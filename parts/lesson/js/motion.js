@@ -292,7 +292,7 @@
     flyValue(text, from, to, onLand, cls) {
       const stage = document.querySelector('.stage');
       if (!G || reduced || !stage) { if (onLand) onLand(); return 0; }
-      const el = document.createElement('div'); el.className = 'fly-val' + (cls ? ' ' + cls : ''); el.textContent = text; stage.appendChild(el);
+      const el = document.createElement('div'); el.className = 'fly-val' + (cls ? ' ' + cls : ''); el.textContent = I18n.label(text); stage.appendChild(el);
       const top = Math.min(from.y, to.y) - 70;
       add(() => G.timeline({ onComplete: () => el.remove() })
         .set(el, { left: from.x, top: from.y, xPercent: -50, yPercent: -50, scale: 0.7, opacity: 0 })
@@ -309,7 +309,7 @@
     intoMark(text, from, to, col, onLand) {
       const stage = document.querySelector('.stage');
       if (!G || reduced || !stage) { if (onLand) onLand(); return; }
-      const el = document.createElement('div'); el.className = 'fly-val tomark'; el.textContent = text; el.style.color = col; stage.appendChild(el);
+      const el = document.createElement('div'); el.className = 'fly-val tomark'; el.textContent = I18n.label(text); el.style.color = col; stage.appendChild(el);
       add(() => G.timeline({ onComplete: () => el.remove() })
         .set(el, { left: from.x, top: from.y, xPercent: -50, yPercent: -50, scale: 1, opacity: 1 })
         .to(el, { left: to.x, top: to.y, duration: 0.75, ease: 'power2.inOut' })
@@ -334,7 +334,7 @@
     slideValue(text, from, to, onLand, cls) {
       const stage = document.querySelector('.stage');
       if (!G || reduced || !stage) { if (onLand) onLand(); return 0; }
-      const el = document.createElement('div'); el.className = 'fly-val' + (cls ? ' ' + cls : ''); el.textContent = text; stage.appendChild(el);
+      const el = document.createElement('div'); el.className = 'fly-val' + (cls ? ' ' + cls : ''); el.textContent = I18n.label(text); stage.appendChild(el);
       add(() => G.timeline({ onComplete: () => el.remove() })
         .set(el, { left: from.x, top: from.y, xPercent: -50, yPercent: -50, scale: 1, opacity: 1 })
         .to(el, { left: to.x, top: to.y, duration: 0.8, ease: 'power2.inOut' }, 0)

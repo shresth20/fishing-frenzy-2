@@ -31,51 +31,54 @@ const LOCATIONS = [
 // values given being on the net itself); `hints` are a wrong net's two lines, said after it tangles:
 // what is off and which way to go, [the part set is under, over] what it should be (Net.missFor reads which from the
 // frame itself, so a hint is always true there).
+// The words are in locales/locales.json, by key: the data holds each line's English (I18n.source), which its recording
+// is looked up by (voice-data.js, AudioEngine.voiceKey); the plate and the bubbles show it in the player's language
+// (Game.instruct, Game.say: I18n.tr).
 const LEVELS = [
   { title: 'Warm-up', warmup: true, type: 'free', drops: 3, corner: 'C', along: 'DC',
     width: 420, height: 200, angleA: 90, start: 0, // Popo's net as it is: a rectangle, nothing to set
     location: 0, fish: 4,
-    prompt: "Now, let's help Popo catch some *fish!*", hint: '' },
+    prompt: I18n.source('helpPopoCatch'), hint: '' },
   { title: 'Make it Parallel', type: 'parallel', sides: ['BC', 'AD'], corner: 'B', along: 'AB',
     width: 440, height: 200, lean: 60, start: -5, // slides along AB (so AB stays parallel to CD), from the left of its place
     location: 0, fish: 3,
-    prompt: 'Drag vertex B to make the net a *parallelogram*.',
-    hints: ['Opposite sides of a parallelogram are equal. Make AB *longer*.', 'Opposite sides of a parallelogram are equal. Make AB *shorter*.'] },
+    prompt: I18n.source('netDragB'),
+    hints: [I18n.source('hintAbLonger'), I18n.source('hintAbShorter')] },
   { title: 'Complete the Parallelogram', type: 'parallel', sides: ['AB', 'CD'], both: true, corner: 'C', along: 'BC',
     width: 440, height: 210, lean: -60, start: -6, // slides along BC (so BC stays parallel to AD), from B's side
     location: 0, fish: 4,
-    prompt: 'Drag vertex C to make the net a *parallelogram*.',
-    hints: ['Opposite sides of a parallelogram are equal. Make BC *longer*.', 'Opposite sides of a parallelogram are equal. Make BC *shorter*.'] },
+    prompt: I18n.source('netDragC'),
+    hints: [I18n.source('hintBcLonger'), I18n.source('hintBcShorter')] },
   { title: 'Match the Opposite Side', type: 'length', side: 'CD', reference: 'AB', metres: { AB: 7 }, corner: 'C', along: 'DC',
     width: 420, height: 200, lean: 50, start: -6, // CD starts at about 5 cm
     location: 1, fish: 4,
-    prompt: 'Drag vertex C to make the net a *parallelogram*.',
-    hints: ['Opposite sides are equal. Make CD *longer*.', 'Opposite sides are equal. Make CD *shorter*.'] },
+    prompt: I18n.source('netDragC'),
+    hints: [I18n.source('hintCdLonger'), I18n.source('hintCdShorter')] },
   { title: 'Use Both Side Properties', type: 'sides', metres: { AB: 8, BC: 5 }, corner: 'D', along: 'BD',
     width: 380, height: 230, lean: 60, start: -7, // slides along the diagonal, toward B (AB and BC stay as they are)
     location: 1, fish: 5,
-    prompt: 'Drag vertex D to make the net a *parallelogram*.',
-    hints: ['Opposite sides are equal. Make CD and AD *longer*.', 'Opposite sides are equal. Make CD and AD *shorter*.'] },
+    prompt: I18n.source('netDragD'),
+    hints: [I18n.source('hintCdAdLonger'), I18n.source('hintCdAdShorter')] },
   { title: 'Match the Opposite Angle', type: 'angle', vertex: 'C', reference: 'A', degrees: 68, corner: 'C', along: 'DC',
     width: 420, height: 210, angleA: 68, start: -7, // angle C starts near 100 degrees
     location: 2, fish: 5,
-    prompt: 'Drag vertex C to make the net a *parallelogram*.',
-    hints: ['Opposite angles are equal. Make ∠C *bigger*.', 'Opposite angles are equal. Make ∠C *smaller*.'] },
+    prompt: I18n.source('netDragC'),
+    hints: [I18n.source('hintAngleCBigger'), I18n.source('hintAngleCSmaller')] },
   { title: 'Make the Adjacent Angle', type: 'supplementary', vertex: 'B', reference: 'A', degrees: 72, corner: 'B', along: 'AB',
     width: 420, height: 210, angleA: 72, start: 8, // angle B starts near 85 degrees
     location: 2, fish: 6,
-    prompt: 'Drag vertex B to make the net a *parallelogram*.',
-    hints: ['Adjacent angles add up to 180°. Make ∠B *bigger*.', 'Adjacent angles add up to 180°. Make ∠B *smaller*.'] },
+    prompt: I18n.source('netDragB'),
+    hints: [I18n.source('hintAngleBBigger'), I18n.source('hintAngleBSmaller')] },
   { title: 'Balance the Diagonals', type: 'diagonals', metres: { AB: 6 }, corner: 'C', along: 'DC',
     width: 440, height: 210, lean: 50, start: -8, // along DC, so both diagonals' halves change as it slides
     location: 3, fish: 7,
-    prompt: 'Drag vertex C to make the net a *parallelogram*.',
-    hints: ['The diagonals bisect each other. Make OC *longer*.', 'The diagonals bisect each other. Make OC *shorter*.'] },
+    prompt: I18n.source('netDragC'),
+    hints: [I18n.source('hintOcLonger'), I18n.source('hintOcShorter')] },
   { title: 'Final Catch', type: 'parallelogram', metres: { AB: 6 }, corner: 'D', along: 'BD',
     width: 400, height: 210, lean: 30, rotate: -7, start: -9, // slides along the diagonal, toward B
     location: 3, fish: 9, rare: true,
-    prompt: 'Drag vertex D to make the net a *parallelogram*.',
-    hints: ['Opposite sides are equal. Make CD *longer*.', 'Opposite sides are equal. Make CD *shorter*.'] },
+    prompt: I18n.source('netDragD'),
+    hints: [I18n.source('hintCdLonger'), I18n.source('hintCdShorter')] },
 ];
 
 // The catch to go for over the eight nets, the Master Catch: the most a run can net is about 95 (the biggest bunch
@@ -146,36 +149,36 @@ function bunchesFor(level) {
 const STORY = {
   // Popo only reacts, as he does in Fishing Frenzy (his lines are his recordings from there):
   // a catch, a wrong net, a right net that came up empty, the golden school, and the end
-  empty: { who: 'popo', text: 'Huh?!' },
-  golden: { who: 'popo', text: '*Woah!*', cue: { word: 0, do: 'hop' } },
-  complete: [{ who: 'popo', text: '*Wow!*', cue: { word: 0, do: 'hop' } }, { who: 'popo', text: 'What a *catch!*' }],
+  empty: { who: 'popo', text: I18n.source('popoHuh') },
+  golden: { who: 'popo', text: I18n.source('popoWoah'), cue: { word: 0, do: 'hop' } },
+  complete: [{ who: 'popo', text: I18n.source('popoWow'), cue: { word: 0, do: 'hop' } }, { who: 'popo', text: I18n.source('popoWhatACatch') }],
   // the warm-up's catches: Popo cheers each one (his recordings from Fishing Frenzy)
   cheers: [
-    { who: 'popo', text: 'Great *catch!*' },
-    { who: 'popo', text: '*Wow!*' },
-    { who: 'popo', text: 'Ha ha *ha!*' },
+    { who: 'popo', text: I18n.source('popoGreatCatch') },
+    { who: 'popo', text: I18n.source('popoWow') },
+    { who: 'popo', text: I18n.source('popoHaHaHa') },
   ],
   // the hook before the lesson (sequences.js hook): Popo's net keeps tangling until a leaping fish knocks its corner into
   // a parallelogram, which stays open and makes the catch; Swiftee names the shape and the lesson finds out why. These
   // ten lines only, in this order (h1 ... h10); `tail`: how long a line stays up after its voice (ms), short, so the
   // story keeps moving
   hook: {
-    h1: { who: 'narrator', text: 'Popo was out fishing today.', tail: 500 },
-    h2: { who: 'popo', text: "Let's catch lots of *fish!*", cue: { word: 0, do: 'hop' }, tail: 300 },
-    h3: { who: 'popo', text: 'Oh no! This net got *tangled.*', tail: 500 },
-    h4: { who: 'narrator', text: 'Popo tried different net shapes, but they kept getting *tangled.*', tail: 300 },
-    h5: { who: 'popo', text: 'I need a net that stays *open* in the water!', tail: 400 },
-    whoa: { who: 'popo', text: 'Whoa! A *giant* fish!', cue: { word: 0, do: 'exclaim' }, tail: 200 },
-    h6: { who: 'popo', text: 'Hey! This one stayed *open!*', tail: 400 },
-    h7: { who: 'popo', text: 'It worked! What *shape* is this?', tail: 400 },
-    h8: { who: 'swiftee', text: 'This shape is called a *parallelogram.*', cue: { word: 5, do: 'trace' }, tail: 500 },
-    h9: { who: 'popo', text: 'Parallelogram? What *shape* is that?', tail: 400 },
-    h10: { who: 'swiftee', text: "Let's find *out!*", cue: { word: 2, do: 'twirl' }, tail: 300 },
+    h1: { who: 'narrator', text: I18n.source('hookH1'), tail: 500 },
+    h2: { who: 'popo', text: I18n.source('hookH2'), cue: { word: 0, do: 'hop' }, tail: 300 },
+    h3: { who: 'popo', text: I18n.source('hookH3'), tail: 500 },
+    h4: { who: 'narrator', text: I18n.source('hookH4'), tail: 300 },
+    h5: { who: 'popo', text: I18n.source('hookH5'), tail: 400 },
+    whoa: { who: 'popo', text: I18n.source('hookWhoa'), cue: { word: 0, do: 'exclaim' }, tail: 200 },
+    h6: { who: 'popo', text: I18n.source('hookH6'), tail: 400 },
+    h7: { who: 'popo', text: I18n.source('hookH7'), tail: 400 },
+    h8: { who: 'swiftee', text: I18n.source('hookH8'), cue: { word: 5, do: 'trace' }, tail: 500 },
+    h9: { who: 'popo', text: I18n.source('hookH9'), tail: 400 },
+    h10: { who: 'swiftee', text: I18n.source('hookH10'), cue: { word: 2, do: 'twirl' }, tail: 300 },
   },
   // after the lesson: the giant wave has brought Popo back, and Swiftee swoops in from it
   welcome: [
-    { who: 'swiftee', text: '*Great* job!', cue: { word: 0, do: 'twirl' } },
-    { who: 'swiftee', text: "Now, let's help Popo catch some *fish!*", cue: { word: 6, do: 'hop' } },
+    { who: 'swiftee', text: I18n.source('welcomeGreatJob'), cue: { word: 0, do: 'twirl' } },
+    { who: 'swiftee', text: I18n.source('helpPopoCatch'), cue: { word: 6, do: 'hop' } },
   ],
 };
 

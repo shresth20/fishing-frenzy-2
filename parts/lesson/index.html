@@ -3,10 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Parallelogram lesson · Fishing Frenzy 2</title>
+<title data-i18n="lessonPageTitle">Parallelogram lesson · Fishing Frenzy 2</title>
 <link rel="icon" href="data:,">
 <!-- part of the journey: index.html at the root plays it after the fishing game's banner (shell/bridge.js) -->
 <script src="../../shell/bridge.js" data-part="lesson"></script>
+<!-- every word on screen, by key, in the language asked for with ?lan= (shell/i18n.js, locales/locales.json); the
+     markup's own words are {{tx.*}} (game-engine.js renderVals) -->
+<script src="../../locales/locales.js"></script>
+<script src="../../shell/i18n.js"></script>
 <!-- (the fonts don't hold the page up: as the journey's, index.html; the text re-fits as they arrive) -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Fredoka:wght@500;600;700&amp;family=Nunito:wght@600;700;800;900&amp;display=swap" media="print" onload="this.media='all'">
 <!-- only the ∥ and ∠ symbols, which the game fonts don't have; listed after them in the CSS font stacks -->
@@ -49,7 +53,7 @@
 <div class="stage {{sceneCls}}" style="position: absolute; left: 0px; top: 0px; width: 1280px; height: 720px; transform: translate(225.07px, 126.32px) scale(1.14833); transform-origin: 0 0" onPointerDown="{{rootDown}}" onPointerMove="{{rootMove}}" onPointerUp="{{rootUp}}" onPointerCancel="{{rootUp}}">
 
 <sc-if value="{{isLesson}}" hint-placeholder-val="{{ true }}">
-<svg class="{{boardCls}}" viewBox="0 0 520 420" width="520" height="420" style="position: absolute; left: 640px; top: 104px; overflow: visible; touch-action: none; transform-origin: 0px 0px; transition: transform 0.7s cubic-bezier(0.22, 0.8, 0.3, 1); transform: {{boardTf}}" aria-label="Parallelogram ABCD">
+<svg class="{{boardCls}}" viewBox="0 0 520 420" width="520" height="420" style="position: absolute; left: 640px; top: 104px; overflow: visible; touch-action: none; transform-origin: 0px 0px; transition: transform 0.7s cubic-bezier(0.22, 0.8, 0.3, 1); transform: {{boardTf}}" aria-label="{{tx.board}}" data-board="1">
 <g class="pop-g" style="transform-origin: {{popO}}">
 <polygon class="shape-fill" sc-camel-points="{{g.poly}}" fill="rgba(229,205,234,0.92)" stroke="none"></polygon>
 <!-- the filled angles, clipped to the shape (as in Fishing Frenzy's lesson), under the sides -->
@@ -129,16 +133,16 @@
      base, C is turned, no side level, near a rhombus (a parallelogram needn't sit flat) - and carry the board's own
      parallel arrows, orange chevrons over a white halo: two on one pair, one on the other, each pair pointing one way -->
 <div class="grid4 {{gridCls}}" style="position: absolute; left: 360px; top: 156px; width: 560px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px">
-<button data-qa="opt-A" class="opt gridopt {{c1.A.cls}}" disabled="{{c1.A.dis}}" onClick="{{c1.A.pick}}" aria-label="Shape A" style="position: relative; height: 206px; display: flex; align-items: center; justify-content: center">
+<button data-qa="opt-A" class="opt gridopt {{c1.A.cls}}" disabled="{{c1.A.dis}}" onClick="{{c1.A.pick}}" aria-label="{{tx.shapeA}}" style="position: relative; height: 206px; display: flex; align-items: center; justify-content: center">
 <svg width="262" height="157" viewBox="0 0 200 120" aria-hidden="true"><polygon points="24,96 142,96 176,24 58,24" fill="#e4d6ff" stroke="#7a4fe0" stroke-width="4" stroke-linejoin="round"></polygon><path d="M110.2,30 L116.2,24 L110.2,18 M117.8,30 L123.8,24 L117.8,18 M76.2,102 L82.2,96 L76.2,90 M83.8,102 L89.8,96 L83.8,90 M45.1,65.3 L42.3,57.3 L34.3,60.2 M163.1,65.3 L160.3,57.3 L152.3,60.2" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M110.2,30 L116.2,24 L110.2,18 M117.8,30 L123.8,24 L117.8,18 M76.2,102 L82.2,96 L76.2,90 M83.8,102 L89.8,96 L83.8,90 M45.1,65.3 L42.3,57.3 L34.3,60.2 M163.1,65.3 L160.3,57.3 L152.3,60.2" fill="none" stroke="#ff7a00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </button>
-<button data-qa="opt-B" class="opt gridopt {{c1.B.cls}}" disabled="{{c1.B.dis}}" onClick="{{c1.B.pick}}" aria-label="Shape B" style="position: relative; height: 206px; display: flex; align-items: center; justify-content: center">
+<button data-qa="opt-B" class="opt gridopt {{c1.B.cls}}" disabled="{{c1.B.dis}}" onClick="{{c1.B.pick}}" aria-label="{{tx.shapeB}}" style="position: relative; height: 206px; display: flex; align-items: center; justify-content: center">
 <svg width="262" height="157" viewBox="0 0 200 120" aria-hidden="true"><polygon points="26,95 174,95 140,25 60,25" fill="#d5ebff" stroke="#2f6fc8" stroke-width="4" stroke-linejoin="round"></polygon></svg>
 </button>
-<button data-qa="opt-C" class="opt gridopt {{c1.C.cls}}" disabled="{{c1.C.dis}}" onClick="{{c1.C.pick}}" aria-label="Shape C" style="position: relative; height: 206px; display: flex; align-items: center; justify-content: center">
+<button data-qa="opt-C" class="opt gridopt {{c1.C.cls}}" disabled="{{c1.C.dis}}" onClick="{{c1.C.pick}}" aria-label="{{tx.shapeC}}" style="position: relative; height: 206px; display: flex; align-items: center; justify-content: center">
 <svg width="262" height="157" viewBox="0 0 200 120" aria-hidden="true"><polygon points="40,80 120,104 166,40 86,16" fill="#d3f4d8" stroke="#1f9a49" stroke-width="4" stroke-linejoin="round"></polygon><path d="M71.8,95.8 L79.2,91.8 L75.2,84.3 M79.0,98.0 L86.5,94.0 L82.5,86.5 M117.8,31.8 L125.2,27.8 L121.2,20.3 M125.0,34.0 L132.5,30.0 L128.5,22.5 M66.1,53.9 L64.8,45.6 L56.4,46.9 M146.1,77.9 L144.8,69.6 L136.4,70.9" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M71.8,95.8 L79.2,91.8 L75.2,84.3 M79.0,98.0 L86.5,94.0 L82.5,86.5 M117.8,31.8 L125.2,27.8 L121.2,20.3 M125.0,34.0 L132.5,30.0 L128.5,22.5 M66.1,53.9 L64.8,45.6 L56.4,46.9 M146.1,77.9 L144.8,69.6 L136.4,70.9" fill="none" stroke="#ff7a00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </button>
-<button data-qa="opt-D" class="opt gridopt {{c1.D.cls}}" disabled="{{c1.D.dis}}" onClick="{{c1.D.pick}}" aria-label="Shape D" style="position: relative; height: 206px; display: flex; align-items: center; justify-content: center">
+<button data-qa="opt-D" class="opt gridopt {{c1.D.cls}}" disabled="{{c1.D.dis}}" onClick="{{c1.D.pick}}" aria-label="{{tx.shapeD}}" style="position: relative; height: 206px; display: flex; align-items: center; justify-content: center">
 <svg width="262" height="157" viewBox="0 0 200 120" aria-hidden="true" overflow="visible"><polygon points="32,65 116,21 160,35 170,75 66,99" fill="#ffe5bd" stroke="#d27a14" stroke-width="4" stroke-linejoin="round"></polygon><text class="pent-n n1" x="63" y="38">1</text><text class="pent-n n2" x="145" y="19">2</text><text class="pent-n n3" x="177" y="54">3</text><text class="pent-n n4" x="121" y="99">4</text><text class="pent-n n5" x="39" y="88">5</text></svg>
 </button>
 </div>
@@ -148,7 +152,7 @@
 <div class="{{fillCls}}" style="position: absolute; left: 120px; top: {{optTop}}px; width: 1040px">
 <div class="blank-row">
 <sc-for list="{{blanks}}" as="bk" hint-placeholder-count="2">
-<span class="blank-grp {{bk.gap}}"><span class="blank-pre">{{bk.pre}}</span><button class="{{bk.cls}}" data-blank="{{bk.id}}" data-qa="blank-{{bk.id}}" onClick="{{bk.tap}}" aria-label="Answer box {{bk.pre}}"><span class="dd-val {{bk.ph}}">{{bk.t}}</span></button><span class="blank-post">{{bk.post}}</span><span class="blank-eq">{{bk.eq}}</span></span>
+<span class="blank-grp {{bk.gap}}"><span class="blank-pre">{{bk.pre}}</span><button class="{{bk.cls}}" data-blank="{{bk.id}}" data-qa="blank-{{bk.id}}" onClick="{{bk.tap}}" aria-label="{{bk.aria}}"><span class="dd-val {{bk.ph}}">{{bk.t}}</span></button><span class="blank-post">{{bk.post}}</span><span class="blank-eq">{{bk.eq}}</span></span>
 </sc-for>
 </div>
 <div class="tile-row">
@@ -180,25 +184,25 @@
 <sc-if value="{{isEnd}}" hint-placeholder-val="{{ false }}">
 <!-- the score card (the lesson's own page only): centred in the card's room right of Swiftee and her bubble -->
 <div class="{{fadeCls}}" style="position: absolute; left: 600px; top: 150px; width: 460px; height: 360px; border-radius: 28px; background: rgba(255,255,255,0.9); border: 3px solid #cfe6f7; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; box-shadow: 0 10px 30px rgba(18,59,99,0.15)">
-<div style="font-family: 'Baloo 2', 'Noto Sans Math', system-ui, sans-serif; font-weight: 800; font-size: 42px; line-height: 1.05; color: #123b63; text-align: center">Lesson complete!</div>
+<div style="font-family: 'Baloo 2', 'Noto Sans Math', system-ui, sans-serif; font-weight: 800; font-size: 42px; line-height: 1.05; color: #123b63; text-align: center">{{tx.lessonComplete}}</div>
 <div style="display: flex; gap: 10px">
 <sc-for list="{{stars}}" as="st" hint-placeholder-count="3">
 <svg class="star {{st.cls}}" width="62" height="62" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.3l-5.8 3 1.1-6.4-4.7-4.6 6.5-.9z" fill="currentColor" stroke="#c48f05" stroke-width="0.8" stroke-linejoin="round"></path></svg>
 </sc-for>
 </div>
 <div style="font-weight: 800; font-size: 20px; color: #123b63; text-align: center; max-width: 360px">{{scoreText}}</div>
-<button class="next" onClick="{{restart}}" style="margin-top: 6px">Play again</button>
+<button class="next" onClick="{{restart}}" style="margin-top: 6px">{{tx.playAgain}}</button>
 </div>
 </sc-if>
 
 <div class="chip-row{{chipRowCls}}" style="position: absolute; left: calc({{chipLeft}}px - 80px); top: {{chipTop}}px; width: 1040px; height: 104px; display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; align-content: center; justify-content: center; gap: 12px 28px; pointer-events: none">
 <sc-for list="{{chips}}" as="cp" hint-placeholder-count="1">
-<div class="chip {{cp.k}}" aria-label="{{cp.t}}"><span class="chip-cap">{{cp.cap}}</span><span class="chip-ln"><span>{{cp.p0}}</span><span class="op">{{cp.s0}}</span><span>{{cp.p1}}</span><span class="op">{{cp.s1}}</span><span>{{cp.p2}}</span><span class="op">{{cp.s2}}</span><span>{{cp.p3}}</span><span class="op">{{cp.s3}}</span><span>{{cp.p4}}</span></span></div>
+<div class="chip {{cp.k}}" aria-label="{{cp.a}}" data-t="{{cp.t}}"><span class="chip-cap">{{cp.cap}}</span><span class="chip-ln"><span>{{cp.p0}}</span><span class="op">{{cp.s0}}</span><span>{{cp.p1}}</span><span class="op">{{cp.s1}}</span><span>{{cp.p2}}</span><span class="op">{{cp.s2}}</span><span>{{cp.p3}}</span><span class="op">{{cp.s3}}</span><span>{{cp.p4}}</span></span></div>
 </sc-for>
 </div>
 
 <div class="{{swCls}}" style="position: absolute; top: 401px; width: 259px; height: 259px; pointer-events: none">
-<img class="bird swiftee-still" src="assets/images/swiftee.webp" alt="Swiftee the bird" style="position: absolute; left: 42px; top: 29px; width: 180px; height: 198px">
+<img class="bird swiftee-still" src="assets/images/swiftee.webp" alt="{{tx.swiftee}}" style="position: absolute; left: 42px; top: 29px; width: 180px; height: 198px">
 <canvas class="swiftee-sprite" width="256" height="256" aria-hidden="true" style="position: absolute; left: 0px; top: 0px; width: 259px; height: 259px"></canvas>
 </div>
 <div class="sum-root"></div>
@@ -226,12 +230,12 @@
 </sc-if>
 <!-- the journey's Next buttons, at the bottom middle of the card (as Fishing Frenzy's): the end's, under Swiftee's goodbye, and the
      summary's, once every idea has been explained - the learner moves on when they choose -->
-<sc-if value="{{endNext}}" hint-placeholder-val="{{ false }}"><button class="next end-next" data-qa="end-next" onClick="{{endGo}}">Next</button></sc-if>
-<sc-if value="{{showSumNext}}" hint-placeholder-val="{{ false }}"><button class="next end-next sum-next" data-qa="sum-next" onClick="{{sumNextGo}}">Next</button></sc-if>
+<sc-if value="{{endNext}}" hint-placeholder-val="{{ false }}"><button class="next end-next" data-qa="end-next" onClick="{{endGo}}">{{tx.next}}</button></sc-if>
+<sc-if value="{{showSumNext}}" hint-placeholder-val="{{ false }}"><button class="next end-next sum-next" data-qa="sum-next" onClick="{{sumNextGo}}">{{tx.next}}</button></sc-if>
 
 </div>
 <sc-if value="{{notStarted}}" hint-placeholder-val="{{ false }}">
-<button class="journey-next" data-qa="start" onClick="{{begin}}">Next</button>
+<button class="journey-next" data-qa="start" onClick="{{begin}}">{{tx.next}}</button>
 </sc-if>
 </div>
 </x-dc>

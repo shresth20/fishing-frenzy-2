@@ -79,7 +79,7 @@ if (journey) {
   journey.onDispose(() => { game.dispose(); audio.hold(true); });
 }
 
-ui.setLoading('Loading…');
+ui.setLoading(T('loading'));
 Promise.all([loadCoreAssets(journey ? (k) => journey.progress(k) : undefined), audio.prepareVoices(PopoGame.VOICE_DATA)])
   .then(() => {
     ui.setLoading('');
@@ -89,7 +89,7 @@ Promise.all([loadCoreAssets(journey ? (k) => journey.progress(k) : undefined), a
     if (journey) journey.ready();
   })
   .catch((err) => {
-    ui.setLoading(`Could not load the game art (${err.message}).`);
+    ui.setLoading(T('loadArtFailed', { error: err.message }));
     if (journey) journey.failed(err.message);
   });
 })(window.PopoGame = window.PopoGame || {});

@@ -31,6 +31,25 @@ Static files, no build step: `python3 -m http.server 8000` at this folder's root
 - `?start=fishing`: Play skips the lesson. `?debug`: `window.lessonDebug` in the lesson, `window.popoDebug` in the game.
 - `parts/lesson/index.html?solo`: the lesson on its own page.
 
+## Languages
+
+Every word on screen comes from `locales/locales.json` by key (`shell/i18n.js`): `T('key')` in the scripts,
+`data-i18n="key"` in the pages, `{{tx.*}}` in the lesson's markup. Pick the language with `?lan=<code>` (e.g.
+`index.html?lan=hi`); the journey passes it on to both parts, and a language not in the file plays in English.
+
+- `locales.json` holds English only for now. A translation is one more object beside `en` with the same keys (and its
+  code in `supportedLanguages`). Keep `{placeholders}`, `\n` (a line break in Swiftee's bubble), notation (AB, ∠A, 68°)
+  and the `*stars*` (a starred word is a key word: Popo's stressed words, the lesson's gold terms) - star the matching
+  words of the translation.
+- After every edit of `locales.json`, regenerate `locales/locales.js` (the copy the pages load, so they also work from
+  disk) with the command at the top of `shell/i18n.js`.
+- The voice-over is still English: each clip is found by its line's English, so the game's data keeps the English
+  (`I18n.source` / `I18n.plain`) and only the screen shows the translation (`I18n.tr`); the words then appear in step
+  with the English voice. A line's key is also its voice key, ready for recordings in other languages
+  (`I18n.voice(key)`: `assets/VO/<lang>/<key>.webm`).
+- Not translated: the `?dev=1` panel (a developer's tool), the `<noscript>` line (shown only without JavaScript) and the
+  painted "Fishing Frenzy 2" logo (an image).
+
 ## How it fits together
 
 `index.html` and `shell/journey.js` are the journey: the fishing game plays in one full-window frame (its banner is

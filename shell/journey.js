@@ -39,10 +39,10 @@
 
   // the journey's steps, in order (each announced with its number): the game's first net, the lesson, the rest of the game
   const STEPS = ['intro', 'lesson', 'fishing'];
-  // the parts, in the journey's order (the dev panel's sections)
+  // the parts, in the journey's order (the dev panel's sections); their titles in the player's language (shell/i18n.js)
   const PARTS = [
-    { id: 'lesson', src: 'parts/lesson/index.html', title: "Swiftee's parallelogram lesson" },
-    { id: 'fishing', src: 'parts/fishing/index.html', title: "Popo's parallelogram nets" },
+    { id: 'lesson', src: 'parts/lesson/index.html', title: I18n.t('partLesson') },
+    { id: 'fishing', src: 'parts/fishing/index.html', title: I18n.t('partFishing') },
   ];
   // times in ms
   const T = {
@@ -137,6 +137,7 @@
     const u = new URL(p.src, location.href);
     u.searchParams.set('embed', '1');
     ['dev', 'debug'].forEach((k) => { if (params.has(k)) u.searchParams.set(k, params.get(k) || '1'); });
+    ['lan', 'lang'].forEach((k) => { if (params.get(k)) u.searchParams.set(k, params.get(k)); }); // (the player's language: shell/i18n.js)
     return u.href;
   }
   // start loading a part (once): the game shows at once, the lesson behind it, unseen
@@ -401,7 +402,7 @@
       el.hidden = !f;
       if (!f) return;
       const failed = f.status === 'failed';
-      el.querySelector('.status-text').textContent = failed ? 'Could not load the game.' : 'Getting ready…';
+      el.querySelector('.status-text').textContent = failed ? I18n.t('loadFailed') : I18n.t('gettingReady');
       const bar = el.querySelector('.bar');
       bar.hidden = failed;
       bar.classList.toggle('unknown', !(f.progress > 0));

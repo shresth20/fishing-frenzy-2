@@ -223,7 +223,7 @@ class UI {
     b.classList.remove('leave');
     if (mode !== 'hidden') {
       b.dataset.mode = mode;
-      b.querySelector('.label').textContent = { check: 'Check', catch: 'Catch', again: 'Try again' }[mode];
+      b.querySelector('.label').textContent = T({ check: 'btnCheck', catch: 'btnCatch', again: 'tryAgain' }[mode]);
       b.hidden = false;
       this.pop(b);
       return;
@@ -492,7 +492,7 @@ class UI {
 
   setSound(muted) {
     this.el.sound.setAttribute('aria-pressed', String(!muted));
-    this.el.sound.setAttribute('aria-label', muted ? 'Sound off' : 'Sound on');
+    this.el.sound.setAttribute('aria-label', T(muted ? 'ariaSoundOff' : 'ariaSoundOn'));
     this.el.sound.classList.toggle('muted', muted);
   }
 
@@ -505,7 +505,7 @@ class UI {
   // arriving, 'cheer' for every tenth.
   setCatch(n, move = null) {
     this.el.catchCount.textContent = String(n);
-    this.el.catch.setAttribute('aria-label', `Fish caught: ${n}`);
+    this.el.catch.setAttribute('aria-label', T('ariaFishCaught', { n }));
     if (!move) return;
     this.el.catch.classList.remove('gulp', 'cheer');
     void this.el.catch.offsetWidth;
@@ -557,7 +557,7 @@ class UI {
     const won = n >= goal;
     this.countGoal(n, goal);
     document.getElementById('goal').classList.toggle('won', won);
-    document.getElementById('goal-line').textContent = 'Think you can catch more next time?';
+    document.getElementById('goal-line').textContent = T('goalLine');
     return won;
   }
 

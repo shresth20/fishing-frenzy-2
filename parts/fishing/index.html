@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
   <meta name="theme-color" content="#0b4fb8">
-  <title>Fishing Frenzy 2</title>
+  <title data-i18n="gameTitle">Fishing Frenzy 2</title>
   <!-- part of the journey: index.html at the root shows this banner as its front page (shell/bridge.js) -->
   <script src="../../shell/bridge.js" data-part="fishing"></script>
+  <!-- every word on screen, by key, in the language asked for with ?lan= (shell/i18n.js, locales/locales.json) -->
+  <script src="../../locales/locales.js"></script>
+  <script src="../../shell/i18n.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- (not holding the page up: as the journey's, index.html) -->
@@ -23,9 +26,9 @@
       <canvas id="curtain" class="layer curtain" aria-hidden="true"></canvas>
 
       <div id="hits" class="hits">
-        <button id="handle" class="handle" type="button" aria-label="Net corner. Drag it, or move it with the arrow keys and press Enter." hidden></button>
-        <button id="step-back" class="step" type="button" aria-label="Slide the corner back one stop" hidden></button>
-        <button id="step-on" class="step" type="button" aria-label="Slide the corner on one stop" hidden></button>
+        <button id="handle" class="handle" type="button" aria-label="Net corner. Drag it, or move it with the arrow keys and press Enter." data-i18n-aria-label="ariaNetCorner" hidden></button>
+        <button id="step-back" class="step" type="button" aria-label="Slide the corner back one stop" data-i18n-aria-label="ariaStepBack" hidden></button>
+        <button id="step-on" class="step" type="button" aria-label="Slide the corner on one stop" data-i18n-aria-label="ariaStepOn" hidden></button>
       </div>
       <img id="hand" class="hand" src="assets/sprites/hint-hand.webp" alt="" hidden aria-hidden="true">
 
@@ -34,7 +37,7 @@
 
       <div id="hud" class="hud" hidden>
         <div class="hud-top">
-          <div id="catch" class="catch" role="status" aria-label="Fish caught: 0">
+          <div id="catch" class="catch" role="status" aria-label="Fish caught: 0" data-i18n-aria-label="ariaFishCaught" data-i18n-vars='{"n":0}'>
             <span class="catch-row">
               <span id="catch-badge" class="catch-badge" aria-hidden="true"><svg class="catch-icon" viewBox="0 0 44 28"><path d="M3 14c6-9 19-11 27-4l10-7v22l-10-7c-8 7-21 5-27-4z" fill="#ffd23f" stroke="#fff3c4" stroke-width="2" stroke-linejoin="round"/><path d="M19 8.5c2 3.5 2 7.5 0 11" fill="none" stroke="#e8890c" stroke-width="2" stroke-linecap="round"/><circle cx="11.5" cy="11.5" r="2.6" fill="#3b1d00"/><circle cx="12.3" cy="10.7" r="0.9" fill="#fff"/></svg></span>
               <span id="catch-count" class="catch-count">0</span>
@@ -45,10 +48,10 @@
             <span id="instruction-say" class="sr-only"></span>
           </div>
           <div class="hud-buttons">
-            <button id="btn-sound" class="icon-btn" type="button" aria-label="Sound on" aria-pressed="true">
+            <button id="btn-sound" class="icon-btn" type="button" aria-label="Sound on" data-i18n-aria-label="ariaSoundOn" aria-pressed="true">
               <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path class="spk" d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path class="wave" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a9 9 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="mute" d="M16 9l5 6M21 9l-5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
             </button>
-            <button id="btn-pause" class="icon-btn" type="button" aria-label="Pause">
+            <button id="btn-pause" class="icon-btn" type="button" aria-label="Pause" data-i18n-aria-label="ariaPause">
               <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1" fill="currentColor"/><rect x="14" y="5" width="4" height="14" rx="1" fill="currentColor"/></svg>
             </button>
           </div>
@@ -61,52 +64,52 @@
               <svg class="ic ic-catch" viewBox="0 0 44 40"><path d="M14 4h26l-8 16H6z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M21 4l-5 16M29 4l-3 16M12 12h25" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M6 20c0 10 6 16 13 16s13-6 13-16" fill="none" stroke="currentColor" stroke-width="3"/></svg>
               <svg class="ic ic-again" viewBox="0 0 44 40"><path d="M31.5 25a11 11 0 1 1-1.6-11.4" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"/><path d="M33 7v8h-8" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
-            <span class="label">Check</span>
+            <span class="label" data-i18n="btnCheck">Check</span>
           </button>
         </div>
         <!-- The End: a card on the sunburst once the circle has closed on Popo - a trophy, the run's catch against the goal
              (GOAL, 75) counting up, a bar filling to it, one line and Play Again -->
         <div id="goal" class="goal" hidden>
           <span class="goal-cup" aria-hidden="true"><i class="goal-twinkle">✦</i><i class="goal-twinkle">✦</i><svg viewBox="0 0 64 64"><defs><linearGradient id="cup-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff27a"/><stop offset=".5" stop-color="#ffcb33"/><stop offset="1" stop-color="#f58c12"/></linearGradient></defs><path d="M19 15H10a8.5 8.5 0 0 0 10 13M45 15h9a8.5 8.5 0 0 1-10 13" fill="none" stroke="#3b1d00" stroke-width="4.4" stroke-linecap="round"/><path d="M19 15H10a8.5 8.5 0 0 0 10 13M45 15h9a8.5 8.5 0 0 1-10 13" fill="none" stroke="#ffcb33" stroke-width="2" stroke-linecap="round"/><path d="M17 8h30v14a15 15 0 0 1-30 0z" fill="url(#cup-gold)" stroke="#3b1d00" stroke-width="2.6" stroke-linejoin="round"/><path d="M28 36.5h8l1.5 8.5h-11z" fill="#ffa71f" stroke="#3b1d00" stroke-width="2.6" stroke-linejoin="round"/><rect x="18" y="45" width="28" height="9" rx="2.5" fill="url(#cup-gold)" stroke="#3b1d00" stroke-width="2.6"/><path d="M32 13.5l2.3 4.7 5.2.8-3.8 3.6.9 5.1-4.6-2.4-4.6 2.4.9-5.1-3.8-3.6 5.2-.8z" fill="#fff8d8"/><path d="M21 11v10a10 10 0 0 0 4 8" fill="none" stroke="#fffbe0" stroke-width="2.2" stroke-linecap="round" opacity=".75"/></svg></span>
-          <span class="goal-title">Great Fishing, Popo!</span>
-          <span class="goal-sub">You helped Popo catch...</span>
+          <span class="goal-title" data-i18n="goalTitle">Great Fishing, Popo!</span>
+          <span class="goal-sub" data-i18n="goalSub">You helped Popo catch...</span>
           <span class="goal-stats">
-            <span class="goal-stat mine"><span class="goal-label">Your catch</span><span class="goal-num"><span class="goal-ic" aria-hidden="true"><svg viewBox="0 0 44 28"><path d="M3 14c6-9 19-11 27-4l10-7v22l-10-7c-8 7-21 5-27-4z" fill="#ffd23f" stroke="#3b1d00" stroke-width="2.6" stroke-linejoin="round"/><circle cx="11.5" cy="11.5" r="2.6" fill="#3b1d00"/></svg></span><span id="goal-n">0</span></span><span class="goal-unit">fish</span></span>
-            <span class="goal-stat aim"><span class="goal-label">Maximum possible</span><span class="goal-num"><span class="goal-ic" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="13" fill="#fff" stroke="#3b1d00" stroke-width="2.6"/><circle cx="16" cy="16" r="8.5" fill="#2bb3a3" stroke="#3b1d00" stroke-width="2.2"/><circle cx="16" cy="16" r="3.6" fill="#fff" stroke="#3b1d00" stroke-width="2"/></svg></span><span id="goal-of">75</span></span><span class="goal-unit">fish</span></span>
+            <span class="goal-stat mine"><span class="goal-label" data-i18n="goalYourCatch">Your catch</span><span class="goal-num"><span class="goal-ic" aria-hidden="true"><svg viewBox="0 0 44 28"><path d="M3 14c6-9 19-11 27-4l10-7v22l-10-7c-8 7-21 5-27-4z" fill="#ffd23f" stroke="#3b1d00" stroke-width="2.6" stroke-linejoin="round"/><circle cx="11.5" cy="11.5" r="2.6" fill="#3b1d00"/></svg></span><span id="goal-n">0</span></span><span class="goal-unit" data-i18n="goalFish">fish</span></span>
+            <span class="goal-stat aim"><span class="goal-label" data-i18n="goalMaxPossible">Maximum possible</span><span class="goal-num"><span class="goal-ic" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="13" fill="#fff" stroke="#3b1d00" stroke-width="2.6"/><circle cx="16" cy="16" r="8.5" fill="#2bb3a3" stroke="#3b1d00" stroke-width="2.2"/><circle cx="16" cy="16" r="3.6" fill="#fff" stroke="#3b1d00" stroke-width="2"/></svg></span><span id="goal-of">75</span></span><span class="goal-unit" data-i18n="goalFish">fish</span></span>
           </span>
           <span id="goal-bar" class="goal-bar" aria-hidden="true"><span class="goal-fill"></span><span class="goal-rider"><svg viewBox="0 0 44 28"><path d="M3 14c6-9 19-11 27-4l10-7v22l-10-7c-8 7-21 5-27-4z" fill="#ffd23f" stroke="#3b1d00" stroke-width="2.6" stroke-linejoin="round"/><circle cx="11.5" cy="11.5" r="2.6" fill="#3b1d00"/></svg></span><span class="goal-star">★</span></span>
           <span id="goal-line" class="goal-line" role="status"></span>
           <span class="goal-go">
             <button id="btn-again" class="drop-btn again-btn" type="button" hidden>
               <span class="badge" aria-hidden="true"><svg viewBox="0 0 44 40"><path d="M31.5 25a11 11 0 1 1-1.6-11.4" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"/><path d="M32.5 6.5v8.6h-8.6" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <span>Try Again</span>
+              <span data-i18n="goalTryAgain">Try Again</span>
             </button>
           </span>
         </div>
         <div class="actions">
           <button id="btn-drop" class="drop-btn" type="button" hidden>
             <span class="badge" aria-hidden="true"><svg viewBox="0 0 44 40"><path d="M14 4h26l-8 16H6z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M21 4l-5 16M30 4l-5 16M10 12h26" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6"/><path d="M22 23v13M15 30l7 7 7-7" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            <span>Drop Net</span>
+            <span data-i18n="btnDropNet">Drop Net</span>
           </button>
         </div>
       </div>
 
-      <section id="overlay-pause" class="overlay pause" hidden aria-label="Paused">
+      <section id="overlay-pause" class="overlay pause" hidden aria-label="Paused" data-i18n-aria-label="ariaPaused">
         <div class="card">
-          <span class="card-kicker">TAKE A BREATHER</span><h2>Adventure paused</h2><p>Your next catch can wait.</p>
-          <button id="btn-resume" class="btn primary" type="button">Resume</button>
-          <button id="btn-restart" class="btn" type="button">Restart</button>
+          <span class="card-kicker" data-i18n="pauseKicker">TAKE A BREATHER</span><h2 data-i18n="pauseTitle">Adventure paused</h2><p data-i18n="pauseText">Your next catch can wait.</p>
+          <button id="btn-resume" class="btn primary" type="button" data-i18n="btnResume">Resume</button>
+          <button id="btn-restart" class="btn" type="button" data-i18n="btnRestart">Restart</button>
         </div>
       </section>
 
 
       <section id="screen-start" class="screen start" aria-labelledby="game-title">
-        <h1 id="game-title" class="sr-only">Fishing Frenzy 2</h1>
-        <button id="btn-play" class="play-hit" type="button" aria-label="Play"></button>
-        <p id="loading" class="loading" role="status">Loading…</p>
+        <h1 id="game-title" class="sr-only" data-i18n="gameTitle">Fishing Frenzy 2</h1>
+        <button id="btn-play" class="play-hit" type="button" aria-label="Play" data-i18n-aria-label="ariaPlay"></button>
+        <p id="loading" class="loading" role="status" data-i18n="loading">Loading…</p>
       </section>
     </div>
-    <div id="rotate-hint" class="rotate-hint" hidden>Rotate your device for the best experience</div>
+    <div id="rotate-hint" class="rotate-hint" data-i18n="rotateHint" hidden>Rotate your device for the best experience</div>
   </div>
   <script src="src/sprite-data.js" defer></script>
   <script src="src/personality-data.js" defer></script>

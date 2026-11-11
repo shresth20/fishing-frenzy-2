@@ -1341,7 +1341,7 @@ class Net {
   measure(ctx, c) {
     const L = this.level;
     if (!L) return;
-    const m = (name) => `${cm(this.metresShown(name))} cm`; // (7 cm, 5.5 cm: as the lesson writes lengths)
+    const m = (name) => `${cm(this.metresShown(name))} ${T('unitCm')}`; // (7 cm, 5.5 cm: as the lesson writes lengths; the unit in the player's language)
     const deg = (letter) => `${this.degreesShown(letter)}°`;
     // Only what the task is about is on the net - the value given and the one the child sets - so nothing clutters
     // it: the net is checked by pressing Check, not by reading it
@@ -1377,12 +1377,12 @@ class Net {
         break;
       }
       case 'length':
-        this.drawLength(ctx, c, L.reference, `${L.metres[L.reference]} cm`);
+        this.drawLength(ctx, c, L.reference, `${L.metres[L.reference]} ${T('unitCm')}`);
         this.drawLength(ctx, c, L.side, m(L.side), true);
         break;
       case 'sides': { // the two sides given, and the two the child sets (their opposites)
         const given = Object.keys(L.metres);
-        for (const name of ['AB', 'BC', 'CD', 'AD']) this.drawLength(ctx, c, name, given.includes(name) ? `${L.metres[name]} cm` : m(name), !given.includes(name));
+        for (const name of ['AB', 'BC', 'CD', 'AD']) this.drawLength(ctx, c, name, given.includes(name) ? `${L.metres[name]} ${T('unitCm')}` : m(name), !given.includes(name));
         break;
       }
       case 'angle':
@@ -1553,7 +1553,7 @@ class Net {
     const put = (from, to, name, value, sign, along = 0.5) => {
       const mid = lerp(from, to, along);
       const u = normalize(sub(to, from)), n = { x: -u.y * sign, y: u.x * sign };
-      const string = `${name} ${cm(value)} cm`, off = 8 * k + reach(labelHalf(string, 20, k), n);
+      const string = `${name} ${cm(value)} ${T('unitCm')}`, off = 8 * k + reach(labelHalf(string, 20, k), n);
       // (the half's other side, in the next triangle, if its own has no room: alt)
       const end = from === o ? to : from, out = normalize(sub(end, o)), last = add(end, times(out, 34 * k + reach(labelHalf(string, 20, k), out)));
       this.text(ctx, string, mid.x + n.x * off, mid.y + n.y * off, 20, '#ffd84a', true,

@@ -45,21 +45,23 @@
 
   // ---------- the ideas, in teaching order. card() draws any of them from this data; the lines are the lesson's recap
   // clips (vo_lines.js) ----------
+  // (the words are in locales/locales.json: a line is its English, I18n.plain - its clip and its cue words are the English
+  // line's, and the engine shows it in the player's language; a name plate is only shown, so it is in that language, T)
   //   visual: draw (outline draws itself); chev (parallel arrows on both pairs); ticks (equal-length ticks on both
   //           pairs); wedges (angles with their values); lit (sides that glow); diag (the diagonals, O and their equal halves)
   //   cue:    spoken word -> what it highlights (see cue() below)
   const IDEAS = [
-    { id: 'parallelogram', label: 'Parallelogram', t: 'A parallelogram is a quadrilateral with two pairs of opposite sides parallel.',
+    { id: 'parallelogram', label: T('wordParallelogram'), t: I18n.plain('sumParallelogram'),
       visual: { draw: true, chev: true }, cue: { quadrilateral: 'outline', parallel: 'pair' } },
-    { id: 'parallel', label: 'Parallel sides', t: 'Opposite sides are parallel.',
+    { id: 'parallel', label: T('capParallelSides'), t: I18n.plain('sumParallel'),
       visual: { chev: true }, cue: { opposite: 'pairs', parallel: 'chev' } },
-    { id: 'equal', label: 'Equal sides', t: 'Opposite sides are equal.',
+    { id: 'equal', label: T('capEqualSides'), t: I18n.plain('sumEqual'),
       visual: { ticks: true }, cue: { opposite: 'pairs', equal: 'ticks' } },
-    { id: 'angles', label: 'Equal angles', t: 'Opposite angles are equal.',
+    { id: 'angles', label: T('capEqualAngles'), t: I18n.plain('sumAngles'),
       visual: { wedges: ['A', 'B', 'C', 'D'] }, cue: { angles: 'wedges', equal: 'values' } },
-    { id: 'supplementary', label: 'Supplementary', t: 'Adjacent angles are supplementary. They add up to 180°.',
+    { id: 'supplementary', label: T('capSupplementary'), t: I18n.plain('sumSupplementary'),
       visual: { wedges: ['A', 'B'], lit: ['AB'] }, cue: { adjacent: 'lit', angles: 'wedges', supplementary: 'tag', add: 'add', 180: 'sum' } },
-    { id: 'diagonals', label: 'Diagonals', t: 'Diagonals bisect each other.',
+    { id: 'diagonals', label: T('capDiagonals'), t: I18n.plain('lsDiagonalsBisect'),
       visual: { diag: true }, cue: { diagonals: 'diag', bisect: 'halves' } }
   ];
 
@@ -92,7 +94,7 @@
       this.ctx = G ? G.context(() => {}) : null;
       this.timers = [];
       root.innerHTML = '';
-      const svg = mk('svg', { viewBox: '0 0 ' + W + ' ' + H, width: 1280, height: 720, 'aria-label': 'Summary', role: 'img' }, root);
+      const svg = mk('svg', { viewBox: '0 0 ' + W + ' ' + H, width: 1280, height: 720, 'aria-label': T('ariaSummary'), role: 'img' }, root);
       this.svg = svg;
       this.defs = mk('defs', {}, svg);
       this.layer = mk('g', {}, svg);

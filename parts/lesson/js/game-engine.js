@@ -113,11 +113,13 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
   buildPause() {
     if (typeof document === 'undefined' || document.getElementById('lesson-pause')) return;
     const b = document.createElement('button');
-    b.id = 'lesson-pause'; b.className = 'lesson-pause'; b.type = 'button'; b.setAttribute('aria-label', 'Pause');
+    b.id = 'lesson-pause'; b.className = 'lesson-pause'; b.type = 'button'; b.setAttribute('aria-label', I18n.t('ariaPause'));
     b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1" fill="currentColor"/><rect x="14" y="5" width="4" height="14" rx="1" fill="currentColor"/></svg>';
     const o = document.createElement('div');
-    o.id = 'lesson-paused'; o.className = 'lesson-paused-card'; o.hidden = true; o.setAttribute('role', 'dialog'); o.setAttribute('aria-label', 'Paused');
-    o.innerHTML = '<div class="lp-card"><span class="lp-kicker">TAKE A BREATHER</span><h2>Lesson paused</h2><p>Swiftee will wait for you.</p><button type="button" class="lp-resume">Resume</button></div>';
+    o.id = 'lesson-paused'; o.className = 'lesson-paused-card'; o.hidden = true; o.setAttribute('role', 'dialog'); o.setAttribute('aria-label', I18n.t('ariaPaused'));
+    o.innerHTML = '<div class="lp-card"><span class="lp-kicker"></span><h2></h2><p></p><button type="button" class="lp-resume"></button></div>';
+    // (its words in the player's language, as text)
+    [['.lp-kicker', 'pauseKicker'], ['h2', 'lessonPauseTitle'], ['p', 'lessonPauseText'], ['.lp-resume', 'btnResume']].forEach(([sel, key]) => { o.querySelector(sel).textContent = I18n.t(key); });
     b.addEventListener('click', (e) => { e.stopPropagation(); this.sfx('tap'); this.pauseLesson(); });
     o.querySelector('.lp-resume').addEventListener('click', (e) => { e.stopPropagation(); this.sfx('tap'); this.resumeLesson(); });
     document.body.appendChild(b); document.body.appendChild(o);
@@ -222,7 +224,7 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
     (st.lines || []).concat(st.after || [], st.answerAfter || [], st.showAnswer ? [st.showAnswer] : []).forEach((L) => { const k = L.keep ? L.s : L.t; if (k) out.push(plain(k)); });
     [st.wrong, st.ok].concat((st.opts || []).map((o) => o.fb), st.fill && st.fill.fb ? Object.values(st.fill.fb) : [])
       .forEach((t) => { if (t) out.push(plain(t)); });
-    if (st.task === 'dragB') out.push('BC is not parallel to AD yet. Keep dragging B to the right.', 'B went too far. Drag it back a little.');
+    if (st.task === 'dragB') out.push(I18n.plain('lsTipDragRight'), I18n.plain('lsTipDragBack'));
     if (st.summary && window.Summary) Summary.lines().forEach((t) => out.push(plain(t))); // the summary's ideas
     return out;
   }
@@ -1246,7 +1248,8 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
   }
   setTag(t, o) { this.setState({ chips: this.state.chips.map((c) => (c.t === t ? Object.assign({}, c, o) : c)) }); }
   tagCentre(t) {
-    const stage = typeof document !== 'undefined' && document.querySelector('.stage'), el = stage && stage.querySelector('.chip[aria-label="' + t + '"]');
+    // (a card by its English, data-t: its label is in the player's language)
+    const stage = typeof document !== 'undefined' && document.querySelector('.stage'), el = stage && stage.querySelector('.chip[data-t="' + t + '"]');
     if (!el) return null;
     const sr = stage.getBoundingClientRect(), z = sr.width / 1280 || 1, r = el.getBoundingClientRect();
     return { x: (r.left - sr.left + r.width / 2) / z, y: (r.top - sr.top + r.height / 2) / z };
@@ -1651,7 +1654,7 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
   // x0 + board x * sx (the board is only ever moved and scaled, never turned).
   boardMap(svg) {
     if (typeof document === 'undefined') return null;
-    svg = svg || document.querySelector('.stage svg[aria-label="Parallelogram ABCD"]');
+    svg = svg || document.querySelector('.stage svg[data-board]'); // (the board: its label is in the player's language)
     if (!svg) return null;
     let pr = svg.querySelector('g.probe');
     if (!pr) {
@@ -1969,7 +1972,7 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
       const wrongs = s.wrongs + 1;
       this.setState({ wrongs: wrongs });
       if (st.showAnswer && wrongs > CONFIG.reveal.afterTips) this.revealB();
-      else this.oops(P.B.x < tx ? 'BC is not parallel to AD yet. Keep dragging B to the right.' : 'B went too far. Drag it back a little.', null);
+      else this.oops(P.B.x < tx ? I18n.plain('lsTipDragRight') : I18n.plain('lsTipDragBack'), null);
     }
   }
   // dragB missed once too often: B stops taking drags and Swiftee says why (st.showAnswer); on its glideB word a copy of
@@ -2255,7 +2258,7 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
     // wrong: the value shows briefly in an orange box that shakes, the tip plays, then the box empties for a retry - the
     // tip for that value in that box ("B:65"), else for the value, else for the box, else the screen's own
     this.setState({ fill: Object.assign({}, F, { at: at, bad: { [id]: true }, checking: true, open: null, closing: false, tried: Object.assign({}, F.tried, { [id]: ((F.tried || {})[id] || []).concat([t]) }) }), cfuFirst: false });
-    this.oops((D.fb && (D.fb[id + ':' + t] || D.fb[t] || D.fb[id] || D.fb.any)) || 'Not quite. Try again.');
+    this.oops((D.fb && (D.fb[id + ':' + t] || D.fb[t] || D.fb[id] || D.fb.any)) || I18n.plain('lsTipTryAgain'));
     const tok = this.stepTok;
     this.tm(() => {
       if (tok !== this.stepTok) return;
@@ -2326,7 +2329,7 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
     }
     // wrong blanks wobble orange, then empty again for another try
     this.setState({ fill: Object.assign({}, F, { locked: locked, bad: bad, checking: true, checkIds: Object.keys(bad) }), cfuFirst: false });
-    this.oops((D.fb && (D.fb[wrongTile] || D.fb.any)) || 'Not quite. Try again.');
+    this.oops((D.fb && (D.fb[wrongTile] || D.fb.any)) || I18n.plain('lsTipTryAgain'));
     const tok = this.stepTok;
     this.tm(() => {
       if (tok !== this.stepTok) return;
@@ -2777,11 +2780,12 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
 
   // a card as a notation panel: a small caption naming the property it states, and its relation signs (∥ = +) split
   // out so they wear the highlight colour (p0 s0 p1 s1 ... in index.html)
+  // (its words in the player's language - I18n.label: a word card's, a caption, a unit - read from its English, c.t)
   chipView(c) {
-    const t = c.show || c.t || '', ttl = c.t || '', side = '(AB|BC|CD|AD|DA)', half = '(AO|OA|BO|OB|CO|OC|DO|OD)';
-    const cap = /\bname\b|brk/.test(c.k) ? '' : /∥/.test(ttl) ? 'Parallel sides' : /^∠[A-D] = ∠[A-D]$/.test(ttl) ? 'Equal angles' :
-      /180°/.test(ttl) ? 'Supplementary' : new RegExp('^' + side + ' = ' + side + '$').test(ttl) ? 'Equal sides' :
-      new RegExp('^' + half + ' = ' + half + '$').test(ttl) ? 'Equal halves' : '';
+    const t = I18n.label(c.show || c.t || ''), ttl = c.t || '', side = '(AB|BC|CD|AD|DA)', half = '(AO|OA|BO|OB|CO|OC|DO|OD)';
+    const cap = /\bname\b|brk/.test(c.k) ? '' : /∥/.test(ttl) ? I18n.t('capParallelSides') : /^∠[A-D] = ∠[A-D]$/.test(ttl) ? I18n.t('capEqualAngles') :
+      /180°/.test(ttl) ? I18n.t('capSupplementary') : new RegExp('^' + side + ' = ' + side + '$').test(ttl) ? I18n.t('capEqualSides') :
+      new RegExp('^' + half + ' = ' + half + '$').test(ttl) ? I18n.t('capEqualHalves') : '';
     const bits = t.split(/ (∥|=|\+) /), v = { cap: cap };
     // the spaces travel with the sign, so unused slots take no room (the runtime wraps every value in a span: no :empty)
     for (let i = 0; i < 5; i++) { v['p' + i] = bits[2 * i] || ''; if (i < 4) v['s' + i] = bits[2 * i + 1] ? ' ' + bits[2 * i + 1] + ' ' : ''; }
@@ -2898,7 +2902,7 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
     // (once the zoom has settled - its transition's end, however long the machine takes - the lines are drawn on the
     // stage, where the zoomed shape now is)
     let drawn = false;
-    const board = typeof document !== 'undefined' && document.querySelector('.stage svg[aria-label="Parallelogram ABCD"]');
+    const board = typeof document !== 'undefined' && document.querySelector('.stage svg[data-board]');
     const zooms = !Motion.reduced && (this.meetZoom(this.cur()) || { f: 1 }).f < 0.999;
     if (board && zooms) board.addEventListener('transitionend', function done(e) { if (e.target === board && e.propertyName === 'transform') { board.removeEventListener('transitionend', done); draw(); } });
     const draw = () => {
@@ -2937,7 +2941,7 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
     if (m === undefined) { try { m = document.createElement('canvas').getContext('2d') || null; } catch (e) { m = null; } this._measure = m; }
     if (!m) m = { font: '', measureText: (t) => ({ width: t.length * (parseFloat(m.font.slice(4)) || 26) * 0.52 }) }; // no canvas (headless test): an estimate
     // a pill's width for its text: short answers (68°, 6 cm) are set bigger, long ones smaller (css .opt.short / .long)
-    const textW = (o) => { const t = o.t || o.id, long = t.length > 14, short = t.length <= 4; m.font = '700 ' + (long ? 28 : short ? 42 : 36) + "px 'Baloo 2', system-ui, sans-serif"; return m.measureText(t).width + 2 * (long ? C.pillPadLong : C.pillPad); };
+    const textW = (o) => { const t = I18n.label(o.t || o.id), long = t.length > 14, short = t.length <= 4; /* (as shown: renderVals mk) */ m.font = '700 ' + (long ? 28 : short ? 42 : 36) + "px 'Baloo 2', system-ui, sans-serif"; return m.measureText(t).width + 2 * (long ? C.pillPadLong : C.pillPad); };
     const narrow = O.filter((o) => !o.wide), cols = Math.max(1, narrow.length);
     let pw = Math.max(C.pillMin, ...narrow.map(textW));
     pw = Math.min(pw, (C.rowMax - gap * (cols - 1)) / cols);
@@ -2962,18 +2966,60 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
     return !!(L0 && L0.narr);
   }
   isPlate(st) { return !!(this.state.opened && st && st.id !== 'intro' && st.task !== 'measure' && st.task !== 'measureAngles' && !st.own && !st.end && !st.summary && !(st.hero && JOURNEY)); } // (own: Swiftee's own thought, in her bubble)
+  // A line in another language (I18n.tr): its own words, its *starred* ones the key words (gold, as KEY_WORDS are in
+  // English), each \n a break. The voice is still the English line's and s.reveal counts its words (say()), so the shown
+  // words come in at the same share of the line: the first with the voice's first word, the last with its last.
+  shownWords(text, s) {
+    const all = this.toWords(s.line || '').length, list = [];
+    // (a number and its unit, and short equations, stay on one line, as toWords keeps them)
+    const unit = I18n.t('unitCm').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const glue = new RegExp('(\\d) (cm|' + unit + ')(?=$|[\\s.,;:!?)])', 'g');
+    text.split('\n').forEach((part, li) => {
+      if (li) list.push(null);
+      let open = false; // (a star may open on one word and close on a later one)
+      part.replace(glue, '$1\u00a0$2').replace(/ ([=+\u2212]) /g, '\u00a0$1\u00a0').split(/[ \t]+/).filter(Boolean).forEach((tok) => {
+        let on = open, key = false;
+        for (const ch of tok) { if (ch === '*') on = !on; else if (on) key = true; }
+        open = on;
+        const t = tok.replace(/\*/g, '');
+        if (t) list.push({ t: t, key: key });
+      });
+    });
+    const n = list.filter(Boolean).length, upTo = Math.min(n, Math.ceil(Math.min(s.reveal, all) * n / Math.max(1, all)));
+    let i = 0;
+    return list.map((w) => {
+      if (!w) return { t: '', cls: 'brk' };
+      const k = i++;
+      return { t: w.t, cls: (k < upTo - 1 ? 'on' : (k === upTo - 1 ? (s.talking ? 'cur' : 'on') : '')) + (w.key ? ' key' : '') };
+    });
+  }
+  // the markup's own words, in the player's language (index.html: {{tx.*}})
+  texts() {
+    return this._tx || (this._tx = {
+      board: I18n.t('ariaBoard'), shapeA: I18n.t('ariaShape', { name: 'A' }), shapeB: I18n.t('ariaShape', { name: 'B' }),
+      shapeC: I18n.t('ariaShape', { name: 'C' }), shapeD: I18n.t('ariaShape', { name: 'D' }), swiftee: I18n.t('altSwiftee'),
+      lessonComplete: I18n.t('lessonComplete'), playAgain: I18n.t('lessonPlayAgain'), next: I18n.t('btnNext'),
+    });
+  }
   renderVals() {
     const s = this.state, steps = this.steps(), st = this.cur();
     const isLesson = !st.grid && !st.end && !st.summary; // (the summary draws its own ideas: no board)
     // a newline in a line forces a break in the bubble (a full-width zero-height item); it is not a word, so reveal timing is unchanged
     let wi = 0;
     let words = [];
-    (s.line || '').split('\n').forEach((part, li) => {
-      if (li) words.push({ t: '', cls: 'brk' });
-      // key words (the lesson's terms) wear gold on the caption plate, as in the reference (dual coding)
-      this.toWords(part).forEach((w) => { const i = wi++, key = KEY_WORDS.test(w.toLowerCase().replace(/[^a-z0-9°]/g, '')) ? ' key' : '';
-        words.push({ t: w, cls: (i < s.reveal - 1 ? 'on' : (i === s.reveal - 1 ? (s.talking ? 'cur' : 'on') : '')) + key }); });
-    });
+    // the line in the player's language (shell/i18n.js; in English it is s.line itself)
+    const shown = I18n.tr(s.line || '');
+    if (shown === (s.line || '')) {
+      (s.line || '').split('\n').forEach((part, li) => {
+        if (li) words.push({ t: '', cls: 'brk' });
+        // key words (the lesson's terms) wear gold on the caption plate, as in the reference (dual coding)
+        this.toWords(part).forEach((w) => { const i = wi++, key = KEY_WORDS.test(w.toLowerCase().replace(/[^a-z0-9°]/g, '')) ? ' key' : '';
+          words.push({ t: w, cls: (i < s.reveal - 1 ? 'on' : (i === s.reveal - 1 ? (s.talking ? 'cur' : 'on') : '')) + key }); });
+      });
+    } else {
+      words = this.shownWords(shown, s);
+      wi = words.filter((w) => w.cls !== 'brk').length;
+    }
     // the narration plate: the whole line on one line (its own breaks ignored), each word popping in as it is said
     const onPlate = this.isPlate(st) || this.narrLine();
     if (onPlate) words = words.filter((w) => w.cls !== 'brk');
@@ -2987,7 +3033,8 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
     // once answered, the other answers fold away and the right one (or ones) settle alone in the centre - on every row
     // of answers (not the grid of shapes): no greyed answers left lying about
     const soloRow = !!(st.opts && !st.grid), solo = soloRow && !!s.done;
-    const mk = (o) => ({ id: o.id, t: o.t || o.id, cls: (s.picks[o.id] || (optPulse && !s.done ? 'nudged' : '')) + (o.wide ? ' wide' : '') + ((o.t || o.id).length > 14 ? ' long' : (o.t || o.id).length <= 4 ? ' short' : '') + (solo ? (o.ok ? ' solo' : ' leave') : ''), dis: !!s.picks[o.id] || s.done, pick: () => this.pick(o) });
+    // (an answer as shown: in the player's language, I18n.label - its English, o.t, is what is checked)
+    const mk = (o) => ({ id: o.id, t: I18n.label(o.t || o.id), cls: (s.picks[o.id] || (optPulse && !s.done ? 'nudged' : '')) + (o.wide ? ' wide' : '') + (I18n.label(o.t || o.id).length > 14 ? ' long' : I18n.label(o.t || o.id).length <= 4 ? ' short' : '') + (solo ? (o.ok ? ' solo' : ' leave') : ''), dis: !!s.picks[o.id] || s.done, pick: () => this.pick(o) });
     const c1 = {};
     if (st.grid) st.opts.forEach((o) => { c1[o.id] = mk(o); });
     // screen-change fade class; combined classes below are built here because the template runtime drops a class
@@ -2998,7 +3045,8 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
     const F = s.fill || this.freshFill(), FD = st.fill;
     const actB = FD && !s.done ? this.activeBlank() : null;
     const dd = !!(FD && !FD.match);
-    const blanks = FD ? FD.blanks.map((b, i) => ({ id: b.id, pre: b.pre || '', post: b.post || '', eq: FD.match && i % 2 === 0 ? '=' : '',
+    const blanks = FD ? FD.blanks.map((b, i) => ({ id: b.id, pre: b.pre || '', post: I18n.label(b.post || ''), eq: FD.match && i % 2 === 0 ? '=' : '',
+      aria: I18n.t('ariaAnswerBox', { name: b.pre || '' }),
       ph: dd && !F.at[b.id] ? 'ph' : '', exp: 'false',
       gap: (FD.match && i % 2 === 1 && i < FD.blanks.length - 1 ? 'gap' : '') + (b.pair && s.boxGone && s.boxGone[b.pair] ? ' gone' : ''), // (gone: merged into its tag)
       t: (s.boxVal && s.boxVal[b.id]) || F.at[b.id] || (dd ? '?' : ''), cls: 'blank' + (dd ? ' dd' : '') + (F.locked[b.id] ? ' good' : F.bad[b.id] ? ' bad' : F.at[b.id] ? ' full' : b.id === actB ? ' act' : '') + (FD.match ? ' seg' : '') + (dd && F.open === b.id ? ' open' : '') + (b.pair && s.boxHi === b.pair ? ' hot' : '') +
@@ -3031,10 +3079,10 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
       endNext: !!(st.end && JOURNEY && s.endNext && !this.handedOff),
       endGo: () => { if (!this.handedOff) { this.sfx('tap'); this.setState({ endNext: false }); this.handOff(); } },
       showSumNext: !!(st.summary && s.sumNext && !this.handedOff), sumNextGo: () => this.sumNextGo(),
-      g: G.g, tags: G.tags,
+      g: G.g, tags: G.tags.map((tg) => { const t = I18n.label(tg.t); return t === tg.t ? tg : Object.assign({}, tg, { t: t }); }), // (a unit in the player's language)
       words: words, plateW: plate ? plate.w : 0,
       // a line with its own breaks keeps exactly those lines: the bubble widens instead of wrapping again
-      bubCls: s.bub + ((s.line || '').indexOf('\n') >= 0 ? ' manual' : ''),
+      bubCls: s.bub + (shown.indexOf('\n') >= 0 ? ' manual' : ''),
       // lesson steps share one board, so it only fades in when it first appears; each check fades in fresh
       fadeCls: fadeV,
       chipRowCls: st.chipRows ? ' top' : '', // rows grow downward from chipTop, so the first row never moves
@@ -3043,9 +3091,9 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
       chips: chips.reduce((a, c) => a.concat(st.chipRows && /\bname\b/.test(c.k) && a.length ? [{ t: '', k: 'brk' }] : [], [c]), [])
         .map((c) => (/^(AB|CD) [∥=] (AB|CD)$/.test(c.t) ? Object.assign({}, c, { k: c.k + ' pairA' }) :
           /^(AD|BC) [∥=] (AD|BC)$/.test(c.t) ? Object.assign({}, c, { k: c.k + ' pairB' }) : c))
-        .map((c) => ((v) => Object.assign(v, { k: v.k + (v.cap ? ' hascap' : '') }))(Object.assign({ t: c.t, k: c.k + (c.t.length > 20 ? ' long' : '') + (c.arriving ? ' arriving' : c.landed ? ' landed' : '') + (c.kept ? ' kept' : '') + (c.morph ? ' m' + c.morph : '') + (c.t && c.t === s.chipHi ? ' hi' : s.chipHi && c.k !== 'brk' ? ' lo' : '') }, this.chipView(c)))),
+        .map((c) => ((v) => Object.assign(v, { k: v.k + (v.cap ? ' hascap' : '') }))(Object.assign({ t: c.t, a: I18n.label(c.t), k: c.k + (I18n.label(c.t).length > 20 ? ' long' : '') + (c.arriving ? ' arriving' : c.landed ? ' landed' : '') + (c.kept ? ' kept' : '') + (c.morph ? ' m' + c.morph : '') + (c.t && c.t === s.chipHi ? ' hi' : s.chipHi && c.k !== 'brk' ? ' lo' : '') }, this.chipView(c)))),
       rootDown: (e) => this.rootDown(e),
-      wordSize: plate ? plate.size : wi > 15 || (s.line || '').length > 80 ? 22 : 24, // the plate's fit; a long bubble line gets the smaller size
+      wordSize: plate ? plate.size : wi > 15 || shown.replace(/\*/g, '').length > 80 ? 22 : 24, // the plate's fit; a long bubble line gets the smaller size
       c1: c1, hasOpts: hasOpts, opts: opts,
       // the answers (and answer boxes) in a row under the shape, centred on the card
       optTop: isLesson ? Math.round(this.sceneFit(st).bottom + CONFIG.card.optGap + (this.tagsAsked(st) ? CONFIG.card.chipGap + CONFIG.card.chipLane : 0)) : 376, // (under a right answer's tags)
@@ -3056,7 +3104,8 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
       // (tags above the shape: their row centred between the line's plate and the shape's letters)
       chipTop: isLesson ? (st.chipTop && st.chipTop < 200 ? Math.round((CONFIG.card.plateBottom + this.sceneFit(st).head) / 2 - 52) : Math.round(this.sceneFit(st).bottom + CONFIG.card.chipGap + CONFIG.card.chipLane / 2 - 52)) : st.chipTop || 528, chipLeft: 200, // (the row: 1040 wide, centred on the card, so four tags stay one row)
       stars: [0, 1, 2].map((i) => ({ cls: i < nStars ? 'on' : '' })),
-      scoreText: 'You got ' + nRight + ' of ' + nChecks + ' checkpoint challenges right on the first try.',
+      scoreText: I18n.t('lessonScore', { right: nRight, total: nChecks }),
+      tx: this.texts(), // the markup's own words
       // every screen is a scene on the card: the shape centred on it, Swiftee (where she is) on the sand at the left
       sceneCls: (s.opened ? 'in-card ' : s.opening ? 'card-wait ' : 'pre-open ') + 'scene' + (this.plateEnter(st) ? ' plate plate-enter' : this.isPlate(st) ? ' plate' : this.narrLine() ? ' plate' : '') + (st.skin ? ' skin-' + st.skin : '') + (st.summary ? ' summary' : '') + (st.hero && JOURNEY ? ' hero endhero' : '') + (st.fig ? ' figsync' : '') + (st.task === 'measure' || st.task === 'measureAngles' || st.own ? ' measure-room' : '') + (st.okGlow || (st.lines || []).some((L) => L.cues) ? ' cue-pulse' : ''), // skin: a screen's own look; summary / measure-room: their own places for Swiftee (css/game.css)
       boardTf: isLesson ? this.zoomTf(st) : 'none',

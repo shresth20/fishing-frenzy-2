@@ -37,6 +37,7 @@
     var shell = new URL('../../index.html', location.href);
     shell.searchParams.set('start', part);
     ['dev', 'debug'].forEach(function (k) { if (params.has(k)) shell.searchParams.set(k, params.get(k) || '1'); });
+    ['lan', 'lang'].forEach(function (k) { if (params.get(k)) shell.searchParams.set(k, params.get(k)); }); // (the player's language)
     window.Journey = { embedded: false, leaving: true }; // the part's own start-up checks this and stays idle
     location.replace(shell.href);
     return;

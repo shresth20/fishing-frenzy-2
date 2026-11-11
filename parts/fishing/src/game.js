@@ -618,7 +618,9 @@ class Game {
   // boing, and the plate bounces as each new sentence starts. Returns how long that takes, in
   // seconds.
   instruct(text, { voice = true, pace = READ_PACE } = {}) {
-    return this.deliver(this.ui.setInstruction(text), text, voice, pace);
+    // the plate shows the line in the player's language (shell/i18n.js: the same line in English); its voice is still
+    // the English line's recording, so `text` (the English) goes on to the voice
+    return this.deliver(this.ui.setInstruction(I18n.tr(text)), text, voice, pace);
   }
 
   deliver(words, text, voice, pace) {
@@ -1035,13 +1037,19 @@ class Game {
   say(line, token) {
     return new Promise((resolve, reject) => {
       if (this.dialogue) this.endLine();
-      const words = line.text.split(' ').map((raw) => ({ text: raw.replace(/\*/g, ''), em: raw.includes('*') }));
+      // the bubble shows the line in the player's language (shell/i18n.js: in English, line.text itself); its voice is
+      // the English line's recording (speak, below)
+      const shown = I18n.tr(line.text), same = shown === line.text;
+      const words = (same ? shown.split(' ') : shown.split(/\s+/).filter(Boolean)).map((raw) => ({ text: raw.replace(/\*/g, ''), em: raw.includes('*') }));
+      // (a cue is on a word of the English line: in another language it fires at the same share of the line's words)
+      const cue = same || !line.cue ? line.cue
+        : { ...line.cue, word: Math.min(words.length - 1, Math.round((line.cue.word * words.length) / line.text.split(' ').length)) };
       const narrator = line.who === 'narrator';
       this.dialogue = {
-        words, who: line.who, cue: line.cue, cueDone: false, token, resolve, reject, stay: !!line.stay, settled: false,
+        words, who: line.who, cue, cueDone: false, token, resolve, reject, stay: !!line.stay, settled: false,
         next: 0, wait: 0, held: 0,
         pace: narrator ? 0.21 : 0.17,
-        hold: (narrator ? 1000 : 700) + line.text.length * (narrator ? 26 : 22),
+        hold: (narrator ? 1000 : 700) + shown.length * (narrator ? 26 : 22),
       };
       this.ui.showLine(line.who, words, line.who === 'popo' ? this.popoBubbleWidth() : 0);
       this.dialogue.tail = line.tail;
