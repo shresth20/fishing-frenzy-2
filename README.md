@@ -37,10 +37,11 @@ Every word on screen comes from `locales/locales.json` by key (`shell/i18n.js`):
 `data-i18n="key"` in the pages, `{{tx.*}}` in the lesson's markup. Pick the language with `?lan=<code>` (e.g.
 `index.html?lan=hi`); the journey passes it on to both parts, and a language not in the file plays in English.
 
-- `locales.json` holds English only for now. A translation is one more object beside `en` with the same keys (and its
-  code in `supportedLanguages`). Keep `{placeholders}`, `\n` (a line break in Swiftee's bubble), notation (AB, ∠A, 68°)
-  and the `*stars*` (a starred word is a key word: Popo's stressed words, the lesson's gold terms) - star the matching
-  words of the translation.
+- Languages: English (`en`, the source), Hindi (`hi`), Marathi (`mr`), Telugu (`te`), Gujarati (`gu`) and Odia (`od`),
+  each with every key of `en` in its order. A new key goes into `en` first, then into every language. Keep
+  `{placeholders}`, `\n` (a line break in Swiftee's bubble), notation (AB, ∠A, 68°) and the `*stars*` (a starred word
+  is a key word: Popo's stressed words, the lesson's gold terms) - star the matching words of the translation. The
+  unit "cm" is `unitCm` in each language (सेमी, సెం.మీ., સેમી, ସେମି), and the lines use the same unit.
 - After every edit of `locales.json`, regenerate `locales/locales.js` (the copy the pages load, so they also work from
   disk) with the command at the top of `shell/i18n.js`.
 - The voice-over is still English: each clip is found by its line's English, so the game's data keeps the English

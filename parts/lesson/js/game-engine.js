@@ -2973,7 +2973,7 @@ window.TrapeziumGame = class TrapeziumGame extends DCLogic {
     const all = this.toWords(s.line || '').length, list = [];
     // (a number and its unit, and short equations, stay on one line, as toWords keeps them)
     const unit = I18n.t('unitCm').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const glue = new RegExp('(\\d) (cm|' + unit + ')(?=$|[\\s.,;:!?)])', 'g');
+    const glue = new RegExp('(\\d) (cm|' + unit + ')(?=$|[\\s.,;:!?)।])', 'g'); // (।: the danda, hi and od's full stop)
     text.split('\n').forEach((part, li) => {
       if (li) list.push(null);
       let open = false; // (a star may open on one word and close on a later one)
