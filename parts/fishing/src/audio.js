@@ -55,8 +55,10 @@ class AudioEngine {
   // Recorded voice lines (voice-data.js), decoded with an offline context so they are ready before they are needed.
   // A line is embedded (a data URL: decoded before the banner is ready) or the lesson's own clip ('<path>#<seconds>':
   // fetched behind the banner, played from where its first word starts, past the clip's quiet lead-in).
+  // In a language recorded in full (shell/i18n.js I18n.voiced: ?lan=hi) each line plays that language's clip instead
+  // (inLanguage).
   prepareVoices(data) {
-    const entries = Object.entries(data || {});
+    const entries = Object.entries(window.I18n && I18n.voiced ? this.inLanguage(data) : data || {});
     const OAC = window.OfflineAudioContext || window.webkitOfflineAudioContext;
     if (!entries.length || !OAC) return Promise.resolve();
     const decoder = new OAC(1, 1, 24000);
@@ -75,6 +77,19 @@ class AudioEngine {
     }
     this.decodeVoice = decode;
     return Promise.all(embedded);
+  }
+
+  // The lines' clips in the player's language (assets/VO-HI/ at the repository's root), each found by its line's key
+  // (I18n.keyOf: the voice key's text is the line's English): fetched as files behind the banner, played from their start
+  // (they open with only a few hundredths of a second of quiet). One voice: a line with no clip in that language is left
+  // out (it shows at a reading pace), rather than said in English.
+  inLanguage(data) {
+    const out = {};
+    for (const key of Object.keys(data || {})) {
+      const clip = I18n.voiceClip(I18n.keyOf(key.slice(key.indexOf(':') + 1)));
+      if (clip) out[key] = clip.url;
+    }
+    return out;
   }
 
   // The lesson's clips the nets borrow, fetched once Play is tapped (they are first needed after the lesson), so the

@@ -12,6 +12,12 @@ line and types the words at the clip's pace.
 | `js/voice.js` | the player |
 | `tools/vo_build.js` | rebuild tool: studio zip(s) → clips (loudness-matched) + map |
 
+This is the English voice-over. In Hindi (`?lan=hi`) the same player plays the Hindi recordings instead, from
+`assets/VO-HI/` at the repository's root, each line's clip found by its key (see the README's Languages section):
+`js/voice.js` gives each English word of a line the time its Hindi words are said (`assets/VO-HI/vo_hi.js`), so the
+bubble's Hindi words come with the Hindi voice. `../../tools/vo_lang_build.js` builds those clips with this folder's
+`tools/vo_build.js` (its encoder and its word timing).
+
 ## How the clips were made
 
 - **Studio:** *Ai Wala Human By Aamir*, https://ai-wala-human-by-aamir-809572708022.asia-southeast1.run.app/, tab

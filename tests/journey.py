@@ -131,7 +131,8 @@ def server():
         urllib.request.urlopen(url + 'shell/journey.js', timeout=3).read(1)
         return url, None
     except Exception:
-        srv = http.server.ThreadingHTTPServer(('127.0.0.1', 0), functools.partial(Quiet, directory=str(ROOT)))
+        # (a deep queue: a frame asks for many files at once, and the default 5 waiting connections refused some)
+        srv = type('Server', (http.server.ThreadingHTTPServer,), {'request_queue_size': 128})(('127.0.0.1', 0), functools.partial(Quiet, directory=str(ROOT)))
         threading.Thread(target=srv.serve_forever, daemon=True).start()
         return f'http://127.0.0.1:{srv.server_address[1]}/', srv
 

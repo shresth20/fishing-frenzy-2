@@ -44,10 +44,18 @@ Every word on screen comes from `locales/locales.json` by key (`shell/i18n.js`):
   unit "cm" is `unitCm` in each language (सेमी, సెం.మీ., સેમી, ସେମି), and the lines use the same unit.
 - After every edit of `locales.json`, regenerate `locales/locales.js` (the copy the pages load, so they also work from
   disk) with the command at the top of `shell/i18n.js`.
-- The voice-over is still English: each clip is found by its line's English, so the game's data keeps the English
-  (`I18n.source` / `I18n.plain`) and only the screen shows the translation (`I18n.tr`); the words then appear in step
-  with the English voice. A line's key is also its voice key, ready for recordings in other languages
-  (`I18n.voice(key)`: `assets/VO/<lang>/<key>.webm`).
+- The game's data keeps the English (`I18n.source` / `I18n.plain`) and only the screen shows the translation
+  (`I18n.tr`): each line is found by its English, its clip and its key with it.
+- **Hindi is voiced** (`?lan=hi`): both parts play `assets/VO-HI/<key>.ogg` in place of the English clips, each found by
+  its line's key (`I18n.keyOf`, `I18n.voiceClip`), its words appearing as they are said (`assets/VO-HI/vo_hi.js`: when
+  each word starts, measured from the audio). Swiftee and the narrator are ElevenLabs' Devi, Popo is Amit (Kids Cartoon
+  Character), `eleven_multilingual_v2`. Every key of `hi` has a clip but `loadArtFailed` and `ariaFishCaught` (filled
+  in at run time); a value-dependent line has one per value (`lessonScore.0`-`.9`, `ariaShape.A`-`.D`,
+  `ariaAnswerBox.*`). The script (`vo_script_hi.json`: each line as shown and as spoken, notation said in words) and the
+  studio's MP3s (`masters/`) sit beside the clips and stay out of the deploy. After a new or re-recorded master,
+  `node tools/vo_lang_build.js hi` makes its clip (Ogg Opus, 32 kbps, at the English clips' loudness) and the map, and
+  lists any line the game says that has no clip (needs Playwright, as `parts/lesson/tools/vo_build.js` does). The other
+  languages play the English voice under their own words.
 - Not translated: the `?dev=1` panel (a developer's tool), the `<noscript>` line (shown only without JavaScript) and the
   painted "Fishing Frenzy 2" logo (an image).
 
@@ -66,5 +74,6 @@ leaves the tests, tools and docs out.
 
 ## Tests (Python Playwright)
 
-- `python3 tests/lesson.py [chromium|webkit] [WxH] [touch]`: the whole lesson with real taps and drags.
+- `python3 tests/lesson.py [chromium|webkit] [WxH] [touch]`: the whole lesson with real taps and drags
+  (`TA_LAN=hi` for the Hindi lesson and its voice).
 - `python3 tests/journey.py`: the journey, from the banner's Play to the fishing and back.

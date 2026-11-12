@@ -9,9 +9,12 @@ real taps and drags (Python Playwright: pip install playwright && playwright ins
   the diagonals    drawn corner to corner, after a side was tried (a tip, no diagonal)
   answer boxes     a wrong value first, then the right ones
   the end          the score card counts the checks right on the first try
+  the voice-over   every clip it fetched loaded, all from the player's language's recordings (assets/VO-HI/ with
+                   TA_LAN=hi) or, for a language not recorded, the English ones (parts/lesson/assets/vo/)
 
 Checks there is no Back, Next or screen list, no console error or failed request, and that no screen stalls.
 A screenshot of every screen goes to /tmp/parallelogram-lesson (or $TA_SHOTS). Clips play at ?speed=3.
+In another language: TA_LAN=hi python3 tests/lesson.py (?lan=hi).
 """
 import functools
 import http.server
@@ -27,6 +30,7 @@ SHOTS = Path(os.environ.get('TA_SHOTS', '/tmp/parallelogram-lesson'))
 BROWSER = sys.argv[1] if len(sys.argv) > 1 else 'chromium'
 SIZE = [int(v) for v in (sys.argv[2] if len(sys.argv) > 2 else '1280x720').split('x')]
 TOUCH = len(sys.argv) > 3 and sys.argv[3] == 'touch'
+LAN = os.environ.get('TA_LAN', '')
 
 passed, failed = [], []
 
@@ -39,7 +43,8 @@ def check(ok, what, detail=''):
 def serve():
     handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(ROOT))
     handler.log_message = lambda *a: None
-    srv = http.server.ThreadingHTTPServer(('127.0.0.1', 0), handler)
+    # (a deep queue: the page asks for many files at once, and the default 5 waiting connections refused some)
+    srv = type('Server', (http.server.ThreadingHTTPServer,), {'request_queue_size': 128})(('127.0.0.1', 0), handler)
     threading.Thread(target=srv.serve_forever, daemon=True).start()
     return srv, 'http://127.0.0.1:%d/' % srv.server_address[1]
 
@@ -64,7 +69,7 @@ STATE = '''() => { const e = window.lessonDebug, s = e.state, st = e.cur();
 BOX = '''(sel) => { const el = document.querySelector(sel); if (!el) return null; const r = el.getBoundingClientRect();
   return r.width || r.height ? [r.left + r.width / 2, r.top + r.height / 2] : null; }'''
 # a board point (the shape's own coordinates) in client px
-BOARD = '''([x, y]) => { const svg = document.querySelector('.stage svg[aria-label="Parallelogram ABCD"]'); const pt = svg.createSVGPoint();
+BOARD = '''([x, y]) => { const svg = document.querySelector('.stage svg[aria-label="' + I18n.t('ariaBoard') + '"]'); const pt = svg.createSVGPoint();
   pt.x = x; pt.y = y; const q = pt.matrixTransform(svg.getScreenCTM()); return [q.x, q.y]; }'''
 
 
@@ -80,7 +85,9 @@ def main():
         # (not the GPU driver's notices: screenshots read the WebGL water back)
         page.on('console', lambda m: errs.append(m.type + ': ' + m.text) if m.type in ('error', 'warning') and 'GL Driver Message' not in m.text else None)
         page.on('requestfailed', lambda r: errs.append('failed: ' + r.url) if 'fonts.g' not in r.url and not r.url.endswith('.ogg') else None)
-        page.goto(url + 'parts/lesson/index.html?solo&debug&speed=3')
+        clips = []  # every voice-over clip fetched: (address, status)
+        page.on('response', lambda r: clips.append((r.url, r.status)) if r.url.split('?')[0].endswith('.ogg') else None)
+        page.goto(url + 'parts/lesson/index.html?solo&debug&speed=3' + ('&lan=' + LAN if LAN else ''))
         page.wait_for_function('() => !!window.lessonDebug', timeout=20000)
         st = lambda: page.evaluate(STATE)
         box = lambda sel: page.evaluate(BOX, sel)
@@ -247,7 +254,8 @@ def main():
                 page.screenshot(path=str(SHOTS / ('%02d-end-card.png' % (s['step'] + 1))))
                 score = page.evaluate('() => (document.querySelector(".stage") || {}).innerText || ""')
                 right = sum(1 for v in st()['results'].values() if v)
-                check('You got %d of 9' % right in score, 'the score card counts the checks right first time', score[:120])
+                want = page.evaluate('(r) => I18n.t("lessonScore", { right: r, total: 9 })', right)
+                check(want in score, 'the score card counts the checks right first time', score[:120])
                 break
             if time.time() - stall_t0 > 45:
                 check(False, 'screen %d (%s) moves on' % (s['step'] + 1, sid), 'stalled for 45 s')
@@ -255,6 +263,12 @@ def main():
             time.sleep(0.2)
         check(len(seen) == st()['of'], 'every screen was played', '%d of %d' % (len(seen), st()['of']))
         check(not errs, 'no console errors or failed requests', '; '.join(errs[:5]))
+        folder = page.evaluate('() => I18n.voiced ? "/assets/VO-" + I18n.lang.toUpperCase() + "/" : "/parts/lesson/assets/vo/"')
+        odd = [u for u, s in clips if folder not in u or s >= 400]
+        if page.evaluate('() => !!(window.VO && VO.on)'):
+            check(clips and not odd, 'the voice-over: %d clips fetched, all from %s' % (len(clips), folder), '; '.join(odd[:3]) or 'no clip fetched')
+        else:
+            check(not clips, 'the voice-over is off in this browser (no Ogg Opus): no clip fetched', '; '.join(u for u, s in clips[:3]))
         browser.close()
     srv.shutdown()
     print('\n%d passed, %d failed. Screenshots: %s' % (len(passed), len(failed), SHOTS))

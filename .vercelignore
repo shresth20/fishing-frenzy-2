@@ -7,3 +7,7 @@ parts/lesson/docs/
 .DS_Store
 .env
 .env.*
+tools/
+# the voice-over's studio masters and scripts (the game plays the .ogg clips beside them)
+assets/VO-*/masters/
+assets/VO-*/vo_script_*.json

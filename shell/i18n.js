@@ -18,16 +18,22 @@
 //                         comes back as it is, its unit (cm) in the player's language.
 //   I18n.label(english)   I18n.tr without the * marks: for buttons, cards and answers.
 //
-// Why the game keeps its English: the voice-over is English (each clip is looked up by its line's English text:
-// parts/fishing/src/voice-data.js, parts/lesson/js/vo_lines.js) and the lesson's cues fire on English words as the
-// voice says them. So the data holds I18n.source / I18n.plain and only the screen shows I18n.tr; in English every one of
+// Why the game keeps its English: each line is found by its English text (its English clip in
+// parts/fishing/src/voice-data.js and parts/lesson/js/vo_lines.js, its key with I18n.keyOf) and the lesson's cues fire on
+// English words. So the data holds I18n.source / I18n.plain and only the screen shows I18n.tr; in English every one of
 // these returns exactly what it was given, so nothing changes there.
 //
 // In locales.json a *starred* word is a key word: the fishing game's stressed words (they pop bigger), and in the lesson's
 // lines the words shown in gold. A translation stars its own key words; \n is a line break in Swiftee's bubble.
 //
-// Voice-over (for later): I18n.voice(key) is the clip of a line in the player's language,
-// assets/VO/<lang>/<key>.webm next to the page; I18n.say(key) plays it. A line's voice key is its text key.
+// Voice-over in the player's language: a language recorded in full has its clips in assets/VO-<LANG>/<key>.ogg at the
+// repository's root and its map in assets/VO-<LANG>/vo_<lang>.js (window.VO_LANGS, made by tools/vo_lang_build.js), which
+// the parts load. A line's voice key is its text key.
+//   I18n.voiced           true when the player's language has its own recordings (Hindi: ?lan=hi); the parts then play
+//                         them instead of the English (one voice: a line with no clip in it shows its words silently)
+//   I18n.keyOf(english)   the key of a line the game holds in English (stars, line breaks and case aside)
+//   I18n.voiceClip(key)   { url, seconds, times (each shown word's start, s), end (of its speech, s) }, or null
+//   I18n.voice(key)       the clip's address; I18n.say(key) plays it.
 //
 // Opened from disk (file://) the browser will not fetch locales.json, so the pages load locales/locales.js, made from
 // it. After every edit of locales/locales.json, run at the repository's root:
@@ -45,13 +51,16 @@
   var asked = params ? (params.get('lan') || params.get('lang') || '') : '';
 
   var lang = SOURCE, cur = {}, en = {};
-  var exact = new Map(), plainIdx = new Map();
+  var exact = new Map(), plainIdx = new Map(), looseIdx = new Map();
   var warned = {};
   function warnOnce(kind, key) {
     if (warned[kind + key]) return;
     warned[kind + key] = 1;
     try { console.warn('[i18n] ' + (kind === 'missing' ? 'no text for key "' + key + '" in locales.json' : '"' + key + '" has no ' + lang + ' text yet: English shown')); } catch (e) { /* no console */ }
   }
+  // a line's English as the parts hold it for their voice (keyOf): no stars, one space for each run of spaces and breaks,
+  // in lower case (the fishing game's voice keys are), ... for … and ' for ’
+  function loose(s) { return String(s).replace(/\*/g, '').replace(/…/g, '...').replace(/’/g, "'").replace(/\s+/g, ' ').trim().toLowerCase(); }
   // the language asked for, if locales.json has it (hi-IN -> hi), else the default
   function pick(code) {
     if (!DATA) return SOURCE;
@@ -67,8 +76,9 @@
     lang = pick(asked);
     en = (DATA && DATA[SOURCE]) || {};
     cur = (DATA && DATA[lang]) || en;
-    exact = new Map(); plainIdx = new Map();
+    exact = new Map(); plainIdx = new Map(); looseIdx = new Map();
     Object.keys(en).forEach(function (k) { var v = en[k]; if (typeof v === 'string' && v && !exact.has(v)) exact.set(v, k); });
+    Object.keys(en).forEach(function (k) { var v = en[k]; if (typeof v === 'string' && v && !looseIdx.has(loose(v))) looseIdx.set(loose(v), k); });
     Object.keys(en).forEach(function (k) {
       var v = en[k];
       if (typeof v !== 'string') return;
@@ -144,8 +154,22 @@
     });
   }
 
-  // voice-over by key (for the translated recordings to come): assets/VO/<lang>/<key>.webm next to the page
-  function voice(key, ext) { return 'assets/VO/' + lang + '/' + key + '.' + (ext || 'webm'); }
+  // voice-over by key in the player's language (assets/VO-<LANG>/, its map in window.VO_LANGS: see the top)
+  function recorded() {
+    var all = typeof window !== 'undefined' && window.VO_LANGS;
+    var v = lang !== SOURCE && all && all[lang];
+    return v && v.clips ? v : null;
+  }
+  function keyOf(english) { return english == null ? undefined : looseIdx.get(loose(english)); }
+  function voice(key) {
+    var v = recorded();
+    var dir = v ? v.dir : 'assets/VO-' + lang.toUpperCase() + '/', ext = v ? v.ext || 'ogg' : 'ogg';
+    return new URL('../' + dir + key + '.' + ext, here).href; // (the repository's root: shell/../)
+  }
+  function voiceClip(key) {
+    var v = recorded(), c = v && key != null && Object.prototype.hasOwnProperty.call(v.clips, key) ? v.clips[key] : null;
+    return c ? { key: String(key), url: voice(key), seconds: c[0], times: c[1] || null, end: c[2] || 0 } : null;
+  }
   function say(key) {
     try { var a = new Audio(voice(key)); var p = a.play(); if (p && p.catch) p.catch(function () { /* no clip */ }); return a; } catch (e) { return null; }
   }
@@ -165,6 +189,7 @@
     source: source, plain: plain, tr: tr, label: label, units: units,
     t: t, has: function (key) { return look(cur, String(key)) !== undefined; },
     applyStatic: applyStatic, load: load, voice: voice, say: say,
+    get voiced() { return !!recorded(); }, keyOf: keyOf, voiceClip: voiceClip,
   };
   window.T = t;
 

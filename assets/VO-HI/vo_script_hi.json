@@ -1,0 +1,1798 @@
+{
+ "about": "Hindi voice-over: one clip per locales.json \"hi\" key (a value variant as key.<value>). Recorded with ElevenLabs eleven_multilingual_v2 (masters/<file>.mp3, 44.1 kHz 128 kbps); the game plays <file>.ogg (Ogg Opus 32 kbps mono, -16.4 LUFS) made by tools/vo_lang_build.js, which also writes vo_hi.js. \"text\" is the line as the screen shows it; \"spoken\" is what the voice was given (notation said in words); \"seconds\" is the master's length.",
+ "model": "eleven_multilingual_v2",
+ "voices": {
+  "swiftee": {
+   "name": "Devi - Encouraging and Motivating",
+   "voice_id": "MF4J4IDTRo0AxOO4dpFR"
+  },
+  "popo": {
+   "name": "Amit - Kids Cartoon Character",
+   "voice_id": "NbvR1eY6Q8ivACdEO8PV"
+  }
+ },
+ "settings": {
+  "swiftee": {
+   "stability": 0.6,
+   "similarity_boost": 0.8,
+   "style": 0.15,
+   "speaker_boost": true,
+   "speed": 0.95,
+   "speed_note": "lsAskSides, lsSeeElse at 0.85"
+  },
+  "popo": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "speaker_boost": true,
+   "speed": 1.0
+  },
+  "seed": 4242
+ },
+ "not_recorded": [
+  {
+   "key": "loadArtFailed",
+   "why": "filled with a browser error message at run time",
+   "text": "खेल के चित्र लोड नहीं हो सके ({error})।"
+  },
+  {
+   "key": "ariaFishCaught",
+   "why": "filled with the running fish count at run time",
+   "text": "पकड़ी गई मछलियाँ: {n}"
+  }
+ ],
+ "clips": [
+  {
+   "file": "gameTitle",
+   "key": "gameTitle",
+   "speaker": "swiftee",
+   "text": "फ़िशिंग फ़्रेंज़ी 2",
+   "spoken": "फ़िशिंग फ़्रेंज़ी टू",
+   "seconds": 1.52
+  },
+  {
+   "file": "gettingReady",
+   "key": "gettingReady",
+   "speaker": "swiftee",
+   "text": "तैयारी हो रही है…",
+   "spoken": "तैयारी हो रही है…",
+   "seconds": 1.8
+  },
+  {
+   "file": "loadFailed",
+   "key": "loadFailed",
+   "speaker": "swiftee",
+   "text": "खेल लोड नहीं हो सका।",
+   "spoken": "खेल लोड नहीं हो सका।",
+   "seconds": 1.85
+  },
+  {
+   "file": "tryAgain",
+   "key": "tryAgain",
+   "speaker": "swiftee",
+   "text": "फिर से प्रयास करें",
+   "spoken": "फिर से प्रयास करें",
+   "seconds": 1.62
+  },
+  {
+   "file": "rotateHint",
+   "key": "rotateHint",
+   "speaker": "swiftee",
+   "text": "सबसे अच्छे अनुभव के लिए अपना डिवाइस घुमाएँ",
+   "spoken": "सबसे अच्छे अनुभव के लिए अपना डिवाइस घुमाएँ",
+   "seconds": 3.71
+  },
+  {
+   "file": "partLesson",
+   "key": "partLesson",
+   "speaker": "swiftee",
+   "text": "स्विफ्टी का समांतर चतुर्भुज पाठ",
+   "spoken": "स्विफ्टी का समांतर चतुर्भुज पाठ",
+   "seconds": 3.84
+  },
+  {
+   "file": "partFishing",
+   "key": "partFishing",
+   "speaker": "swiftee",
+   "text": "पोपो के समांतर चतुर्भुज जाल",
+   "spoken": "पोपो के समांतर चतुर्भुज जाल",
+   "seconds": 2.46
+  },
+  {
+   "file": "loading",
+   "key": "loading",
+   "speaker": "swiftee",
+   "text": "लोड हो रहा है…",
+   "spoken": "लोड हो रहा है…",
+   "seconds": 1.33
+  },
+  {
+   "file": "ariaPlay",
+   "key": "ariaPlay",
+   "speaker": "swiftee",
+   "text": "खेलें",
+   "spoken": "खेलें",
+   "seconds": 0.97
+  },
+  {
+   "file": "ariaNetCorner",
+   "key": "ariaNetCorner",
+   "speaker": "swiftee",
+   "text": "जाल का कोना। इसे ड्रैग करें, या ऐरो कुंजियों से खिसकाएँ और एंटर दबाएँ।",
+   "spoken": "जाल का कोना। इसे ड्रैग करें, या ऐरो कुंजियों से खिसकाएँ और एंटर दबाएँ।",
+   "seconds": 6.95
+  },
+  {
+   "file": "ariaStepBack",
+   "key": "ariaStepBack",
+   "speaker": "swiftee",
+   "text": "कोने को एक कदम पीछे खिसकाएँ",
+   "spoken": "कोने को एक कदम पीछे खिसकाएँ",
+   "seconds": 2.74
+  },
+  {
+   "file": "ariaStepOn",
+   "key": "ariaStepOn",
+   "speaker": "swiftee",
+   "text": "कोने को एक कदम आगे खिसकाएँ",
+   "spoken": "कोने को एक कदम आगे खिसकाएँ",
+   "seconds": 2.82
+  },
+  {
+   "file": "ariaSoundOn",
+   "key": "ariaSoundOn",
+   "speaker": "swiftee",
+   "text": "आवाज़ चालू",
+   "spoken": "आवाज़ चालू",
+   "seconds": 1.28
+  },
+  {
+   "file": "ariaSoundOff",
+   "key": "ariaSoundOff",
+   "speaker": "swiftee",
+   "text": "आवाज़ बंद",
+   "spoken": "आवाज़ बंद",
+   "seconds": 1.25
+  },
+  {
+   "file": "ariaPause",
+   "key": "ariaPause",
+   "speaker": "swiftee",
+   "text": "रोकें",
+   "spoken": "रोकें",
+   "seconds": 0.97
+  },
+  {
+   "file": "ariaPaused",
+   "key": "ariaPaused",
+   "speaker": "swiftee",
+   "text": "रुका हुआ",
+   "spoken": "रुका हुआ",
+   "seconds": 1.07
+  },
+  {
+   "file": "btnCheck",
+   "key": "btnCheck",
+   "speaker": "swiftee",
+   "text": "जाँचें",
+   "spoken": "जाँचें",
+   "seconds": 1.1
+  },
+  {
+   "file": "btnCatch",
+   "key": "btnCatch",
+   "speaker": "swiftee",
+   "text": "पकड़ें",
+   "spoken": "पकड़ें",
+   "seconds": 0.97
+  },
+  {
+   "file": "btnDropNet",
+   "key": "btnDropNet",
+   "speaker": "swiftee",
+   "text": "जाल डालें",
+   "spoken": "जाल डालें",
+   "seconds": 1.1
+  },
+  {
+   "file": "btnResume",
+   "key": "btnResume",
+   "speaker": "swiftee",
+   "text": "फिर से शुरू करें",
+   "spoken": "फिर से शुरू करें",
+   "seconds": 1.52
+  },
+  {
+   "file": "btnRestart",
+   "key": "btnRestart",
+   "speaker": "swiftee",
+   "text": "दोबारा शुरू करें",
+   "spoken": "दोबारा शुरू करें",
+   "seconds": 1.52
+  },
+  {
+   "file": "pauseKicker",
+   "key": "pauseKicker",
+   "speaker": "swiftee",
+   "text": "थोड़ा आराम कर लें",
+   "spoken": "थोड़ा आराम कर लें",
+   "seconds": 1.75
+  },
+  {
+   "file": "pauseTitle",
+   "key": "pauseTitle",
+   "speaker": "swiftee",
+   "text": "रोमांच रुका हुआ है",
+   "spoken": "रोमांच रुका हुआ है",
+   "seconds": 1.7
+  },
+  {
+   "file": "pauseText",
+   "key": "pauseText",
+   "speaker": "swiftee",
+   "text": "आपकी अगली पकड़ इंतज़ार कर सकती है।",
+   "spoken": "आपकी अगली पकड़ इंतज़ार कर सकती है।",
+   "seconds": 2.95
+  },
+  {
+   "file": "goalTitle",
+   "key": "goalTitle",
+   "speaker": "swiftee",
+   "text": "बढ़िया मछली पकड़ी, पोपो!",
+   "spoken": "बढ़िया मछली पकड़ी, पोपो!",
+   "seconds": 2.27
+  },
+  {
+   "file": "goalSub",
+   "key": "goalSub",
+   "speaker": "swiftee",
+   "text": "आपकी मदद से पोपो ने पकड़ीं...",
+   "spoken": "आपकी मदद से पोपो ने पकड़ीं...",
+   "seconds": 2.17
+  },
+  {
+   "file": "goalYourCatch",
+   "key": "goalYourCatch",
+   "speaker": "swiftee",
+   "text": "आपकी पकड़",
+   "spoken": "आपकी पकड़",
+   "seconds": 1.2
+  },
+  {
+   "file": "goalMaxPossible",
+   "key": "goalMaxPossible",
+   "speaker": "swiftee",
+   "text": "अधिकतम संभव",
+   "spoken": "अधिकतम संभव",
+   "seconds": 1.67
+  },
+  {
+   "file": "goalFish",
+   "key": "goalFish",
+   "speaker": "swiftee",
+   "text": "मछलियाँ",
+   "spoken": "मछलियाँ",
+   "seconds": 1.07
+  },
+  {
+   "file": "goalLine",
+   "key": "goalLine",
+   "speaker": "swiftee",
+   "text": "क्या अगली बार आप और ज़्यादा पकड़ सकते हैं?",
+   "spoken": "क्या अगली बार आप और ज़्यादा पकड़ सकते हैं?",
+   "seconds": 3.19
+  },
+  {
+   "file": "goalTryAgain",
+   "key": "goalTryAgain",
+   "speaker": "swiftee",
+   "text": "फिर से प्रयास करें",
+   "spoken": "फिर से प्रयास करें",
+   "seconds": 1.62
+  },
+  {
+   "file": "unitCm",
+   "key": "unitCm",
+   "speaker": "swiftee",
+   "text": "सेमी",
+   "spoken": "सेंटीमीटर",
+   "seconds": 1.28
+  },
+  {
+   "file": "popoHuh",
+   "key": "popoHuh",
+   "speaker": "popo",
+   "text": "हैं?!",
+   "spoken": "हैं?!",
+   "seconds": 0.68
+  },
+  {
+   "file": "popoWoah",
+   "key": "popoWoah",
+   "speaker": "popo",
+   "text": "*ओहो!*",
+   "spoken": "ओहो!",
+   "seconds": 1.02
+  },
+  {
+   "file": "popoWow",
+   "key": "popoWow",
+   "speaker": "popo",
+   "text": "*वाह!*",
+   "spoken": "वाह!",
+   "seconds": 1.07
+  },
+  {
+   "file": "popoWhatACatch",
+   "key": "popoWhatACatch",
+   "speaker": "popo",
+   "text": "क्या *पकड़* है!",
+   "spoken": "क्या पकड़ है!",
+   "seconds": 1.44
+  },
+  {
+   "file": "popoGreatCatch",
+   "key": "popoGreatCatch",
+   "speaker": "popo",
+   "text": "बढ़िया *पकड़!*",
+   "spoken": "बढ़िया पकड़!",
+   "seconds": 1.25
+  },
+  {
+   "file": "popoHaHaHa",
+   "key": "popoHaHaHa",
+   "speaker": "popo",
+   "text": "हा हा *हा!*",
+   "spoken": "हा हा हा!",
+   "seconds": 1.07
+  },
+  {
+   "file": "hookH1",
+   "key": "hookH1",
+   "speaker": "swiftee",
+   "text": "आज पोपो मछली पकड़ने निकला था।",
+   "spoken": "आज पोपो मछली पकड़ने निकला था।",
+   "seconds": 2.59
+  },
+  {
+   "file": "hookH2",
+   "key": "hookH2",
+   "speaker": "popo",
+   "text": "चलिए, ढेर सारी *मछलियाँ* पकड़ें!",
+   "spoken": "चलिए, ढेर सारी मछलियाँ पकड़ें!",
+   "seconds": 2.35
+  },
+  {
+   "file": "hookH3",
+   "key": "hookH3",
+   "speaker": "popo",
+   "text": "अरे नहीं! यह जाल *उलझ* गया।",
+   "spoken": "अरे नहीं! यह जाल उलझ गया।",
+   "seconds": 2.46
+  },
+  {
+   "file": "hookH4",
+   "key": "hookH4",
+   "speaker": "swiftee",
+   "text": "पोपो ने जाल के अलग-अलग आकार आज़माए, पर वे *उलझते* ही रहे।",
+   "spoken": "पोपो ने जाल के अलग-अलग आकार आज़माए, पर वे उलझते ही रहे।",
+   "seconds": 5.88
+  },
+  {
+   "file": "hookH5",
+   "key": "hookH5",
+   "speaker": "popo",
+   "text": "मुझे ऐसा जाल चाहिए जो पानी में *खुला* रहे!",
+   "spoken": "मुझे ऐसा जाल चाहिए जो पानी में खुला रहे!",
+   "seconds": 2.74
+  },
+  {
+   "file": "hookWhoa",
+   "key": "hookWhoa",
+   "speaker": "popo",
+   "text": "अरे वाह! एक *विशाल* मछली!",
+   "spoken": "अरे वाह! एक विशाल मछली!",
+   "seconds": 2.35
+  },
+  {
+   "file": "hookH6",
+   "key": "hookH6",
+   "speaker": "popo",
+   "text": "अरे! यह वाला *खुला* रहा!",
+   "spoken": "अरे! यह वाला खुला रहा!",
+   "seconds": 1.99
+  },
+  {
+   "file": "hookH7",
+   "key": "hookH7",
+   "speaker": "popo",
+   "text": "यह काम कर गया! यह कौन-सा *आकार* है?",
+   "spoken": "यह काम कर गया! यह कौन-सा आकार है?",
+   "seconds": 2.69
+  },
+  {
+   "file": "hookH8",
+   "key": "hookH8",
+   "speaker": "swiftee",
+   "text": "इस आकार को *समांतर* *चतुर्भुज* कहते हैं।",
+   "spoken": "इस आकार को समांतर चतुर्भुज कहते हैं।",
+   "seconds": 3.06
+  },
+  {
+   "file": "hookH9",
+   "key": "hookH9",
+   "speaker": "popo",
+   "text": "समांतर चतुर्भुज? वह कौन-सा *आकार* है?",
+   "spoken": "समांतर चतुर्भुज? वह कौन-सा आकार है?",
+   "seconds": 3.76
+  },
+  {
+   "file": "hookH10",
+   "key": "hookH10",
+   "speaker": "swiftee",
+   "text": "चलिए, पता *लगाएँ!*",
+   "spoken": "चलिए, पता लगाएँ!",
+   "seconds": 1.85
+  },
+  {
+   "file": "welcomeGreatJob",
+   "key": "welcomeGreatJob",
+   "speaker": "swiftee",
+   "text": "बहुत *बढ़िया!*",
+   "spoken": "बहुत बढ़िया!",
+   "seconds": 1.2
+  },
+  {
+   "file": "helpPopoCatch",
+   "key": "helpPopoCatch",
+   "speaker": "swiftee",
+   "text": "अब चलिए, कुछ *मछलियाँ* पकड़ने में पोपो की मदद करें!",
+   "spoken": "अब चलिए, कुछ मछलियाँ पकड़ने में पोपो की मदद करें!",
+   "seconds": 3.94
+  },
+  {
+   "file": "netDragB",
+   "key": "netDragB",
+   "speaker": "swiftee",
+   "text": "जाल को *समांतर* *चतुर्भुज* बनाने के लिए शीर्ष B को ड्रैग करें।",
+   "spoken": "जाल को समांतर चतुर्भुज बनाने के लिए शीर्ष बी को ड्रैग करें।",
+   "seconds": 4.96
+  },
+  {
+   "file": "hintAbLonger",
+   "key": "hintAbLonger",
+   "speaker": "swiftee",
+   "text": "समांतर चतुर्भुज की सम्मुख भुजाएँ बराबर होती हैं। AB को और *लंबा* करें।",
+   "spoken": "समांतर चतुर्भुज की सम्मुख भुजाएँ बराबर होती हैं। ए बी को और लंबा करें।",
+   "seconds": 6.95
+  },
+  {
+   "file": "hintAbShorter",
+   "key": "hintAbShorter",
+   "speaker": "swiftee",
+   "text": "समांतर चतुर्भुज की सम्मुख भुजाएँ बराबर होती हैं। AB को और *छोटा* करें।",
+   "spoken": "समांतर चतुर्भुज की सम्मुख भुजाएँ बराबर होती हैं। ए बी को और छोटा करें।",
+   "seconds": 6.95
+  },
+  {
+   "file": "netDragC",
+   "key": "netDragC",
+   "speaker": "swiftee",
+   "text": "जाल को *समांतर* *चतुर्भुज* बनाने के लिए शीर्ष C को ड्रैग करें।",
+   "spoken": "जाल को समांतर चतुर्भुज बनाने के लिए शीर्ष सी को ड्रैग करें।",
+   "seconds": 5.02
+  },
+  {
+   "file": "hintBcLonger",
+   "key": "hintBcLonger",
+   "speaker": "swiftee",
+   "text": "समांतर चतुर्भुज की सम्मुख भुजाएँ बराबर होती हैं। BC को और *लंबा* करें।",
+   "spoken": "समांतर चतुर्भुज की सम्मुख भुजाएँ बराबर होती हैं। बी सी को और लंबा करें।",
+   "seconds": 6.69
+  },
+  {
+   "file": "hintBcShorter",
+   "key": "hintBcShorter",
+   "speaker": "swiftee",
+   "text": "समांतर चतुर्भुज की सम्मुख भुजाएँ बराबर होती हैं। BC को और *छोटा* करें।",
+   "spoken": "समांतर चतुर्भुज की सम्मुख भुजाएँ बराबर होती हैं। बी सी को और छोटा करें।",
+   "seconds": 6.64
+  },
+  {
+   "file": "hintCdLonger",
+   "key": "hintCdLonger",
+   "speaker": "swiftee",
+   "text": "सम्मुख भुजाएँ बराबर होती हैं। CD को और *लंबा* करें।",
+   "spoken": "सम्मुख भुजाएँ बराबर होती हैं। सी डी को और लंबा करें।",
+   "seconds": 5.02
+  },
+  {
+   "file": "hintCdShorter",
+   "key": "hintCdShorter",
+   "speaker": "swiftee",
+   "text": "सम्मुख भुजाएँ बराबर होती हैं। CD को और *छोटा* करें।",
+   "spoken": "सम्मुख भुजाएँ बराबर होती हैं। सी डी को और छोटा करें।",
+   "seconds": 4.78
+  },
+  {
+   "file": "netDragD",
+   "key": "netDragD",
+   "speaker": "swiftee",
+   "text": "जाल को *समांतर* *चतुर्भुज* बनाने के लिए शीर्ष D को ड्रैग करें।",
+   "spoken": "जाल को समांतर चतुर्भुज बनाने के लिए शीर्ष डी को ड्रैग करें।",
+   "seconds": 5.25
+  },
+  {
+   "file": "hintCdAdLonger",
+   "key": "hintCdAdLonger",
+   "speaker": "swiftee",
+   "text": "सम्मुख भुजाएँ बराबर होती हैं। CD और AD दोनों को *लंबा* करें।",
+   "spoken": "सम्मुख भुजाएँ बराबर होती हैं। सी डी और ए डी दोनों को लंबा करें।",
+   "seconds": 6.27
+  },
+  {
+   "file": "hintCdAdShorter",
+   "key": "hintCdAdShorter",
+   "speaker": "swiftee",
+   "text": "सम्मुख भुजाएँ बराबर होती हैं। CD और AD दोनों को *छोटा* करें।",
+   "spoken": "सम्मुख भुजाएँ बराबर होती हैं। सी डी और ए डी दोनों को छोटा करें।",
+   "seconds": 5.88
+  },
+  {
+   "file": "hintAngleCBigger",
+   "key": "hintAngleCBigger",
+   "speaker": "swiftee",
+   "text": "सम्मुख कोण बराबर होते हैं। ∠C को और *बड़ा* करें।",
+   "spoken": "सम्मुख कोण बराबर होते हैं। कोण सी को और बड़ा करें।",
+   "seconds": 4.21
+  },
+  {
+   "file": "hintAngleCSmaller",
+   "key": "hintAngleCSmaller",
+   "speaker": "swiftee",
+   "text": "सम्मुख कोण बराबर होते हैं। ∠C को और *छोटा* करें।",
+   "spoken": "सम्मुख कोण बराबर होते हैं। कोण सी को और छोटा करें।",
+   "seconds": 4.21
+  },
+  {
+   "file": "hintAngleBBigger",
+   "key": "hintAngleBBigger",
+   "speaker": "swiftee",
+   "text": "आसन्न कोणों का योग 180° होता है। ∠B को और *बड़ा* करें।",
+   "spoken": "आसन्न कोणों का योग एक सौ अस्सी डिग्री होता है। कोण बी को और बड़ा करें।",
+   "seconds": 6.58
+  },
+  {
+   "file": "hintAngleBSmaller",
+   "key": "hintAngleBSmaller",
+   "speaker": "swiftee",
+   "text": "आसन्न कोणों का योग 180° होता है। ∠B को और *छोटा* करें।",
+   "spoken": "आसन्न कोणों का योग एक सौ अस्सी डिग्री होता है। कोण बी को और छोटा करें।",
+   "seconds": 7.0
+  },
+  {
+   "file": "hintOcLonger",
+   "key": "hintOcLonger",
+   "speaker": "swiftee",
+   "text": "विकर्ण एक-दूसरे को समद्विभाजित करते हैं। OC को और *लंबा* करें।",
+   "spoken": "विकर्ण एक-दूसरे को समद्विभाजित करते हैं। ओ सी को और लंबा करें।",
+   "seconds": 5.43
+  },
+  {
+   "file": "hintOcShorter",
+   "key": "hintOcShorter",
+   "speaker": "swiftee",
+   "text": "विकर्ण एक-दूसरे को समद्विभाजित करते हैं। OC को और *छोटा* करें।",
+   "spoken": "विकर्ण एक-दूसरे को समद्विभाजित करते हैं। ओ सी को और छोटा करें।",
+   "seconds": 5.8
+  },
+  {
+   "file": "lessonPageTitle",
+   "key": "lessonPageTitle",
+   "speaker": "swiftee",
+   "text": "समांतर चतुर्भुज पाठ · फ़िशिंग फ़्रेंज़ी 2",
+   "spoken": "समांतर चतुर्भुज पाठ, फ़िशिंग फ़्रेंज़ी टू",
+   "seconds": 3.37
+  },
+  {
+   "file": "ariaBoard",
+   "key": "ariaBoard",
+   "speaker": "swiftee",
+   "text": "समांतर चतुर्भुज ABCD",
+   "spoken": "समांतर चतुर्भुज ए बी सी डी",
+   "seconds": 2.93
+  },
+  {
+   "file": "ariaShape.A",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "आकार {name}",
+   "spoken": "आकार ए",
+   "seconds": 1.2
+  },
+  {
+   "file": "ariaShape.B",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "आकार {name}",
+   "spoken": "आकार बी",
+   "seconds": 1.1
+  },
+  {
+   "file": "ariaShape.C",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "आकार {name}",
+   "spoken": "आकार सी",
+   "seconds": 1.15
+  },
+  {
+   "file": "ariaShape.D",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "आकार {name}",
+   "spoken": "आकार डी",
+   "seconds": 1.07
+  },
+  {
+   "file": "ariaAnswerBox.CD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तर बॉक्स {name}",
+   "spoken": "उत्तर बॉक्स सी डी",
+   "seconds": 1.52
+  },
+  {
+   "file": "ariaAnswerBox.AD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तर बॉक्स {name}",
+   "spoken": "उत्तर बॉक्स ए डी",
+   "seconds": 1.57
+  },
+  {
+   "file": "ariaAnswerBox.angleB",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तर बॉक्स {name}",
+   "spoken": "उत्तर बॉक्स कोण बी",
+   "seconds": 1.57
+  },
+  {
+   "file": "ariaAnswerBox.angleC",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तर बॉक्स {name}",
+   "spoken": "उत्तर बॉक्स कोण सी",
+   "seconds": 1.67
+  },
+  {
+   "file": "ariaAnswerBox.angleD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तर बॉक्स {name}",
+   "spoken": "उत्तर बॉक्स कोण डी",
+   "seconds": 1.62
+  },
+  {
+   "file": "ariaAnswerBox.OC",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तर बॉक्स {name}",
+   "spoken": "उत्तर बॉक्स ओ सी",
+   "seconds": 1.8
+  },
+  {
+   "file": "ariaAnswerBox.OD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तर बॉक्स {name}",
+   "spoken": "उत्तर बॉक्स ओ डी",
+   "seconds": 1.67
+  },
+  {
+   "file": "altSwiftee",
+   "key": "altSwiftee",
+   "speaker": "swiftee",
+   "text": "स्विफ्टी चिड़िया",
+   "spoken": "स्विफ्टी चिड़िया",
+   "seconds": 1.33
+  },
+  {
+   "file": "btnNext",
+   "key": "btnNext",
+   "speaker": "swiftee",
+   "text": "आगे",
+   "spoken": "आगे",
+   "seconds": 0.84
+  },
+  {
+   "file": "lessonComplete",
+   "key": "lessonComplete",
+   "speaker": "swiftee",
+   "text": "पाठ पूरा हुआ!",
+   "spoken": "पाठ पूरा हुआ!",
+   "seconds": 1.38
+  },
+  {
+   "file": "lessonPlayAgain",
+   "key": "lessonPlayAgain",
+   "speaker": "swiftee",
+   "text": "फिर से खेलें",
+   "spoken": "फिर से खेलें",
+   "seconds": 1.25
+  },
+  {
+   "file": "lessonPauseTitle",
+   "key": "lessonPauseTitle",
+   "speaker": "swiftee",
+   "text": "पाठ रुका हुआ है",
+   "spoken": "पाठ रुका हुआ है",
+   "seconds": 1.57
+  },
+  {
+   "file": "lessonPauseText",
+   "key": "lessonPauseText",
+   "speaker": "swiftee",
+   "text": "स्विफ्टी आपका इंतज़ार करेगी।",
+   "spoken": "स्विफ्टी आपका इंतज़ार करेगी।",
+   "seconds": 2.12
+  },
+  {
+   "file": "lessonScore.0",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "आपने {total} में से {right} चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "spoken": "आपने नौ में से शून्य चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "seconds": 6.16
+  },
+  {
+   "file": "lessonScore.1",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "आपने {total} में से {right} चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "spoken": "आपने नौ में से एक चेकपॉइंट चुनौती पहली ही कोशिश में सही की।",
+   "seconds": 5.25
+  },
+  {
+   "file": "lessonScore.2",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "आपने {total} में से {right} चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "spoken": "आपने नौ में से दो चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "seconds": 5.04
+  },
+  {
+   "file": "lessonScore.3",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "आपने {total} में से {right} चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "spoken": "आपने नौ में से तीन चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "seconds": 5.56
+  },
+  {
+   "file": "lessonScore.4",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "आपने {total} में से {right} चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "spoken": "आपने नौ में से चार चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "seconds": 5.33
+  },
+  {
+   "file": "lessonScore.5",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "आपने {total} में से {right} चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "spoken": "आपने नौ में से पाँच चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "seconds": 5.28
+  },
+  {
+   "file": "lessonScore.6",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "आपने {total} में से {right} चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "spoken": "आपने नौ में से छह चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "seconds": 5.25
+  },
+  {
+   "file": "lessonScore.7",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "आपने {total} में से {right} चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "spoken": "आपने नौ में से सात चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "seconds": 5.25
+  },
+  {
+   "file": "lessonScore.8",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "आपने {total} में से {right} चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "spoken": "आपने नौ में से आठ चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "seconds": 5.2
+  },
+  {
+   "file": "lessonScore.9",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "आपने {total} में से {right} चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "spoken": "आपने नौ में से नौ चेकपॉइंट चुनौतियाँ पहली ही कोशिश में सही कीं।",
+   "seconds": 5.43
+  },
+  {
+   "file": "ariaSummary",
+   "key": "ariaSummary",
+   "speaker": "swiftee",
+   "text": "सारांश",
+   "spoken": "सारांश",
+   "seconds": 1.02
+  },
+  {
+   "file": "wordTrapezium",
+   "key": "wordTrapezium",
+   "speaker": "swiftee",
+   "text": "समलंब चतुर्भुज",
+   "spoken": "समलंब चतुर्भुज",
+   "seconds": 1.67
+  },
+  {
+   "file": "wordParallelogram",
+   "key": "wordParallelogram",
+   "speaker": "swiftee",
+   "text": "समांतर चतुर्भुज",
+   "spoken": "समांतर चतुर्भुज",
+   "seconds": 1.91
+  },
+  {
+   "file": "capParallelSides",
+   "key": "capParallelSides",
+   "speaker": "swiftee",
+   "text": "समांतर भुजाएँ",
+   "spoken": "समांतर भुजाएँ",
+   "seconds": 1.67
+  },
+  {
+   "file": "capEqualSides",
+   "key": "capEqualSides",
+   "speaker": "swiftee",
+   "text": "बराबर भुजाएँ",
+   "spoken": "बराबर भुजाएँ",
+   "seconds": 1.44
+  },
+  {
+   "file": "capEqualAngles",
+   "key": "capEqualAngles",
+   "speaker": "swiftee",
+   "text": "बराबर कोण",
+   "spoken": "बराबर कोण",
+   "seconds": 1.33
+  },
+  {
+   "file": "capSupplementary",
+   "key": "capSupplementary",
+   "speaker": "swiftee",
+   "text": "संपूरक",
+   "spoken": "संपूरक",
+   "seconds": 1.1
+  },
+  {
+   "file": "capEqualHalves",
+   "key": "capEqualHalves",
+   "speaker": "swiftee",
+   "text": "बराबर आधे भाग",
+   "spoken": "बराबर आधे भाग",
+   "seconds": 1.8
+  },
+  {
+   "file": "capDiagonals",
+   "key": "capDiagonals",
+   "speaker": "swiftee",
+   "text": "विकर्ण",
+   "spoken": "विकर्ण",
+   "seconds": 1.07
+  },
+  {
+   "file": "lsIntro",
+   "key": "lsIntro",
+   "speaker": "swiftee",
+   "text": "हमने पहले *चतुर्भुजों* के बारे में\nसीखा था।",
+   "spoken": "हमने पहले चतुर्भुजों के बारे में सीखा था।",
+   "seconds": 3.66
+  },
+  {
+   "file": "lsQuadSides",
+   "key": "lsQuadSides",
+   "speaker": "swiftee",
+   "text": "4 *भुजाओं* वाले किसी भी *बहुभुज* को\n*चतुर्भुज* कहते हैं।",
+   "spoken": "चार भुजाओं वाले किसी भी बहुभुज को चतुर्भुज कहते हैं।",
+   "seconds": 4.68
+  },
+  {
+   "file": "lsSpecial",
+   "key": "lsSpecial",
+   "speaker": "swiftee",
+   "text": "यह एक खास तरह का\n*चतुर्भुज* है, जिसे *समलंब* *चतुर्भुज* कहते हैं।",
+   "spoken": "यह एक खास तरह का चतुर्भुज है, जिसे समलंब चतुर्भुज कहते हैं।",
+   "seconds": 5.43
+  },
+  {
+   "file": "lsOnePair",
+   "key": "lsOnePair",
+   "speaker": "swiftee",
+   "text": "*समलंब* *चतुर्भुज* में *सम्मुख* *भुजाओं* का\nएक जोड़ा *समांतर* होता है।",
+   "spoken": "समलंब चतुर्भुज में सम्मुख भुजाओं का एक जोड़ा समांतर होता है।",
+   "seconds": 5.67
+  },
+  {
+   "file": "lsAskPar",
+   "key": "lsAskPar",
+   "speaker": "swiftee",
+   "text": "*भुजाओं* का कौन-सा जोड़ा\nएक-दूसरे के *समांतर* है?",
+   "spoken": "भुजाओं का कौन-सा जोड़ा एक-दूसरे के समांतर है?",
+   "seconds": 3.29
+  },
+  {
+   "file": "lsAskParOk",
+   "key": "lsAskParOk",
+   "speaker": "swiftee",
+   "text": "बिल्कुल सही! AB ∥ CD।",
+   "spoken": "बिल्कुल सही! ए बी, सी डी के समांतर है।",
+   "seconds": 4.0
+  },
+  {
+   "file": "lsAskParFbAD",
+   "key": "lsAskParFbAD",
+   "speaker": "swiftee",
+   "text": "फिर से देखें। AD और BC एक-दूसरे की ओर झुकी हैं, इसलिए अगर हम इन्हें लंबा करें तो ये आपस में मिल जाएँगी।",
+   "spoken": "फिर से देखें। ए डी और बी सी एक-दूसरे की ओर झुकी हैं, इसलिए अगर हम इन्हें लंबा करें तो ये आपस में मिल जाएँगी।",
+   "seconds": 10.81
+  },
+  {
+   "file": "lsWhatIf",
+   "key": "lsWhatIf",
+   "speaker": "swiftee",
+   "text": "अगर हम *सम्मुख* *भुजाओं* के\nदूसरे जोड़े को भी *समांतर* बना दें तो?",
+   "spoken": "अगर हम सम्मुख भुजाओं के दूसरे जोड़े को भी समांतर बना दें तो?",
+   "seconds": 5.51
+  },
+  {
+   "file": "lsDragPar",
+   "key": "lsDragPar",
+   "speaker": "swiftee",
+   "text": "*शीर्ष* B को ड्रैग करके\nBC को AD के *समांतर* बनाएँ।",
+   "spoken": "शीर्ष बी को ड्रैग करके बी सी को ए डी के समांतर बनाएँ।",
+   "seconds": 4.62
+  },
+  {
+   "file": "lsDragParAfter",
+   "key": "lsDragParAfter",
+   "speaker": "swiftee",
+   "text": "शाबाश! अब BC भुजा\nAD के *समांतर* है।",
+   "spoken": "शाबाश! अब बी सी भुजा ए डी के समांतर है।",
+   "seconds": 3.79
+  },
+  {
+   "file": "lsDragParShowAnswer",
+   "key": "lsDragParShowAnswer",
+   "speaker": "swiftee",
+   "text": "देखिए! BC को भी\nAD की तरह ही झुकना होगा।",
+   "spoken": "देखिए! बी सी को भी ए डी की तरह ही झुकना होगा।",
+   "seconds": 4.6
+  },
+  {
+   "file": "lsDragParAnswerAfter",
+   "key": "lsDragParAnswerAfter",
+   "speaker": "swiftee",
+   "text": "अब BC भुजा AD के *समांतर* है।",
+   "spoken": "अब बी सी भुजा ए डी के समांतर है।",
+   "seconds": 3.24
+  },
+  {
+   "file": "lsBothPar",
+   "key": "lsBothPar",
+   "speaker": "swiftee",
+   "text": "अब *सम्मुख* *भुजाओं* के\nदोनों जोड़े *समांतर* हैं।",
+   "spoken": "अब सम्मुख भुजाओं के दोनों जोड़े समांतर हैं।",
+   "seconds": 3.06
+  },
+  {
+   "file": "lsDefPg",
+   "key": "lsDefPg",
+   "speaker": "swiftee",
+   "text": "इसे हम *समांतर* *चतुर्भुज* कहते हैं।",
+   "spoken": "इसे हम समांतर चतुर्भुज कहते हैं।",
+   "seconds": 3.11
+  },
+  {
+   "file": "lsDefFull",
+   "key": "lsDefFull",
+   "speaker": "swiftee",
+   "text": "जिस *चतुर्भुज* में *सम्मुख* *भुजाओं* के\nदोनों जोड़े *समांतर* हों, उसे\n*समांतर* *चतुर्भुज* कहते हैं।",
+   "spoken": "जिस चतुर्भुज में सम्मुख भुजाओं के दोनों जोड़े समांतर हों, उसे समांतर चतुर्भुज कहते हैं।",
+   "seconds": 8.07
+  },
+  {
+   "file": "lsLengthsQ",
+   "key": "lsLengthsQ",
+   "speaker": "swiftee",
+   "text": "पर *भुजाओं* की\nलंबाई का क्या?",
+   "spoken": "पर भुजाओं की लंबाई का क्या?",
+   "seconds": 2.04
+  },
+  {
+   "file": "lsEqualQ",
+   "key": "lsEqualQ",
+   "speaker": "swiftee",
+   "text": "क्या वे भी *बराबर* हैं?",
+   "spoken": "क्या वे भी बराबर हैं?",
+   "seconds": 1.75
+  },
+  {
+   "file": "lsFindOut",
+   "key": "lsFindOut",
+   "speaker": "swiftee",
+   "text": "चलिए, पता लगाएँ!",
+   "spoken": "चलिए, पता लगाएँ!",
+   "seconds": 1.85
+  },
+  {
+   "file": "lsInteresting",
+   "key": "lsInteresting",
+   "speaker": "swiftee",
+   "text": "लंबाइयों के बारे में\nकुछ दिलचस्प\nबात है।",
+   "spoken": "लंबाइयों के बारे में कुछ दिलचस्प बात है।",
+   "seconds": 2.93
+  },
+  {
+   "file": "lsAskSides",
+   "key": "lsAskSides",
+   "speaker": "swiftee",
+   "text": "*भुजाओं* के बारे में\nआप क्या देखते हैं?",
+   "spoken": "भुजाओं के बारे में आप क्या देखते हैं?",
+   "seconds": 2.82
+  },
+  {
+   "file": "lsAskSidesOk",
+   "key": "lsAskSidesOk",
+   "speaker": "swiftee",
+   "text": "बिल्कुल सही! *सम्मुख*\n*भुजाएँ* *बराबर* हैं।",
+   "spoken": "बिल्कुल सही! सम्मुख भुजाएँ बराबर हैं।",
+   "seconds": 3.06
+  },
+  {
+   "file": "lsAskSidesOptAll",
+   "key": "lsAskSidesOptAll",
+   "speaker": "swiftee",
+   "text": "सभी भुजाएँ बराबर हैं",
+   "spoken": "सभी भुजाएँ बराबर हैं",
+   "seconds": 2.09
+  },
+  {
+   "file": "lsAskSidesFbAll",
+   "key": "lsAskSidesFbAll",
+   "speaker": "swiftee",
+   "text": "लंबाइयाँ फिर से देखें। AB की लंबाई 6 सेमी है, पर AD की केवल 3 सेमी।",
+   "spoken": "लंबाइयाँ फिर से देखें। ए बी की लंबाई छह सेंटीमीटर है, पर ए डी की केवल तीन सेंटीमीटर।",
+   "seconds": 8.25
+  },
+  {
+   "file": "lsAskSidesOptOpp",
+   "key": "lsAskSidesOptOpp",
+   "speaker": "swiftee",
+   "text": "सम्मुख भुजाएँ बराबर हैं",
+   "spoken": "सम्मुख भुजाएँ बराबर हैं",
+   "seconds": 2.04
+  },
+  {
+   "file": "lsOppEq",
+   "key": "lsOppEq",
+   "speaker": "swiftee",
+   "text": "किसी भी *समांतर* *चतुर्भुज* में,\n*सम्मुख* *भुजाओं* की\nलंबाई *बराबर* होती है।",
+   "spoken": "किसी भी समांतर चतुर्भुज में, सम्मुख भुजाओं की लंबाई बराबर होती है।",
+   "seconds": 6.95
+  },
+  {
+   "file": "lsSidesSum",
+   "key": "lsSidesSum",
+   "speaker": "swiftee",
+   "text": "तो, किसी भी *समांतर* *चतुर्भुज* में,\n*सम्मुख* *भुजाएँ*\n*समांतर* और *बराबर* होती हैं।",
+   "spoken": "तो, किसी भी समांतर चतुर्भुज में, सम्मुख भुजाएँ समांतर और बराबर होती हैं।",
+   "seconds": 7.29
+  },
+  {
+   "file": "lsCp1a",
+   "key": "lsCp1a",
+   "speaker": "swiftee",
+   "text": "इनमें से कौन-से\n*समांतर* *चतुर्भुज* हैं? सभी सही\nविकल्प चुनें।",
+   "spoken": "इनमें से कौन-से समांतर चतुर्भुज हैं? सभी सही विकल्प चुनें।",
+   "seconds": 4.86
+  },
+  {
+   "file": "lsCp1aOk",
+   "key": "lsCp1aOk",
+   "speaker": "swiftee",
+   "text": "हाँ! इन दोनों आकारों में\n*समांतर* *भुजाओं* के दो जोड़े हैं।",
+   "spoken": "हाँ! इन दोनों आकारों में समांतर भुजाओं के दो जोड़े हैं।",
+   "seconds": 4.96
+  },
+  {
+   "file": "lsCp1aFbB",
+   "key": "lsCp1aFbB",
+   "speaker": "swiftee",
+   "text": "यह आकार एक *समलंब* *चतुर्भुज* है। इसकी *भुजाओं* का केवल एक जोड़ा *समांतर* है।",
+   "spoken": "यह आकार एक समलंब चतुर्भुज है। इसकी भुजाओं का केवल एक जोड़ा समांतर है।",
+   "seconds": 7.78
+  },
+  {
+   "file": "lsCp1aFbD",
+   "key": "lsCp1aFbD",
+   "speaker": "swiftee",
+   "text": "इस आकार की पाँच *भुजाएँ* हैं, इसलिए यह *चतुर्भुज* नहीं है।",
+   "spoken": "इस आकार की पाँच भुजाएँ हैं, इसलिए यह चतुर्भुज नहीं है।",
+   "seconds": 5.2
+  },
+  {
+   "file": "lsCp1b",
+   "key": "lsCp1b",
+   "speaker": "swiftee",
+   "text": "इस *समांतर* *चतुर्भुज* में,\nAB = 7 सेमी है। CD की\nलंबाई क्या है?",
+   "spoken": "इस समांतर चतुर्भुज में, ए बी बराबर सात सेंटीमीटर है। सी डी की लंबाई क्या है?",
+   "seconds": 6.82
+  },
+  {
+   "file": "lsCp1bOk",
+   "key": "lsCp1bOk",
+   "speaker": "swiftee",
+   "text": "बिल्कुल ठीक! *सम्मुख* *भुजाएँ*\n*बराबर* होती हैं, इसलिए CD = 7 सेमी।",
+   "spoken": "बिल्कुल ठीक! सम्मुख भुजाएँ बराबर होती हैं, इसलिए सी डी बराबर सात सेंटीमीटर।",
+   "seconds": 7.47
+  },
+  {
+   "file": "lsCp1bFbHalf",
+   "key": "lsCp1bFbHalf",
+   "speaker": "swiftee",
+   "text": "CD, AB का आधा नहीं है। *समांतर* *चतुर्भुज* की *सम्मुख* *भुजाएँ* *बराबर* होती हैं।",
+   "spoken": "सी डी, ए बी का आधा नहीं है। समांतर चतुर्भुज की सम्मुख भुजाएँ बराबर होती हैं।",
+   "seconds": 8.2
+  },
+  {
+   "file": "lsCp1bFbDouble",
+   "key": "lsCp1bFbDouble",
+   "speaker": "swiftee",
+   "text": "CD, AB का दोगुना नहीं है। *समांतर* *चतुर्भुज* की *सम्मुख* *भुजाएँ* *बराबर* होती हैं।",
+   "spoken": "सी डी, ए बी का दोगुना नहीं है। समांतर चतुर्भुज की सम्मुख भुजाएँ बराबर होती हैं।",
+   "seconds": 7.71
+  },
+  {
+   "file": "lsCp1c",
+   "key": "lsCp1c",
+   "speaker": "swiftee",
+   "text": "इस *समांतर* *चतुर्भुज* में,\nAB = 8 सेमी और BC = 5 सेमी है।\nCD और AD की\nलंबाइयाँ ज्ञात करें।",
+   "spoken": "इस समांतर चतुर्भुज में, ए बी बराबर आठ सेंटीमीटर और बी सी बराबर पाँच सेंटीमीटर है। सी डी और ए डी की लंबाइयाँ ज्ञात करें।",
+   "seconds": 12.49
+  },
+  {
+   "file": "lsCp1cOk",
+   "key": "lsCp1cOk",
+   "speaker": "swiftee",
+   "text": "CD = 8 सेमी, AD = 5 सेमी।",
+   "spoken": "सी डी बराबर आठ सेंटीमीटर, ए डी बराबर पाँच सेंटीमीटर।",
+   "seconds": 5.2
+  },
+  {
+   "file": "lsCp1cFbCD",
+   "key": "lsCp1cFbCD",
+   "speaker": "swiftee",
+   "text": "CD, AB के *सम्मुख* है, इसलिए CD = AB।",
+   "spoken": "सी डी, ए बी के सम्मुख है, इसलिए सी डी बराबर ए बी।",
+   "seconds": 5.51
+  },
+  {
+   "file": "lsCp1cFbAD",
+   "key": "lsCp1cFbAD",
+   "speaker": "swiftee",
+   "text": "AD, BC के *सम्मुख* है, इसलिए AD = BC।",
+   "spoken": "ए डी, बी सी के सम्मुख है, इसलिए ए डी बराबर बी सी।",
+   "seconds": 5.51
+  },
+  {
+   "file": "lsSidesDone",
+   "key": "lsSidesDone",
+   "speaker": "swiftee",
+   "text": "हमने *समांतर* *चतुर्भुज* की\n*भुजाओं* के बारे में सब कुछ सीख लिया।",
+   "spoken": "हमने समांतर चतुर्भुज की भुजाओं के बारे में सब कुछ सीख लिया।",
+   "seconds": 4.44
+  },
+  {
+   "file": "lsAngles",
+   "key": "lsAngles",
+   "speaker": "swiftee",
+   "text": "पर इसके *कोणों* का क्या?\nक्या वे भी *बराबर* हैं?",
+   "spoken": "पर इसके कोणों का क्या? क्या वे भी बराबर हैं?",
+   "seconds": 3.24
+  },
+  {
+   "file": "lsInterestingAng",
+   "key": "lsInterestingAng",
+   "speaker": "swiftee",
+   "text": "यहाँ भी कुछ\nदिलचस्प बात है।",
+   "spoken": "यहाँ भी कुछ दिलचस्प बात है।",
+   "seconds": 2.17
+  },
+  {
+   "file": "lsSomeEq",
+   "key": "lsSomeEq",
+   "speaker": "swiftee",
+   "text": "कुछ *कोण* एक-दूसरे के\n*बराबर* हैं।",
+   "spoken": "कुछ कोण एक-दूसरे के बराबर हैं।",
+   "seconds": 2.53
+  },
+  {
+   "file": "lsTapEqA",
+   "key": "lsTapEqA",
+   "speaker": "swiftee",
+   "text": "कौन-सा *कोण*\n∠A के *बराबर* है?",
+   "spoken": "कौन-सा कोण, कोण ए के बराबर है?",
+   "seconds": 2.59
+  },
+  {
+   "file": "lsTapEqAOk",
+   "key": "lsTapEqAOk",
+   "speaker": "swiftee",
+   "text": "बिल्कुल सही! ∠A,\n∠C के *बराबर* है।",
+   "spoken": "बिल्कुल सही! कोण ए, कोण सी के बराबर है।",
+   "seconds": 4.0
+  },
+  {
+   "file": "lsTapEqAFb",
+   "key": "lsTapEqAFb",
+   "speaker": "swiftee",
+   "text": "पूरी तरह सही नहीं। इसके माप की ∠A से तुलना करें। A के *सम्मुख* कोने को देखें।",
+   "spoken": "पूरी तरह सही नहीं। इसके माप की कोण ए से तुलना करें। ए के सम्मुख कोने को देखें।",
+   "seconds": 8.02
+  },
+  {
+   "file": "lsTapEqD",
+   "key": "lsTapEqD",
+   "speaker": "swiftee",
+   "text": "कौन-सा *कोण*\n∠D के *बराबर* है?",
+   "spoken": "कौन-सा कोण, कोण डी के बराबर है?",
+   "seconds": 2.64
+  },
+  {
+   "file": "lsTapEqDOk",
+   "key": "lsTapEqDOk",
+   "speaker": "swiftee",
+   "text": "बिल्कुल सही! ∠D,\n∠B के *बराबर* है।",
+   "spoken": "बिल्कुल सही! कोण डी, कोण बी के बराबर है।",
+   "seconds": 3.84
+  },
+  {
+   "file": "lsTapEqDFb",
+   "key": "lsTapEqDFb",
+   "speaker": "swiftee",
+   "text": "पूरी तरह सही नहीं। इसके माप की ∠D से तुलना करें। D के *सम्मुख* कोने को देखें।",
+   "spoken": "पूरी तरह सही नहीं। इसके माप की कोण डी से तुलना करें। डी के सम्मुख कोने को देखें।",
+   "seconds": 7.71
+  },
+  {
+   "file": "lsOppAng",
+   "key": "lsOppAng",
+   "speaker": "swiftee",
+   "text": "तो किसी भी *समांतर* *चतुर्भुज* में,\n*सम्मुख* *कोण* भी\n*बराबर* होते हैं।",
+   "spoken": "तो किसी भी समांतर चतुर्भुज में, सम्मुख कोण भी बराबर होते हैं।",
+   "seconds": 5.15
+  },
+  {
+   "file": "lsSeeElse",
+   "key": "lsSeeElse",
+   "speaker": "swiftee",
+   "text": "पर मुझे कुछ और\nभी दिख रहा है।",
+   "spoken": "पर मुझे कुछ और भी दिख रहा है।",
+   "seconds": 2.17
+  },
+  {
+   "file": "lsLookAD",
+   "key": "lsLookAD",
+   "speaker": "swiftee",
+   "text": "∠A और ∠D को देखें।",
+   "spoken": "कोण ए और कोण डी को देखें।",
+   "seconds": 1.99
+  },
+  {
+   "file": "lsSumAD",
+   "key": "lsSumAD",
+   "speaker": "swiftee",
+   "text": "इनका योग *180°* होता है।",
+   "spoken": "इनका योग एक सौ अस्सी डिग्री होता है।",
+   "seconds": 3.19
+  },
+  {
+   "file": "lsAskAdj",
+   "key": "lsAskAdj",
+   "speaker": "swiftee",
+   "text": "और किन *कोणों* का\nयोग *180°* होता है?",
+   "spoken": "और किन कोणों का योग एक सौ अस्सी डिग्री होता है?",
+   "seconds": 3.89
+  },
+  {
+   "file": "lsAskAdjOk",
+   "key": "lsAskAdjOk",
+   "speaker": "swiftee",
+   "text": "हाँ! ∠B + ∠C = 180° और\n∠A + ∠B = 180°।",
+   "spoken": "हाँ! कोण बी जमा कोण सी बराबर एक सौ अस्सी डिग्री और कोण ए जमा कोण बी बराबर एक सौ अस्सी डिग्री।",
+   "seconds": 11.1
+  },
+  {
+   "file": "lsAskAdjFbBD",
+   "key": "lsAskAdjFbBD",
+   "speaker": "swiftee",
+   "text": "∠B और ∠D *सम्मुख* *कोण* हैं। 70° + 70° से *180°* नहीं बनता।",
+   "spoken": "कोण बी और कोण डी सम्मुख कोण हैं। सत्तर डिग्री जमा सत्तर डिग्री से एक सौ अस्सी डिग्री नहीं बनता।",
+   "seconds": 8.62
+  },
+  {
+   "file": "lsAskAdjFbAC",
+   "key": "lsAskAdjFbAC",
+   "speaker": "swiftee",
+   "text": "∠A और ∠C *सम्मुख* *कोण* हैं। 110° + 110° से *180°* नहीं बनता।",
+   "spoken": "कोण ए और कोण सी सम्मुख कोण हैं। एक सौ दस डिग्री जमा एक सौ दस डिग्री से एक सौ अस्सी डिग्री नहीं बनता।",
+   "seconds": 9.8
+  },
+  {
+   "file": "lsAdjRule",
+   "key": "lsAdjRule",
+   "speaker": "swiftee",
+   "text": "इस *समांतर* *चतुर्भुज* में\nहर दो *आसन्न* *कोणों* का\nयोग *180°* होता है।",
+   "spoken": "इस समांतर चतुर्भुज में हर दो आसन्न कोणों का योग एक सौ अस्सी डिग्री होता है।",
+   "seconds": 7.65
+  },
+  {
+   "file": "lsCp2a",
+   "key": "lsCp2a",
+   "speaker": "swiftee",
+   "text": "इस *समांतर* *चतुर्भुज* में,\n∠A = 68° है। ∠C की\nमाप क्या है?",
+   "spoken": "इस समांतर चतुर्भुज में, कोण ए बराबर अड़सठ डिग्री है। कोण सी की माप क्या है?",
+   "seconds": 6.92
+  },
+  {
+   "file": "lsCp2aOk",
+   "key": "lsCp2aOk",
+   "speaker": "swiftee",
+   "text": "बिल्कुल ठीक! *सम्मुख* *कोण*\n*बराबर* होते हैं, इसलिए ∠C = 68°।",
+   "spoken": "बिल्कुल ठीक! सम्मुख कोण बराबर होते हैं, इसलिए कोण सी बराबर अड़सठ डिग्री।",
+   "seconds": 6.27
+  },
+  {
+   "file": "lsCp2aFb",
+   "key": "lsCp2aFb",
+   "speaker": "swiftee",
+   "text": "फिर से देखें। *समांतर* *चतुर्भुज* के *सम्मुख* *कोण* *बराबर* होते हैं।",
+   "spoken": "फिर से देखें। समांतर चतुर्भुज के सम्मुख कोण बराबर होते हैं।",
+   "seconds": 4.86
+  },
+  {
+   "file": "lsCp2b",
+   "key": "lsCp2b",
+   "speaker": "swiftee",
+   "text": "इस *समांतर* *चतुर्भुज* में,\n∠A = 72° है। ∠B की\nमाप क्या है?",
+   "spoken": "इस समांतर चतुर्भुज में, कोण ए बराबर बहत्तर डिग्री है। कोण बी की माप क्या है?",
+   "seconds": 6.64
+  },
+  {
+   "file": "lsCp2bOk",
+   "key": "lsCp2bOk",
+   "speaker": "swiftee",
+   "text": "सही! 72° + 108° = 180°।",
+   "spoken": "सही! बहत्तर डिग्री जमा एक सौ आठ डिग्री बराबर एक सौ अस्सी डिग्री।",
+   "seconds": 6.77
+  },
+  {
+   "file": "lsCp2bFb72",
+   "key": "lsCp2bFb72",
+   "speaker": "swiftee",
+   "text": "∠B, ∠A के बगल में है, उसके *सम्मुख* नहीं। *आसन्न* *कोणों* का योग *180°* होता है।",
+   "spoken": "कोण बी, कोण ए के बगल में है, उसके सम्मुख नहीं। आसन्न कोणों का योग एक सौ अस्सी डिग्री होता है।",
+   "seconds": 8.67
+  },
+  {
+   "file": "lsCp2bFb180",
+   "key": "lsCp2bFb180",
+   "speaker": "swiftee",
+   "text": "*180°* तो ∠A और ∠B का योग है, अकेले ∠B का नहीं।",
+   "spoken": "एक सौ अस्सी डिग्री तो कोण ए और कोण बी का योग है, अकेले कोण बी का नहीं।",
+   "seconds": 6.16
+  },
+  {
+   "file": "lsCp2c",
+   "key": "lsCp2c",
+   "speaker": "swiftee",
+   "text": "इस *समांतर* *चतुर्भुज* में,\n∠A = 65° है। ∠B, ∠C और ∠D की\nमाप ज्ञात करें।",
+   "spoken": "इस समांतर चतुर्भुज में, कोण ए बराबर पैंसठ डिग्री है। कोण बी, कोण सी और कोण डी की माप ज्ञात करें।",
+   "seconds": 10.4
+  },
+  {
+   "file": "lsCp2cOk",
+   "key": "lsCp2cOk",
+   "speaker": "swiftee",
+   "text": "कमाल है! ∠B = 115°, ∠C = 65°\nऔर ∠D = 115°।",
+   "spoken": "कमाल है! कोण बी बराबर एक सौ पंद्रह डिग्री, कोण सी बराबर पैंसठ डिग्री और कोण डी बराबर एक सौ पंद्रह डिग्री।",
+   "seconds": 10.27
+  },
+  {
+   "file": "lsCp2cFbB25",
+   "key": "lsCp2cFbB25",
+   "speaker": "swiftee",
+   "text": "25° + 65° तो केवल 90° होता है। ∠A और ∠B का योग *180°* होना चाहिए।",
+   "spoken": "पच्चीस डिग्री जमा पैंसठ डिग्री तो केवल नब्बे डिग्री होता है। कोण ए और कोण बी का योग एक सौ अस्सी डिग्री होना चाहिए।",
+   "seconds": 10.03
+  },
+  {
+   "file": "lsCp2cFbB65",
+   "key": "lsCp2cFbB65",
+   "speaker": "swiftee",
+   "text": "∠B, ∠A के बगल में है, उसके *सम्मुख* नहीं। ∠A + ∠B = 180°।",
+   "spoken": "कोण बी, कोण ए के बगल में है, उसके सम्मुख नहीं। कोण ए जमा कोण बी बराबर एक सौ अस्सी डिग्री।",
+   "seconds": 8.91
+  },
+  {
+   "file": "lsCp2cFbB180",
+   "key": "lsCp2cFbB180",
+   "speaker": "swiftee",
+   "text": "*180°* तो ∠A और ∠B मिलाकर है। इसमें से ∠A के 65° घटाएँ।",
+   "spoken": "एक सौ अस्सी डिग्री तो कोण ए और कोण बी मिलाकर है। इसमें से कोण ए के पैंसठ डिग्री घटाएँ।",
+   "seconds": 8.62
+  },
+  {
+   "file": "lsCp2cFbC25",
+   "key": "lsCp2cFbC25",
+   "speaker": "swiftee",
+   "text": "∠C, ∠A के *सम्मुख* है, इसलिए यह ∠A के *बराबर* है, 25° नहीं।",
+   "spoken": "कोण सी, कोण ए के सम्मुख है, इसलिए यह कोण ए के बराबर है, पच्चीस डिग्री नहीं।",
+   "seconds": 7.29
+  },
+  {
+   "file": "lsCp2cFbC115",
+   "key": "lsCp2cFbC115",
+   "speaker": "swiftee",
+   "text": "115° तो ∠A के बगल वाले *कोण* की माप है। ∠C, ∠A के *सम्मुख* है, इसलिए ∠C = ∠A।",
+   "spoken": "एक सौ पंद्रह डिग्री तो कोण ए के बगल वाले कोण की माप है। कोण सी, कोण ए के सम्मुख है, इसलिए कोण सी बराबर कोण ए।",
+   "seconds": 11.47
+  },
+  {
+   "file": "lsCp2cFbC180",
+   "key": "lsCp2cFbC180",
+   "speaker": "swiftee",
+   "text": "∠C, ∠A के *सम्मुख* है, इसलिए यह ∠A के *बराबर* है, *180°* नहीं।",
+   "spoken": "कोण सी, कोण ए के सम्मुख है, इसलिए यह कोण ए के बराबर है, एक सौ अस्सी डिग्री नहीं।",
+   "seconds": 7.76
+  },
+  {
+   "file": "lsCp2cFbD25",
+   "key": "lsCp2cFbD25",
+   "speaker": "swiftee",
+   "text": "25° + 65° तो केवल 90° होता है। ∠A और ∠D का योग *180°* होना चाहिए।",
+   "spoken": "पच्चीस डिग्री जमा पैंसठ डिग्री तो केवल नब्बे डिग्री होता है। कोण ए और कोण डी का योग एक सौ अस्सी डिग्री होना चाहिए।",
+   "seconds": 10.48
+  },
+  {
+   "file": "lsCp2cFbD65",
+   "key": "lsCp2cFbD65",
+   "speaker": "swiftee",
+   "text": "∠D, ∠A के बगल में है, उसके *सम्मुख* नहीं। ∠A + ∠D = 180°।",
+   "spoken": "कोण डी, कोण ए के बगल में है, उसके सम्मुख नहीं। कोण ए जमा कोण डी बराबर एक सौ अस्सी डिग्री।",
+   "seconds": 9.04
+  },
+  {
+   "file": "lsCp2cFbD180",
+   "key": "lsCp2cFbD180",
+   "speaker": "swiftee",
+   "text": "*180°* तो ∠A और ∠D मिलाकर है। इसमें से ∠A के 65° घटाएँ।",
+   "spoken": "एक सौ अस्सी डिग्री तो कोण ए और कोण डी मिलाकर है। इसमें से कोण ए के पैंसठ डिग्री घटाएँ।",
+   "seconds": 8.72
+  },
+  {
+   "file": "lsExplored",
+   "key": "lsExplored",
+   "speaker": "swiftee",
+   "text": "हमने *समांतर* *चतुर्भुज* की\n*भुजाओं* और *कोणों* के बारे में\nसब कुछ जान लिया है।",
+   "spoken": "हमने समांतर चतुर्भुज की भुजाओं और कोणों के बारे में सब कुछ जान लिया है।",
+   "seconds": 6.5
+  },
+  {
+   "file": "lsDiagIntro",
+   "key": "lsDiagIntro",
+   "speaker": "swiftee",
+   "text": "चलिए, इसके\n*विकर्णों* के बारे में सीखें।",
+   "spoken": "चलिए, इसके विकर्णों के बारे में सीखें।",
+   "seconds": 3.34
+  },
+  {
+   "file": "lsDrawDiag",
+   "key": "lsDrawDiag",
+   "speaker": "swiftee",
+   "text": "इस *समांतर* *चतुर्भुज* के\nसभी *विकर्ण* खींचें।",
+   "spoken": "इस समांतर चतुर्भुज के सभी विकर्ण खींचें।",
+   "seconds": 3.11
+  },
+  {
+   "file": "lsDrawDiagWrong",
+   "key": "lsDrawDiagWrong",
+   "speaker": "swiftee",
+   "text": "यह तो एक *भुजा* है। *विकर्ण* दो *सम्मुख* कोनों को जोड़ता है।",
+   "spoken": "यह तो एक भुजा है। विकर्ण दो सम्मुख कोनों को जोड़ता है।",
+   "seconds": 4.18
+  },
+  {
+   "file": "lsDrawDiagAfter",
+   "key": "lsDrawDiagAfter",
+   "speaker": "swiftee",
+   "text": "बहुत बढ़िया! आपने दोनों\n*विकर्ण* खींच लिए।",
+   "spoken": "बहुत बढ़िया! आपने दोनों विकर्ण खींच लिए।",
+   "seconds": 3.11
+  },
+  {
+   "file": "lsDiagNames",
+   "key": "lsDiagNames",
+   "speaker": "swiftee",
+   "text": "AC और BD इस *समांतर* *चतुर्भुज* के\n*विकर्ण* हैं।",
+   "spoken": "ए सी और बी डी इस समांतर चतुर्भुज के विकर्ण हैं।",
+   "seconds": 5.56
+  },
+  {
+   "file": "lsMeetO",
+   "key": "lsMeetO",
+   "speaker": "swiftee",
+   "text": "ये एक-दूसरे से\nबिंदु O पर मिलते हैं।",
+   "spoken": "ये एक-दूसरे से बिंदु ओ पर मिलते हैं।",
+   "seconds": 2.59
+  },
+  {
+   "file": "lsSegs",
+   "key": "lsSegs",
+   "speaker": "swiftee",
+   "text": "हर *विकर्ण* दूसरे विकर्ण को\n2 *रेखाखंडों* में\nबाँटता है।",
+   "spoken": "हर विकर्ण दूसरे विकर्ण को दो रेखाखंडों में बाँटता है।",
+   "seconds": 5.33
+  },
+  {
+   "file": "lsMeasureSeg",
+   "key": "lsMeasureSeg",
+   "speaker": "swiftee",
+   "text": "क्या हर *विकर्ण* के\nदोनों *रेखाखंड* *बराबर* हैं?",
+   "spoken": "क्या हर विकर्ण के दोनों रेखाखंड बराबर हैं?",
+   "seconds": 3.37
+  },
+  {
+   "file": "lsCompare",
+   "key": "lsCompare",
+   "speaker": "swiftee",
+   "text": "चलिए, इन *रेखाखंडों* की\nलंबाइयों की तुलना करें।",
+   "spoken": "चलिए, इन रेखाखंडों की लंबाइयों की तुलना करें।",
+   "seconds": 3.89
+  },
+  {
+   "file": "lsMatchSeg",
+   "key": "lsMatchSeg",
+   "speaker": "swiftee",
+   "text": "*रेखाखंडों* को\nउनकी सही जगह पर ड्रैग करें।",
+   "spoken": "रेखाखंडों को उनकी सही जगह पर ड्रैग करें।",
+   "seconds": 2.87
+  },
+  {
+   "file": "lsMatchSegOk",
+   "key": "lsMatchSegOk",
+   "speaker": "swiftee",
+   "text": "बिल्कुल सही! एक ही *विकर्ण* के\nदोनों *रेखाखंड*\n*बराबर* होते हैं।",
+   "spoken": "बिल्कुल सही! एक ही विकर्ण के दोनों रेखाखंड बराबर होते हैं।",
+   "seconds": 5.2
+  },
+  {
+   "file": "lsMatchSegFb",
+   "key": "lsMatchSegFb",
+   "speaker": "swiftee",
+   "text": "उन दोनों की लंबाई एक जैसी नहीं है। लंबाइयाँ फिर से देखें।",
+   "spoken": "उन दोनों की लंबाई एक जैसी नहीं है। लंबाइयाँ फिर से देखें।",
+   "seconds": 4.62
+  },
+  {
+   "file": "lsBisectEq",
+   "key": "lsBisectEq",
+   "speaker": "swiftee",
+   "text": "हर *विकर्ण* को दूसरा विकर्ण\nदो *बराबर* भागों में\nबाँटता है।",
+   "spoken": "हर विकर्ण को दूसरा विकर्ण दो बराबर भागों में बाँटता है।",
+   "seconds": 4.78
+  },
+  {
+   "file": "lsBisect",
+   "key": "lsBisect",
+   "speaker": "swiftee",
+   "text": "तो *समांतर* *चतुर्भुज* के\n*विकर्ण* एक-दूसरे को\n*समद्विभाजित* करते हैं।",
+   "spoken": "तो समांतर चतुर्भुज के विकर्ण एक-दूसरे को समद्विभाजित करते हैं।",
+   "seconds": 6.92
+  },
+  {
+   "file": "lsDiagonalsBisect",
+   "key": "lsDiagonalsBisect",
+   "speaker": "swiftee",
+   "text": "*विकर्ण* एक-दूसरे को *समद्विभाजित* करते हैं।",
+   "spoken": "विकर्ण एक-दूसरे को समद्विभाजित करते हैं।",
+   "seconds": 3.24
+  },
+  {
+   "file": "lsCp3a",
+   "key": "lsCp3a",
+   "speaker": "swiftee",
+   "text": "इस *समांतर* *चतुर्भुज* में,\nAO = 6 सेमी है। OC की\nलंबाई क्या है?",
+   "spoken": "इस समांतर चतुर्भुज में, ए ओ बराबर छह सेंटीमीटर है। ओ सी की लंबाई क्या है?",
+   "seconds": 8.2
+  },
+  {
+   "file": "lsCp3aOk",
+   "key": "lsCp3aOk",
+   "speaker": "swiftee",
+   "text": "हाँ! बिंदु O, AC को आधे में बाँटता है,\nइसलिए OC = 6 सेमी।",
+   "spoken": "हाँ! बिंदु ओ, ए सी को आधे में बाँटता है, इसलिए ओ सी बराबर छह सेंटीमीटर।",
+   "seconds": 7.71
+  },
+  {
+   "file": "lsCp3aFb3",
+   "key": "lsCp3aFb3",
+   "speaker": "swiftee",
+   "text": "OC, AO का आधा नहीं है। OC = AO।",
+   "spoken": "ओ सी, ए ओ का आधा नहीं है। ओ सी बराबर ए ओ।",
+   "seconds": 5.28
+  },
+  {
+   "file": "lsCp3aFb12",
+   "key": "lsCp3aFb12",
+   "speaker": "swiftee",
+   "text": "12 सेमी तो पूरा AC है। OC उसका केवल आधा है।",
+   "spoken": "बारह सेंटीमीटर तो पूरा ए सी है। ओ सी उसका केवल आधा है।",
+   "seconds": 4.68
+  },
+  {
+   "file": "lsCp3b",
+   "key": "lsCp3b",
+   "speaker": "swiftee",
+   "text": "इस *समांतर* *चतुर्भुज* में,\nAO = 5 सेमी और BO = 3 सेमी है।\nOC और OD की\nलंबाइयाँ ज्ञात करें।",
+   "spoken": "इस समांतर चतुर्भुज में, ए ओ बराबर पाँच सेंटीमीटर और बी ओ बराबर तीन सेंटीमीटर है। ओ सी और ओ डी की लंबाइयाँ ज्ञात करें।",
+   "seconds": 11.78
+  },
+  {
+   "file": "lsCp3bOk",
+   "key": "lsCp3bOk",
+   "speaker": "swiftee",
+   "text": "शाबाश! OC = AO = 5 सेमी\nऔर OD = BO = 3 सेमी।",
+   "spoken": "शाबाश! ओ सी बराबर ए ओ बराबर पाँच सेंटीमीटर और ओ डी बराबर बी ओ बराबर तीन सेंटीमीटर।",
+   "seconds": 8.96
+  },
+  {
+   "file": "lsCp3bFbOC",
+   "key": "lsCp3bFbOC",
+   "speaker": "swiftee",
+   "text": "OC, AC का दूसरा आधा भाग है, इसलिए OC = AO।",
+   "spoken": "ओ सी, ए सी का दूसरा आधा भाग है, इसलिए ओ सी बराबर ए ओ।",
+   "seconds": 6.58
+  },
+  {
+   "file": "lsCp3bFbOD",
+   "key": "lsCp3bFbOD",
+   "speaker": "swiftee",
+   "text": "OD, BD का दूसरा आधा भाग है, इसलिए OD = BO।",
+   "spoken": "ओ डी, बी डी का दूसरा आधा भाग है, इसलिए ओ डी बराबर बी ओ।",
+   "seconds": 6.58
+  },
+  {
+   "file": "lsCp3c",
+   "key": "lsCp3c",
+   "speaker": "swiftee",
+   "text": "इनमें से कौन-से कथन\nइस *समांतर* *चतुर्भुज* के लिए सही हैं?\nसभी सही विकल्प चुनें।",
+   "spoken": "इनमें से कौन-से कथन इस समांतर चतुर्भुज के लिए सही हैं? सभी सही विकल्प चुनें।",
+   "seconds": 8.59
+  },
+  {
+   "file": "lsCp3cOk",
+   "key": "lsCp3cOk",
+   "speaker": "swiftee",
+   "text": "एकदम सही! AO = OC, BO = OD,\nइसलिए *विकर्ण* एक-दूसरे को\n*समद्विभाजित* करते हैं।",
+   "spoken": "एकदम सही! ए ओ बराबर ओ सी, बी ओ बराबर ओ डी, इसलिए विकर्ण एक-दूसरे को समद्विभाजित करते हैं।",
+   "seconds": 10.4
+  },
+  {
+   "file": "lsCp3cFbAOBO",
+   "key": "lsCp3cFbAOBO",
+   "speaker": "swiftee",
+   "text": "AO और BO अलग-अलग *विकर्णों* के भाग हैं, इसलिए इनका *बराबर* होना ज़रूरी नहीं।",
+   "spoken": "ए ओ और बी ओ अलग-अलग विकर्णों के भाग हैं, इसलिए इनका बराबर होना ज़रूरी नहीं।",
+   "seconds": 7.18
+  },
+  {
+   "file": "lsCp3cFbACBD",
+   "key": "lsCp3cFbACBD",
+   "speaker": "swiftee",
+   "text": "इस *समांतर* *चतुर्भुज* के दोनों *विकर्णों* की लंबाइयाँ अलग-अलग हैं।",
+   "spoken": "इस समांतर चतुर्भुज के दोनों विकर्णों की लंबाइयाँ अलग-अलग हैं।",
+   "seconds": 5.33
+  },
+  {
+   "file": "lsRecap",
+   "key": "lsRecap",
+   "speaker": "swiftee",
+   "text": "चलिए, याद करें कि हमने\n*समांतर* *चतुर्भुजों* के बारे में क्या सीखा।",
+   "spoken": "चलिए, याद करें कि हमने समांतर चतुर्भुजों के बारे में क्या सीखा।",
+   "seconds": 6.45
+  },
+  {
+   "file": "lsEnd",
+   "key": "lsEnd",
+   "speaker": "swiftee",
+   "text": "कमाल कर दिया! अब आप\n*समांतर* *चतुर्भुजों* के बारे में सब कुछ जानते हैं।",
+   "spoken": "कमाल कर दिया! अब आप समांतर चतुर्भुजों के बारे में सब कुछ जानते हैं।",
+   "seconds": 5.04
+  },
+  {
+   "file": "lsTipDragRight",
+   "key": "lsTipDragRight",
+   "speaker": "swiftee",
+   "text": "BC अभी AD के *समांतर* नहीं है। B को दाईं ओर ड्रैग करते रहें।",
+   "spoken": "बी सी अभी ए डी के समांतर नहीं है। बी को दाईं ओर ड्रैग करते रहें।",
+   "seconds": 6.95
+  },
+  {
+   "file": "lsTipDragBack",
+   "key": "lsTipDragBack",
+   "speaker": "swiftee",
+   "text": "B बहुत आगे चला गया। इसे थोड़ा पीछे ड्रैग करें।",
+   "spoken": "बी बहुत आगे चला गया। इसे थोड़ा पीछे ड्रैग करें।",
+   "seconds": 4.21
+  },
+  {
+   "file": "lsTipTryAgain",
+   "key": "lsTipTryAgain",
+   "speaker": "swiftee",
+   "text": "पूरी तरह सही नहीं। फिर से प्रयास करें।",
+   "spoken": "पूरी तरह सही नहीं। फिर से प्रयास करें।",
+   "seconds": 3.16
+  },
+  {
+   "file": "sumParallelogram",
+   "key": "sumParallelogram",
+   "speaker": "swiftee",
+   "text": "*समांतर* *चतुर्भुज* वह *चतुर्भुज* है, जिसमें *सम्मुख* *भुजाओं* के दोनों जोड़े *समांतर* होते हैं।",
+   "spoken": "समांतर चतुर्भुज वह चतुर्भुज है, जिसमें सम्मुख भुजाओं के दोनों जोड़े समांतर होते हैं।",
+   "seconds": 9.14
+  },
+  {
+   "file": "sumParallel",
+   "key": "sumParallel",
+   "speaker": "swiftee",
+   "text": "*सम्मुख* *भुजाएँ* *समांतर* होती हैं।",
+   "spoken": "सम्मुख भुजाएँ समांतर होती हैं।",
+   "seconds": 2.46
+  },
+  {
+   "file": "sumEqual",
+   "key": "sumEqual",
+   "speaker": "swiftee",
+   "text": "*सम्मुख* *भुजाएँ* *बराबर* होती हैं।",
+   "spoken": "सम्मुख भुजाएँ बराबर होती हैं।",
+   "seconds": 2.53
+  },
+  {
+   "file": "sumAngles",
+   "key": "sumAngles",
+   "speaker": "swiftee",
+   "text": "*सम्मुख* *कोण* *बराबर* होते हैं।",
+   "spoken": "सम्मुख कोण बराबर होते हैं।",
+   "seconds": 2.17
+  },
+  {
+   "file": "sumSupplementary",
+   "key": "sumSupplementary",
+   "speaker": "swiftee",
+   "text": "*आसन्न* *कोण* *संपूरक* होते हैं। इनका योग *180°* होता है।",
+   "spoken": "आसन्न कोण संपूरक होते हैं। इनका योग एक सौ अस्सी डिग्री होता है।",
+   "seconds": 6.45
+  }
+ ]
+}
