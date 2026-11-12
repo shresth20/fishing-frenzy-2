@@ -1,4 +1,4 @@
-// Builds a language's recorded voice-over (e.g. Hindi: assets/VO-HI/, Marathi: assets/VO-MR/) from its masters, for both parts of the journey.
+// Builds a language's recorded voice-over (e.g. Hindi: assets/VO-HI/, Marathi: assets/VO-MR/, Gujarati: assets/VO-GU/) from its masters, for both parts of the journey.
 //
 //   node tools/vo_lang_build.js hi [--all]
 //
@@ -45,6 +45,12 @@ const SAID = {
       65: 'पासष्ट', 68: 'अडुसष्ट', 70: 'सत्तर', 72: 'बहात्तर', 90: 'नव्वद', 108: 'एकशे आठ', 110: 'एकशे दहा', 115: 'एकशे पंधरा', 180: 'एकशे ऐंशी' },
     letters: { A: 'ए', B: 'बी', C: 'सी', D: 'डी', O: 'ओ' },
     words: { '∥': ' ला समांतर आहे ', '∠': 'कोन ', '°': ' अंश', '+': ' अधिक ', '=': ' बरोबर ', '−': ' वजा ', 'सेमी': 'सेंटीमीटर' },
+  },
+  gu: {
+    num: { 0: 'શૂન્ય', 1: 'એક', 2: 'બે', 3: 'ત્રણ', 4: 'ચાર', 5: 'પાંચ', 6: 'છ', 7: 'સાત', 8: 'આઠ', 9: 'નવ', 12: 'બાર', 25: 'પચ્ચીસ',
+      65: 'પાંસઠ', 68: 'અડસઠ', 70: 'સિત્તેર', 72: 'બોંતેર', 90: 'નેવું', 108: 'એકસો આઠ', 110: 'એકસો દસ', 115: 'એકસો પંદર', 180: 'એકસો એંસી' },
+    letters: { A: 'એ', B: 'બી', C: 'સી', D: 'ડી', O: 'ઓ' },
+    words: { '∥': ' ને સમાંતર છે ', '∠': 'ખૂણો ', '°': ' અંશ', '+': ' વત્તા ', '=': ' બરાબર ', '−': ' ઓછા ', 'સેમી': 'સેન્ટિમીટર' },
   },
 };
 function saidLen(w) {

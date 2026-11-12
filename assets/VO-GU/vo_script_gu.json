@@ -1,0 +1,1801 @@
+{
+ "about": "Gujarati voice-over: one clip per locales.json \"gu\" key (a value variant as key.<value>). Recorded with ElevenLabs (model below; masters/<file>.mp3) by tools/vo_lang_record.js; the game plays <file>.ogg (Ogg Opus 32 kbps mono, -16.4 LUFS) made by tools/vo_lang_build.js, which also writes vo_gu.js. \"text\" is the line as the screen shows it; \"spoken\" is what the voice was given (notation said in words); \"seconds\" is the clip's length.",
+ "model": "eleven_v4",
+ "language_code": "gu",
+ "voices": {
+  "swiftee": {
+   "name": "Hetalben - Young Gujarati Customer Care",
+   "voice_id": "1wX3DrX9Q7x2fkeiljyg"
+  },
+  "popo": {
+   "name": "Bhavesh Bhai - Expressive Gujarati Friend",
+   "voice_id": "UHwU6ReRgTsCs68KHc6C"
+  }
+ },
+ "settings": {
+  "swiftee": {
+   "stability": 0.5,
+   "similarity_boost": 0.8,
+   "style": 0.15,
+   "use_speaker_boost": true
+  },
+  "popo": {
+   "stability": 0.5,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true
+  },
+  "seed": 4242
+ },
+ "not_recorded": [
+  {
+   "key": "loadArtFailed",
+   "why": "filled with a browser error message at run time",
+   "text": "રમતનાં ચિત્રો લોડ થઈ શક્યાં નહીં ({error})."
+  },
+  {
+   "key": "ariaFishCaught",
+   "why": "filled with the running fish count at run time",
+   "text": "પકડેલી માછલીઓ: {n}"
+  }
+ ],
+ "recorded": {
+  "date": "2026-11-12",
+  "credits_charged": 4588,
+  "note": "eleven_v4 charged about 0.48 credits per character of spoken text"
+ },
+ "clips": [
+  {
+   "file": "gameTitle",
+   "key": "gameTitle",
+   "speaker": "swiftee",
+   "text": "ફિશિંગ ફ્રેન્ઝી 2",
+   "spoken": "ફિશિંગ ફ્રેન્ઝી ટુ",
+   "seconds": 1.52
+  },
+  {
+   "file": "gettingReady",
+   "key": "gettingReady",
+   "speaker": "swiftee",
+   "text": "તૈયારી થઈ રહી છે…",
+   "spoken": "તૈયારી થઈ રહી છે…",
+   "seconds": 1.6
+  },
+  {
+   "file": "loadFailed",
+   "key": "loadFailed",
+   "speaker": "swiftee",
+   "text": "રમત લોડ થઈ શકી નહીં.",
+   "spoken": "રમત લોડ થઈ શકી નહીં.",
+   "seconds": 2
+  },
+  {
+   "file": "tryAgain",
+   "key": "tryAgain",
+   "speaker": "swiftee",
+   "text": "ફરી પ્રયાસ કરો",
+   "spoken": "ફરી પ્રયાસ કરો",
+   "seconds": 1.2
+  },
+  {
+   "file": "rotateHint",
+   "key": "rotateHint",
+   "speaker": "swiftee",
+   "text": "શ્રેષ્ઠ અનુભવ માટે તમારું ઉપકરણ ફેરવો",
+   "spoken": "શ્રેષ્ઠ અનુભવ માટે તમારું ઉપકરણ ફેરવો",
+   "seconds": 3.28
+  },
+  {
+   "file": "partLesson",
+   "key": "partLesson",
+   "speaker": "swiftee",
+   "text": "સ્વિફ્ટીનો સમાંતરબાજુ ચતુષ્કોણનો પાઠ",
+   "spoken": "સ્વિફ્ટીનો સમાંતરબાજુ ચતુષ્કોણનો પાઠ",
+   "seconds": 3.04
+  },
+  {
+   "file": "partFishing",
+   "key": "partFishing",
+   "speaker": "swiftee",
+   "text": "પોપોની સમાંતરબાજુ ચતુષ્કોણ જાળો",
+   "spoken": "પોપોની સમાંતરબાજુ ચતુષ્કોણ જાળો",
+   "seconds": 2.72
+  },
+  {
+   "file": "loading",
+   "key": "loading",
+   "speaker": "swiftee",
+   "text": "લોડ થઈ રહ્યું છે…",
+   "spoken": "લોડ થઈ રહ્યું છે…",
+   "seconds": 1.76
+  },
+  {
+   "file": "ariaPlay",
+   "key": "ariaPlay",
+   "speaker": "swiftee",
+   "text": "રમો",
+   "spoken": "રમો",
+   "seconds": 0.64
+  },
+  {
+   "file": "ariaNetCorner",
+   "key": "ariaNetCorner",
+   "speaker": "swiftee",
+   "text": "જાળનો ખૂણો. તેને ડ્રેગ કરો, અથવા એરો કી વડે ખસેડો અને એન્ટર દબાવો.",
+   "spoken": "જાળનો ખૂણો. તેને ડ્રેગ કરો, અથવા એરો કી વડે ખસેડો અને એન્ટર દબાવો.",
+   "seconds": 6.08
+  },
+  {
+   "file": "ariaStepBack",
+   "key": "ariaStepBack",
+   "speaker": "swiftee",
+   "text": "ખૂણાને એક પગલું પાછળ ખસેડો",
+   "spoken": "ખૂણાને એક પગલું પાછળ ખસેડો",
+   "seconds": 2.56
+  },
+  {
+   "file": "ariaStepOn",
+   "key": "ariaStepOn",
+   "speaker": "swiftee",
+   "text": "ખૂણાને એક પગલું આગળ ખસેડો",
+   "spoken": "ખૂણાને એક પગલું આગળ ખસેડો",
+   "seconds": 2.48
+  },
+  {
+   "file": "ariaSoundOn",
+   "key": "ariaSoundOn",
+   "speaker": "swiftee",
+   "text": "અવાજ ચાલુ",
+   "spoken": "અવાજ ચાલુ",
+   "seconds": 1.28
+  },
+  {
+   "file": "ariaSoundOff",
+   "key": "ariaSoundOff",
+   "speaker": "swiftee",
+   "text": "અવાજ બંધ",
+   "spoken": "અવાજ બંધ",
+   "seconds": 1.2
+  },
+  {
+   "file": "ariaPause",
+   "key": "ariaPause",
+   "speaker": "swiftee",
+   "text": "થોભો",
+   "spoken": "થોભો",
+   "seconds": 0.8
+  },
+  {
+   "file": "ariaPaused",
+   "key": "ariaPaused",
+   "speaker": "swiftee",
+   "text": "થોભાવેલ",
+   "spoken": "થોભાવેલ",
+   "seconds": 0.96
+  },
+  {
+   "file": "btnCheck",
+   "key": "btnCheck",
+   "speaker": "swiftee",
+   "text": "તપાસો",
+   "spoken": "તપાસો",
+   "seconds": 0.96
+  },
+  {
+   "file": "btnCatch",
+   "key": "btnCatch",
+   "speaker": "swiftee",
+   "text": "પકડો",
+   "spoken": "પકડો",
+   "seconds": 0.8
+  },
+  {
+   "file": "btnDropNet",
+   "key": "btnDropNet",
+   "speaker": "swiftee",
+   "text": "જાળ નાખો",
+   "spoken": "જાળ નાખો",
+   "seconds": 1.2
+  },
+  {
+   "file": "btnResume",
+   "key": "btnResume",
+   "speaker": "swiftee",
+   "text": "ફરી શરૂ કરો",
+   "spoken": "ફરી શરૂ કરો",
+   "seconds": 1.04
+  },
+  {
+   "file": "btnRestart",
+   "key": "btnRestart",
+   "speaker": "swiftee",
+   "text": "ફરીથી શરૂ કરો",
+   "spoken": "ફરીથી શરૂ કરો",
+   "seconds": 1.2
+  },
+  {
+   "file": "pauseKicker",
+   "key": "pauseKicker",
+   "speaker": "swiftee",
+   "text": "થોડો આરામ કરો",
+   "spoken": "થોડો આરામ કરો",
+   "seconds": 1.28
+  },
+  {
+   "file": "pauseTitle",
+   "key": "pauseTitle",
+   "speaker": "swiftee",
+   "text": "સાહસ થોભાવ્યું છે",
+   "spoken": "સાહસ થોભાવ્યું છે",
+   "seconds": 1.68
+  },
+  {
+   "file": "pauseText",
+   "key": "pauseText",
+   "speaker": "swiftee",
+   "text": "તમારી આગલી માછલી રાહ જોઈ શકે છે.",
+   "spoken": "તમારી આગલી માછલી રાહ જોઈ શકે છે.",
+   "seconds": 2.72
+  },
+  {
+   "file": "goalTitle",
+   "key": "goalTitle",
+   "speaker": "swiftee",
+   "text": "સરસ માછીમારી, પોપો!",
+   "spoken": "સરસ માછીમારી, પોપો!",
+   "seconds": 2.48
+  },
+  {
+   "file": "goalSub",
+   "key": "goalSub",
+   "speaker": "swiftee",
+   "text": "તમારી મદદથી પોપોએ પકડી...",
+   "spoken": "તમારી મદદથી પોપોએ પકડી...",
+   "seconds": 2.4
+  },
+  {
+   "file": "goalYourCatch",
+   "key": "goalYourCatch",
+   "speaker": "swiftee",
+   "text": "તમારી પકડ",
+   "spoken": "તમારી પકડ",
+   "seconds": 1.2
+  },
+  {
+   "file": "goalMaxPossible",
+   "key": "goalMaxPossible",
+   "speaker": "swiftee",
+   "text": "વધુમાં વધુ શક્ય",
+   "spoken": "વધુમાં વધુ શક્ય",
+   "seconds": 1.6
+  },
+  {
+   "file": "goalFish",
+   "key": "goalFish",
+   "speaker": "swiftee",
+   "text": "માછલી",
+   "spoken": "માછલી",
+   "seconds": 0.8
+  },
+  {
+   "file": "goalLine",
+   "key": "goalLine",
+   "speaker": "swiftee",
+   "text": "આગલી વખતે વધુ માછલીઓ પકડી શકશો?",
+   "spoken": "આગલી વખતે વધુ માછલીઓ પકડી શકશો?",
+   "seconds": 2.64
+  },
+  {
+   "file": "goalTryAgain",
+   "key": "goalTryAgain",
+   "speaker": "swiftee",
+   "text": "ફરી પ્રયાસ કરો",
+   "spoken": "ફરી પ્રયાસ કરો",
+   "seconds": 1.2
+  },
+  {
+   "file": "unitCm",
+   "key": "unitCm",
+   "speaker": "swiftee",
+   "text": "સેમી",
+   "spoken": "સેન્ટિમીટર",
+   "seconds": 1.2
+  },
+  {
+   "file": "popoHuh",
+   "key": "popoHuh",
+   "speaker": "popo",
+   "text": "હેં?!",
+   "spoken": "હેં?!",
+   "seconds": 0.8
+  },
+  {
+   "file": "popoWoah",
+   "key": "popoWoah",
+   "speaker": "popo",
+   "text": "*ઓહો!*",
+   "spoken": "ઓહો!",
+   "seconds": 1.2
+  },
+  {
+   "file": "popoWow",
+   "key": "popoWow",
+   "speaker": "popo",
+   "text": "*વાહ!*",
+   "spoken": "વાહ!",
+   "seconds": 0.96
+  },
+  {
+   "file": "popoWhatACatch",
+   "key": "popoWhatACatch",
+   "speaker": "popo",
+   "text": "કેવી જોરદાર *પકડ!*",
+   "spoken": "કેવી જોરદાર પકડ!",
+   "seconds": 2.08
+  },
+  {
+   "file": "popoGreatCatch",
+   "key": "popoGreatCatch",
+   "speaker": "popo",
+   "text": "સરસ *પકડ!*",
+   "spoken": "સરસ પકડ!",
+   "seconds": 1.36
+  },
+  {
+   "file": "popoHaHaHa",
+   "key": "popoHaHaHa",
+   "speaker": "popo",
+   "text": "હા હા *હા!*",
+   "spoken": "હા હા હા!",
+   "seconds": 1.44
+  },
+  {
+   "file": "hookH1",
+   "key": "hookH1",
+   "speaker": "swiftee",
+   "text": "પોપો આજે માછલી પકડવા ગયો હતો.",
+   "spoken": "પોપો આજે માછલી પકડવા ગયો હતો.",
+   "seconds": 2.32
+  },
+  {
+   "file": "hookH2",
+   "key": "hookH2",
+   "speaker": "popo",
+   "text": "ચાલો, ઘણી બધી *માછલીઓ* પકડીએ!",
+   "spoken": "ચાલો, ઘણી બધી માછલીઓ પકડીએ!",
+   "seconds": 2.8
+  },
+  {
+   "file": "hookH3",
+   "key": "hookH3",
+   "speaker": "popo",
+   "text": "અરે રે! આ જાળ *ગૂંચવાઈ* ગઈ.",
+   "spoken": "અરે રે! આ જાળ ગૂંચવાઈ ગઈ.",
+   "seconds": 2.96
+  },
+  {
+   "file": "hookH4",
+   "key": "hookH4",
+   "speaker": "swiftee",
+   "text": "પોપોએ જાળના જુદા જુદા આકાર અજમાવ્યા, પણ તે વારંવાર *ગૂંચવાઈ* જતી.",
+   "spoken": "પોપોએ જાળના જુદા જુદા આકાર અજમાવ્યા, પણ તે વારંવાર ગૂંચવાઈ જતી.",
+   "seconds": 5.12
+  },
+  {
+   "file": "hookH5",
+   "key": "hookH5",
+   "speaker": "popo",
+   "text": "મારે એવી જાળ જોઈએ જે પાણીમાં *ખુલ્લી* રહે!",
+   "spoken": "મારે એવી જાળ જોઈએ જે પાણીમાં ખુલ્લી રહે!",
+   "seconds": 3.68
+  },
+  {
+   "file": "hookWhoa",
+   "key": "hookWhoa",
+   "speaker": "popo",
+   "text": "અરે વાહ! એક *વિશાળ* માછલી!",
+   "spoken": "અરે વાહ! એક વિશાળ માછલી!",
+   "seconds": 2.88
+  },
+  {
+   "file": "hookH6",
+   "key": "hookH6",
+   "speaker": "popo",
+   "text": "અરે! આ જાળ *ખુલ્લી* રહી!",
+   "spoken": "અરે! આ જાળ ખુલ્લી રહી!",
+   "seconds": 2.16
+  },
+  {
+   "file": "hookH7",
+   "key": "hookH7",
+   "speaker": "popo",
+   "text": "કામ થઈ ગયું! આ કયો *આકાર* છે?",
+   "spoken": "કામ થઈ ગયું! આ કયો આકાર છે?",
+   "seconds": 3.2
+  },
+  {
+   "file": "hookH8",
+   "key": "hookH8",
+   "speaker": "swiftee",
+   "text": "આ આકારને *સમાંતરબાજુ* *ચતુષ્કોણ* કહેવાય છે.",
+   "spoken": "આ આકારને સમાંતરબાજુ ચતુષ્કોણ કહેવાય છે.",
+   "seconds": 3.36
+  },
+  {
+   "file": "hookH9",
+   "key": "hookH9",
+   "speaker": "popo",
+   "text": "સમાંતરબાજુ ચતુષ્કોણ? એ કયો *આકાર* છે?",
+   "spoken": "સમાંતરબાજુ ચતુષ્કોણ? એ કયો આકાર છે?",
+   "seconds": 3.84
+  },
+  {
+   "file": "hookH10",
+   "key": "hookH10",
+   "speaker": "swiftee",
+   "text": "ચાલો *જાણીએ!*",
+   "spoken": "ચાલો જાણીએ!",
+   "seconds": 1.28
+  },
+  {
+   "file": "welcomeGreatJob",
+   "key": "welcomeGreatJob",
+   "speaker": "swiftee",
+   "text": "*સરસ* કામ!",
+   "spoken": "સરસ કામ!",
+   "seconds": 1.04
+  },
+  {
+   "file": "helpPopoCatch",
+   "key": "helpPopoCatch",
+   "speaker": "swiftee",
+   "text": "હવે, ચાલો પોપોને થોડી *માછલીઓ* પકડવામાં મદદ કરીએ!",
+   "spoken": "હવે, ચાલો પોપોને થોડી માછલીઓ પકડવામાં મદદ કરીએ!",
+   "seconds": 4.16
+  },
+  {
+   "file": "netDragB",
+   "key": "netDragB",
+   "speaker": "swiftee",
+   "text": "જાળને *સમાંતરબાજુ* *ચતુષ્કોણ* બનાવવા માટે શિરોબિંદુ B ને ડ્રેગ કરો.",
+   "spoken": "જાળને સમાંતરબાજુ ચતુષ્કોણ બનાવવા માટે શિરોબિંદુ બી ને ડ્રેગ કરો.",
+   "seconds": 5.12
+  },
+  {
+   "file": "hintAbLonger",
+   "key": "hintAbLonger",
+   "speaker": "swiftee",
+   "text": "સમાંતરબાજુ ચતુષ્કોણની સામસામેની બાજુઓ સમાન હોય છે. AB ને *લાંબી* કરો.",
+   "spoken": "સમાંતરબાજુ ચતુષ્કોણની સામસામેની બાજુઓ સમાન હોય છે. એ બી ને લાંબી કરો.",
+   "seconds": 6
+  },
+  {
+   "file": "hintAbShorter",
+   "key": "hintAbShorter",
+   "speaker": "swiftee",
+   "text": "સમાંતરબાજુ ચતુષ્કોણની સામસામેની બાજુઓ સમાન હોય છે. AB ને *ટૂંકી* કરો.",
+   "spoken": "સમાંતરબાજુ ચતુષ્કોણની સામસામેની બાજુઓ સમાન હોય છે. એ બી ને ટૂંકી કરો.",
+   "seconds": 6
+  },
+  {
+   "file": "netDragC",
+   "key": "netDragC",
+   "speaker": "swiftee",
+   "text": "જાળને *સમાંતરબાજુ* *ચતુષ્કોણ* બનાવવા માટે શિરોબિંદુ C ને ડ્રેગ કરો.",
+   "spoken": "જાળને સમાંતરબાજુ ચતુષ્કોણ બનાવવા માટે શિરોબિંદુ સી ને ડ્રેગ કરો.",
+   "seconds": 5.04
+  },
+  {
+   "file": "hintBcLonger",
+   "key": "hintBcLonger",
+   "speaker": "swiftee",
+   "text": "સમાંતરબાજુ ચતુષ્કોણની સામસામેની બાજુઓ સમાન હોય છે. BC ને *લાંબી* કરો.",
+   "spoken": "સમાંતરબાજુ ચતુષ્કોણની સામસામેની બાજુઓ સમાન હોય છે. બી સી ને લાંબી કરો.",
+   "seconds": 5.92
+  },
+  {
+   "file": "hintBcShorter",
+   "key": "hintBcShorter",
+   "speaker": "swiftee",
+   "text": "સમાંતરબાજુ ચતુષ્કોણની સામસામેની બાજુઓ સમાન હોય છે. BC ને *ટૂંકી* કરો.",
+   "spoken": "સમાંતરબાજુ ચતુષ્કોણની સામસામેની બાજુઓ સમાન હોય છે. બી સી ને ટૂંકી કરો.",
+   "seconds": 5.84
+  },
+  {
+   "file": "hintCdLonger",
+   "key": "hintCdLonger",
+   "speaker": "swiftee",
+   "text": "સામસામેની બાજુઓ સમાન હોય છે. CD ને *લાંબી* કરો.",
+   "spoken": "સામસામેની બાજુઓ સમાન હોય છે. સી ડી ને લાંબી કરો.",
+   "seconds": 4.4
+  },
+  {
+   "file": "hintCdShorter",
+   "key": "hintCdShorter",
+   "speaker": "swiftee",
+   "text": "સામસામેની બાજુઓ સમાન હોય છે. CD ને *ટૂંકી* કરો.",
+   "spoken": "સામસામેની બાજુઓ સમાન હોય છે. સી ડી ને ટૂંકી કરો.",
+   "seconds": 4.32
+  },
+  {
+   "file": "netDragD",
+   "key": "netDragD",
+   "speaker": "swiftee",
+   "text": "જાળને *સમાંતરબાજુ* *ચતુષ્કોણ* બનાવવા માટે શિરોબિંદુ D ને ડ્રેગ કરો.",
+   "spoken": "જાળને સમાંતરબાજુ ચતુષ્કોણ બનાવવા માટે શિરોબિંદુ ડી ને ડ્રેગ કરો.",
+   "seconds": 5.2
+  },
+  {
+   "file": "hintCdAdLonger",
+   "key": "hintCdAdLonger",
+   "speaker": "swiftee",
+   "text": "સામસામેની બાજુઓ સમાન હોય છે. CD અને AD ને *લાંબી* કરો.",
+   "spoken": "સામસામેની બાજુઓ સમાન હોય છે. સી ડી અને એ ડી ને લાંબી કરો.",
+   "seconds": 5.2
+  },
+  {
+   "file": "hintCdAdShorter",
+   "key": "hintCdAdShorter",
+   "speaker": "swiftee",
+   "text": "સામસામેની બાજુઓ સમાન હોય છે. CD અને AD ને *ટૂંકી* કરો.",
+   "spoken": "સામસામેની બાજુઓ સમાન હોય છે. સી ડી અને એ ડી ને ટૂંકી કરો.",
+   "seconds": 5.28
+  },
+  {
+   "file": "hintAngleCBigger",
+   "key": "hintAngleCBigger",
+   "speaker": "swiftee",
+   "text": "સામસામેના ખૂણા સમાન હોય છે. ∠C ને *મોટો* કરો.",
+   "spoken": "સામસામેના ખૂણા સમાન હોય છે. ખૂણા સી ને મોટો કરો.",
+   "seconds": 4.32
+  },
+  {
+   "file": "hintAngleCSmaller",
+   "key": "hintAngleCSmaller",
+   "speaker": "swiftee",
+   "text": "સામસામેના ખૂણા સમાન હોય છે. ∠C ને *નાનો* કરો.",
+   "spoken": "સામસામેના ખૂણા સમાન હોય છે. ખૂણા સી ને નાનો કરો.",
+   "seconds": 4.24
+  },
+  {
+   "file": "hintAngleBBigger",
+   "key": "hintAngleBBigger",
+   "speaker": "swiftee",
+   "text": "પાસપાસેના ખૂણાઓનો સરવાળો 180° થાય છે. ∠B ને *મોટો* કરો.",
+   "spoken": "પાસપાસેના ખૂણાઓનો સરવાળો એકસો એંસી અંશ થાય છે. ખૂણા બી ને મોટો કરો.",
+   "seconds": 5.68
+  },
+  {
+   "file": "hintAngleBSmaller",
+   "key": "hintAngleBSmaller",
+   "speaker": "swiftee",
+   "text": "પાસપાસેના ખૂણાઓનો સરવાળો 180° થાય છે. ∠B ને *નાનો* કરો.",
+   "spoken": "પાસપાસેના ખૂણાઓનો સરવાળો એકસો એંસી અંશ થાય છે. ખૂણા બી ને નાનો કરો.",
+   "seconds": 5.68
+  },
+  {
+   "file": "hintOcLonger",
+   "key": "hintOcLonger",
+   "speaker": "swiftee",
+   "text": "વિકર્ણો એકબીજાને દુભાગે છે. OC ને *લાંબો* કરો.",
+   "spoken": "વિકર્ણો એકબીજાને દુભાગે છે. ઓ સી ને લાંબો કરો.",
+   "seconds": 4.32
+  },
+  {
+   "file": "hintOcShorter",
+   "key": "hintOcShorter",
+   "speaker": "swiftee",
+   "text": "વિકર્ણો એકબીજાને દુભાગે છે. OC ને *ટૂંકો* કરો.",
+   "spoken": "વિકર્ણો એકબીજાને દુભાગે છે. ઓ સી ને ટૂંકો કરો.",
+   "seconds": 4.16
+  },
+  {
+   "file": "lessonPageTitle",
+   "key": "lessonPageTitle",
+   "speaker": "swiftee",
+   "text": "સમાંતરબાજુ ચતુષ્કોણનો પાઠ · ફિશિંગ ફ્રેન્ઝી 2",
+   "spoken": "સમાંતરબાજુ ચતુષ્કોણનો પાઠ, ફિશિંગ ફ્રેન્ઝી ટુ",
+   "seconds": 3.92
+  },
+  {
+   "file": "ariaBoard",
+   "key": "ariaBoard",
+   "speaker": "swiftee",
+   "text": "સમાંતરબાજુ ચતુષ્કોણ ABCD",
+   "spoken": "સમાંતરબાજુ ચતુષ્કોણ એ બી સી ડી",
+   "seconds": 4.32
+  },
+  {
+   "file": "ariaShape.A",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "આકાર {name}",
+   "spoken": "આકાર એ",
+   "seconds": 1.12
+  },
+  {
+   "file": "ariaShape.B",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "આકાર {name}",
+   "spoken": "આકાર બી",
+   "seconds": 1.12
+  },
+  {
+   "file": "ariaShape.C",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "આકાર {name}",
+   "spoken": "આકાર સી",
+   "seconds": 1.12
+  },
+  {
+   "file": "ariaShape.D",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "આકાર {name}",
+   "spoken": "આકાર ડી",
+   "seconds": 1.2
+  },
+  {
+   "file": "ariaAnswerBox.CD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "જવાબનું ખાનું {name}",
+   "spoken": "જવાબનું ખાનું સી ડી",
+   "seconds": 2.32
+  },
+  {
+   "file": "ariaAnswerBox.AD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "જવાબનું ખાનું {name}",
+   "spoken": "જવાબનું ખાનું એ ડી",
+   "seconds": 2.16
+  },
+  {
+   "file": "ariaAnswerBox.angleB",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "જવાબનું ખાનું {name}",
+   "spoken": "જવાબનું ખાનું ખૂણો બી",
+   "seconds": 1.92
+  },
+  {
+   "file": "ariaAnswerBox.angleC",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "જવાબનું ખાનું {name}",
+   "spoken": "જવાબનું ખાનું ખૂણો સી",
+   "seconds": 2.08
+  },
+  {
+   "file": "ariaAnswerBox.angleD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "જવાબનું ખાનું {name}",
+   "spoken": "જવાબનું ખાનું ખૂણો ડી",
+   "seconds": 2.32
+  },
+  {
+   "file": "ariaAnswerBox.OC",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "જવાબનું ખાનું {name}",
+   "spoken": "જવાબનું ખાનું ઓ સી",
+   "seconds": 2.32
+  },
+  {
+   "file": "ariaAnswerBox.OD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "જવાબનું ખાનું {name}",
+   "spoken": "જવાબનું ખાનું ઓ ડી",
+   "seconds": 2.56
+  },
+  {
+   "file": "altSwiftee",
+   "key": "altSwiftee",
+   "speaker": "swiftee",
+   "text": "સ્વિફ્ટી પક્ષી",
+   "spoken": "સ્વિફ્ટી પક્ષી",
+   "seconds": 1.28
+  },
+  {
+   "file": "btnNext",
+   "key": "btnNext",
+   "speaker": "swiftee",
+   "text": "આગળ",
+   "spoken": "આગળ",
+   "seconds": 0.64
+  },
+  {
+   "file": "lessonComplete",
+   "key": "lessonComplete",
+   "speaker": "swiftee",
+   "text": "પાઠ પૂરો થયો!",
+   "spoken": "પાઠ પૂરો થયો!",
+   "seconds": 1.28
+  },
+  {
+   "file": "lessonPlayAgain",
+   "key": "lessonPlayAgain",
+   "speaker": "swiftee",
+   "text": "ફરી રમો",
+   "spoken": "ફરી રમો",
+   "seconds": 0.88
+  },
+  {
+   "file": "lessonPauseTitle",
+   "key": "lessonPauseTitle",
+   "speaker": "swiftee",
+   "text": "પાઠ થોભાવ્યો છે",
+   "spoken": "પાઠ થોભાવ્યો છે",
+   "seconds": 1.44
+  },
+  {
+   "file": "lessonPauseText",
+   "key": "lessonPauseText",
+   "speaker": "swiftee",
+   "text": "સ્વિફ્ટી તમારી રાહ જોશે.",
+   "spoken": "સ્વિફ્ટી તમારી રાહ જોશે.",
+   "seconds": 1.92
+  },
+  {
+   "file": "lessonScore.0",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "તમે {total} માંથી {right} ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "spoken": "તમે નવમાંથી શૂન્ય ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "seconds": 4.64
+  },
+  {
+   "file": "lessonScore.1",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "તમે {total} માંથી {right} ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "spoken": "તમે નવમાંથી એક ચેકપોઇન્ટ પડકાર પહેલા પ્રયાસમાં જ સાચો કર્યો.",
+   "seconds": 4.64
+  },
+  {
+   "file": "lessonScore.2",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "તમે {total} માંથી {right} ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "spoken": "તમે નવમાંથી બે ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "seconds": 4.4
+  },
+  {
+   "file": "lessonScore.3",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "તમે {total} માંથી {right} ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "spoken": "તમે નવમાંથી ત્રણ ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "seconds": 4.48
+  },
+  {
+   "file": "lessonScore.4",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "તમે {total} માંથી {right} ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "spoken": "તમે નવમાંથી ચાર ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "seconds": 4.56
+  },
+  {
+   "file": "lessonScore.5",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "તમે {total} માંથી {right} ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "spoken": "તમે નવમાંથી પાંચ ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "seconds": 4.48
+  },
+  {
+   "file": "lessonScore.6",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "તમે {total} માંથી {right} ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "spoken": "તમે નવમાંથી છ ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "seconds": 4.48
+  },
+  {
+   "file": "lessonScore.7",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "તમે {total} માંથી {right} ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "spoken": "તમે નવમાંથી સાત ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "seconds": 4.56
+  },
+  {
+   "file": "lessonScore.8",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "તમે {total} માંથી {right} ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "spoken": "તમે નવમાંથી આઠ ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "seconds": 4.56
+  },
+  {
+   "file": "lessonScore.9",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "તમે {total} માંથી {right} ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "spoken": "તમે નવમાંથી નવ ચેકપોઇન્ટ પડકારો પહેલા પ્રયાસમાં જ સાચા કર્યા.",
+   "seconds": 4.4
+  },
+  {
+   "file": "ariaSummary",
+   "key": "ariaSummary",
+   "speaker": "swiftee",
+   "text": "સારાંશ",
+   "spoken": "સારાંશ",
+   "seconds": 0.96
+  },
+  {
+   "file": "wordTrapezium",
+   "key": "wordTrapezium",
+   "speaker": "swiftee",
+   "text": "સમલંબ ચતુષ્કોણ",
+   "spoken": "સમલંબ ચતુષ્કોણ",
+   "seconds": 1.68
+  },
+  {
+   "file": "wordParallelogram",
+   "key": "wordParallelogram",
+   "speaker": "swiftee",
+   "text": "સમાંતરબાજુ ચતુષ્કોણ",
+   "spoken": "સમાંતરબાજુ ચતુષ્કોણ",
+   "seconds": 2.08
+  },
+  {
+   "file": "capParallelSides",
+   "key": "capParallelSides",
+   "speaker": "swiftee",
+   "text": "સમાંતર બાજુઓ",
+   "spoken": "સમાંતર બાજુઓ",
+   "seconds": 1.52
+  },
+  {
+   "file": "capEqualSides",
+   "key": "capEqualSides",
+   "speaker": "swiftee",
+   "text": "સમાન બાજુઓ",
+   "spoken": "સમાન બાજુઓ",
+   "seconds": 1.52
+  },
+  {
+   "file": "capEqualAngles",
+   "key": "capEqualAngles",
+   "speaker": "swiftee",
+   "text": "સમાન ખૂણાઓ",
+   "spoken": "સમાન ખૂણાઓ",
+   "seconds": 1.52
+  },
+  {
+   "file": "capSupplementary",
+   "key": "capSupplementary",
+   "speaker": "swiftee",
+   "text": "પૂરકકોણ",
+   "spoken": "પૂરકકોણ",
+   "seconds": 0.96
+  },
+  {
+   "file": "capEqualHalves",
+   "key": "capEqualHalves",
+   "speaker": "swiftee",
+   "text": "સમાન અડધા ભાગ",
+   "spoken": "સમાન અડધા ભાગ",
+   "seconds": 1.68
+  },
+  {
+   "file": "capDiagonals",
+   "key": "capDiagonals",
+   "speaker": "swiftee",
+   "text": "વિકર્ણો",
+   "spoken": "વિકર્ણો",
+   "seconds": 1.04
+  },
+  {
+   "file": "lsIntro",
+   "key": "lsIntro",
+   "speaker": "swiftee",
+   "text": "આપણે પહેલાં *ચતુષ્કોણ* વિશે\nશીખ્યા હતા.",
+   "spoken": "આપણે પહેલાં ચતુષ્કોણ વિશે શીખ્યા હતા.",
+   "seconds": 2.56
+  },
+  {
+   "file": "lsQuadSides",
+   "key": "lsQuadSides",
+   "speaker": "swiftee",
+   "text": "કોઈ પણ *બહુકોણ* જેને 4 *બાજુઓ* હોય,\nતેને *ચતુષ્કોણ* કહેવાય છે.",
+   "spoken": "કોઈ પણ બહુકોણ જેને ચાર બાજુઓ હોય, તેને ચતુષ્કોણ કહેવાય છે.",
+   "seconds": 5.12
+  },
+  {
+   "file": "lsSpecial",
+   "key": "lsSpecial",
+   "speaker": "swiftee",
+   "text": "આ એક ખાસ પ્રકારનો\n*ચતુષ્કોણ* છે, જેને *સમલંબ* *ચતુષ્કોણ* કહેવાય છે.",
+   "spoken": "આ એક ખાસ પ્રકારનો ચતુષ્કોણ છે, જેને સમલંબ ચતુષ્કોણ કહેવાય છે.",
+   "seconds": 5.12
+  },
+  {
+   "file": "lsOnePair",
+   "key": "lsOnePair",
+   "speaker": "swiftee",
+   "text": "*સમલંબ* *ચતુષ્કોણમાં* *સામસામેની*\n*બાજુઓની* એક જોડ *સમાંતર* હોય છે.",
+   "spoken": "સમલંબ ચતુષ્કોણમાં સામસામેની બાજુઓની એક જોડ સમાંતર હોય છે.",
+   "seconds": 5.28
+  },
+  {
+   "file": "lsAskPar",
+   "key": "lsAskPar",
+   "speaker": "swiftee",
+   "text": "*બાજુઓની* કઈ જોડ\nએકબીજાને *સમાંતર* છે?",
+   "spoken": "બાજુઓની કઈ જોડ એકબીજાને સમાંતર છે?",
+   "seconds": 3.04
+  },
+  {
+   "file": "lsAskParOk",
+   "key": "lsAskParOk",
+   "speaker": "swiftee",
+   "text": "એકદમ સાચું! AB ∥ CD.",
+   "spoken": "એકદમ સાચું! એ બી, સી ડી ને સમાંતર છે.",
+   "seconds": 3.44
+  },
+  {
+   "file": "lsAskParFbAD",
+   "key": "lsAskParFbAD",
+   "speaker": "swiftee",
+   "text": "ફરી જુઓ. AD અને BC એકબીજા તરફ નમેલી છે, તેથી જો આપણે તેમને લંબાવીએ તો તે એકબીજાને મળે.",
+   "spoken": "ફરી જુઓ. એ ડી અને બી સી એકબીજા તરફ નમેલી છે, તેથી જો આપણે તેમને લંબાવીએ તો તે એકબીજાને મળે.",
+   "seconds": 7.92
+  },
+  {
+   "file": "lsWhatIf",
+   "key": "lsWhatIf",
+   "speaker": "swiftee",
+   "text": "જો આપણે *સામસામેની* *બાજુઓની*\nબીજી જોડને પણ *સમાંતર* બનાવીએ તો?",
+   "spoken": "જો આપણે સામસામેની બાજુઓની બીજી જોડને પણ સમાંતર બનાવીએ તો?",
+   "seconds": 4.56
+  },
+  {
+   "file": "lsDragPar",
+   "key": "lsDragPar",
+   "speaker": "swiftee",
+   "text": "*શિરોબિંદુ* B ને ડ્રેગ કરો,\nજેથી BC એ AD ને *સમાંતર* બને.",
+   "spoken": "શિરોબિંદુ બી ને ડ્રેગ કરો, જેથી બી સી, એ ડી ને સમાંતર બને.",
+   "seconds": 5.28
+  },
+  {
+   "file": "lsDragParAfter",
+   "key": "lsDragParAfter",
+   "speaker": "swiftee",
+   "text": "શાબાશ! હવે BC એ\nAD ને *સમાંતર* છે.",
+   "spoken": "શાબાશ! હવે બી સી, એ ડી ને સમાંતર છે.",
+   "seconds": 3.92
+  },
+  {
+   "file": "lsDragParShowAnswer",
+   "key": "lsDragParShowAnswer",
+   "speaker": "swiftee",
+   "text": "જુઓ! BC એ\nAD ની જેમ જ નમવું જોઈએ.",
+   "spoken": "જુઓ! બી સી, એ ડી ની જેમ જ નમવું જોઈએ.",
+   "seconds": 3.2
+  },
+  {
+   "file": "lsDragParAnswerAfter",
+   "key": "lsDragParAnswerAfter",
+   "speaker": "swiftee",
+   "text": "હવે BC એ AD ને *સમાંતર* છે.",
+   "spoken": "હવે બી સી, એ ડી ને સમાંતર છે.",
+   "seconds": 2.4
+  },
+  {
+   "file": "lsBothPar",
+   "key": "lsBothPar",
+   "speaker": "swiftee",
+   "text": "હવે *સામસામેની* *બાજુઓની*\nબંને જોડ *સમાંતર* છે.",
+   "spoken": "હવે સામસામેની બાજુઓની બંને જોડ સમાંતર છે.",
+   "seconds": 4
+  },
+  {
+   "file": "lsDefPg",
+   "key": "lsDefPg",
+   "speaker": "swiftee",
+   "text": "આને આપણે *સમાંતરબાજુ* *ચતુષ્કોણ* કહીએ છીએ.",
+   "spoken": "આને આપણે સમાંતરબાજુ ચતુષ્કોણ કહીએ છીએ.",
+   "seconds": 3.2
+  },
+  {
+   "file": "lsDefFull",
+   "key": "lsDefFull",
+   "speaker": "swiftee",
+   "text": "જે *ચતુષ્કોણમાં* *સામસામેની* *બાજુઓની*\nબંને જોડ *સમાંતર* હોય, તેને\n*સમાંતરબાજુ* *ચતુષ્કોણ* કહેવાય છે.",
+   "spoken": "જે ચતુષ્કોણમાં સામસામેની બાજુઓની બંને જોડ સમાંતર હોય, તેને સમાંતરબાજુ ચતુષ્કોણ કહેવાય છે.",
+   "seconds": 7.28
+  },
+  {
+   "file": "lsLengthsQ",
+   "key": "lsLengthsQ",
+   "speaker": "swiftee",
+   "text": "પણ *બાજુઓની*\nલંબાઈ વિશે શું?",
+   "spoken": "પણ બાજુઓની લંબાઈ વિશે શું?",
+   "seconds": 2.4
+  },
+  {
+   "file": "lsEqualQ",
+   "key": "lsEqualQ",
+   "speaker": "swiftee",
+   "text": "શું તે પણ *સમાન* છે?",
+   "spoken": "શું તે પણ સમાન છે?",
+   "seconds": 1.76
+  },
+  {
+   "file": "lsFindOut",
+   "key": "lsFindOut",
+   "speaker": "swiftee",
+   "text": "ચાલો જાણીએ!",
+   "spoken": "ચાલો જાણીએ!",
+   "seconds": 1.28
+  },
+  {
+   "file": "lsInteresting",
+   "key": "lsInteresting",
+   "speaker": "swiftee",
+   "text": "લંબાઈઓ વિશે\nકંઈક રસપ્રદ\nવાત છે.",
+   "spoken": "લંબાઈઓ વિશે કંઈક રસપ્રદ વાત છે.",
+   "seconds": 3.2
+  },
+  {
+   "file": "lsAskSides",
+   "key": "lsAskSides",
+   "speaker": "swiftee",
+   "text": "*બાજુઓ* વિશે તમને\nશું ધ્યાનમાં આવે છે?",
+   "spoken": "બાજુઓ વિશે તમને શું ધ્યાનમાં આવે છે?",
+   "seconds": 2.56
+  },
+  {
+   "file": "lsAskSidesOk",
+   "key": "lsAskSidesOk",
+   "speaker": "swiftee",
+   "text": "એકદમ સાચું! *સામસામેની*\n*બાજુઓ* *સમાન* છે.",
+   "spoken": "એકદમ સાચું! સામસામેની બાજુઓ સમાન છે.",
+   "seconds": 3.84
+  },
+  {
+   "file": "lsAskSidesOptAll",
+   "key": "lsAskSidesOptAll",
+   "speaker": "swiftee",
+   "text": "બધી બાજુઓ સમાન છે",
+   "spoken": "બધી બાજુઓ સમાન છે",
+   "seconds": 2
+  },
+  {
+   "file": "lsAskSidesFbAll",
+   "key": "lsAskSidesFbAll",
+   "speaker": "swiftee",
+   "text": "લંબાઈઓ ફરી જુઓ. AB ની લંબાઈ 6 સેમી છે, પણ AD ની માત્ર 3 સેમી છે.",
+   "spoken": "લંબાઈઓ ફરી જુઓ. એ બી ની લંબાઈ છ સેન્ટિમીટર છે, પણ એ ડી ની માત્ર ત્રણ સેન્ટિમીટર છે.",
+   "seconds": 7.2
+  },
+  {
+   "file": "lsAskSidesOptOpp",
+   "key": "lsAskSidesOptOpp",
+   "speaker": "swiftee",
+   "text": "સામસામેની બાજુઓ સમાન છે",
+   "spoken": "સામસામેની બાજુઓ સમાન છે",
+   "seconds": 2.4
+  },
+  {
+   "file": "lsOppEq",
+   "key": "lsOppEq",
+   "speaker": "swiftee",
+   "text": "કોઈ પણ *સમાંતરબાજુ* *ચતુષ્કોણમાં*,\n*સામસામેની* *બાજુઓની*\nલંબાઈ *સમાન* હોય છે.",
+   "spoken": "કોઈ પણ સમાંતરબાજુ ચતુષ્કોણમાં, સામસામેની બાજુઓની લંબાઈ સમાન હોય છે.",
+   "seconds": 5.6
+  },
+  {
+   "file": "lsSidesSum",
+   "key": "lsSidesSum",
+   "speaker": "swiftee",
+   "text": "તેથી, કોઈ પણ *સમાંતરબાજુ* *ચતુષ્કોણમાં*,\n*સામસામેની* *બાજુઓ*\n*સમાંતર* અને *સમાન* હોય છે.",
+   "spoken": "તેથી, કોઈ પણ સમાંતરબાજુ ચતુષ્કોણમાં, સામસામેની બાજુઓ સમાંતર અને સમાન હોય છે.",
+   "seconds": 6.72
+  },
+  {
+   "file": "lsCp1a",
+   "key": "lsCp1a",
+   "speaker": "swiftee",
+   "text": "આમાંથી કયા આકાર\n*સમાંતરબાજુ* *ચતુષ્કોણ* છે?\nજે સાચા હોય તે બધા પસંદ કરો.",
+   "spoken": "આમાંથી કયા આકાર સમાંતરબાજુ ચતુષ્કોણ છે? જે સાચા હોય તે બધા પસંદ કરો.",
+   "seconds": 6.08
+  },
+  {
+   "file": "lsCp1aOk",
+   "key": "lsCp1aOk",
+   "speaker": "swiftee",
+   "text": "હા! આ બંને આકારોમાં\n*સમાંતર* *બાજુઓની* બે જોડ છે.",
+   "spoken": "હા! આ બંને આકારોમાં સમાંતર બાજુઓની બે જોડ છે.",
+   "seconds": 4.48
+  },
+  {
+   "file": "lsCp1aFbB",
+   "key": "lsCp1aFbB",
+   "speaker": "swiftee",
+   "text": "આ આકાર *સમલંબ* *ચતુષ્કોણ* છે. તેની *બાજુઓની* માત્ર એક જ જોડ *સમાંતર* છે.",
+   "spoken": "આ આકાર સમલંબ ચતુષ્કોણ છે. તેની બાજુઓની માત્ર એક જ જોડ સમાંતર છે.",
+   "seconds": 6
+  },
+  {
+   "file": "lsCp1aFbD",
+   "key": "lsCp1aFbD",
+   "speaker": "swiftee",
+   "text": "આ આકારને પાંચ *બાજુઓ* છે, તેથી તે *ચતુષ્કોણ* નથી.",
+   "spoken": "આ આકારને પાંચ બાજુઓ છે, તેથી તે ચતુષ્કોણ નથી.",
+   "seconds": 4.56
+  },
+  {
+   "file": "lsCp1b",
+   "key": "lsCp1b",
+   "speaker": "swiftee",
+   "text": "આ *સમાંતરબાજુ* *ચતુષ્કોણમાં*,\nAB = 7 સેમી. CD ની\nલંબાઈ કેટલી છે?",
+   "spoken": "આ સમાંતરબાજુ ચતુષ્કોણમાં, એ બી બરાબર સાત સેન્ટિમીટર. સી ડી ની લંબાઈ કેટલી છે?",
+   "seconds": 6.48
+  },
+  {
+   "file": "lsCp1bOk",
+   "key": "lsCp1bOk",
+   "speaker": "swiftee",
+   "text": "બરાબર! *સામસામેની* *બાજુઓ*\n*સમાન* હોય છે, તેથી CD = 7 સેમી.",
+   "spoken": "બરાબર! સામસામેની બાજુઓ સમાન હોય છે, તેથી સી ડી બરાબર સાત સેન્ટિમીટર.",
+   "seconds": 6.24
+  },
+  {
+   "file": "lsCp1bFbHalf",
+   "key": "lsCp1bFbHalf",
+   "speaker": "swiftee",
+   "text": "CD એ AB ની અડધી નથી. *સમાંતરબાજુ* *ચતુષ્કોણની* *સામસામેની* *બાજુઓ* *સમાન* હોય છે.",
+   "spoken": "સી ડી, એ બી ની અડધી નથી. સમાંતરબાજુ ચતુષ્કોણની સામસામેની બાજુઓ સમાન હોય છે.",
+   "seconds": 6.8
+  },
+  {
+   "file": "lsCp1bFbDouble",
+   "key": "lsCp1bFbDouble",
+   "speaker": "swiftee",
+   "text": "CD એ AB ની બમણી નથી. *સમાંતરબાજુ* *ચતુષ્કોણની* *સામસામેની* *બાજુઓ* *સમાન* હોય છે.",
+   "spoken": "સી ડી, એ બી ની બમણી નથી. સમાંતરબાજુ ચતુષ્કોણની સામસામેની બાજુઓ સમાન હોય છે.",
+   "seconds": 6.88
+  },
+  {
+   "file": "lsCp1c",
+   "key": "lsCp1c",
+   "speaker": "swiftee",
+   "text": "આ *સમાંતરબાજુ* *ચતુષ્કોણમાં*,\nAB = 8 સેમી અને BC = 5 સેમી.\nCD અને AD ની\nલંબાઈ શોધો.",
+   "spoken": "આ સમાંતરબાજુ ચતુષ્કોણમાં, એ બી બરાબર આઠ સેન્ટિમીટર અને બી સી બરાબર પાંચ સેન્ટિમીટર. સી ડી અને એ ડી ની લંબાઈ શોધો.",
+   "seconds": 9.68
+  },
+  {
+   "file": "lsCp1cOk",
+   "key": "lsCp1cOk",
+   "speaker": "swiftee",
+   "text": "CD = 8 સેમી, AD = 5 સેમી.",
+   "spoken": "સી ડી બરાબર આઠ સેન્ટિમીટર, એ ડી બરાબર પાંચ સેન્ટિમીટર.",
+   "seconds": 4.64
+  },
+  {
+   "file": "lsCp1cFbCD",
+   "key": "lsCp1cFbCD",
+   "speaker": "swiftee",
+   "text": "CD એ AB ની *સામેની* બાજુ છે, તેથી CD = AB.",
+   "spoken": "સી ડી, એ બી ની સામેની બાજુ છે, તેથી સી ડી બરાબર એ બી.",
+   "seconds": 5.28
+  },
+  {
+   "file": "lsCp1cFbAD",
+   "key": "lsCp1cFbAD",
+   "speaker": "swiftee",
+   "text": "AD એ BC ની *સામેની* બાજુ છે, તેથી AD = BC.",
+   "spoken": "એ ડી, બી સી ની સામેની બાજુ છે, તેથી એ ડી બરાબર બી સી.",
+   "seconds": 5.04
+  },
+  {
+   "file": "lsSidesDone",
+   "key": "lsSidesDone",
+   "speaker": "swiftee",
+   "text": "આપણે *સમાંતરબાજુ* *ચતુષ્કોણની*\n*બાજુઓ* વિશે બધું શીખ્યા.",
+   "spoken": "આપણે સમાંતરબાજુ ચતુષ્કોણની બાજુઓ વિશે બધું શીખ્યા.",
+   "seconds": 4
+  },
+  {
+   "file": "lsAngles",
+   "key": "lsAngles",
+   "speaker": "swiftee",
+   "text": "પણ તેના *ખૂણાઓ* વિશે શું?\nશું તે પણ *સમાન* છે?",
+   "spoken": "પણ તેના ખૂણાઓ વિશે શું? શું તે પણ સમાન છે?",
+   "seconds": 3.44
+  },
+  {
+   "file": "lsInterestingAng",
+   "key": "lsInterestingAng",
+   "speaker": "swiftee",
+   "text": "અહીં પણ કંઈક\nરસપ્રદ વાત છે.",
+   "spoken": "અહીં પણ કંઈક રસપ્રદ વાત છે.",
+   "seconds": 2.4
+  },
+  {
+   "file": "lsSomeEq",
+   "key": "lsSomeEq",
+   "speaker": "swiftee",
+   "text": "કેટલાક *ખૂણાઓ*\nએકબીજાને *સમાન* છે.",
+   "spoken": "કેટલાક ખૂણાઓ એકબીજાને સમાન છે.",
+   "seconds": 2.72
+  },
+  {
+   "file": "lsTapEqA",
+   "key": "lsTapEqA",
+   "speaker": "swiftee",
+   "text": "કયો *ખૂણો*\n∠A ને *સમાન* છે?",
+   "spoken": "કયો ખૂણો ખૂણા એ ને સમાન છે?",
+   "seconds": 2.4
+  },
+  {
+   "file": "lsTapEqAOk",
+   "key": "lsTapEqAOk",
+   "speaker": "swiftee",
+   "text": "એકદમ સાચું! ∠A એ\n∠C ને *સમાન* છે.",
+   "spoken": "એકદમ સાચું! ખૂણા એ, ખૂણા સી ને સમાન છે.",
+   "seconds": 4.56
+  },
+  {
+   "file": "lsTapEqAFb",
+   "key": "lsTapEqAFb",
+   "speaker": "swiftee",
+   "text": "બરાબર નથી. તેનું માપ ∠A સાથે સરખાવો. A ની *સામેનો* ખૂણો જુઓ.",
+   "spoken": "બરાબર નથી. તેનું માપ ખૂણા એ સાથે સરખાવો. એ ની સામેનો ખૂણો જુઓ.",
+   "seconds": 5.76
+  },
+  {
+   "file": "lsTapEqD",
+   "key": "lsTapEqD",
+   "speaker": "swiftee",
+   "text": "કયો *ખૂણો*\n∠D ને *સમાન* છે?",
+   "spoken": "કયો ખૂણો ખૂણા ડી ને સમાન છે?",
+   "seconds": 2.48
+  },
+  {
+   "file": "lsTapEqDOk",
+   "key": "lsTapEqDOk",
+   "speaker": "swiftee",
+   "text": "એકદમ સાચું! ∠D એ\n∠B ને *સમાન* છે.",
+   "spoken": "એકદમ સાચું! ખૂણા ડી, ખૂણા બી ને સમાન છે.",
+   "seconds": 4.24
+  },
+  {
+   "file": "lsTapEqDFb",
+   "key": "lsTapEqDFb",
+   "speaker": "swiftee",
+   "text": "બરાબર નથી. તેનું માપ ∠D સાથે સરખાવો. D ની *સામેનો* ખૂણો જુઓ.",
+   "spoken": "બરાબર નથી. તેનું માપ ખૂણા ડી સાથે સરખાવો. ડી ની સામેનો ખૂણો જુઓ.",
+   "seconds": 6
+  },
+  {
+   "file": "lsOppAng",
+   "key": "lsOppAng",
+   "speaker": "swiftee",
+   "text": "તેથી કોઈ પણ *સમાંતરબાજુ* *ચતુષ્કોણમાં*,\n*સામસામેના* *ખૂણાઓ*\nપણ *સમાન* હોય છે.",
+   "spoken": "તેથી કોઈ પણ સમાંતરબાજુ ચતુષ્કોણમાં, સામસામેના ખૂણાઓ પણ સમાન હોય છે.",
+   "seconds": 5.44
+  },
+  {
+   "file": "lsSeeElse",
+   "key": "lsSeeElse",
+   "speaker": "swiftee",
+   "text": "પણ મને બીજું પણ\nકંઈક દેખાય છે.",
+   "spoken": "પણ મને બીજું પણ કંઈક દેખાય છે.",
+   "seconds": 2.48
+  },
+  {
+   "file": "lsLookAD",
+   "key": "lsLookAD",
+   "speaker": "swiftee",
+   "text": "∠A અને ∠D ને જુઓ.",
+   "spoken": "ખૂણા એ અને ખૂણા ડી ને જુઓ.",
+   "seconds": 2.72
+  },
+  {
+   "file": "lsSumAD",
+   "key": "lsSumAD",
+   "speaker": "swiftee",
+   "text": "તેમનો સરવાળો *180°* થાય છે.",
+   "spoken": "તેમનો સરવાળો એકસો એંસી અંશ થાય છે.",
+   "seconds": 2.96
+  },
+  {
+   "file": "lsAskAdj",
+   "key": "lsAskAdj",
+   "speaker": "swiftee",
+   "text": "બીજા કયા *ખૂણાઓનો*\nસરવાળો *180°* થાય છે?",
+   "spoken": "બીજા કયા ખૂણાઓનો સરવાળો એકસો એંસી અંશ થાય છે?",
+   "seconds": 3.76
+  },
+  {
+   "file": "lsAskAdjOk",
+   "key": "lsAskAdjOk",
+   "speaker": "swiftee",
+   "text": "હા! ∠B + ∠C = 180° અને\n∠A + ∠B = 180°.",
+   "spoken": "હા! ખૂણો બી વત્તા ખૂણો સી બરાબર એકસો એંસી અંશ અને ખૂણો એ વત્તા ખૂણો બી બરાબર એકસો એંસી અંશ.",
+   "seconds": 8.8
+  },
+  {
+   "file": "lsAskAdjFbBD",
+   "key": "lsAskAdjFbBD",
+   "speaker": "swiftee",
+   "text": "∠B અને ∠D *સામસામેના* *ખૂણા* છે. 70° + 70° નો સરવાળો *180°* નથી.",
+   "spoken": "ખૂણો બી અને ખૂણો ડી સામસામેના ખૂણા છે. સિત્તેર અંશ વત્તા સિત્તેર અંશ નો સરવાળો એકસો એંસી અંશ નથી.",
+   "seconds": 8.4
+  },
+  {
+   "file": "lsAskAdjFbAC",
+   "key": "lsAskAdjFbAC",
+   "speaker": "swiftee",
+   "text": "∠A અને ∠C *સામસામેના* *ખૂણા* છે. 110° + 110° નો સરવાળો *180°* નથી.",
+   "spoken": "ખૂણો એ અને ખૂણો સી સામસામેના ખૂણા છે. એકસો દસ અંશ વત્તા એકસો દસ અંશ નો સરવાળો એકસો એંસી અંશ નથી.",
+   "seconds": 9.76
+  },
+  {
+   "file": "lsAdjRule",
+   "key": "lsAdjRule",
+   "speaker": "swiftee",
+   "text": "આ *સમાંતરબાજુ* *ચતુષ્કોણમાં*\n*પાસપાસેના* *ખૂણાઓની* દરેક જોડનો\nસરવાળો *180°* થાય છે.",
+   "spoken": "આ સમાંતરબાજુ ચતુષ્કોણમાં પાસપાસેના ખૂણાઓની દરેક જોડનો સરવાળો એકસો એંસી અંશ થાય છે.",
+   "seconds": 7.04
+  },
+  {
+   "file": "lsCp2a",
+   "key": "lsCp2a",
+   "speaker": "swiftee",
+   "text": "આ *સમાંતરબાજુ* *ચતુષ્કોણમાં*,\n∠A = 68°. ∠C નું\nમાપ કેટલું છે?",
+   "spoken": "આ સમાંતરબાજુ ચતુષ્કોણમાં, ખૂણો એ બરાબર અડસઠ અંશ. ખૂણા સી નું માપ કેટલું છે?",
+   "seconds": 6.96
+  },
+  {
+   "file": "lsCp2aOk",
+   "key": "lsCp2aOk",
+   "speaker": "swiftee",
+   "text": "બરાબર! *સામસામેના* *ખૂણા*\n*સમાન* હોય છે, તેથી ∠C = 68°.",
+   "spoken": "બરાબર! સામસામેના ખૂણા સમાન હોય છે, તેથી ખૂણો સી બરાબર અડસઠ અંશ.",
+   "seconds": 6.56
+  },
+  {
+   "file": "lsCp2aFb",
+   "key": "lsCp2aFb",
+   "speaker": "swiftee",
+   "text": "ફરી જુઓ. *સમાંતરબાજુ* *ચતુષ્કોણના* *સામસામેના* *ખૂણા* *સમાન* હોય છે.",
+   "spoken": "ફરી જુઓ. સમાંતરબાજુ ચતુષ્કોણના સામસામેના ખૂણા સમાન હોય છે.",
+   "seconds": 5.28
+  },
+  {
+   "file": "lsCp2b",
+   "key": "lsCp2b",
+   "speaker": "swiftee",
+   "text": "આ *સમાંતરબાજુ* *ચતુષ્કોણમાં*,\n∠A = 72°. ∠B નું\nમાપ કેટલું છે?",
+   "spoken": "આ સમાંતરબાજુ ચતુષ્કોણમાં, ખૂણો એ બરાબર બોંતેર અંશ. ખૂણા બી નું માપ કેટલું છે?",
+   "seconds": 6.96
+  },
+  {
+   "file": "lsCp2bOk",
+   "key": "lsCp2bOk",
+   "speaker": "swiftee",
+   "text": "સાચું! 72° + 108° = 180°.",
+   "spoken": "સાચું! બોંતેર અંશ વત્તા એકસો આઠ અંશ બરાબર એકસો એંસી અંશ.",
+   "seconds": 5.68
+  },
+  {
+   "file": "lsCp2bFb72",
+   "key": "lsCp2bFb72",
+   "speaker": "swiftee",
+   "text": "∠B એ ∠A ની પાસે છે, તેની *સામે* નથી. *પાસપાસેના* *ખૂણાઓનો* સરવાળો *180°* થાય છે.",
+   "spoken": "ખૂણા બી, ખૂણા એ ની પાસે છે, તેની સામે નથી. પાસપાસેના ખૂણાઓનો સરવાળો એકસો એંસી અંશ થાય છે.",
+   "seconds": 8.64
+  },
+  {
+   "file": "lsCp2bFb180",
+   "key": "lsCp2bFb180",
+   "speaker": "swiftee",
+   "text": "*180°* એ ∠A અને ∠B નો સરવાળો છે, એકલા ∠B નું માપ નથી.",
+   "spoken": "એકસો એંસી અંશ, ખૂણા એ અને ખૂણા બી નો સરવાળો છે, એકલા ખૂણા બી નું માપ નથી.",
+   "seconds": 6.8
+  },
+  {
+   "file": "lsCp2c",
+   "key": "lsCp2c",
+   "speaker": "swiftee",
+   "text": "આ *સમાંતરબાજુ* *ચતુષ્કોણમાં*,\n∠A = 65°. ∠B, ∠C અને ∠D નાં\nમાપ શોધો.",
+   "spoken": "આ સમાંતરબાજુ ચતુષ્કોણમાં, ખૂણો એ બરાબર પાંસઠ અંશ. ખૂણા બી, ખૂણા સી અને ખૂણા ડી નાં માપ શોધો.",
+   "seconds": 8.96
+  },
+  {
+   "file": "lsCp2cOk",
+   "key": "lsCp2cOk",
+   "speaker": "swiftee",
+   "text": "અદ્ભુત! ∠B = 115°, ∠C = 65°\nઅને ∠D = 115°.",
+   "spoken": "અદ્ભુત! ખૂણો બી બરાબર એકસો પંદર અંશ, ખૂણો સી બરાબર પાંસઠ અંશ અને ખૂણો ડી બરાબર એકસો પંદર અંશ.",
+   "seconds": 9.36
+  },
+  {
+   "file": "lsCp2cFbB25",
+   "key": "lsCp2cFbB25",
+   "speaker": "swiftee",
+   "text": "25° + 65° તો માત્ર 90° થાય છે. ∠A અને ∠B નો સરવાળો *180°* થવો જોઈએ.",
+   "spoken": "પચ્ચીસ અંશ વત્તા પાંસઠ અંશ તો માત્ર નેવું અંશ થાય છે. ખૂણા એ અને ખૂણા બી નો સરવાળો એકસો એંસી અંશ થવો જોઈએ.",
+   "seconds": 9.04
+  },
+  {
+   "file": "lsCp2cFbB65",
+   "key": "lsCp2cFbB65",
+   "speaker": "swiftee",
+   "text": "∠B એ ∠A ની પાસે છે, તેની *સામે* નથી. ∠A + ∠B = 180°.",
+   "spoken": "ખૂણા બી, ખૂણા એ ની પાસે છે, તેની સામે નથી. ખૂણો એ વત્તા ખૂણો બી બરાબર એકસો એંસી અંશ.",
+   "seconds": 8.96
+  },
+  {
+   "file": "lsCp2cFbB180",
+   "key": "lsCp2cFbB180",
+   "speaker": "swiftee",
+   "text": "*180°* એ ∠A અને ∠B બંને સાથે મળીને છે. તેમાંથી ∠A ના 65° બાદ કરો.",
+   "spoken": "એકસો એંસી અંશ, ખૂણો એ અને ખૂણો બી બંને સાથે મળીને છે. તેમાંથી ખૂણા એ ના પાંસઠ અંશ બાદ કરો.",
+   "seconds": 8.8
+  },
+  {
+   "file": "lsCp2cFbC25",
+   "key": "lsCp2cFbC25",
+   "speaker": "swiftee",
+   "text": "∠C એ ∠A ની *સામે* છે, તેથી તે ∠A ને *સમાન* છે, 25° નહીં.",
+   "spoken": "ખૂણા સી, ખૂણા એ ની સામે છે, તેથી તે ખૂણા એ ને સમાન છે, પચ્ચીસ અંશ નહીં.",
+   "seconds": 6.64
+  },
+  {
+   "file": "lsCp2cFbC115",
+   "key": "lsCp2cFbC115",
+   "speaker": "swiftee",
+   "text": "115° એ ∠A ની પાસેના *ખૂણાનું* માપ છે. ∠C એ ∠A ની *સામે* છે, તેથી ∠C = ∠A.",
+   "spoken": "એકસો પંદર અંશ, ખૂણા એ ની પાસેના ખૂણાનું માપ છે. ખૂણા સી, ખૂણા એ ની સામે છે, તેથી ખૂણો સી બરાબર ખૂણો એ.",
+   "seconds": 10.08
+  },
+  {
+   "file": "lsCp2cFbC180",
+   "key": "lsCp2cFbC180",
+   "speaker": "swiftee",
+   "text": "∠C એ ∠A ની *સામે* છે, તેથી તે ∠A ને *સમાન* છે, *180°* નહીં.",
+   "spoken": "ખૂણા સી, ખૂણા એ ની સામે છે, તેથી તે ખૂણા એ ને સમાન છે, એકસો એંસી અંશ નહીં.",
+   "seconds": 7.12
+  },
+  {
+   "file": "lsCp2cFbD25",
+   "key": "lsCp2cFbD25",
+   "speaker": "swiftee",
+   "text": "25° + 65° તો માત્ર 90° થાય છે. ∠A અને ∠D નો સરવાળો *180°* થવો જોઈએ.",
+   "spoken": "પચ્ચીસ અંશ વત્તા પાંસઠ અંશ તો માત્ર નેવું અંશ થાય છે. ખૂણા એ અને ખૂણા ડી નો સરવાળો એકસો એંસી અંશ થવો જોઈએ.",
+   "seconds": 9.04
+  },
+  {
+   "file": "lsCp2cFbD65",
+   "key": "lsCp2cFbD65",
+   "speaker": "swiftee",
+   "text": "∠D એ ∠A ની પાસે છે, તેની *સામે* નથી. ∠A + ∠D = 180°.",
+   "spoken": "ખૂણા ડી, ખૂણા એ ની પાસે છે, તેની સામે નથી. ખૂણો એ વત્તા ખૂણો ડી બરાબર એકસો એંસી અંશ.",
+   "seconds": 9.04
+  },
+  {
+   "file": "lsCp2cFbD180",
+   "key": "lsCp2cFbD180",
+   "speaker": "swiftee",
+   "text": "*180°* એ ∠A અને ∠D બંને સાથે મળીને છે. તેમાંથી ∠A ના 65° બાદ કરો.",
+   "spoken": "એકસો એંસી અંશ, ખૂણો એ અને ખૂણો ડી બંને સાથે મળીને છે. તેમાંથી ખૂણા એ ના પાંસઠ અંશ બાદ કરો.",
+   "seconds": 8.8
+  },
+  {
+   "file": "lsExplored",
+   "key": "lsExplored",
+   "speaker": "swiftee",
+   "text": "આપણે *સમાંતરબાજુ* *ચતુષ્કોણની*\n*બાજુઓ* અને *ખૂણાઓ* વિશે\nબધું જાણી લીધું.",
+   "spoken": "આપણે સમાંતરબાજુ ચતુષ્કોણની બાજુઓ અને ખૂણાઓ વિશે બધું જાણી લીધું.",
+   "seconds": 5.12
+  },
+  {
+   "file": "lsDiagIntro",
+   "key": "lsDiagIntro",
+   "speaker": "swiftee",
+   "text": "ચાલો, તેના *વિકર્ણો*\nવિશે શીખીએ.",
+   "spoken": "ચાલો, તેના વિકર્ણો વિશે શીખીએ.",
+   "seconds": 2.4
+  },
+  {
+   "file": "lsDrawDiag",
+   "key": "lsDrawDiag",
+   "speaker": "swiftee",
+   "text": "આ *સમાંતરબાજુ* *ચતુષ્કોણના*\nબધા *વિકર્ણો* દોરો.",
+   "spoken": "આ સમાંતરબાજુ ચતુષ્કોણના બધા વિકર્ણો દોરો.",
+   "seconds": 3.84
+  },
+  {
+   "file": "lsDrawDiagWrong",
+   "key": "lsDrawDiagWrong",
+   "speaker": "swiftee",
+   "text": "તે તો એક *બાજુ* છે. *વિકર્ણ* બે *સામસામેના* ખૂણાઓને જોડે છે.",
+   "spoken": "તે તો એક બાજુ છે. વિકર્ણ બે સામસામેના ખૂણાઓને જોડે છે.",
+   "seconds": 5.12
+  },
+  {
+   "file": "lsDrawDiagAfter",
+   "key": "lsDrawDiagAfter",
+   "speaker": "swiftee",
+   "text": "સરસ! તમે બંને\n*વિકર્ણો* દોર્યા.",
+   "spoken": "સરસ! તમે બંને વિકર્ણો દોર્યા.",
+   "seconds": 2.8
+  },
+  {
+   "file": "lsDiagNames",
+   "key": "lsDiagNames",
+   "speaker": "swiftee",
+   "text": "AC અને BD આ *સમાંતરબાજુ*\n*ચતુષ્કોણના* *વિકર્ણો* છે.",
+   "spoken": "એ સી અને બી ડી આ સમાંતરબાજુ ચતુષ્કોણના વિકર્ણો છે.",
+   "seconds": 4.32
+  },
+  {
+   "file": "lsMeetO",
+   "key": "lsMeetO",
+   "speaker": "swiftee",
+   "text": "તેઓ એકબીજાને\nબિંદુ O પર મળે છે.",
+   "spoken": "તેઓ એકબીજાને બિંદુ ઓ પર મળે છે.",
+   "seconds": 2.96
+  },
+  {
+   "file": "lsSegs",
+   "key": "lsSegs",
+   "speaker": "swiftee",
+   "text": "દરેક *વિકર્ણ*\nબીજા વિકર્ણને\n2 *રેખાખંડોમાં* વહેંચે છે.",
+   "spoken": "દરેક વિકર્ણ બીજા વિકર્ણને બે રેખાખંડોમાં વહેંચે છે.",
+   "seconds": 4.16
+  },
+  {
+   "file": "lsMeasureSeg",
+   "key": "lsMeasureSeg",
+   "speaker": "swiftee",
+   "text": "શું દરેક *વિકર્ણના* બંને\n*રેખાખંડો* *સમાન* છે?",
+   "spoken": "શું દરેક વિકર્ણના બંને રેખાખંડો સમાન છે?",
+   "seconds": 3.6
+  },
+  {
+   "file": "lsCompare",
+   "key": "lsCompare",
+   "speaker": "swiftee",
+   "text": "ચાલો, આ *રેખાખંડોની*\nલંબાઈ સરખાવીએ.",
+   "spoken": "ચાલો, આ રેખાખંડોની લંબાઈ સરખાવીએ.",
+   "seconds": 3.12
+  },
+  {
+   "file": "lsMatchSeg",
+   "key": "lsMatchSeg",
+   "speaker": "swiftee",
+   "text": "*રેખાખંડોને* તેમની\nસાચી જગ્યાએ ડ્રેગ કરો.",
+   "spoken": "રેખાખંડોને તેમની સાચી જગ્યાએ ડ્રેગ કરો.",
+   "seconds": 3.28
+  },
+  {
+   "file": "lsMatchSegOk",
+   "key": "lsMatchSegOk",
+   "speaker": "swiftee",
+   "text": "એકદમ સાચું! એક જ\n*વિકર્ણના* *રેખાખંડો*\n*સમાન* છે.",
+   "spoken": "એકદમ સાચું! એક જ વિકર્ણના રેખાખંડો સમાન છે.",
+   "seconds": 4.16
+  },
+  {
+   "file": "lsMatchSegFb",
+   "key": "lsMatchSegFb",
+   "speaker": "swiftee",
+   "text": "તે બંનેની લંબાઈ સરખી નથી. લંબાઈ ફરી જુઓ.",
+   "spoken": "તે બંનેની લંબાઈ સરખી નથી. લંબાઈ ફરી જુઓ.",
+   "seconds": 3.68
+  },
+  {
+   "file": "lsBisectEq",
+   "key": "lsBisectEq",
+   "speaker": "swiftee",
+   "text": "દરેક *વિકર્ણ* બીજા\nવિકર્ણ વડે બે *સમાન*\nભાગમાં વહેંચાય છે.",
+   "spoken": "દરેક વિકર્ણ બીજા વિકર્ણ વડે બે સમાન ભાગમાં વહેંચાય છે.",
+   "seconds": 4.4
+  },
+  {
+   "file": "lsBisect",
+   "key": "lsBisect",
+   "speaker": "swiftee",
+   "text": "તેથી *સમાંતરબાજુ* *ચતુષ્કોણના*\n*વિકર્ણો* એકબીજાને\n*દુભાગે* છે.",
+   "spoken": "તેથી સમાંતરબાજુ ચતુષ્કોણના વિકર્ણો એકબીજાને દુભાગે છે.",
+   "seconds": 4.56
+  },
+  {
+   "file": "lsDiagonalsBisect",
+   "key": "lsDiagonalsBisect",
+   "speaker": "swiftee",
+   "text": "*વિકર્ણો* એકબીજાને *દુભાગે* છે.",
+   "spoken": "વિકર્ણો એકબીજાને દુભાગે છે.",
+   "seconds": 2.48
+  },
+  {
+   "file": "lsCp3a",
+   "key": "lsCp3a",
+   "speaker": "swiftee",
+   "text": "આ *સમાંતરબાજુ* *ચતુષ્કોણમાં*,\nAO = 6 સેમી. OC ની\nલંબાઈ કેટલી છે?",
+   "spoken": "આ સમાંતરબાજુ ચતુષ્કોણમાં, એ ઓ બરાબર છ સેન્ટિમીટર. ઓ સી ની લંબાઈ કેટલી છે?",
+   "seconds": 6.64
+  },
+  {
+   "file": "lsCp3aOk",
+   "key": "lsCp3aOk",
+   "speaker": "swiftee",
+   "text": "હા! O એ AC ને બે સરખા ભાગમાં વહેંચે છે,\nતેથી OC = 6 સેમી.",
+   "spoken": "હા! ઓ, એ સી ને બે સરખા ભાગમાં વહેંચે છે, તેથી ઓ સી બરાબર છ સેન્ટિમીટર.",
+   "seconds": 6.88
+  },
+  {
+   "file": "lsCp3aFb3",
+   "key": "lsCp3aFb3",
+   "speaker": "swiftee",
+   "text": "OC એ AO નો અડધો નથી. OC = AO.",
+   "spoken": "ઓ સી, એ ઓ નો અડધો નથી. ઓ સી બરાબર એ ઓ.",
+   "seconds": 5.2
+  },
+  {
+   "file": "lsCp3aFb12",
+   "key": "lsCp3aFb12",
+   "speaker": "swiftee",
+   "text": "12 સેમી એ આખો AC છે. OC તો તેનો માત્ર અડધો ભાગ છે.",
+   "spoken": "બાર સેન્ટિમીટર, આખો એ સી છે. ઓ સી તો તેનો માત્ર અડધો ભાગ છે.",
+   "seconds": 5.6
+  },
+  {
+   "file": "lsCp3b",
+   "key": "lsCp3b",
+   "speaker": "swiftee",
+   "text": "આ *સમાંતરબાજુ* *ચતુષ્કોણમાં*,\nAO = 5 સેમી અને BO = 3 સેમી.\nOC અને OD ની\nલંબાઈ શોધો.",
+   "spoken": "આ સમાંતરબાજુ ચતુષ્કોણમાં, એ ઓ બરાબર પાંચ સેન્ટિમીટર અને બી ઓ બરાબર ત્રણ સેન્ટિમીટર. ઓ સી અને ઓ ડી ની લંબાઈ શોધો.",
+   "seconds": 10.08
+  },
+  {
+   "file": "lsCp3bOk",
+   "key": "lsCp3bOk",
+   "speaker": "swiftee",
+   "text": "શાબાશ! OC = AO = 5 સેમી\nઅને OD = BO = 3 સેમી.",
+   "spoken": "શાબાશ! ઓ સી બરાબર એ ઓ બરાબર પાંચ સેન્ટિમીટર અને ઓ ડી બરાબર બી ઓ બરાબર ત્રણ સેન્ટિમીટર.",
+   "seconds": 8.56
+  },
+  {
+   "file": "lsCp3bFbOC",
+   "key": "lsCp3bFbOC",
+   "speaker": "swiftee",
+   "text": "OC એ AC નો બીજો અડધો ભાગ છે, તેથી OC = AO.",
+   "spoken": "ઓ સી, એ સી નો બીજો અડધો ભાગ છે, તેથી ઓ સી બરાબર એ ઓ.",
+   "seconds": 5.84
+  },
+  {
+   "file": "lsCp3bFbOD",
+   "key": "lsCp3bFbOD",
+   "speaker": "swiftee",
+   "text": "OD એ BD નો બીજો અડધો ભાગ છે, તેથી OD = BO.",
+   "spoken": "ઓ ડી, બી ડી નો બીજો અડધો ભાગ છે, તેથી ઓ ડી બરાબર બી ઓ.",
+   "seconds": 5.84
+  },
+  {
+   "file": "lsCp3c",
+   "key": "lsCp3c",
+   "speaker": "swiftee",
+   "text": "નીચેનામાંથી કયાં વિધાનો\nઆ *સમાંતરબાજુ* *ચતુષ્કોણ* માટે સાચાં છે?\nજે સાચાં હોય તે બધાં પસંદ કરો.",
+   "spoken": "નીચેનામાંથી કયાં વિધાનો આ સમાંતરબાજુ ચતુષ્કોણ માટે સાચાં છે? જે સાચાં હોય તે બધાં પસંદ કરો.",
+   "seconds": 7.84
+  },
+  {
+   "file": "lsCp3cOk",
+   "key": "lsCp3cOk",
+   "speaker": "swiftee",
+   "text": "ઉત્તમ! AO = OC, BO = OD,\nતેથી *વિકર્ણો* એકબીજાને\n*દુભાગે* છે.",
+   "spoken": "ઉત્તમ! એ ઓ બરાબર ઓ સી, બી ઓ બરાબર ઓ ડી, તેથી વિકર્ણો એકબીજાને દુભાગે છે.",
+   "seconds": 8.48
+  },
+  {
+   "file": "lsCp3cFbAOBO",
+   "key": "lsCp3cFbAOBO",
+   "speaker": "swiftee",
+   "text": "AO અને BO જુદા જુદા *વિકર્ણોના* ભાગ છે, તેથી તે *સમાન* જ હોય એ જરૂરી નથી.",
+   "spoken": "એ ઓ અને બી ઓ જુદા જુદા વિકર્ણોના ભાગ છે, તેથી તે સમાન જ હોય એ જરૂરી નથી.",
+   "seconds": 6.4
+  },
+  {
+   "file": "lsCp3cFbACBD",
+   "key": "lsCp3cFbACBD",
+   "speaker": "swiftee",
+   "text": "આ *સમાંતરબાજુ* *ચતુષ્કોણના* બંને *વિકર્ણોની* લંબાઈ જુદી જુદી છે.",
+   "spoken": "આ સમાંતરબાજુ ચતુષ્કોણના બંને વિકર્ણોની લંબાઈ જુદી જુદી છે.",
+   "seconds": 4.64
+  },
+  {
+   "file": "lsRecap",
+   "key": "lsRecap",
+   "speaker": "swiftee",
+   "text": "ચાલો, *સમાંતરબાજુ* *ચતુષ્કોણ* વિશે\nઆપણે જે શીખ્યા તે યાદ કરીએ.",
+   "spoken": "ચાલો, સમાંતરબાજુ ચતુષ્કોણ વિશે આપણે જે શીખ્યા તે યાદ કરીએ.",
+   "seconds": 4.72
+  },
+  {
+   "file": "lsEnd",
+   "key": "lsEnd",
+   "speaker": "swiftee",
+   "text": "અદ્ભુત કામ! હવે તમે *સમાંતરબાજુ*\n*ચતુષ્કોણ* વિશે બધું જાણો છો.",
+   "spoken": "અદ્ભુત કામ! હવે તમે સમાંતરબાજુ ચતુષ્કોણ વિશે બધું જાણો છો.",
+   "seconds": 5.04
+  },
+  {
+   "file": "lsTipDragRight",
+   "key": "lsTipDragRight",
+   "speaker": "swiftee",
+   "text": "BC હજી AD ને *સમાંતર* નથી. B ને જમણી તરફ ડ્રેગ કરતા રહો.",
+   "spoken": "બી સી હજી એ ડી ને સમાંતર નથી. બી ને જમણી તરફ ડ્રેગ કરતા રહો.",
+   "seconds": 5.12
+  },
+  {
+   "file": "lsTipDragBack",
+   "key": "lsTipDragBack",
+   "speaker": "swiftee",
+   "text": "B વધારે દૂર જતું રહ્યું. તેને થોડું પાછું ડ્રેગ કરો.",
+   "spoken": "બી વધારે દૂર જતું રહ્યું. તેને થોડું પાછું ડ્રેગ કરો.",
+   "seconds": 4.08
+  },
+  {
+   "file": "lsTipTryAgain",
+   "key": "lsTipTryAgain",
+   "speaker": "swiftee",
+   "text": "બરાબર નથી. ફરી પ્રયાસ કરો.",
+   "spoken": "બરાબર નથી. ફરી પ્રયાસ કરો.",
+   "seconds": 2.4
+  },
+  {
+   "file": "sumParallelogram",
+   "key": "sumParallelogram",
+   "speaker": "swiftee",
+   "text": "*સમાંતરબાજુ* *ચતુષ્કોણ* એવો *ચતુષ્કોણ* છે, જેમાં *સામસામેની* *બાજુઓની* બંને જોડ *સમાંતર* હોય છે.",
+   "spoken": "સમાંતરબાજુ ચતુષ્કોણ એવો ચતુષ્કોણ છે, જેમાં સામસામેની બાજુઓની બંને જોડ સમાંતર હોય છે.",
+   "seconds": 7.12
+  },
+  {
+   "file": "sumParallel",
+   "key": "sumParallel",
+   "speaker": "swiftee",
+   "text": "*સામસામેની* *બાજુઓ* *સમાંતર* હોય છે.",
+   "spoken": "સામસામેની બાજુઓ સમાંતર હોય છે.",
+   "seconds": 2.72
+  },
+  {
+   "file": "sumEqual",
+   "key": "sumEqual",
+   "speaker": "swiftee",
+   "text": "*સામસામેની* *બાજુઓ* *સમાન* હોય છે.",
+   "spoken": "સામસામેની બાજુઓ સમાન હોય છે.",
+   "seconds": 2.64
+  },
+  {
+   "file": "sumAngles",
+   "key": "sumAngles",
+   "speaker": "swiftee",
+   "text": "*સામસામેના* *ખૂણા* *સમાન* હોય છે.",
+   "spoken": "સામસામેના ખૂણા સમાન હોય છે.",
+   "seconds": 2.48
+  },
+  {
+   "file": "sumSupplementary",
+   "key": "sumSupplementary",
+   "speaker": "swiftee",
+   "text": "*પાસપાસેના* *ખૂણા* *પૂરકકોણ* છે. તેમનો સરવાળો *180°* થાય છે.",
+   "spoken": "પાસપાસેના ખૂણા પૂરકકોણ છે. તેમનો સરવાળો એકસો એંસી અંશ થાય છે.",
+   "seconds": 5.36
+  }
+ ]
+}

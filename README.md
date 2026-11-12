@@ -59,6 +59,9 @@ Every word on screen comes from `locales/locales.json` by key (`shell/i18n.js`):
   Swiftee and the narrator are ElevenLabs' Sayali, Popo is Vardaan, `eleven_v4` (`eleven_multilingual_v2` has no
   Marathi). `ELEVENLABS_API_KEY=… node tools/vo_lang_record.js mr --only <file>,…` records masters from the script
   (`--count`: words, characters and credits without calling the API), then `node tools/vo_lang_build.js mr`.
+- **Gujarati is voiced** (`?lan=gu`) the same way, from `assets/VO-GU/` (`vo_gu.js`, `vo_script_gu.json`, `masters/`):
+  Swiftee and the narrator are ElevenLabs' Hetalben, Popo is Bhavesh Bhai, `eleven_v4`
+  (`node tools/vo_lang_record.js gu …`, then `node tools/vo_lang_build.js gu`).
   The other languages play the English voice under their own words.
 - Not translated: the `?dev=1` panel (a developer's tool), the `<noscript>` line (shown only without JavaScript) and the
   painted "Fishing Frenzy 2" logo (an image).
@@ -79,5 +82,5 @@ leaves the tests, tools and docs out.
 ## Tests (Python Playwright)
 
 - `python3 tests/lesson.py [chromium|webkit] [WxH] [touch]`: the whole lesson with real taps and drags
-  (`TA_LAN=hi` or `TA_LAN=mr` for the Hindi or Marathi lesson and its voice).
+  (`TA_LAN=hi`, `TA_LAN=mr` or `TA_LAN=gu` for the Hindi, Marathi or Gujarati lesson and its voice).
 - `python3 tests/journey.py`: the journey, from the banner's Play to the fishing and back.

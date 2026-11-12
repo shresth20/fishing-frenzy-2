@@ -10,11 +10,11 @@ real taps and drags (Python Playwright: pip install playwright && playwright ins
   answer boxes     a wrong value first, then the right ones
   the end          the score card counts the checks right on the first try
   the voice-over   every clip it fetched loaded, all from the player's language's recordings (assets/VO-HI/ with
-                   TA_LAN=hi, assets/VO-MR/ with TA_LAN=mr) or, for a language not recorded, the English ones (parts/lesson/assets/vo/)
+                   TA_LAN=hi, assets/VO-MR/ with TA_LAN=mr, assets/VO-GU/ with TA_LAN=gu) or, for a language not recorded, the English ones (parts/lesson/assets/vo/)
 
 Checks there is no Back, Next or screen list, no console error or failed request, and that no screen stalls.
 A screenshot of every screen goes to /tmp/parallelogram-lesson (or $TA_SHOTS). Clips play at ?speed=3.
-In another language: TA_LAN=hi (or mr) python3 tests/lesson.py (?lan=hi).
+In another language: TA_LAN=hi (or mr, gu) python3 tests/lesson.py (?lan=hi).
 """
 import functools
 import http.server
