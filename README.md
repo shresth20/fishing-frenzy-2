@@ -54,8 +54,12 @@ Every word on screen comes from `locales/locales.json` by key (`shell/i18n.js`):
   `ariaAnswerBox.*`). The script (`vo_script_hi.json`: each line as shown and as spoken, notation said in words) and the
   studio's MP3s (`masters/`) sit beside the clips and stay out of the deploy. After a new or re-recorded master,
   `node tools/vo_lang_build.js hi` makes its clip (Ogg Opus, 32 kbps, at the English clips' loudness) and the map, and
-  lists any line the game says that has no clip (needs Playwright, as `parts/lesson/tools/vo_build.js` does). The other
-  languages play the English voice under their own words.
+  lists any line the game says that has no clip (needs Playwright, as `parts/lesson/tools/vo_build.js` does).
+- **Marathi is voiced** (`?lan=mr`) the same way, from `assets/VO-MR/` (`vo_mr.js`, `vo_script_mr.json`, `masters/`):
+  Swiftee and the narrator are ElevenLabs' Sayali, Popo is Vardaan, `eleven_v4` (`eleven_multilingual_v2` has no
+  Marathi). `ELEVENLABS_API_KEY=… node tools/vo_lang_record.js mr --only <file>,…` records masters from the script
+  (`--count`: words, characters and credits without calling the API), then `node tools/vo_lang_build.js mr`.
+  The other languages play the English voice under their own words.
 - Not translated: the `?dev=1` panel (a developer's tool), the `<noscript>` line (shown only without JavaScript) and the
   painted "Fishing Frenzy 2" logo (an image).
 
@@ -75,5 +79,5 @@ leaves the tests, tools and docs out.
 ## Tests (Python Playwright)
 
 - `python3 tests/lesson.py [chromium|webkit] [WxH] [touch]`: the whole lesson with real taps and drags
-  (`TA_LAN=hi` for the Hindi lesson and its voice).
+  (`TA_LAN=hi` or `TA_LAN=mr` for the Hindi or Marathi lesson and its voice).
 - `python3 tests/journey.py`: the journey, from the banner's Play to the fishing and back.

@@ -1,0 +1,1801 @@
+{
+ "about": "Marathi voice-over: one clip per locales.json \"mr\" key (a value variant as key.<value>). Recorded with ElevenLabs (model below; masters/<file>.mp3) by tools/vo_lang_record.js; the game plays <file>.ogg (Ogg Opus 32 kbps mono, -16.4 LUFS) made by tools/vo_lang_build.js, which also writes vo_mr.js. \"text\" is the line as the screen shows it; \"spoken\" is what the voice was given (notation said in words); \"seconds\" is the clip's length.",
+ "model": "eleven_v4",
+ "language_code": "mr",
+ "voices": {
+  "swiftee": {
+   "name": "Sayali - Marathi User Onboarding Agent",
+   "voice_id": "ObcUVfo3RbQv9i2RBbAe"
+  },
+  "popo": {
+   "name": "Vardaan - Expressive Marathi Care Agent",
+   "voice_id": "ritE7mWIE55SDe0J11Kk"
+  }
+ },
+ "settings": {
+  "swiftee": {
+   "stability": 0.5,
+   "similarity_boost": 0.8,
+   "style": 0.15,
+   "use_speaker_boost": true
+  },
+  "popo": {
+   "stability": 0.5,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true
+  },
+  "seed": 4242
+ },
+ "not_recorded": [
+  {
+   "key": "loadArtFailed",
+   "why": "filled with a browser error message at run time",
+   "text": "खेळाची चित्रे लोड होऊ शकली नाहीत ({error})."
+  },
+  {
+   "key": "ariaFishCaught",
+   "why": "filled with the running fish count at run time",
+   "text": "पकडलेले मासे: {n}"
+  }
+ ],
+ "clips": [
+  {
+   "file": "gameTitle",
+   "key": "gameTitle",
+   "speaker": "swiftee",
+   "text": "फिशिंग फ्रेंझी 2",
+   "spoken": "फिशिंग फ्रेंझी टू",
+   "seconds": 1.52
+  },
+  {
+   "file": "gettingReady",
+   "key": "gettingReady",
+   "speaker": "swiftee",
+   "text": "तयारी सुरू आहे…",
+   "spoken": "तयारी सुरू आहे…",
+   "seconds": 1.28
+  },
+  {
+   "file": "loadFailed",
+   "key": "loadFailed",
+   "speaker": "swiftee",
+   "text": "खेळ लोड होऊ शकला नाही.",
+   "spoken": "खेळ लोड होऊ शकला नाही.",
+   "seconds": 1.84
+  },
+  {
+   "file": "tryAgain",
+   "key": "tryAgain",
+   "speaker": "swiftee",
+   "text": "पुन्हा प्रयत्न करा",
+   "spoken": "पुन्हा प्रयत्न करा",
+   "seconds": 1.28
+  },
+  {
+   "file": "rotateHint",
+   "key": "rotateHint",
+   "speaker": "swiftee",
+   "text": "सर्वोत्तम अनुभवासाठी तुमचे डिव्हाइस फिरवा",
+   "spoken": "सर्वोत्तम अनुभवासाठी तुमचे डिव्हाइस फिरवा",
+   "seconds": 3.12
+  },
+  {
+   "file": "partLesson",
+   "key": "partLesson",
+   "speaker": "swiftee",
+   "text": "स्विफ्टीचा समांतरभुज चौकोनाचा धडा",
+   "spoken": "स्विफ्टीचा समांतरभुज चौकोनाचा धडा",
+   "seconds": 3.12
+  },
+  {
+   "file": "partFishing",
+   "key": "partFishing",
+   "speaker": "swiftee",
+   "text": "पोपोची समांतरभुज चौकोनी जाळी",
+   "spoken": "पोपोची समांतरभुज चौकोनी जाळी",
+   "seconds": 2.72
+  },
+  {
+   "file": "loading",
+   "key": "loading",
+   "speaker": "swiftee",
+   "text": "लोड होत आहे…",
+   "spoken": "लोड होत आहे…",
+   "seconds": 1.36
+  },
+  {
+   "file": "ariaPlay",
+   "key": "ariaPlay",
+   "speaker": "swiftee",
+   "text": "खेळा",
+   "spoken": "खेळा",
+   "seconds": 0.64
+  },
+  {
+   "file": "ariaNetCorner",
+   "key": "ariaNetCorner",
+   "speaker": "swiftee",
+   "text": "जाळ्याचा कोपरा. तो ड्रॅग करा, किंवा ॲरो कीजने हलवा आणि एंटर दाबा.",
+   "spoken": "जाळ्याचा कोपरा. तो ड्रॅग करा, किंवा ॲरो कीजने हलवा आणि एंटर दाबा.",
+   "seconds": 6.0
+  },
+  {
+   "file": "ariaStepBack",
+   "key": "ariaStepBack",
+   "speaker": "swiftee",
+   "text": "कोपरा एक टप्पा मागे सरकवा",
+   "spoken": "कोपरा एक टप्पा मागे सरकवा",
+   "seconds": 2.4
+  },
+  {
+   "file": "ariaStepOn",
+   "key": "ariaStepOn",
+   "speaker": "swiftee",
+   "text": "कोपरा एक टप्पा पुढे सरकवा",
+   "spoken": "कोपरा एक टप्पा पुढे सरकवा",
+   "seconds": 2.4
+  },
+  {
+   "file": "ariaSoundOn",
+   "key": "ariaSoundOn",
+   "speaker": "swiftee",
+   "text": "आवाज सुरू",
+   "spoken": "आवाज सुरू",
+   "seconds": 1.12
+  },
+  {
+   "file": "ariaSoundOff",
+   "key": "ariaSoundOff",
+   "speaker": "swiftee",
+   "text": "आवाज बंद",
+   "spoken": "आवाज बंद",
+   "seconds": 1.28
+  },
+  {
+   "file": "ariaPause",
+   "key": "ariaPause",
+   "speaker": "swiftee",
+   "text": "थांबवा",
+   "spoken": "थांबवा",
+   "seconds": 0.8
+  },
+  {
+   "file": "ariaPaused",
+   "key": "ariaPaused",
+   "speaker": "swiftee",
+   "text": "थांबवले आहे",
+   "spoken": "थांबवले आहे",
+   "seconds": 1.04
+  },
+  {
+   "file": "btnCheck",
+   "key": "btnCheck",
+   "speaker": "swiftee",
+   "text": "तपासा",
+   "spoken": "तपासा",
+   "seconds": 0.8
+  },
+  {
+   "file": "btnCatch",
+   "key": "btnCatch",
+   "speaker": "swiftee",
+   "text": "पकडा",
+   "spoken": "पकडा",
+   "seconds": 0.64
+  },
+  {
+   "file": "btnDropNet",
+   "key": "btnDropNet",
+   "speaker": "swiftee",
+   "text": "जाळे टाका",
+   "spoken": "जाळे टाका",
+   "seconds": 1.04
+  },
+  {
+   "file": "btnResume",
+   "key": "btnResume",
+   "speaker": "swiftee",
+   "text": "पुन्हा सुरू करा",
+   "spoken": "पुन्हा सुरू करा",
+   "seconds": 1.12
+  },
+  {
+   "file": "btnRestart",
+   "key": "btnRestart",
+   "speaker": "swiftee",
+   "text": "पुन्हा सुरुवात करा",
+   "spoken": "पुन्हा सुरुवात करा",
+   "seconds": 1.28
+  },
+  {
+   "file": "pauseKicker",
+   "key": "pauseKicker",
+   "speaker": "swiftee",
+   "text": "थोडी विश्रांती घ्या",
+   "spoken": "थोडी विश्रांती घ्या",
+   "seconds": 1.36
+  },
+  {
+   "file": "pauseTitle",
+   "key": "pauseTitle",
+   "speaker": "swiftee",
+   "text": "साहस थांबले आहे",
+   "spoken": "साहस थांबले आहे",
+   "seconds": 1.52
+  },
+  {
+   "file": "pauseText",
+   "key": "pauseText",
+   "speaker": "swiftee",
+   "text": "तुमचा पुढचा मासा थोडा थांबू शकतो.",
+   "spoken": "तुमचा पुढचा मासा थोडा थांबू शकतो.",
+   "seconds": 2.72
+  },
+  {
+   "file": "goalTitle",
+   "key": "goalTitle",
+   "speaker": "swiftee",
+   "text": "छान मासेमारी, पोपो!",
+   "spoken": "छान मासेमारी, पोपो!",
+   "seconds": 2.24
+  },
+  {
+   "file": "goalSub",
+   "key": "goalSub",
+   "speaker": "swiftee",
+   "text": "तुम्ही पोपोला पकडायला मदत केली...",
+   "spoken": "तुम्ही पोपोला पकडायला मदत केली...",
+   "seconds": 2.32
+  },
+  {
+   "file": "goalYourCatch",
+   "key": "goalYourCatch",
+   "speaker": "swiftee",
+   "text": "तुम्ही पकडलेले",
+   "spoken": "तुम्ही पकडलेले",
+   "seconds": 1.2
+  },
+  {
+   "file": "goalMaxPossible",
+   "key": "goalMaxPossible",
+   "speaker": "swiftee",
+   "text": "जास्तीत जास्त शक्य",
+   "spoken": "जास्तीत जास्त शक्य",
+   "seconds": 1.76
+  },
+  {
+   "file": "goalFish",
+   "key": "goalFish",
+   "speaker": "swiftee",
+   "text": "मासे",
+   "spoken": "मासे",
+   "seconds": 0.8
+  },
+  {
+   "file": "goalLine",
+   "key": "goalLine",
+   "speaker": "swiftee",
+   "text": "पुढच्या वेळी आणखी मासे पकडू शकाल का?",
+   "spoken": "पुढच्या वेळी आणखी मासे पकडू शकाल का?",
+   "seconds": 2.56
+  },
+  {
+   "file": "goalTryAgain",
+   "key": "goalTryAgain",
+   "speaker": "swiftee",
+   "text": "पुन्हा प्रयत्न करा",
+   "spoken": "पुन्हा प्रयत्न करा",
+   "seconds": 1.28
+  },
+  {
+   "file": "unitCm",
+   "key": "unitCm",
+   "speaker": "swiftee",
+   "text": "सेमी",
+   "spoken": "सेंटीमीटर",
+   "seconds": 1.12
+  },
+  {
+   "file": "popoHuh",
+   "key": "popoHuh",
+   "speaker": "popo",
+   "text": "अं?!",
+   "spoken": "अं?!",
+   "seconds": 0.64
+  },
+  {
+   "file": "popoWoah",
+   "key": "popoWoah",
+   "speaker": "popo",
+   "text": "*अरेच्चा!*",
+   "spoken": "अरेच्चा!",
+   "seconds": 1.12
+  },
+  {
+   "file": "popoWow",
+   "key": "popoWow",
+   "speaker": "popo",
+   "text": "*व्वा!*",
+   "spoken": "व्वा!",
+   "seconds": 0.96
+  },
+  {
+   "file": "popoWhatACatch",
+   "key": "popoWhatACatch",
+   "speaker": "popo",
+   "text": "काय मस्त *मासा!*",
+   "spoken": "काय मस्त मासा!",
+   "seconds": 1.76
+  },
+  {
+   "file": "popoGreatCatch",
+   "key": "popoGreatCatch",
+   "speaker": "popo",
+   "text": "छान *पकडला!*",
+   "spoken": "छान पकडला!",
+   "seconds": 1.04
+  },
+  {
+   "file": "popoHaHaHa",
+   "key": "popoHaHaHa",
+   "speaker": "popo",
+   "text": "हा हा *हा!*",
+   "spoken": "हा हा हा!",
+   "seconds": 1.2
+  },
+  {
+   "file": "hookH1",
+   "key": "hookH1",
+   "speaker": "swiftee",
+   "text": "पोपो आज मासे पकडायला गेला होता.",
+   "spoken": "पोपो आज मासे पकडायला गेला होता.",
+   "seconds": 2.4
+  },
+  {
+   "file": "hookH2",
+   "key": "hookH2",
+   "speaker": "popo",
+   "text": "चला, खूप *मासे* पकडूया!",
+   "spoken": "चला, खूप मासे पकडूया!",
+   "seconds": 2.08
+  },
+  {
+   "file": "hookH3",
+   "key": "hookH3",
+   "speaker": "popo",
+   "text": "अरे बापरे! हे जाळे *गुंतले.*",
+   "spoken": "अरे बापरे! हे जाळे गुंतले.",
+   "seconds": 2.56
+  },
+  {
+   "file": "hookH4",
+   "key": "hookH4",
+   "speaker": "swiftee",
+   "text": "पोपोने वेगवेगळ्या आकारांची जाळी वापरून पाहिली, पण ती सारखी *गुंतत* राहिली.",
+   "spoken": "पोपोने वेगवेगळ्या आकारांची जाळी वापरून पाहिली, पण ती सारखी गुंतत राहिली.",
+   "seconds": 5.12
+  },
+  {
+   "file": "hookH5",
+   "key": "hookH5",
+   "speaker": "popo",
+   "text": "मला असे जाळे हवे आहे, जे पाण्यात *उघडे* राहील!",
+   "spoken": "मला असे जाळे हवे आहे, जे पाण्यात उघडे राहील!",
+   "seconds": 3.28
+  },
+  {
+   "file": "hookWhoa",
+   "key": "hookWhoa",
+   "speaker": "popo",
+   "text": "अरे वा! एक *महाकाय* मासा!",
+   "spoken": "अरे वा! एक महाकाय मासा!",
+   "seconds": 2.4
+  },
+  {
+   "file": "hookH6",
+   "key": "hookH6",
+   "speaker": "popo",
+   "text": "अरे! हे जाळे *उघडे* राहिले!",
+   "spoken": "अरे! हे जाळे उघडे राहिले!",
+   "seconds": 2.0
+  },
+  {
+   "file": "hookH7",
+   "key": "hookH7",
+   "speaker": "popo",
+   "text": "जमले! हा कोणता *आकार* आहे?",
+   "spoken": "जमले! हा कोणता आकार आहे?",
+   "seconds": 2.32
+  },
+  {
+   "file": "hookH8",
+   "key": "hookH8",
+   "speaker": "swiftee",
+   "text": "या आकाराला *समांतरभुज* *चौकोन* म्हणतात.",
+   "spoken": "या आकाराला समांतरभुज चौकोन म्हणतात.",
+   "seconds": 2.96
+  },
+  {
+   "file": "hookH9",
+   "key": "hookH9",
+   "speaker": "popo",
+   "text": "समांतरभुज चौकोन? तो कोणता *आकार* आहे?",
+   "spoken": "समांतरभुज चौकोन? तो कोणता आकार आहे?",
+   "seconds": 3.12
+  },
+  {
+   "file": "hookH10",
+   "key": "hookH10",
+   "speaker": "swiftee",
+   "text": "चला, *शोधूया!*",
+   "spoken": "चला, शोधूया!",
+   "seconds": 1.44
+  },
+  {
+   "file": "welcomeGreatJob",
+   "key": "welcomeGreatJob",
+   "speaker": "swiftee",
+   "text": "*उत्तम* काम!",
+   "spoken": "उत्तम काम!",
+   "seconds": 1.12
+  },
+  {
+   "file": "helpPopoCatch",
+   "key": "helpPopoCatch",
+   "speaker": "swiftee",
+   "text": "आता पोपोला थोडे *मासे* पकडायला मदत करूया!",
+   "spoken": "आता पोपोला थोडे मासे पकडायला मदत करूया!",
+   "seconds": 2.96
+  },
+  {
+   "file": "netDragB",
+   "key": "netDragB",
+   "speaker": "swiftee",
+   "text": "शिरोबिंदू B ड्रॅग करून जाळ्याचा *समांतरभुज* *चौकोन* बनवा.",
+   "spoken": "शिरोबिंदू बी ड्रॅग करून जाळ्याचा समांतरभुज चौकोन बनवा.",
+   "seconds": 4.4
+  },
+  {
+   "file": "hintAbLonger",
+   "key": "hintAbLonger",
+   "speaker": "swiftee",
+   "text": "समांतरभुज चौकोनाच्या संमुख बाजू समान असतात. AB आणखी *लांब* करा.",
+   "spoken": "समांतरभुज चौकोनाच्या संमुख बाजू समान असतात. ए बी आणखी लांब करा.",
+   "seconds": 5.84
+  },
+  {
+   "file": "hintAbShorter",
+   "key": "hintAbShorter",
+   "speaker": "swiftee",
+   "text": "समांतरभुज चौकोनाच्या संमुख बाजू समान असतात. AB आणखी *लहान* करा.",
+   "spoken": "समांतरभुज चौकोनाच्या संमुख बाजू समान असतात. ए बी आणखी लहान करा.",
+   "seconds": 5.84
+  },
+  {
+   "file": "netDragC",
+   "key": "netDragC",
+   "speaker": "swiftee",
+   "text": "शिरोबिंदू C ड्रॅग करून जाळ्याचा *समांतरभुज* *चौकोन* बनवा.",
+   "spoken": "शिरोबिंदू सी ड्रॅग करून जाळ्याचा समांतरभुज चौकोन बनवा.",
+   "seconds": 4.4
+  },
+  {
+   "file": "hintBcLonger",
+   "key": "hintBcLonger",
+   "speaker": "swiftee",
+   "text": "समांतरभुज चौकोनाच्या संमुख बाजू समान असतात. BC आणखी *लांब* करा.",
+   "spoken": "समांतरभुज चौकोनाच्या संमुख बाजू समान असतात. बी सी आणखी लांब करा.",
+   "seconds": 5.52
+  },
+  {
+   "file": "hintBcShorter",
+   "key": "hintBcShorter",
+   "speaker": "swiftee",
+   "text": "समांतरभुज चौकोनाच्या संमुख बाजू समान असतात. BC आणखी *लहान* करा.",
+   "spoken": "समांतरभुज चौकोनाच्या संमुख बाजू समान असतात. बी सी आणखी लहान करा.",
+   "seconds": 5.68
+  },
+  {
+   "file": "hintCdLonger",
+   "key": "hintCdLonger",
+   "speaker": "swiftee",
+   "text": "संमुख बाजू समान असतात. CD आणखी *लांब* करा.",
+   "spoken": "संमुख बाजू समान असतात. सी डी आणखी लांब करा.",
+   "seconds": 4.16
+  },
+  {
+   "file": "hintCdShorter",
+   "key": "hintCdShorter",
+   "speaker": "swiftee",
+   "text": "संमुख बाजू समान असतात. CD आणखी *लहान* करा.",
+   "spoken": "संमुख बाजू समान असतात. सी डी आणखी लहान करा.",
+   "seconds": 4.24
+  },
+  {
+   "file": "netDragD",
+   "key": "netDragD",
+   "speaker": "swiftee",
+   "text": "शिरोबिंदू D ड्रॅग करून जाळ्याचा *समांतरभुज* *चौकोन* बनवा.",
+   "spoken": "शिरोबिंदू डी ड्रॅग करून जाळ्याचा समांतरभुज चौकोन बनवा.",
+   "seconds": 4.4
+  },
+  {
+   "file": "hintCdAdLonger",
+   "key": "hintCdAdLonger",
+   "speaker": "swiftee",
+   "text": "संमुख बाजू समान असतात. CD आणि AD आणखी *लांब* करा.",
+   "spoken": "संमुख बाजू समान असतात. सी डी आणि ए डी आणखी लांब करा.",
+   "seconds": 5.36
+  },
+  {
+   "file": "hintCdAdShorter",
+   "key": "hintCdAdShorter",
+   "speaker": "swiftee",
+   "text": "संमुख बाजू समान असतात. CD आणि AD आणखी *लहान* करा.",
+   "spoken": "संमुख बाजू समान असतात. सी डी आणि ए डी आणखी लहान करा.",
+   "seconds": 5.36
+  },
+  {
+   "file": "hintAngleCBigger",
+   "key": "hintAngleCBigger",
+   "speaker": "swiftee",
+   "text": "संमुख कोन समान असतात. ∠C आणखी *मोठा* करा.",
+   "spoken": "संमुख कोन समान असतात. कोन सी आणखी मोठा करा.",
+   "seconds": 4.0
+  },
+  {
+   "file": "hintAngleCSmaller",
+   "key": "hintAngleCSmaller",
+   "speaker": "swiftee",
+   "text": "संमुख कोन समान असतात. ∠C आणखी *लहान* करा.",
+   "spoken": "संमुख कोन समान असतात. कोन सी आणखी लहान करा.",
+   "seconds": 4.0
+  },
+  {
+   "file": "hintAngleBBigger",
+   "key": "hintAngleBBigger",
+   "speaker": "swiftee",
+   "text": "लगतच्या कोनांची बेरीज 180° होते. ∠B आणखी *मोठा* करा.",
+   "spoken": "लगतच्या कोनांची बेरीज एकशे ऐंशी अंश होते. कोन बी आणखी मोठा करा.",
+   "seconds": 5.28
+  },
+  {
+   "file": "hintAngleBSmaller",
+   "key": "hintAngleBSmaller",
+   "speaker": "swiftee",
+   "text": "लगतच्या कोनांची बेरीज 180° होते. ∠B आणखी *लहान* करा.",
+   "spoken": "लगतच्या कोनांची बेरीज एकशे ऐंशी अंश होते. कोन बी आणखी लहान करा.",
+   "seconds": 5.28
+  },
+  {
+   "file": "hintOcLonger",
+   "key": "hintOcLonger",
+   "speaker": "swiftee",
+   "text": "कर्ण एकमेकांना दुभागतात. OC आणखी *लांब* करा.",
+   "spoken": "कर्ण एकमेकांना दुभागतात. ओ सी आणखी लांब करा.",
+   "seconds": 4.08
+  },
+  {
+   "file": "hintOcShorter",
+   "key": "hintOcShorter",
+   "speaker": "swiftee",
+   "text": "कर्ण एकमेकांना दुभागतात. OC आणखी *लहान* करा.",
+   "spoken": "कर्ण एकमेकांना दुभागतात. ओ सी आणखी लहान करा.",
+   "seconds": 4.08
+  },
+  {
+   "file": "lessonPageTitle",
+   "key": "lessonPageTitle",
+   "speaker": "swiftee",
+   "text": "समांतरभुज चौकोनाचा धडा · फिशिंग फ्रेंझी 2",
+   "spoken": "समांतरभुज चौकोनाचा धडा, फिशिंग फ्रेंझी टू",
+   "seconds": 3.76
+  },
+  {
+   "file": "ariaBoard",
+   "key": "ariaBoard",
+   "speaker": "swiftee",
+   "text": "समांतरभुज चौकोन ABCD",
+   "spoken": "समांतरभुज चौकोन ए बी सी डी",
+   "seconds": 3.92
+  },
+  {
+   "file": "ariaShape.A",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "आकार {name}",
+   "spoken": "आकार ए",
+   "seconds": 1.12
+  },
+  {
+   "file": "ariaShape.B",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "आकार {name}",
+   "spoken": "आकार बी",
+   "seconds": 1.04
+  },
+  {
+   "file": "ariaShape.C",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "आकार {name}",
+   "spoken": "आकार सी",
+   "seconds": 1.04
+  },
+  {
+   "file": "ariaShape.D",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "आकार {name}",
+   "spoken": "आकार डी",
+   "seconds": 1.2
+  },
+  {
+   "file": "ariaAnswerBox.CD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तराची चौकट {name}",
+   "spoken": "उत्तराची चौकट सी डी",
+   "seconds": 2.72
+  },
+  {
+   "file": "ariaAnswerBox.AD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तराची चौकट {name}",
+   "spoken": "उत्तराची चौकट ए डी",
+   "seconds": 2.72
+  },
+  {
+   "file": "ariaAnswerBox.angleB",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तराची चौकट {name}",
+   "spoken": "उत्तराची चौकट कोन बी",
+   "seconds": 2.08
+  },
+  {
+   "file": "ariaAnswerBox.angleC",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तराची चौकट {name}",
+   "spoken": "उत्तराची चौकट कोन सी",
+   "seconds": 2.08
+  },
+  {
+   "file": "ariaAnswerBox.angleD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तराची चौकट {name}",
+   "spoken": "उत्तराची चौकट कोन डी",
+   "seconds": 2.16
+  },
+  {
+   "file": "ariaAnswerBox.OC",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तराची चौकट {name}",
+   "spoken": "उत्तराची चौकट ओ सी",
+   "seconds": 2.32
+  },
+  {
+   "file": "ariaAnswerBox.OD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "उत्तराची चौकट {name}",
+   "spoken": "उत्तराची चौकट ओ डी",
+   "seconds": 2.24
+  },
+  {
+   "file": "altSwiftee",
+   "key": "altSwiftee",
+   "speaker": "swiftee",
+   "text": "स्विफ्टी पक्षी",
+   "spoken": "स्विफ्टी पक्षी",
+   "seconds": 1.36
+  },
+  {
+   "file": "btnNext",
+   "key": "btnNext",
+   "speaker": "swiftee",
+   "text": "पुढे",
+   "spoken": "पुढे",
+   "seconds": 0.64
+  },
+  {
+   "file": "lessonComplete",
+   "key": "lessonComplete",
+   "speaker": "swiftee",
+   "text": "धडा पूर्ण झाला!",
+   "spoken": "धडा पूर्ण झाला!",
+   "seconds": 1.52
+  },
+  {
+   "file": "lessonPlayAgain",
+   "key": "lessonPlayAgain",
+   "speaker": "swiftee",
+   "text": "पुन्हा खेळा",
+   "spoken": "पुन्हा खेळा",
+   "seconds": 0.96
+  },
+  {
+   "file": "lessonPauseTitle",
+   "key": "lessonPauseTitle",
+   "speaker": "swiftee",
+   "text": "धडा थांबवला आहे",
+   "spoken": "धडा थांबवला आहे",
+   "seconds": 1.44
+  },
+  {
+   "file": "lessonPauseText",
+   "key": "lessonPauseText",
+   "speaker": "swiftee",
+   "text": "स्विफ्टी तुमची वाट पाहील.",
+   "spoken": "स्विफ्टी तुमची वाट पाहील.",
+   "seconds": 2.0
+  },
+  {
+   "file": "lessonScore.0",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "तुम्ही {total} पैकी {right} आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "spoken": "तुम्ही नऊ पैकी शून्य आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "seconds": 4.64
+  },
+  {
+   "file": "lessonScore.1",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "तुम्ही {total} पैकी {right} आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "spoken": "तुम्ही नऊ पैकी एक आव्हान पहिल्याच प्रयत्नात बरोबर सोडवले.",
+   "seconds": 4.32
+  },
+  {
+   "file": "lessonScore.2",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "तुम्ही {total} पैकी {right} आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "spoken": "तुम्ही नऊ पैकी दोन आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "seconds": 4.48
+  },
+  {
+   "file": "lessonScore.3",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "तुम्ही {total} पैकी {right} आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "spoken": "तुम्ही नऊ पैकी तीन आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "seconds": 4.64
+  },
+  {
+   "file": "lessonScore.4",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "तुम्ही {total} पैकी {right} आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "spoken": "तुम्ही नऊ पैकी चार आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "seconds": 4.4
+  },
+  {
+   "file": "lessonScore.5",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "तुम्ही {total} पैकी {right} आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "spoken": "तुम्ही नऊ पैकी पाच आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "seconds": 4.48
+  },
+  {
+   "file": "lessonScore.6",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "तुम्ही {total} पैकी {right} आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "spoken": "तुम्ही नऊ पैकी सहा आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "seconds": 4.4
+  },
+  {
+   "file": "lessonScore.7",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "तुम्ही {total} पैकी {right} आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "spoken": "तुम्ही नऊ पैकी सात आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "seconds": 4.32
+  },
+  {
+   "file": "lessonScore.8",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "तुम्ही {total} पैकी {right} आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "spoken": "तुम्ही नऊ पैकी आठ आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "seconds": 4.48
+  },
+  {
+   "file": "lessonScore.9",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "तुम्ही {total} पैकी {right} आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "spoken": "तुम्ही नऊ पैकी नऊ आव्हाने पहिल्याच प्रयत्नात बरोबर सोडवली.",
+   "seconds": 4.48
+  },
+  {
+   "file": "ariaSummary",
+   "key": "ariaSummary",
+   "speaker": "swiftee",
+   "text": "सारांश",
+   "spoken": "सारांश",
+   "seconds": 1.04
+  },
+  {
+   "file": "wordTrapezium",
+   "key": "wordTrapezium",
+   "speaker": "swiftee",
+   "text": "समलंब चौकोन",
+   "spoken": "समलंब चौकोन",
+   "seconds": 1.44
+  },
+  {
+   "file": "wordParallelogram",
+   "key": "wordParallelogram",
+   "speaker": "swiftee",
+   "text": "समांतरभुज चौकोन",
+   "spoken": "समांतरभुज चौकोन",
+   "seconds": 1.76
+  },
+  {
+   "file": "capParallelSides",
+   "key": "capParallelSides",
+   "speaker": "swiftee",
+   "text": "समांतर बाजू",
+   "spoken": "समांतर बाजू",
+   "seconds": 1.28
+  },
+  {
+   "file": "capEqualSides",
+   "key": "capEqualSides",
+   "speaker": "swiftee",
+   "text": "समान बाजू",
+   "spoken": "समान बाजू",
+   "seconds": 1.12
+  },
+  {
+   "file": "capEqualAngles",
+   "key": "capEqualAngles",
+   "speaker": "swiftee",
+   "text": "समान कोन",
+   "spoken": "समान कोन",
+   "seconds": 1.12
+  },
+  {
+   "file": "capSupplementary",
+   "key": "capSupplementary",
+   "speaker": "swiftee",
+   "text": "पूरक कोन",
+   "spoken": "पूरक कोन",
+   "seconds": 1.04
+  },
+  {
+   "file": "capEqualHalves",
+   "key": "capEqualHalves",
+   "speaker": "swiftee",
+   "text": "समान अर्धे भाग",
+   "spoken": "समान अर्धे भाग",
+   "seconds": 1.6
+  },
+  {
+   "file": "capDiagonals",
+   "key": "capDiagonals",
+   "speaker": "swiftee",
+   "text": "कर्ण",
+   "spoken": "कर्ण",
+   "seconds": 0.72
+  },
+  {
+   "file": "lsIntro",
+   "key": "lsIntro",
+   "speaker": "swiftee",
+   "text": "आपण आधी *चौकोनांविषयी*\nशिकलो आहोत.",
+   "spoken": "आपण आधी चौकोनांविषयी शिकलो आहोत.",
+   "seconds": 2.56
+  },
+  {
+   "file": "lsQuadSides",
+   "key": "lsQuadSides",
+   "speaker": "swiftee",
+   "text": "ज्या *बहुभुजाकृतीला* 4 *बाजू* असतात,\nतिला *चौकोन* म्हणतात.",
+   "spoken": "ज्या बहुभुजाकृतीला चार बाजू असतात, तिला चौकोन म्हणतात.",
+   "seconds": 4.32
+  },
+  {
+   "file": "lsSpecial",
+   "key": "lsSpecial",
+   "speaker": "swiftee",
+   "text": "हा एक विशेष प्रकारचा\n*चौकोन* आहे, त्याला *समलंब* *चौकोन* म्हणतात.",
+   "spoken": "हा एक विशेष प्रकारचा चौकोन आहे, त्याला समलंब चौकोन म्हणतात.",
+   "seconds": 4.64
+  },
+  {
+   "file": "lsOnePair",
+   "key": "lsOnePair",
+   "speaker": "swiftee",
+   "text": "*समलंब* *चौकोनाच्या* *संमुख*\n*बाजूंची* एक जोडी *समांतर* असते.",
+   "spoken": "समलंब चौकोनाच्या संमुख बाजूंची एक जोडी समांतर असते.",
+   "seconds": 4.4
+  },
+  {
+   "file": "lsAskPar",
+   "key": "lsAskPar",
+   "speaker": "swiftee",
+   "text": "*बाजूंची* कोणती जोडी\nएकमेकींना *समांतर* आहे?",
+   "spoken": "बाजूंची कोणती जोडी एकमेकींना समांतर आहे?",
+   "seconds": 3.28
+  },
+  {
+   "file": "lsAskParOk",
+   "key": "lsAskParOk",
+   "speaker": "swiftee",
+   "text": "बरोबर! AB ∥ CD.",
+   "spoken": "बरोबर! ए बी, सी डी ला समांतर आहे.",
+   "seconds": 3.2
+  },
+  {
+   "file": "lsAskParFbAD",
+   "key": "lsAskParFbAD",
+   "speaker": "swiftee",
+   "text": "पुन्हा पाहा. AD आणि BC एकमेकींकडे झुकल्या आहेत, म्हणून त्यांना लांब केले तर त्या एकमेकींना मिळतील.",
+   "spoken": "पुन्हा पाहा. ए डी आणि बी सी एकमेकींकडे झुकल्या आहेत, म्हणून त्यांना लांब केले तर त्या एकमेकींना मिळतील.",
+   "seconds": 8.32
+  },
+  {
+   "file": "lsWhatIf",
+   "key": "lsWhatIf",
+   "speaker": "swiftee",
+   "text": "आता *संमुख* *बाजूंची* दुसरी जोडीही\n*समांतर* केली तर?",
+   "spoken": "आता संमुख बाजूंची दुसरी जोडीही समांतर केली तर?",
+   "seconds": 3.52
+  },
+  {
+   "file": "lsDragPar",
+   "key": "lsDragPar",
+   "speaker": "swiftee",
+   "text": "*शिरोबिंदू* B ड्रॅग करून\nBC ही बाजू AD ला *समांतर* करा.",
+   "spoken": "शिरोबिंदू बी ड्रॅग करून बी सी ही बाजू ए डी ला समांतर करा.",
+   "seconds": 5.04
+  },
+  {
+   "file": "lsDragParAfter",
+   "key": "lsDragParAfter",
+   "speaker": "swiftee",
+   "text": "शाब्बास! आता BC ही बाजू\nAD ला *समांतर* आहे.",
+   "spoken": "शाब्बास! आता बी सी ही बाजू ए डी ला समांतर आहे.",
+   "seconds": 4.8
+  },
+  {
+   "file": "lsDragParShowAnswer",
+   "key": "lsDragParShowAnswer",
+   "speaker": "swiftee",
+   "text": "पाहा! BC बाजू AD च्याच\nदिशेने झुकली पाहिजे.",
+   "spoken": "पाहा! बी सी बाजू ए डी च्याच दिशेने झुकली पाहिजे.",
+   "seconds": 4.16
+  },
+  {
+   "file": "lsDragParAnswerAfter",
+   "key": "lsDragParAnswerAfter",
+   "speaker": "swiftee",
+   "text": "आता BC ही बाजू AD ला *समांतर* आहे.",
+   "spoken": "आता बी सी ही बाजू ए डी ला समांतर आहे.",
+   "seconds": 3.52
+  },
+  {
+   "file": "lsBothPar",
+   "key": "lsBothPar",
+   "speaker": "swiftee",
+   "text": "आता *संमुख* *बाजूंच्या* दोन्ही\nजोड्या *समांतर* आहेत.",
+   "spoken": "आता संमुख बाजूंच्या दोन्ही जोड्या समांतर आहेत.",
+   "seconds": 3.36
+  },
+  {
+   "file": "lsDefPg",
+   "key": "lsDefPg",
+   "speaker": "swiftee",
+   "text": "याला आपण *समांतरभुज* *चौकोन* म्हणतो.",
+   "spoken": "याला आपण समांतरभुज चौकोन म्हणतो.",
+   "seconds": 2.64
+  },
+  {
+   "file": "lsDefFull",
+   "key": "lsDefFull",
+   "speaker": "swiftee",
+   "text": "ज्या *चौकोनाच्या* *संमुख* *बाजूंच्या*\nदोन्ही जोड्या *समांतर* असतात,\nत्याला *समांतरभुज* *चौकोन* म्हणतात.",
+   "spoken": "ज्या चौकोनाच्या संमुख बाजूंच्या दोन्ही जोड्या समांतर असतात, त्याला समांतरभुज चौकोन म्हणतात.",
+   "seconds": 6.56
+  },
+  {
+   "file": "lsLengthsQ",
+   "key": "lsLengthsQ",
+   "speaker": "swiftee",
+   "text": "पण *बाजूंच्या*\nलांबीचे काय?",
+   "spoken": "पण बाजूंच्या लांबीचे काय?",
+   "seconds": 1.92
+  },
+  {
+   "file": "lsEqualQ",
+   "key": "lsEqualQ",
+   "speaker": "swiftee",
+   "text": "त्याही *समान* आहेत का?",
+   "spoken": "त्याही समान आहेत का?",
+   "seconds": 1.36
+  },
+  {
+   "file": "lsFindOut",
+   "key": "lsFindOut",
+   "speaker": "swiftee",
+   "text": "चला, शोधूया!",
+   "spoken": "चला, शोधूया!",
+   "seconds": 1.44
+  },
+  {
+   "file": "lsInteresting",
+   "key": "lsInteresting",
+   "speaker": "swiftee",
+   "text": "लांबींबद्दल एक\nमजेशीर गोष्ट\nलक्षात येते.",
+   "spoken": "लांबींबद्दल एक मजेशीर गोष्ट लक्षात येते.",
+   "seconds": 3.04
+  },
+  {
+   "file": "lsAskSides",
+   "key": "lsAskSides",
+   "speaker": "swiftee",
+   "text": "*बाजूंबद्दल* तुम्हाला\nकाय लक्षात येते?",
+   "spoken": "बाजूंबद्दल तुम्हाला काय लक्षात येते?",
+   "seconds": 2.32
+  },
+  {
+   "file": "lsAskSidesOk",
+   "key": "lsAskSidesOk",
+   "speaker": "swiftee",
+   "text": "बरोबर! *संमुख*\n*बाजू* *समान* असतात.",
+   "spoken": "बरोबर! संमुख बाजू समान असतात.",
+   "seconds": 3.12
+  },
+  {
+   "file": "lsAskSidesOptAll",
+   "key": "lsAskSidesOptAll",
+   "speaker": "swiftee",
+   "text": "सर्व बाजू समान आहेत",
+   "spoken": "सर्व बाजू समान आहेत",
+   "seconds": 1.92
+  },
+  {
+   "file": "lsAskSidesFbAll",
+   "key": "lsAskSidesFbAll",
+   "speaker": "swiftee",
+   "text": "लांबी पुन्हा पाहा. AB 6 सेमी आहे, पण AD फक्त 3 सेमी आहे.",
+   "spoken": "लांबी पुन्हा पाहा. ए बी सहा सेंटीमीटर आहे, पण ए डी फक्त तीन सेंटीमीटर आहे.",
+   "seconds": 6.48
+  },
+  {
+   "file": "lsAskSidesOptOpp",
+   "key": "lsAskSidesOptOpp",
+   "speaker": "swiftee",
+   "text": "संमुख बाजू समान आहेत",
+   "spoken": "संमुख बाजू समान आहेत",
+   "seconds": 2.0
+  },
+  {
+   "file": "lsOppEq",
+   "key": "lsOppEq",
+   "speaker": "swiftee",
+   "text": "कोणत्याही *समांतरभुज* *चौकोनाच्या*\n*संमुख* *बाजूंच्या* लांबी\n*समान* असतात.",
+   "spoken": "कोणत्याही समांतरभुज चौकोनाच्या संमुख बाजूंच्या लांबी समान असतात.",
+   "seconds": 4.8
+  },
+  {
+   "file": "lsSidesSum",
+   "key": "lsSidesSum",
+   "speaker": "swiftee",
+   "text": "म्हणजे, कोणत्याही *समांतरभुज* *चौकोनाच्या*\n*संमुख* *बाजू*\n*समांतर* आणि *समान* असतात.",
+   "spoken": "म्हणजे, कोणत्याही समांतरभुज चौकोनाच्या संमुख बाजू समांतर आणि समान असतात.",
+   "seconds": 6.0
+  },
+  {
+   "file": "lsCp1a",
+   "key": "lsCp1a",
+   "speaker": "swiftee",
+   "text": "यांपैकी कोणते आकार\n*समांतरभुज* *चौकोन* आहेत? सर्व\nयोग्य आकार निवडा.",
+   "spoken": "यांपैकी कोणते आकार समांतरभुज चौकोन आहेत? सर्व योग्य आकार निवडा.",
+   "seconds": 5.68
+  },
+  {
+   "file": "lsCp1aOk",
+   "key": "lsCp1aOk",
+   "speaker": "swiftee",
+   "text": "हो! या दोन्ही आकारांना\n*समांतर* *बाजूंच्या* दोन जोड्या आहेत.",
+   "spoken": "हो! या दोन्ही आकारांना समांतर बाजूंच्या दोन जोड्या आहेत.",
+   "seconds": 4.56
+  },
+  {
+   "file": "lsCp1aFbB",
+   "key": "lsCp1aFbB",
+   "speaker": "swiftee",
+   "text": "हा आकार *समलंब* *चौकोन* आहे. त्याच्या *बाजूंची* फक्त एकच जोडी *समांतर* आहे.",
+   "spoken": "हा आकार समलंब चौकोन आहे. त्याच्या बाजूंची फक्त एकच जोडी समांतर आहे.",
+   "seconds": 5.68
+  },
+  {
+   "file": "lsCp1aFbD",
+   "key": "lsCp1aFbD",
+   "speaker": "swiftee",
+   "text": "या आकाराला पाच *बाजू* आहेत, म्हणून तो *चौकोन* नाही.",
+   "spoken": "या आकाराला पाच बाजू आहेत, म्हणून तो चौकोन नाही.",
+   "seconds": 3.84
+  },
+  {
+   "file": "lsCp1b",
+   "key": "lsCp1b",
+   "speaker": "swiftee",
+   "text": "या *समांतरभुज* *चौकोनात*,\nAB = 7 सेमी. तर CD ची\nलांबी किती?",
+   "spoken": "या समांतरभुज चौकोनात, ए बी बरोबर सात सेंटीमीटर. तर सी डी ची लांबी किती?",
+   "seconds": 6.32
+  },
+  {
+   "file": "lsCp1bOk",
+   "key": "lsCp1bOk",
+   "speaker": "swiftee",
+   "text": "बरोबर! *संमुख* *बाजू*\n*समान* असतात, म्हणून CD = 7 सेमी.",
+   "spoken": "बरोबर! संमुख बाजू समान असतात, म्हणून सी डी बरोबर सात सेंटीमीटर.",
+   "seconds": 6.16
+  },
+  {
+   "file": "lsCp1bFbHalf",
+   "key": "lsCp1bFbHalf",
+   "speaker": "swiftee",
+   "text": "CD ही AB च्या निम्मी नाही. *समांतरभुज* *चौकोनाच्या* *संमुख* *बाजू* *समान* असतात.",
+   "spoken": "सी डी ही ए बी च्या निम्मी नाही. समांतरभुज चौकोनाच्या संमुख बाजू समान असतात.",
+   "seconds": 6.24
+  },
+  {
+   "file": "lsCp1bFbDouble",
+   "key": "lsCp1bFbDouble",
+   "speaker": "swiftee",
+   "text": "CD ही AB च्या दुप्पट नाही. *समांतरभुज* *चौकोनाच्या* *संमुख* *बाजू* *समान* असतात.",
+   "spoken": "सी डी ही ए बी च्या दुप्पट नाही. समांतरभुज चौकोनाच्या संमुख बाजू समान असतात.",
+   "seconds": 6.4
+  },
+  {
+   "file": "lsCp1c",
+   "key": "lsCp1c",
+   "speaker": "swiftee",
+   "text": "या *समांतरभुज* *चौकोनात*,\nAB = 8 सेमी आणि BC = 5 सेमी.\nतर CD आणि AD च्या\nलांबी काढा.",
+   "spoken": "या समांतरभुज चौकोनात, ए बी बरोबर आठ सेंटीमीटर आणि बी सी बरोबर पाच सेंटीमीटर. तर सी डी आणि ए डी च्या लांबी काढा.",
+   "seconds": 9.28
+  },
+  {
+   "file": "lsCp1cOk",
+   "key": "lsCp1cOk",
+   "speaker": "swiftee",
+   "text": "CD = 8 सेमी, AD = 5 सेमी.",
+   "spoken": "सी डी बरोबर आठ सेंटीमीटर, ए डी बरोबर पाच सेंटीमीटर.",
+   "seconds": 4.56
+  },
+  {
+   "file": "lsCp1cFbCD",
+   "key": "lsCp1cFbCD",
+   "speaker": "swiftee",
+   "text": "CD ही बाजू AB च्या *संमुख* आहे, म्हणून CD = AB.",
+   "spoken": "सी डी ही बाजू ए बी च्या संमुख आहे, म्हणून सी डी बरोबर ए बी.",
+   "seconds": 5.2
+  },
+  {
+   "file": "lsCp1cFbAD",
+   "key": "lsCp1cFbAD",
+   "speaker": "swiftee",
+   "text": "AD ही बाजू BC च्या *संमुख* आहे, म्हणून AD = BC.",
+   "spoken": "ए डी ही बाजू बी सी च्या संमुख आहे, म्हणून ए डी बरोबर बी सी.",
+   "seconds": 5.36
+  },
+  {
+   "file": "lsSidesDone",
+   "key": "lsSidesDone",
+   "speaker": "swiftee",
+   "text": "आपण *समांतरभुज* *चौकोनाच्या*\n*बाजूंविषयी* सर्व काही शिकलो.",
+   "spoken": "आपण समांतरभुज चौकोनाच्या बाजूंविषयी सर्व काही शिकलो.",
+   "seconds": 4.0
+  },
+  {
+   "file": "lsAngles",
+   "key": "lsAngles",
+   "speaker": "swiftee",
+   "text": "पण त्याच्या *कोनांचे* काय?\nतेही *समान* असतात का?",
+   "spoken": "पण त्याच्या कोनांचे काय? तेही समान असतात का?",
+   "seconds": 3.44
+  },
+  {
+   "file": "lsInterestingAng",
+   "key": "lsInterestingAng",
+   "speaker": "swiftee",
+   "text": "इथेही एक\nमजेशीर गोष्ट आहे.",
+   "spoken": "इथेही एक मजेशीर गोष्ट आहे.",
+   "seconds": 2.08
+  },
+  {
+   "file": "lsSomeEq",
+   "key": "lsSomeEq",
+   "speaker": "swiftee",
+   "text": "काही *कोन* एकमेकांशी\n*समान* असतात.",
+   "spoken": "काही कोन एकमेकांशी समान असतात.",
+   "seconds": 2.64
+  },
+  {
+   "file": "lsTapEqA",
+   "key": "lsTapEqA",
+   "speaker": "swiftee",
+   "text": "कोणता *कोन*\n∠A शी *समान* आहे?",
+   "spoken": "कोणता कोन, कोन ए शी समान आहे?",
+   "seconds": 2.8
+  },
+  {
+   "file": "lsTapEqAOk",
+   "key": "lsTapEqAOk",
+   "speaker": "swiftee",
+   "text": "बरोबर! ∠A हा\n∠C शी *समान* आहे.",
+   "spoken": "बरोबर! कोन ए हा कोन सी शी समान आहे.",
+   "seconds": 4.48
+  },
+  {
+   "file": "lsTapEqAFb",
+   "key": "lsTapEqAFb",
+   "speaker": "swiftee",
+   "text": "थोडे चुकले. त्याच्या मापाची ∠A शी तुलना करा. A च्या *संमुख* असलेला कोपरा पाहा.",
+   "spoken": "थोडे चुकले. त्याच्या मापाची कोन ए शी तुलना करा. ए च्या संमुख असलेला कोपरा पाहा.",
+   "seconds": 6.64
+  },
+  {
+   "file": "lsTapEqD",
+   "key": "lsTapEqD",
+   "speaker": "swiftee",
+   "text": "कोणता *कोन*\n∠D शी *समान* आहे?",
+   "spoken": "कोणता कोन, कोन डी शी समान आहे?",
+   "seconds": 2.88
+  },
+  {
+   "file": "lsTapEqDOk",
+   "key": "lsTapEqDOk",
+   "speaker": "swiftee",
+   "text": "बरोबर! ∠D हा\n∠B शी *समान* आहे.",
+   "spoken": "बरोबर! कोन डी हा कोन बी शी समान आहे.",
+   "seconds": 4.16
+  },
+  {
+   "file": "lsTapEqDFb",
+   "key": "lsTapEqDFb",
+   "speaker": "swiftee",
+   "text": "थोडे चुकले. त्याच्या मापाची ∠D शी तुलना करा. D च्या *संमुख* असलेला कोपरा पाहा.",
+   "spoken": "थोडे चुकले. त्याच्या मापाची कोन डी शी तुलना करा. डी च्या संमुख असलेला कोपरा पाहा.",
+   "seconds": 7.04
+  },
+  {
+   "file": "lsOppAng",
+   "key": "lsOppAng",
+   "speaker": "swiftee",
+   "text": "म्हणजे कोणत्याही *समांतरभुज* *चौकोनात*,\n*संमुख* *कोनांच्या* जोड्याही\n*समान* असतात.",
+   "spoken": "म्हणजे कोणत्याही समांतरभुज चौकोनात, संमुख कोनांच्या जोड्याही समान असतात.",
+   "seconds": 5.6
+  },
+  {
+   "file": "lsSeeElse",
+   "key": "lsSeeElse",
+   "speaker": "swiftee",
+   "text": "पण मला आणखी\nकाहीतरी दिसते आहे.",
+   "spoken": "पण मला आणखी काहीतरी दिसते आहे.",
+   "seconds": 2.4
+  },
+  {
+   "file": "lsLookAD",
+   "key": "lsLookAD",
+   "speaker": "swiftee",
+   "text": "∠A आणि ∠D पाहा.",
+   "spoken": "कोन ए आणि कोन डी पाहा.",
+   "seconds": 2.24
+  },
+  {
+   "file": "lsSumAD",
+   "key": "lsSumAD",
+   "speaker": "swiftee",
+   "text": "त्यांची बेरीज *180°* होते.",
+   "spoken": "त्यांची बेरीज एकशे ऐंशी अंश होते.",
+   "seconds": 2.72
+  },
+  {
+   "file": "lsAskAdj",
+   "key": "lsAskAdj",
+   "speaker": "swiftee",
+   "text": "आणखी कोणत्या *कोनांची*\nबेरीज *180°* होते?",
+   "spoken": "आणखी कोणत्या कोनांची बेरीज एकशे ऐंशी अंश होते?",
+   "seconds": 3.52
+  },
+  {
+   "file": "lsAskAdjOk",
+   "key": "lsAskAdjOk",
+   "speaker": "swiftee",
+   "text": "हो! ∠B + ∠C = 180° आणि\n∠A + ∠B = 180°.",
+   "spoken": "हो! कोन बी अधिक कोन सी बरोबर एकशे ऐंशी अंश आणि कोन ए अधिक कोन बी बरोबर एकशे ऐंशी अंश.",
+   "seconds": 9.12
+  },
+  {
+   "file": "lsAskAdjFbBD",
+   "key": "lsAskAdjFbBD",
+   "speaker": "swiftee",
+   "text": "∠B आणि ∠D हे *संमुख* *कोन* आहेत. 70° + 70° म्हणजे *180°* नाही.",
+   "spoken": "कोन बी आणि कोन डी हे संमुख कोन आहेत. सत्तर अंश अधिक सत्तर अंश म्हणजे एकशे ऐंशी अंश नाही.",
+   "seconds": 8.0
+  },
+  {
+   "file": "lsAskAdjFbAC",
+   "key": "lsAskAdjFbAC",
+   "speaker": "swiftee",
+   "text": "∠A आणि ∠C हे *संमुख* *कोन* आहेत. 110° + 110° म्हणजे *180°* नाही.",
+   "spoken": "कोन ए आणि कोन सी हे संमुख कोन आहेत. एकशे दहा अंश अधिक एकशे दहा अंश म्हणजे एकशे ऐंशी अंश नाही.",
+   "seconds": 9.12
+  },
+  {
+   "file": "lsAdjRule",
+   "key": "lsAdjRule",
+   "speaker": "swiftee",
+   "text": "या *समांतरभुज* *चौकोनाच्या*\n*लगतच्या* *कोनांच्या* प्रत्येक जोडीची\nबेरीज *180°* होते.",
+   "spoken": "या समांतरभुज चौकोनाच्या लगतच्या कोनांच्या प्रत्येक जोडीची बेरीज एकशे ऐंशी अंश होते.",
+   "seconds": 6.32
+  },
+  {
+   "file": "lsCp2a",
+   "key": "lsCp2a",
+   "speaker": "swiftee",
+   "text": "या *समांतरभुज* *चौकोनात*,\n∠A = 68°. तर ∠C चे\nमाप किती?",
+   "spoken": "या समांतरभुज चौकोनात, कोन ए बरोबर अडुसष्ट अंश. तर कोन सी चे माप किती?",
+   "seconds": 6.4
+  },
+  {
+   "file": "lsCp2aOk",
+   "key": "lsCp2aOk",
+   "speaker": "swiftee",
+   "text": "बरोबर! *संमुख* *कोन*\n*समान* असतात, म्हणून ∠C = 68°.",
+   "spoken": "बरोबर! संमुख कोन समान असतात, म्हणून कोन सी बरोबर अडुसष्ट अंश.",
+   "seconds": 6.0
+  },
+  {
+   "file": "lsCp2aFb",
+   "key": "lsCp2aFb",
+   "speaker": "swiftee",
+   "text": "पुन्हा पाहा. *समांतरभुज* *चौकोनाचे* *संमुख* *कोन* *समान* असतात.",
+   "spoken": "पुन्हा पाहा. समांतरभुज चौकोनाचे संमुख कोन समान असतात.",
+   "seconds": 4.96
+  },
+  {
+   "file": "lsCp2b",
+   "key": "lsCp2b",
+   "speaker": "swiftee",
+   "text": "या *समांतरभुज* *चौकोनात*,\n∠A = 72°. तर ∠B चे\nमाप किती?",
+   "spoken": "या समांतरभुज चौकोनात, कोन ए बरोबर बहात्तर अंश. तर कोन बी चे माप किती?",
+   "seconds": 6.32
+  },
+  {
+   "file": "lsCp2bOk",
+   "key": "lsCp2bOk",
+   "speaker": "swiftee",
+   "text": "बरोबर! 72° + 108° = 180°.",
+   "spoken": "बरोबर! बहात्तर अंश अधिक एकशे आठ अंश बरोबर एकशे ऐंशी अंश.",
+   "seconds": 6.08
+  },
+  {
+   "file": "lsCp2bFb72",
+   "key": "lsCp2bFb72",
+   "speaker": "swiftee",
+   "text": "∠B हा ∠A च्या शेजारी आहे, त्याच्या *संमुख* नाही. *लगतच्या* *कोनांची* बेरीज *180°* होते.",
+   "spoken": "कोन बी हा कोन ए च्या शेजारी आहे, त्याच्या संमुख नाही. लगतच्या कोनांची बेरीज एकशे ऐंशी अंश होते.",
+   "seconds": 7.68
+  },
+  {
+   "file": "lsCp2bFb180",
+   "key": "lsCp2bFb180",
+   "speaker": "swiftee",
+   "text": "*180°* ही ∠A आणि ∠B ची बेरीज आहे, फक्त ∠B चे माप नाही.",
+   "spoken": "एकशे ऐंशी अंश ही कोन ए आणि कोन बी ची बेरीज आहे, फक्त कोन बी चे माप नाही.",
+   "seconds": 6.48
+  },
+  {
+   "file": "lsCp2c",
+   "key": "lsCp2c",
+   "speaker": "swiftee",
+   "text": "या *समांतरभुज* *चौकोनात*,\n∠A = 65°. तर ∠B, ∠C आणि ∠D\nयांची मापे काढा.",
+   "spoken": "या समांतरभुज चौकोनात, कोन ए बरोबर पासष्ट अंश. तर कोन बी, कोन सी आणि कोन डी यांची मापे काढा.",
+   "seconds": 8.96
+  },
+  {
+   "file": "lsCp2cOk",
+   "key": "lsCp2cOk",
+   "speaker": "swiftee",
+   "text": "अप्रतिम! ∠B = 115°, ∠C = 65°\nआणि ∠D = 115°.",
+   "spoken": "अप्रतिम! कोन बी बरोबर एकशे पंधरा अंश, कोन सी बरोबर पासष्ट अंश आणि कोन डी बरोबर एकशे पंधरा अंश.",
+   "seconds": 9.28
+  },
+  {
+   "file": "lsCp2cFbB25",
+   "key": "lsCp2cFbB25",
+   "speaker": "swiftee",
+   "text": "25° + 65° म्हणजे फक्त 90°. ∠A आणि ∠B ची बेरीज *180°* व्हायला हवी.",
+   "spoken": "पंचवीस अंश अधिक पासष्ट अंश म्हणजे फक्त नव्वद अंश. कोन ए आणि कोन बी ची बेरीज एकशे ऐंशी अंश व्हायला हवी.",
+   "seconds": 8.88
+  },
+  {
+   "file": "lsCp2cFbB65",
+   "key": "lsCp2cFbB65",
+   "speaker": "swiftee",
+   "text": "∠B हा ∠A च्या शेजारी आहे, त्याच्या *संमुख* नाही. ∠A + ∠B = 180°.",
+   "spoken": "कोन बी हा कोन ए च्या शेजारी आहे, त्याच्या संमुख नाही. कोन ए अधिक कोन बी बरोबर एकशे ऐंशी अंश.",
+   "seconds": 9.04
+  },
+  {
+   "file": "lsCp2cFbB180",
+   "key": "lsCp2cFbB180",
+   "speaker": "swiftee",
+   "text": "*180°* म्हणजे ∠A आणि ∠B मिळून. त्यातून ∠A चे 65° वजा करा.",
+   "spoken": "एकशे ऐंशी अंश म्हणजे कोन ए आणि कोन बी मिळून. त्यातून कोन ए चे पासष्ट अंश वजा करा.",
+   "seconds": 8.16
+  },
+  {
+   "file": "lsCp2cFbC25",
+   "key": "lsCp2cFbC25",
+   "speaker": "swiftee",
+   "text": "∠C हा ∠A च्या *संमुख* आहे, म्हणून तो ∠A शी *समान* आहे, 25° नाही.",
+   "spoken": "कोन सी हा कोन ए च्या संमुख आहे, म्हणून तो कोन ए शी समान आहे, पंचवीस अंश नाही.",
+   "seconds": 6.96
+  },
+  {
+   "file": "lsCp2cFbC115",
+   "key": "lsCp2cFbC115",
+   "speaker": "swiftee",
+   "text": "115° हे ∠A च्या शेजारच्या *कोनाचे* माप आहे. ∠C हा ∠A च्या *संमुख* आहे, म्हणून ∠C = ∠A.",
+   "spoken": "एकशे पंधरा अंश हे कोन ए च्या शेजारच्या कोनाचे माप आहे. कोन सी हा कोन ए च्या संमुख आहे, म्हणून कोन सी बरोबर कोन ए.",
+   "seconds": 10.4
+  },
+  {
+   "file": "lsCp2cFbC180",
+   "key": "lsCp2cFbC180",
+   "speaker": "swiftee",
+   "text": "∠C हा ∠A च्या *संमुख* आहे, म्हणून तो ∠A शी *समान* आहे, *180°* नाही.",
+   "spoken": "कोन सी हा कोन ए च्या संमुख आहे, म्हणून तो कोन ए शी समान आहे, एकशे ऐंशी अंश नाही.",
+   "seconds": 6.96
+  },
+  {
+   "file": "lsCp2cFbD25",
+   "key": "lsCp2cFbD25",
+   "speaker": "swiftee",
+   "text": "25° + 65° म्हणजे फक्त 90°. ∠A आणि ∠D ची बेरीज *180°* व्हायला हवी.",
+   "spoken": "पंचवीस अंश अधिक पासष्ट अंश म्हणजे फक्त नव्वद अंश. कोन ए आणि कोन डी ची बेरीज एकशे ऐंशी अंश व्हायला हवी.",
+   "seconds": 8.64
+  },
+  {
+   "file": "lsCp2cFbD65",
+   "key": "lsCp2cFbD65",
+   "speaker": "swiftee",
+   "text": "∠D हा ∠A च्या शेजारी आहे, त्याच्या *संमुख* नाही. ∠A + ∠D = 180°.",
+   "spoken": "कोन डी हा कोन ए च्या शेजारी आहे, त्याच्या संमुख नाही. कोन ए अधिक कोन डी बरोबर एकशे ऐंशी अंश.",
+   "seconds": 8.88
+  },
+  {
+   "file": "lsCp2cFbD180",
+   "key": "lsCp2cFbD180",
+   "speaker": "swiftee",
+   "text": "*180°* म्हणजे ∠A आणि ∠D मिळून. त्यातून ∠A चे 65° वजा करा.",
+   "spoken": "एकशे ऐंशी अंश म्हणजे कोन ए आणि कोन डी मिळून. त्यातून कोन ए चे पासष्ट अंश वजा करा.",
+   "seconds": 7.76
+  },
+  {
+   "file": "lsExplored",
+   "key": "lsExplored",
+   "speaker": "swiftee",
+   "text": "आपण *समांतरभुज* *चौकोनाच्या*\n*बाजू* आणि *कोन* यांविषयी\nसर्व काही जाणून घेतले.",
+   "spoken": "आपण समांतरभुज चौकोनाच्या बाजू आणि कोन यांविषयी सर्व काही जाणून घेतले.",
+   "seconds": 5.52
+  },
+  {
+   "file": "lsDiagIntro",
+   "key": "lsDiagIntro",
+   "speaker": "swiftee",
+   "text": "चला, आता त्याच्या\n*कर्णांविषयी* शिकूया.",
+   "spoken": "चला, आता त्याच्या कर्णांविषयी शिकूया.",
+   "seconds": 2.64
+  },
+  {
+   "file": "lsDrawDiag",
+   "key": "lsDrawDiag",
+   "speaker": "swiftee",
+   "text": "या *समांतरभुज* *चौकोनाचे*\nसर्व *कर्ण* काढा.",
+   "spoken": "या समांतरभुज चौकोनाचे सर्व कर्ण काढा.",
+   "seconds": 3.36
+  },
+  {
+   "file": "lsDrawDiagWrong",
+   "key": "lsDrawDiagWrong",
+   "speaker": "swiftee",
+   "text": "ही तर *बाजू* आहे. *कर्ण* दोन *संमुख* कोपऱ्यांना जोडतो.",
+   "spoken": "ही तर बाजू आहे. कर्ण दोन संमुख कोपऱ्यांना जोडतो.",
+   "seconds": 4.16
+  },
+  {
+   "file": "lsDrawDiagAfter",
+   "key": "lsDrawDiagAfter",
+   "speaker": "swiftee",
+   "text": "छान! तुम्ही दोन्ही\n*कर्ण* काढले.",
+   "spoken": "छान! तुम्ही दोन्ही कर्ण काढले.",
+   "seconds": 2.4
+  },
+  {
+   "file": "lsDiagNames",
+   "key": "lsDiagNames",
+   "speaker": "swiftee",
+   "text": "AC आणि BD हे या\n*समांतरभुज* *चौकोनाचे* *कर्ण* आहेत.",
+   "spoken": "ए सी आणि बी डी हे या समांतरभुज चौकोनाचे कर्ण आहेत.",
+   "seconds": 4.72
+  },
+  {
+   "file": "lsMeetO",
+   "key": "lsMeetO",
+   "speaker": "swiftee",
+   "text": "ते एकमेकांना\nबिंदू O मध्ये छेदतात.",
+   "spoken": "ते एकमेकांना बिंदू ओ मध्ये छेदतात.",
+   "seconds": 2.88
+  },
+  {
+   "file": "lsSegs",
+   "key": "lsSegs",
+   "speaker": "swiftee",
+   "text": "प्रत्येक *कर्ण*\nदुसऱ्या कर्णाचे\n2 *रेषाखंड* करतो.",
+   "spoken": "प्रत्येक कर्ण दुसऱ्या कर्णाचे दोन रेषाखंड करतो.",
+   "seconds": 3.76
+  },
+  {
+   "file": "lsMeasureSeg",
+   "key": "lsMeasureSeg",
+   "speaker": "swiftee",
+   "text": "प्रत्येक *कर्णाचे* दोन\n*रेषाखंड* *समान* आहेत का?",
+   "spoken": "प्रत्येक कर्णाचे दोन रेषाखंड समान आहेत का?",
+   "seconds": 3.44
+  },
+  {
+   "file": "lsCompare",
+   "key": "lsCompare",
+   "speaker": "swiftee",
+   "text": "चला, या *रेषाखंडांच्या*\nलांबींची तुलना करूया.",
+   "spoken": "चला, या रेषाखंडांच्या लांबींची तुलना करूया.",
+   "seconds": 3.6
+  },
+  {
+   "file": "lsMatchSeg",
+   "key": "lsMatchSeg",
+   "speaker": "swiftee",
+   "text": "*रेषाखंड* ड्रॅग करून\nत्यांच्या योग्य जागी ठेवा.",
+   "spoken": "रेषाखंड ड्रॅग करून त्यांच्या योग्य जागी ठेवा.",
+   "seconds": 3.28
+  },
+  {
+   "file": "lsMatchSegOk",
+   "key": "lsMatchSegOk",
+   "speaker": "swiftee",
+   "text": "बरोबर! एकाच\n*कर्णाचे* *रेषाखंड*\n*समान* असतात.",
+   "spoken": "बरोबर! एकाच कर्णाचे रेषाखंड समान असतात.",
+   "seconds": 3.92
+  },
+  {
+   "file": "lsMatchSegFb",
+   "key": "lsMatchSegFb",
+   "speaker": "swiftee",
+   "text": "ते दोन्ही सारख्या लांबीचे नाहीत. लांबी पुन्हा पाहा.",
+   "spoken": "ते दोन्ही सारख्या लांबीचे नाहीत. लांबी पुन्हा पाहा.",
+   "seconds": 3.84
+  },
+  {
+   "file": "lsBisectEq",
+   "key": "lsBisectEq",
+   "speaker": "swiftee",
+   "text": "प्रत्येक *कर्णाचे* दुसऱ्या\nकर्णामुळे दोन *समान*\nभाग होतात.",
+   "spoken": "प्रत्येक कर्णाचे दुसऱ्या कर्णामुळे दोन समान भाग होतात.",
+   "seconds": 4.16
+  },
+  {
+   "file": "lsBisect",
+   "key": "lsBisect",
+   "speaker": "swiftee",
+   "text": "म्हणजे *समांतरभुज* *चौकोनाचे*\n*कर्ण* एकमेकांना\n*दुभागतात*.",
+   "spoken": "म्हणजे समांतरभुज चौकोनाचे कर्ण एकमेकांना दुभागतात.",
+   "seconds": 4.32
+  },
+  {
+   "file": "lsDiagonalsBisect",
+   "key": "lsDiagonalsBisect",
+   "speaker": "swiftee",
+   "text": "*कर्ण* एकमेकांना *दुभागतात*.",
+   "spoken": "कर्ण एकमेकांना दुभागतात.",
+   "seconds": 2.08
+  },
+  {
+   "file": "lsCp3a",
+   "key": "lsCp3a",
+   "speaker": "swiftee",
+   "text": "या *समांतरभुज* *चौकोनात*,\nAO = 6 सेमी. तर OC ची\nलांबी किती?",
+   "spoken": "या समांतरभुज चौकोनात, ए ओ बरोबर सहा सेंटीमीटर. तर ओ सी ची लांबी किती?",
+   "seconds": 6.48
+  },
+  {
+   "file": "lsCp3aOk",
+   "key": "lsCp3aOk",
+   "speaker": "swiftee",
+   "text": "हो! बिंदू O मुळे AC चे दोन अर्धे होतात,\nम्हणून OC = 6 सेमी.",
+   "spoken": "हो! बिंदू ओ मुळे ए सी चे दोन अर्धे होतात, म्हणून ओ सी बरोबर सहा सेंटीमीटर.",
+   "seconds": 6.56
+  },
+  {
+   "file": "lsCp3aFb3",
+   "key": "lsCp3aFb3",
+   "speaker": "swiftee",
+   "text": "OC हा AO च्या निम्मा नाही. OC = AO.",
+   "spoken": "ओ सी हा ए ओ च्या निम्मा नाही. ओ सी बरोबर ए ओ.",
+   "seconds": 5.04
+  },
+  {
+   "file": "lsCp3aFb12",
+   "key": "lsCp3aFb12",
+   "speaker": "swiftee",
+   "text": "12 सेमी म्हणजे संपूर्ण AC. OC फक्त त्याच्या निम्मा आहे.",
+   "spoken": "बारा सेंटीमीटर म्हणजे संपूर्ण ए सी. ओ सी फक्त त्याच्या निम्मा आहे.",
+   "seconds": 4.8
+  },
+  {
+   "file": "lsCp3b",
+   "key": "lsCp3b",
+   "speaker": "swiftee",
+   "text": "या *समांतरभुज* *चौकोनात*,\nAO = 5 सेमी आणि BO = 3 सेमी.\nतर OC आणि OD च्या\nलांबी काढा.",
+   "spoken": "या समांतरभुज चौकोनात, ए ओ बरोबर पाच सेंटीमीटर आणि बी ओ बरोबर तीन सेंटीमीटर. तर ओ सी आणि ओ डी च्या लांबी काढा.",
+   "seconds": 9.92
+  },
+  {
+   "file": "lsCp3bOk",
+   "key": "lsCp3bOk",
+   "speaker": "swiftee",
+   "text": "शाब्बास! OC = AO = 5 सेमी\nआणि OD = BO = 3 सेमी.",
+   "spoken": "शाब्बास! ओ सी बरोबर ए ओ बरोबर पाच सेंटीमीटर आणि ओ डी बरोबर बी ओ बरोबर तीन सेंटीमीटर.",
+   "seconds": 8.64
+  },
+  {
+   "file": "lsCp3bFbOC",
+   "key": "lsCp3bFbOC",
+   "speaker": "swiftee",
+   "text": "OC हा AC चा दुसरा अर्धा भाग आहे, म्हणून OC = AO.",
+   "spoken": "ओ सी हा ए सी चा दुसरा अर्धा भाग आहे, म्हणून ओ सी बरोबर ए ओ.",
+   "seconds": 6.4
+  },
+  {
+   "file": "lsCp3bFbOD",
+   "key": "lsCp3bFbOD",
+   "speaker": "swiftee",
+   "text": "OD हा BD चा दुसरा अर्धा भाग आहे, म्हणून OD = BO.",
+   "spoken": "ओ डी हा बी डी चा दुसरा अर्धा भाग आहे, म्हणून ओ डी बरोबर बी ओ.",
+   "seconds": 5.52
+  },
+  {
+   "file": "lsCp3c",
+   "key": "lsCp3c",
+   "speaker": "swiftee",
+   "text": "यांपैकी कोणती विधाने\nया *समांतरभुज* *चौकोनासाठी* खरी आहेत?\nसर्व योग्य पर्याय निवडा.",
+   "spoken": "यांपैकी कोणती विधाने या समांतरभुज चौकोनासाठी खरी आहेत? सर्व योग्य पर्याय निवडा.",
+   "seconds": 6.56
+  },
+  {
+   "file": "lsCp3cOk",
+   "key": "lsCp3cOk",
+   "speaker": "swiftee",
+   "text": "एकदम बरोबर! AO = OC, BO = OD,\nम्हणून *कर्ण* एकमेकांना\n*दुभागतात*.",
+   "spoken": "एकदम बरोबर! ए ओ बरोबर ओ सी, बी ओ बरोबर ओ डी, म्हणून कर्ण एकमेकांना दुभागतात.",
+   "seconds": 7.76
+  },
+  {
+   "file": "lsCp3cFbAOBO",
+   "key": "lsCp3cFbAOBO",
+   "speaker": "swiftee",
+   "text": "AO आणि BO हे वेगवेगळ्या *कर्णांचे* भाग आहेत, म्हणून ते *समान* असतीलच असे नाही.",
+   "spoken": "ए ओ आणि बी ओ हे वेगवेगळ्या कर्णांचे भाग आहेत, म्हणून ते समान असतीलच असे नाही.",
+   "seconds": 6.24
+  },
+  {
+   "file": "lsCp3cFbACBD",
+   "key": "lsCp3cFbACBD",
+   "speaker": "swiftee",
+   "text": "या *समांतरभुज* *चौकोनाच्या* दोन *कर्णांच्या* लांबी वेगवेगळ्या आहेत.",
+   "spoken": "या समांतरभुज चौकोनाच्या दोन कर्णांच्या लांबी वेगवेगळ्या आहेत.",
+   "seconds": 4.64
+  },
+  {
+   "file": "lsRecap",
+   "key": "lsRecap",
+   "speaker": "swiftee",
+   "text": "चला, *समांतरभुज* *चौकोनांविषयी*\nआपण काय शिकलो ते आठवूया.",
+   "spoken": "चला, समांतरभुज चौकोनांविषयी आपण काय शिकलो ते आठवूया.",
+   "seconds": 4.64
+  },
+  {
+   "file": "lsEnd",
+   "key": "lsEnd",
+   "speaker": "swiftee",
+   "text": "अप्रतिम काम! आता तुम्हाला\n*समांतरभुज* *चौकोनांविषयी* सर्व काही माहीत आहे.",
+   "spoken": "अप्रतिम काम! आता तुम्हाला समांतरभुज चौकोनांविषयी सर्व काही माहीत आहे.",
+   "seconds": 5.36
+  },
+  {
+   "file": "lsTipDragRight",
+   "key": "lsTipDragRight",
+   "speaker": "swiftee",
+   "text": "BC अजून AD ला *समांतर* नाही. B उजवीकडे ड्रॅग करत राहा.",
+   "spoken": "बी सी अजून ए डी ला समांतर नाही. बी उजवीकडे ड्रॅग करत राहा.",
+   "seconds": 5.28
+  },
+  {
+   "file": "lsTipDragBack",
+   "key": "lsTipDragBack",
+   "speaker": "swiftee",
+   "text": "B खूप पुढे गेला. तो थोडा मागे ड्रॅग करा.",
+   "spoken": "बी खूप पुढे गेला. तो थोडा मागे ड्रॅग करा.",
+   "seconds": 3.44
+  },
+  {
+   "file": "lsTipTryAgain",
+   "key": "lsTipTryAgain",
+   "speaker": "swiftee",
+   "text": "थोडे चुकले. पुन्हा प्रयत्न करा.",
+   "spoken": "थोडे चुकले. पुन्हा प्रयत्न करा.",
+   "seconds": 2.48
+  },
+  {
+   "file": "sumParallelogram",
+   "key": "sumParallelogram",
+   "speaker": "swiftee",
+   "text": "*समांतरभुज* *चौकोन* म्हणजे *संमुख* *बाजूंच्या* दोन जोड्या *समांतर* असलेला *चौकोन*.",
+   "spoken": "समांतरभुज चौकोन म्हणजे संमुख बाजूंच्या दोन जोड्या समांतर असलेला चौकोन.",
+   "seconds": 6.16
+  },
+  {
+   "file": "sumParallel",
+   "key": "sumParallel",
+   "speaker": "swiftee",
+   "text": "*संमुख* *बाजू* *समांतर* असतात.",
+   "spoken": "संमुख बाजू समांतर असतात.",
+   "seconds": 2.24
+  },
+  {
+   "file": "sumEqual",
+   "key": "sumEqual",
+   "speaker": "swiftee",
+   "text": "*संमुख* *बाजू* *समान* असतात.",
+   "spoken": "संमुख बाजू समान असतात.",
+   "seconds": 2.16
+  },
+  {
+   "file": "sumAngles",
+   "key": "sumAngles",
+   "speaker": "swiftee",
+   "text": "*संमुख* *कोन* *समान* असतात.",
+   "spoken": "संमुख कोन समान असतात.",
+   "seconds": 1.92
+  },
+  {
+   "file": "sumSupplementary",
+   "key": "sumSupplementary",
+   "speaker": "swiftee",
+   "text": "*लगतचे* *कोन* *पूरक* असतात. त्यांची बेरीज *180°* होते.",
+   "spoken": "लगतचे कोन पूरक असतात. त्यांची बेरीज एकशे ऐंशी अंश होते.",
+   "seconds": 4.48
+  }
+ ],
+ "recorded": {
+  "date": "2026-11-12",
+  "credits_charged": 4564,
+  "note": "eleven_v4 charged about 0.49 credits per character of spoken text"
+ }
+}

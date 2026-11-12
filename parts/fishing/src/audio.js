@@ -79,7 +79,7 @@ class AudioEngine {
     return Promise.all(embedded);
   }
 
-  // The lines' clips in the player's language (assets/VO-HI/ at the repository's root), each found by its line's key
+  // The lines' clips in the player's language (assets/VO-<LANG>/ at the repository's root: VO-HI, VO-MR), each found by its line's key
   // (I18n.keyOf: the voice key's text is the line's English): fetched as files behind the banner, played from their start
   // (they open with only a few hundredths of a second of quiet). One voice: a line with no clip in that language is left
   // out (it shows at a reading pace), rather than said in English.

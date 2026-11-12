@@ -1,10 +1,10 @@
-// Builds a language's recorded voice-over (e.g. Hindi: assets/VO-HI/) from its masters, for both parts of the journey.
+// Builds a language's recorded voice-over (e.g. Hindi: assets/VO-HI/, Marathi: assets/VO-MR/) from its masters, for both parts of the journey.
 //
 //   node tools/vo_lang_build.js hi [--all]
 //
 // In assets/VO-<LANG>/:
 //   vo_script_<lang>.json   the script: one clip per line key of locales.json (file, key, speaker, text as shown, spoken)
-//   masters/<file>.mp3      the recordings as they came from the studio (ElevenLabs), kept out of the deploy
+//   masters/<file>.mp3      the recordings as they came from the studio (ElevenLabs: tools/vo_lang_record.js), kept out of the deploy
 //   <file>.ogg              made here: Ogg Opus, 32 kbps, mono, matched to the English voice-over's loudness (-16.4 LUFS),
 //                           with parts/lesson/tools/vo_build.js's encoder (Chromium's WebCodecs: no ffmpeg)
 //   vo_<lang>.js            made here: key -> [seconds, start of each word as the lesson's bubble shows it (s), end of its
@@ -39,6 +39,12 @@ const SAID = {
       65: 'पैंसठ', 68: 'अड़सठ', 70: 'सत्तर', 72: 'बहत्तर', 90: 'नब्बे', 108: 'एक सौ आठ', 110: 'एक सौ दस', 115: 'एक सौ पंद्रह', 180: 'एक सौ अस्सी' },
     letters: { A: 'ए', B: 'बी', C: 'सी', D: 'डी', O: 'ओ' },
     words: { '∥': ' के समांतर है ', '∠': 'कोण ', '°': ' डिग्री', '+': ' जमा ', '=': ' बराबर ', '−': ' घटा ', 'सेमी': 'सेंटीमीटर' },
+  },
+  mr: {
+    num: { 0: 'शून्य', 1: 'एक', 2: 'दोन', 3: 'तीन', 4: 'चार', 5: 'पाच', 6: 'सहा', 7: 'सात', 8: 'आठ', 9: 'नऊ', 12: 'बारा', 25: 'पंचवीस',
+      65: 'पासष्ट', 68: 'अडुसष्ट', 70: 'सत्तर', 72: 'बहात्तर', 90: 'नव्वद', 108: 'एकशे आठ', 110: 'एकशे दहा', 115: 'एकशे पंधरा', 180: 'एकशे ऐंशी' },
+    letters: { A: 'ए', B: 'बी', C: 'सी', D: 'डी', O: 'ओ' },
+    words: { '∥': ' ला समांतर आहे ', '∠': 'कोन ', '°': ' अंश', '+': ' अधिक ', '=': ' बरोबर ', '−': ' वजा ', 'सेमी': 'सेंटीमीटर' },
   },
 };
 function saidLen(w) {

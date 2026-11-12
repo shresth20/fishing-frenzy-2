@@ -4,8 +4,8 @@
 // spoken text). The engine's say() (js/game-engine.js) uses it as the clock for the line; when a clip is missing or
 // cannot play, say() shows the line's words silently at a speaking pace.
 // Off when the browser cannot play Ogg Opus (older Safari / iPad) or with ?vo=0. ?speed=2 plays clips faster (QA).
-// In a language recorded in full (shell/i18n.js I18n.voiced: ?lan=hi) its own clips play instead, found by the line's
-// key (I18n.keyOf, I18n.voiceClip: assets/VO-HI/ at the repository's root), and no English clip is used.
+// In a language recorded in full (shell/i18n.js I18n.voiced: ?lan=hi, ?lan=mr) its own clips play instead, found by the line's
+// key (I18n.keyOf, I18n.voiceClip: assets/VO-<LANG>/ at the repository's root), and no English clip is used.
 // =====================================================================
 (function () {
   const q = (k) => { try { return new URLSearchParams(location.search).get(k); } catch (e) { return null; } };
