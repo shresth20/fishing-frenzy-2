@@ -246,7 +246,7 @@ The game is deployed as part of the journey: the repository's root is the static
 - **Voices** (`src/voice-data.js`): Popo's lines are his recordings from Fishing Frenzy; every
   other line (the narrator's, every prompt and hint) is Swiftee's studio voice - Fishing
   Frenzy's own clips, the lesson's (`../lesson/assets/vo/`, loaded by path and played from
-  their first word), and the nets' own prompts and hints (`assets/voice/net-*.mp3`, recorded in her studio voice). Each net's lines are worded exactly as she recorded them. For the lesson's clips the plate's
+  their first word), and the nets' own prompts and hints (`assets/voice/net-*.webm`, recorded in her studio voice). Each net's lines are worded exactly as she recorded them. For the lesson's clips the plate's
   words come at the lesson's own measure of when each word is said (`../lesson/js/vo_lines.js`, `AudioEngine.wordTimes`),
   and every voiced line's words follow the voice's playhead (`AudioEngine.voiceTime`), so they never drift from it.
 - **HUD.** Narration follows the Fishing Frenzy games: the instruction (a prompt or hint)
@@ -344,13 +344,15 @@ They can also be recorded with Gemini text-to-speech (`GEMINI_API_KEY` in `.env`
 script). Edit a line in `LINES` and the game's text together, then run the script again.
 
 The hook's nine new lines (`STORY.hook`; "Let's find out!" is Swiftee's existing clip) are files of their own,
-`assets/voice/hook-h1.mp3` … `hook-h9.mp3`, mapped by key in `src/voice-data.js` and fetched with the lesson's clips
-once loading is done (`AudioEngine.fetchLaterVoices`). They were recorded in the "Ai Wala Human" voice studio:
+`assets/voice/hook-h1.webm` … `hook-h9.webm`, mapped by key in `src/voice-data.js` and fetched with the lesson's clips
+once loading is done (`AudioEngine.fetchLaterVoices`). The game's own clips, files and embedded alike, are WebM Opus
+(32 kbps, mono), not the lesson's Ogg: the game decodes its voice with Web Audio (`decodeAudioData`), and WebKit's
+(the tests' WebKit, Safari's engine) decodes Opus in WebM but not in Ogg. They were recorded in the "Ai Wala Human" voice studio:
 Popo as its Male Child (Energetic) voice pitched down a touch to sit near his Fishing Frenzy clips, the narrator and
 Swiftee as its Female Teacher (Standard) voice. Each line is worded exactly as on screen.
 
 Every narrator and Swiftee line - the hook's, the nets' prompts and hints, and her welcome back ("Great job!", "Now,
-let's help Popo catch some fish!", `assets/voice/ff-*.mp3`) - is recorded the way the lesson's are (its
+let's help Popo catch some fish!", `assets/voice/ff-*.webm`) - is recorded the way the lesson's are (its
 `docs/VOICEOVER.md`): given to the studio in Devanagari with each word spelled as the lesson's lines spell it, so a word
 sounds the same in the game as in the lesson, the take closest to the lesson's voice kept, and matched to the lesson's
 loudness (-16.4 LUFS), so no line is louder or quieter than the next.

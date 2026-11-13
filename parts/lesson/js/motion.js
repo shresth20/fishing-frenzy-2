@@ -19,25 +19,6 @@
   const ENTER = { duration: 0.6, ease: 'back.out(1.3)' };
   let ctx = G ? G.context(() => {}) : null;
   const add = (fn) => (ctx ? ctx.add(fn) : null);
-  // An angle sweeps open from its first arm to its second (Fishing Frenzy's lesson): its wedge's path ("M vertex
-  // L arm-start A r r 0 0 sweep arm-end Z") is rebuilt as the sweep grows, and put back as drawn at the end (or by
-  // clear(), if a screen change cuts it short)
-  const sweeps = [];
-  const sweep = (w, at, dur) => {
-    const d0 = w.getAttribute('d'), n = ((d0 || '').match(/-?\d+(\.\d+)?/g) || []).map(Number);
-    if (n.length < 11) return;
-    const vx = n[0], vy = n[1], sx = n[2], sy = n[3], R = n[4], f = n[8], a1 = Math.atan2(sy - vy, sx - vx);
-    let da = Math.atan2(n[10] - vy, n[9] - vx) - a1;
-    if (f === 1) { while (da < 0) da += Math.PI * 2; } else { while (da > 0) da -= Math.PI * 2; }
-    const rec = { w: w, d0: d0, done: false }, r1 = (v) => Math.round(v * 10) / 10;
-    const set = (t) => { const a = a1 + da * t;
-      w.setAttribute('d', 'M' + vx + ',' + vy + ' L' + sx + ',' + sy + ' A' + R + ',' + R + ' 0 0 ' + f + ' ' + r1(vx + R * Math.cos(a)) + ',' + r1(vy + R * Math.sin(a)) + ' Z'); };
-    const end = () => { if (!rec.done) { rec.done = true; if (w.getAttribute('d') !== d0) w.setAttribute('d', d0); } };
-    sweeps.push(rec);
-    set(0.001);
-    const p = { t: 0 };
-    add(() => G.to(p, { t: 1, delay: at, duration: dur, ease: 'power1.inOut', onUpdate: () => { if (!rec.done) set(Math.max(0.001, p.t)); }, onComplete: end }));
-  };
   // the labels are centred on their point by CSS (translate -50% -50%); GSAP keeps that while it owns the transform
   const centred = (els) => G.set(els, { xPercent: -50, yPercent: -50, x: 0, y: 0 });
   // every element any Motion animation touches (Motion.clear wipes their animated properties on screen change)
@@ -56,7 +37,6 @@
       document.querySelectorAll('.stage .fly-val, .stage .pop-bub').forEach((e) => e.remove()); // (an answer still in the air, a right answer's bubbles)
       this.meetEls = null; this.ghostEl = null;
       if (ctx) ctx.revert();
-      sweeps.splice(0).forEach((r) => { if (!r.done && r.w.isConnected) r.w.setAttribute('d', r.d0); r.done = true; });
       const els = $(ANIMATED); // (none yet before the lesson's first screen: GSAP warns about an empty target)
       if (G && els.length) G.set(els, { clearProps: 'opacity,transform,filter,textShadow,strokeWidth,translate,rotate,scale' });
       // GSAP pins SVG origins to 0 0 whenever it touches an SVG element (even while clearing), so drop that by hand

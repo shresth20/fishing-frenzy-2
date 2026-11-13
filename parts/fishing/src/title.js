@@ -4,7 +4,6 @@ const { assets, ease, Effects, state, PHASE } = PopoGame;
 
 const TAU = Math.PI * 2;
 const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
-const lerp = (a, b, k) => a + (b - a) * k;
 const span = (x, a, b) => clamp((x - a) / (b - a));
 
 // The banner, played out on the lake itself. Popo zooms in from the left on his raft
