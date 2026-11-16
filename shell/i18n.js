@@ -29,8 +29,10 @@
 // Voice-over in the player's language: a language recorded in full has its clips in assets/VO-<LANG>/<key>.ogg at the
 // repository's root and its map in assets/VO-<LANG>/vo_<lang>.js (window.VO_LANGS, made by tools/vo_lang_build.js), which
 // the parts load. A line's voice key is its text key.
-//   I18n.voiced           true when the player's language has its own recordings (Hindi: ?lan=hi); the parts then play
-//                         them instead of the English (one voice: a line with no clip in it shows its words silently)
+//   I18n.voiced           true when the player's language has its own recordings (English: assets/VO-EN/; Hindi: ?lan=hi);
+//                         the parts then play them instead of their own English clips (one voice: a line with no clip in
+//                         it shows its words silently; in English it falls back to the part's own clip)
+//   I18n.isSource         true in English, the language the parts' own clips are in
 //   I18n.keyOf(english)   the key of a line the game holds in English (stars, line breaks and case aside)
 //   I18n.voiceClip(key)   { url, seconds, times (each shown word's start, s), end (of its speech, s) }, or null
 //   I18n.voice(key)       the clip's address; I18n.say(key) plays it.
@@ -157,7 +159,7 @@
   // voice-over by key in the player's language (assets/VO-<LANG>/, its map in window.VO_LANGS: see the top)
   function recorded() {
     var all = typeof window !== 'undefined' && window.VO_LANGS;
-    var v = lang !== SOURCE && all && all[lang];
+    var v = all && all[lang]; // (English too: assets/VO-EN/, the parts' own English clips by key)
     return v && v.clips ? v : null;
   }
   function keyOf(english) { return english == null ? undefined : looseIdx.get(loose(english)); }
@@ -189,7 +191,7 @@
     source: source, plain: plain, tr: tr, label: label, units: units,
     t: t, has: function (key) { return look(cur, String(key)) !== undefined; },
     applyStatic: applyStatic, load: load, voice: voice, say: say,
-    get voiced() { return !!recorded(); }, keyOf: keyOf, voiceClip: voiceClip,
+    get voiced() { return !!recorded(); }, get isSource() { return lang === SOURCE; }, keyOf: keyOf, voiceClip: voiceClip,
   };
   window.T = t;
 

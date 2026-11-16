@@ -4,8 +4,9 @@
 // spoken text). The engine's say() (js/game-engine.js) uses it as the clock for the line; when a clip is missing or
 // cannot play, say() shows the line's words silently at a speaking pace.
 // Off when the browser cannot play Ogg Opus (older Safari / iPad) or with ?vo=0. ?speed=2 plays clips faster (QA).
-// In a language recorded in full (shell/i18n.js I18n.voiced: ?lan=hi, ?lan=mr, ?lan=gu) its own clips play instead, found by the line's
-// key (I18n.keyOf, I18n.voiceClip: assets/VO-<LANG>/ at the repository's root), and no English clip is used.
+// In a language recorded in full (shell/i18n.js I18n.voiced: English, ?lan=hi, ?lan=mr, ?lan=gu) its own clips play instead, found by
+// the line's key (I18n.keyOf, I18n.voiceClip: assets/VO-<LANG>/ at the repository's root). Another language uses no English
+// clip; English (assets/VO-EN/) falls back to this folder's clip for a line it has none for.
 // =====================================================================
 (function () {
   const q = (k) => { try { return new URLSearchParams(location.search).get(k); } catch (e) { return null; } };
@@ -34,7 +35,8 @@
     if (!own) return lines[key] || null;
     if (!mine.has(key)) {
       const c = I18n.voiceClip(I18n.keyOf(key));
-      mine.set(key, c ? [c.url, c.seconds, reveal(key, c.times), c.end] : null);
+      // (in English, a line with no clip in assets/VO-EN/ keeps its own: assets/vo/)
+      mine.set(key, c ? [c.url, c.seconds, reveal(key, c.times), c.end] : (I18n.isSource && lines[key]) || null);
     }
     return mine.get(key);
   };

@@ -55,7 +55,7 @@ class AudioEngine {
   // Recorded voice lines (voice-data.js), decoded with an offline context so they are ready before they are needed.
   // A line is embedded (a data URL: decoded before the banner is ready) or the lesson's own clip ('<path>#<seconds>':
   // fetched behind the banner, played from where its first word starts, past the clip's quiet lead-in).
-  // In a language recorded in full (shell/i18n.js I18n.voiced: ?lan=hi) each line plays that language's clip instead
+  // In a language recorded in full (shell/i18n.js I18n.voiced: English from assets/VO-EN/, ?lan=hi) each line plays that language's clip instead
   // (inLanguage).
   prepareVoices(data) {
     const entries = Object.entries(window.I18n && I18n.voiced ? this.inLanguage(data) : data || {});
@@ -88,6 +88,7 @@ class AudioEngine {
     for (const key of Object.keys(data || {})) {
       const clip = I18n.voiceClip(I18n.keyOf(key.slice(key.indexOf(':') + 1)));
       if (clip) out[key] = clip.url;
+      else if (I18n.isSource) out[key] = data[key]; // (English, assets/VO-EN/: a line with no clip there keeps its own)
     }
     return out;
   }

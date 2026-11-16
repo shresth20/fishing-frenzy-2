@@ -4,13 +4,15 @@
 //
 // In assets/VO-<LANG>/:
 //   vo_script_<lang>.json   the script: one clip per line key of locales.json (file, key, speaker, text as shown, spoken)
-//   masters/<file>.mp3      the recordings as they came from the studio (ElevenLabs: tools/vo_lang_record.js), kept out of the deploy
+//   masters/<file>.mp3      new recordings as they came from the studio (ElevenLabs: tools/vo_lang_record.js); local only
+//                           (.gitignore), delete them once their clips are made: the .ogg clips are what the repo keeps
 //   <file>.ogg              made here: Ogg Opus, 32 kbps, mono, matched to the English voice-over's loudness (-16.4 LUFS),
 //                           with parts/lesson/tools/vo_build.js's encoder (Chromium's WebCodecs: no ffmpeg)
 //   vo_<lang>.js            made here: key -> [seconds, start of each word as the lesson's bubble shows it (s), end of its
 //                           speech (s)], measured from the audio as the English map is (vo_build.js alignWords)
 // The pages load vo_<lang>.js; shell/i18n.js finds a line's clip by its key (I18n.voiceClip) when ?lan=<lang>.
-// Only masters newer than their clip are encoded again (--all: every one). Clips no line uses are deleted. Lines the game
+// Only masters newer than their clip are encoded again (--all: every master there is); a clip with no master is kept as
+// it is. Clips no line uses are deleted. Lines the game
 // says that have no clip are listed. Needs Playwright (`npm i --no-save playwright`, or NODE_PATH); CHROME=/path/to/chrome
 // if its own Chromium is not installed.
 const fs = require('fs'), path = require('path');

@@ -4,10 +4,12 @@
 //   node tools/vo_lang_record.js mr --count                      no network: words, characters, estimated credits / minutes
 //   ELEVENLABS_API_KEY=... node tools/vo_lang_record.js mr --voices        the voice library's voices for the language
 //   ELEVENLABS_API_KEY=... node tools/vo_lang_record.js mr --only a,b,c    record these clips (files) only
-//   ELEVENLABS_API_KEY=... node tools/vo_lang_record.js mr [--redo]        record every clip with no master (--redo: all)
+//   ELEVENLABS_API_KEY=... node tools/vo_lang_record.js mr [--redo]        record every clip with neither a master nor a
+//                                                                         built .ogg clip (--redo: all)
 //
 // The script names the model, the voice of each speaker (voices.<speaker>.voice_id) and its settings. Masters go to
-// masters/<file>.mp3 (44.1 kHz, 128 kbps). The key is read from the environment only; never write it into a file.
+// masters/<file>.mp3 (44.1 kHz, 128 kbps): local only (.gitignore), delete them once vo_lang_build.js has made the clips.
+// The key is read from the environment only; never write it into a file.
 const fs = require('fs'), path = require('path');
 
 const ROOT = path.join(__dirname, '..');
@@ -57,7 +59,9 @@ const used = async () => { try { return await (await api('/v1/user/subscription'
   }
   const only = arg('--only') ? new Set(arg('--only').split(',')) : null;
   fs.mkdirSync(MASTERS, { recursive: true });
-  const todo = script.clips.filter((c) => (only ? only.has(c.file) : has('--redo') || !fs.existsSync(path.join(MASTERS, c.file + '.mp3'))));
+  // masters are not kept, so a line counts as recorded once its .ogg clip exists
+  const todo = script.clips.filter((c) => (only ? only.has(c.file) : has('--redo') ||
+    (!fs.existsSync(path.join(MASTERS, c.file + '.mp3')) && !fs.existsSync(path.join(DIR, c.file + '.ogg')))));
   if (only && todo.length !== only.size) { console.error('not in the script: ' + [...only].filter((f) => !todo.some((c) => c.file === f))); process.exit(1); }
   todo.forEach((c) => { if (!script.voices[c.speaker] || !script.voices[c.speaker].voice_id) throw new Error('no voice for ' + c.speaker); });
   const before = await used(), t0 = Date.now();

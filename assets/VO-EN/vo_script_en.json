@@ -1,0 +1,1800 @@
+{
+ "about": "English voice-over: one clip per locales.json \"en\" key (a value variant as key.<value>), as Hindi, Marathi and Gujarati have. The clips with \"from\" are the game's own English recordings (the lesson's Ogg clips copied as they are; the fishing game's MP3s, its files and Popo's embedded clips, kept as masters/<file>.mp3); \"to_record\" lists the lines still to record with ElevenLabs (tools/vo_lang_record.js en: set voices.swiftee.voice_id to Swiftee's English studio voice first). tools/vo_lang_build.js en makes the clips (Ogg Opus 32 kbps mono, -16.4 LUFS) and vo_en.js.",
+ "model": "eleven_multilingual_v2",
+ "voices": {
+  "swiftee": {
+   "name": "Swiftee (English studio voice): to be chosen",
+   "voice_id": null
+  },
+  "popo": {
+   "name": "Popo (English, from Fishing Frenzy): to be chosen",
+   "voice_id": null
+  }
+ },
+ "settings": {
+  "swiftee": {
+   "stability": 0.6,
+   "similarity_boost": 0.8,
+   "style": 0.15,
+   "speaker_boost": true,
+   "speed": 0.95,
+   "speed_note": "lsAskSides, lsSeeElse at 0.85"
+  },
+  "popo": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "speaker_boost": true,
+   "speed": 1
+  },
+  "seed": 4242
+ },
+ "not_recorded": [
+  {
+   "key": "loadArtFailed",
+   "why": "filled with a browser error message at run time",
+   "text": "Could not load the game art ({error})."
+  },
+  {
+   "key": "ariaFishCaught",
+   "why": "filled with the running fish count at run time",
+   "text": "Fish caught: {n}"
+  }
+ ],
+ "to_record": [
+  "gameTitle",
+  "gettingReady",
+  "loadFailed",
+  "tryAgain",
+  "rotateHint",
+  "partLesson",
+  "partFishing",
+  "loading",
+  "ariaPlay",
+  "ariaNetCorner",
+  "ariaStepBack",
+  "ariaStepOn",
+  "ariaSoundOn",
+  "ariaSoundOff",
+  "ariaPause",
+  "ariaPaused",
+  "btnCheck",
+  "btnCatch",
+  "btnDropNet",
+  "btnResume",
+  "btnRestart",
+  "pauseKicker",
+  "pauseTitle",
+  "pauseText",
+  "goalTitle",
+  "goalSub",
+  "goalYourCatch",
+  "goalMaxPossible",
+  "goalFish",
+  "goalLine",
+  "goalTryAgain",
+  "unitCm",
+  "lessonPageTitle",
+  "ariaBoard",
+  "ariaShape.A",
+  "ariaShape.B",
+  "ariaShape.C",
+  "ariaShape.D",
+  "ariaAnswerBox.CD",
+  "ariaAnswerBox.AD",
+  "ariaAnswerBox.angleB",
+  "ariaAnswerBox.angleC",
+  "ariaAnswerBox.angleD",
+  "ariaAnswerBox.OC",
+  "ariaAnswerBox.OD",
+  "altSwiftee",
+  "btnNext",
+  "lessonComplete",
+  "lessonPlayAgain",
+  "lessonPauseTitle",
+  "lessonPauseText",
+  "lessonScore.0",
+  "lessonScore.1",
+  "lessonScore.2",
+  "lessonScore.3",
+  "lessonScore.4",
+  "lessonScore.5",
+  "lessonScore.6",
+  "lessonScore.7",
+  "lessonScore.8",
+  "lessonScore.9",
+  "ariaSummary",
+  "wordTrapezium",
+  "wordParallelogram",
+  "capParallelSides",
+  "capEqualSides",
+  "capEqualAngles",
+  "capSupplementary",
+  "capEqualHalves",
+  "capDiagonals",
+  "lsAskSidesOptAll",
+  "lsAskSidesOptOpp",
+  "lsTipTryAgain"
+ ],
+ "clips": [
+  {
+   "file": "gameTitle",
+   "key": "gameTitle",
+   "speaker": "swiftee",
+   "text": "Fishing Frenzy 2",
+   "spoken": "Fishing Frenzy two"
+  },
+  {
+   "file": "gettingReady",
+   "key": "gettingReady",
+   "speaker": "swiftee",
+   "text": "Getting ready…",
+   "spoken": "Getting ready…"
+  },
+  {
+   "file": "loadFailed",
+   "key": "loadFailed",
+   "speaker": "swiftee",
+   "text": "Could not load the game.",
+   "spoken": "Could not load the game."
+  },
+  {
+   "file": "tryAgain",
+   "key": "tryAgain",
+   "speaker": "swiftee",
+   "text": "Try again",
+   "spoken": "Try again"
+  },
+  {
+   "file": "rotateHint",
+   "key": "rotateHint",
+   "speaker": "swiftee",
+   "text": "Rotate your device for the best experience",
+   "spoken": "Rotate your device for the best experience"
+  },
+  {
+   "file": "partLesson",
+   "key": "partLesson",
+   "speaker": "swiftee",
+   "text": "Swiftee's parallelogram lesson",
+   "spoken": "Swiftee's parallelogram lesson"
+  },
+  {
+   "file": "partFishing",
+   "key": "partFishing",
+   "speaker": "swiftee",
+   "text": "Popo's parallelogram nets",
+   "spoken": "Popo's parallelogram nets"
+  },
+  {
+   "file": "loading",
+   "key": "loading",
+   "speaker": "swiftee",
+   "text": "Loading…",
+   "spoken": "Loading…"
+  },
+  {
+   "file": "ariaPlay",
+   "key": "ariaPlay",
+   "speaker": "swiftee",
+   "text": "Play",
+   "spoken": "Play"
+  },
+  {
+   "file": "ariaNetCorner",
+   "key": "ariaNetCorner",
+   "speaker": "swiftee",
+   "text": "Net corner. Drag it, or move it with the arrow keys and press Enter.",
+   "spoken": "Net corner. Drag it, or move it with the arrow keys and press Enter."
+  },
+  {
+   "file": "ariaStepBack",
+   "key": "ariaStepBack",
+   "speaker": "swiftee",
+   "text": "Slide the corner back one stop",
+   "spoken": "Slide the corner back one stop"
+  },
+  {
+   "file": "ariaStepOn",
+   "key": "ariaStepOn",
+   "speaker": "swiftee",
+   "text": "Slide the corner on one stop",
+   "spoken": "Slide the corner on one stop"
+  },
+  {
+   "file": "ariaSoundOn",
+   "key": "ariaSoundOn",
+   "speaker": "swiftee",
+   "text": "Sound on",
+   "spoken": "Sound on"
+  },
+  {
+   "file": "ariaSoundOff",
+   "key": "ariaSoundOff",
+   "speaker": "swiftee",
+   "text": "Sound off",
+   "spoken": "Sound off"
+  },
+  {
+   "file": "ariaPause",
+   "key": "ariaPause",
+   "speaker": "swiftee",
+   "text": "Pause",
+   "spoken": "Pause"
+  },
+  {
+   "file": "ariaPaused",
+   "key": "ariaPaused",
+   "speaker": "swiftee",
+   "text": "Paused",
+   "spoken": "Paused"
+  },
+  {
+   "file": "btnCheck",
+   "key": "btnCheck",
+   "speaker": "swiftee",
+   "text": "Check",
+   "spoken": "Check"
+  },
+  {
+   "file": "btnCatch",
+   "key": "btnCatch",
+   "speaker": "swiftee",
+   "text": "Catch",
+   "spoken": "Catch"
+  },
+  {
+   "file": "btnDropNet",
+   "key": "btnDropNet",
+   "speaker": "swiftee",
+   "text": "Drop Net",
+   "spoken": "Drop Net"
+  },
+  {
+   "file": "btnResume",
+   "key": "btnResume",
+   "speaker": "swiftee",
+   "text": "Resume",
+   "spoken": "Resume"
+  },
+  {
+   "file": "btnRestart",
+   "key": "btnRestart",
+   "speaker": "swiftee",
+   "text": "Restart",
+   "spoken": "Restart"
+  },
+  {
+   "file": "pauseKicker",
+   "key": "pauseKicker",
+   "speaker": "swiftee",
+   "text": "TAKE A BREATHER",
+   "spoken": "Take a breather"
+  },
+  {
+   "file": "pauseTitle",
+   "key": "pauseTitle",
+   "speaker": "swiftee",
+   "text": "Adventure paused",
+   "spoken": "Adventure paused"
+  },
+  {
+   "file": "pauseText",
+   "key": "pauseText",
+   "speaker": "swiftee",
+   "text": "Your next catch can wait.",
+   "spoken": "Your next catch can wait."
+  },
+  {
+   "file": "goalTitle",
+   "key": "goalTitle",
+   "speaker": "swiftee",
+   "text": "Great Fishing, Popo!",
+   "spoken": "Great Fishing, Popo!"
+  },
+  {
+   "file": "goalSub",
+   "key": "goalSub",
+   "speaker": "swiftee",
+   "text": "You helped Popo catch...",
+   "spoken": "You helped Popo catch..."
+  },
+  {
+   "file": "goalYourCatch",
+   "key": "goalYourCatch",
+   "speaker": "swiftee",
+   "text": "Your catch",
+   "spoken": "Your catch"
+  },
+  {
+   "file": "goalMaxPossible",
+   "key": "goalMaxPossible",
+   "speaker": "swiftee",
+   "text": "Maximum possible",
+   "spoken": "Maximum possible"
+  },
+  {
+   "file": "goalFish",
+   "key": "goalFish",
+   "speaker": "swiftee",
+   "text": "fish",
+   "spoken": "fish"
+  },
+  {
+   "file": "goalLine",
+   "key": "goalLine",
+   "speaker": "swiftee",
+   "text": "Think you can catch more next time?",
+   "spoken": "Think you can catch more next time?"
+  },
+  {
+   "file": "goalTryAgain",
+   "key": "goalTryAgain",
+   "speaker": "swiftee",
+   "text": "Try Again",
+   "spoken": "Try Again"
+  },
+  {
+   "file": "unitCm",
+   "key": "unitCm",
+   "speaker": "swiftee",
+   "text": "cm",
+   "spoken": "centimetres"
+  },
+  {
+   "file": "popoHuh",
+   "key": "popoHuh",
+   "speaker": "popo",
+   "text": "Huh?!",
+   "spoken": "Huh?!",
+   "from": "parts/fishing/src/voice-data.js (popo, embedded)"
+  },
+  {
+   "file": "popoWoah",
+   "key": "popoWoah",
+   "speaker": "popo",
+   "text": "*Woah!*",
+   "spoken": "Woah!",
+   "from": "parts/fishing/src/voice-data.js (popo, embedded)"
+  },
+  {
+   "file": "popoWow",
+   "key": "popoWow",
+   "speaker": "popo",
+   "text": "*Wow!*",
+   "spoken": "Wow!",
+   "from": "parts/fishing/src/voice-data.js (popo, embedded)"
+  },
+  {
+   "file": "popoWhatACatch",
+   "key": "popoWhatACatch",
+   "speaker": "popo",
+   "text": "What a *catch!*",
+   "spoken": "What a catch!",
+   "from": "parts/fishing/src/voice-data.js (popo, embedded)"
+  },
+  {
+   "file": "popoGreatCatch",
+   "key": "popoGreatCatch",
+   "speaker": "popo",
+   "text": "Great *catch!*",
+   "spoken": "Great catch!",
+   "from": "parts/fishing/src/voice-data.js (popo, embedded)"
+  },
+  {
+   "file": "popoHaHaHa",
+   "key": "popoHaHaHa",
+   "speaker": "popo",
+   "text": "Ha ha *ha!*",
+   "spoken": "Ha ha ha!",
+   "from": "parts/fishing/src/voice-data.js (popo, embedded)"
+  },
+  {
+   "file": "hookH1",
+   "key": "hookH1",
+   "speaker": "swiftee",
+   "text": "Popo was out fishing today.",
+   "spoken": "Popo was out fishing today.",
+   "from": "parts/fishing/assets/voice/hook-h1.mp3"
+  },
+  {
+   "file": "hookH2",
+   "key": "hookH2",
+   "speaker": "popo",
+   "text": "Let's catch lots of *fish!*",
+   "spoken": "Let's catch lots of fish!",
+   "from": "parts/fishing/assets/voice/hook-h2.mp3"
+  },
+  {
+   "file": "hookH3",
+   "key": "hookH3",
+   "speaker": "popo",
+   "text": "Oh no! This net got *tangled.*",
+   "spoken": "Oh no! This net got tangled.",
+   "from": "parts/fishing/assets/voice/hook-h3.mp3"
+  },
+  {
+   "file": "hookH4",
+   "key": "hookH4",
+   "speaker": "swiftee",
+   "text": "Popo tried different net shapes, but they kept getting *tangled.*",
+   "spoken": "Popo tried different net shapes, but they kept getting tangled.",
+   "from": "parts/fishing/assets/voice/hook-h4.mp3"
+  },
+  {
+   "file": "hookH5",
+   "key": "hookH5",
+   "speaker": "popo",
+   "text": "I need a net that stays *open* in the water!",
+   "spoken": "I need a net that stays open in the water!",
+   "from": "parts/fishing/assets/voice/hook-h5.mp3"
+  },
+  {
+   "file": "hookWhoa",
+   "key": "hookWhoa",
+   "speaker": "popo",
+   "text": "Whoa! A *giant* fish!",
+   "spoken": "Whoa! A giant fish!",
+   "from": "parts/fishing/src/voice-data.js (popo, embedded)"
+  },
+  {
+   "file": "hookH6",
+   "key": "hookH6",
+   "speaker": "popo",
+   "text": "Hey! This one stayed *open!*",
+   "spoken": "Hey! This one stayed open!",
+   "from": "parts/fishing/assets/voice/hook-h6.mp3"
+  },
+  {
+   "file": "hookH7",
+   "key": "hookH7",
+   "speaker": "popo",
+   "text": "It worked! What *shape* is this?",
+   "spoken": "It worked! What shape is this?",
+   "from": "parts/fishing/assets/voice/hook-h7.mp3"
+  },
+  {
+   "file": "hookH8",
+   "key": "hookH8",
+   "speaker": "swiftee",
+   "text": "This shape is called a *parallelogram.*",
+   "spoken": "This shape is called a parallelogram.",
+   "from": "parts/fishing/assets/voice/hook-h8.mp3"
+  },
+  {
+   "file": "hookH9",
+   "key": "hookH9",
+   "speaker": "popo",
+   "text": "Parallelogram? What *shape* is that?",
+   "spoken": "Parallelogram? What shape is that?",
+   "from": "parts/fishing/assets/voice/hook-h9.mp3"
+  },
+  {
+   "file": "hookH10",
+   "key": "hookH10",
+   "speaker": "swiftee",
+   "text": "Let's find *out!*",
+   "spoken": "Let's find out!",
+   "from": "parts/lesson/assets/vo/vo121.ogg"
+  },
+  {
+   "file": "welcomeGreatJob",
+   "key": "welcomeGreatJob",
+   "speaker": "swiftee",
+   "text": "*Great* job!",
+   "spoken": "Great job!",
+   "from": "parts/fishing/assets/voice/ff-great-job.mp3"
+  },
+  {
+   "file": "helpPopoCatch",
+   "key": "helpPopoCatch",
+   "speaker": "swiftee",
+   "text": "Now, let's help Popo catch some *fish!*",
+   "spoken": "Now, let's help Popo catch some fish!",
+   "from": "parts/fishing/assets/voice/ff-help-popo.mp3"
+  },
+  {
+   "file": "netDragB",
+   "key": "netDragB",
+   "speaker": "swiftee",
+   "text": "Drag vertex B to make the net a *parallelogram*.",
+   "spoken": "Drag vertex B to make the net a parallelogram.",
+   "from": "parts/fishing/assets/voice/net-pB.mp3"
+  },
+  {
+   "file": "hintAbLonger",
+   "key": "hintAbLonger",
+   "speaker": "swiftee",
+   "text": "Opposite sides of a parallelogram are equal. Make AB *longer*.",
+   "spoken": "Opposite sides of a parallelogram are equal. Make A B longer.",
+   "from": "parts/fishing/assets/voice/net-h1a.mp3"
+  },
+  {
+   "file": "hintAbShorter",
+   "key": "hintAbShorter",
+   "speaker": "swiftee",
+   "text": "Opposite sides of a parallelogram are equal. Make AB *shorter*.",
+   "spoken": "Opposite sides of a parallelogram are equal. Make A B shorter.",
+   "from": "parts/fishing/assets/voice/net-h1b.mp3"
+  },
+  {
+   "file": "netDragC",
+   "key": "netDragC",
+   "speaker": "swiftee",
+   "text": "Drag vertex C to make the net a *parallelogram*.",
+   "spoken": "Drag vertex C to make the net a parallelogram.",
+   "from": "parts/fishing/assets/voice/net-pC.mp3"
+  },
+  {
+   "file": "hintBcLonger",
+   "key": "hintBcLonger",
+   "speaker": "swiftee",
+   "text": "Opposite sides of a parallelogram are equal. Make BC *longer*.",
+   "spoken": "Opposite sides of a parallelogram are equal. Make B C longer.",
+   "from": "parts/fishing/assets/voice/net-h2a.mp3"
+  },
+  {
+   "file": "hintBcShorter",
+   "key": "hintBcShorter",
+   "speaker": "swiftee",
+   "text": "Opposite sides of a parallelogram are equal. Make BC *shorter*.",
+   "spoken": "Opposite sides of a parallelogram are equal. Make B C shorter.",
+   "from": "parts/fishing/assets/voice/net-h2b.mp3"
+  },
+  {
+   "file": "hintCdLonger",
+   "key": "hintCdLonger",
+   "speaker": "swiftee",
+   "text": "Opposite sides are equal. Make CD *longer*.",
+   "spoken": "Opposite sides are equal. Make C D longer.",
+   "from": "parts/fishing/assets/voice/net-h3a.mp3"
+  },
+  {
+   "file": "hintCdShorter",
+   "key": "hintCdShorter",
+   "speaker": "swiftee",
+   "text": "Opposite sides are equal. Make CD *shorter*.",
+   "spoken": "Opposite sides are equal. Make C D shorter.",
+   "from": "parts/fishing/assets/voice/net-h3b.mp3"
+  },
+  {
+   "file": "netDragD",
+   "key": "netDragD",
+   "speaker": "swiftee",
+   "text": "Drag vertex D to make the net a *parallelogram*.",
+   "spoken": "Drag vertex D to make the net a parallelogram.",
+   "from": "parts/fishing/assets/voice/net-p8.mp3"
+  },
+  {
+   "file": "hintCdAdLonger",
+   "key": "hintCdAdLonger",
+   "speaker": "swiftee",
+   "text": "Opposite sides are equal. Make CD and AD *longer*.",
+   "spoken": "Opposite sides are equal. Make C D and A D longer.",
+   "from": "parts/fishing/assets/voice/net-h4a.mp3"
+  },
+  {
+   "file": "hintCdAdShorter",
+   "key": "hintCdAdShorter",
+   "speaker": "swiftee",
+   "text": "Opposite sides are equal. Make CD and AD *shorter*.",
+   "spoken": "Opposite sides are equal. Make C D and A D shorter.",
+   "from": "parts/fishing/assets/voice/net-h4b.mp3"
+  },
+  {
+   "file": "hintAngleCBigger",
+   "key": "hintAngleCBigger",
+   "speaker": "swiftee",
+   "text": "Opposite angles are equal. Make ∠C *bigger*.",
+   "spoken": "Opposite angles are equal. Make angle C bigger.",
+   "from": "parts/fishing/assets/voice/net-h5a.mp3"
+  },
+  {
+   "file": "hintAngleCSmaller",
+   "key": "hintAngleCSmaller",
+   "speaker": "swiftee",
+   "text": "Opposite angles are equal. Make ∠C *smaller*.",
+   "spoken": "Opposite angles are equal. Make angle C smaller.",
+   "from": "parts/fishing/assets/voice/net-h5b.mp3"
+  },
+  {
+   "file": "hintAngleBBigger",
+   "key": "hintAngleBBigger",
+   "speaker": "swiftee",
+   "text": "Adjacent angles add up to 180°. Make ∠B *bigger*.",
+   "spoken": "Adjacent angles add up to 180 degrees. Make angle B bigger.",
+   "from": "parts/fishing/assets/voice/net-h6a.mp3"
+  },
+  {
+   "file": "hintAngleBSmaller",
+   "key": "hintAngleBSmaller",
+   "speaker": "swiftee",
+   "text": "Adjacent angles add up to 180°. Make ∠B *smaller*.",
+   "spoken": "Adjacent angles add up to 180 degrees. Make angle B smaller.",
+   "from": "parts/fishing/assets/voice/net-h6b.mp3"
+  },
+  {
+   "file": "hintOcLonger",
+   "key": "hintOcLonger",
+   "speaker": "swiftee",
+   "text": "The diagonals bisect each other. Make OC *longer*.",
+   "spoken": "The diagonals bisect each other. Make O C longer.",
+   "from": "parts/fishing/assets/voice/net-h7a.mp3"
+  },
+  {
+   "file": "hintOcShorter",
+   "key": "hintOcShorter",
+   "speaker": "swiftee",
+   "text": "The diagonals bisect each other. Make OC *shorter*.",
+   "spoken": "The diagonals bisect each other. Make O C shorter.",
+   "from": "parts/fishing/assets/voice/net-h7b.mp3"
+  },
+  {
+   "file": "lessonPageTitle",
+   "key": "lessonPageTitle",
+   "speaker": "swiftee",
+   "text": "Parallelogram lesson · Fishing Frenzy 2",
+   "spoken": "Parallelogram lesson, Fishing Frenzy two"
+  },
+  {
+   "file": "ariaBoard",
+   "key": "ariaBoard",
+   "speaker": "swiftee",
+   "text": "Parallelogram ABCD",
+   "spoken": "Parallelogram A B C D"
+  },
+  {
+   "file": "ariaShape.A",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "Shape {name}",
+   "spoken": "Shape A"
+  },
+  {
+   "file": "ariaShape.B",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "Shape {name}",
+   "spoken": "Shape B"
+  },
+  {
+   "file": "ariaShape.C",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "Shape {name}",
+   "spoken": "Shape C"
+  },
+  {
+   "file": "ariaShape.D",
+   "key": "ariaShape",
+   "speaker": "swiftee",
+   "text": "Shape {name}",
+   "spoken": "Shape D"
+  },
+  {
+   "file": "ariaAnswerBox.CD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "Answer box {name}",
+   "spoken": "Answer box C D"
+  },
+  {
+   "file": "ariaAnswerBox.AD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "Answer box {name}",
+   "spoken": "Answer box A D"
+  },
+  {
+   "file": "ariaAnswerBox.angleB",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "Answer box {name}",
+   "spoken": "Answer box angle B"
+  },
+  {
+   "file": "ariaAnswerBox.angleC",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "Answer box {name}",
+   "spoken": "Answer box angle C"
+  },
+  {
+   "file": "ariaAnswerBox.angleD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "Answer box {name}",
+   "spoken": "Answer box angle D"
+  },
+  {
+   "file": "ariaAnswerBox.OC",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "Answer box {name}",
+   "spoken": "Answer box O C"
+  },
+  {
+   "file": "ariaAnswerBox.OD",
+   "key": "ariaAnswerBox",
+   "speaker": "swiftee",
+   "text": "Answer box {name}",
+   "spoken": "Answer box O D"
+  },
+  {
+   "file": "altSwiftee",
+   "key": "altSwiftee",
+   "speaker": "swiftee",
+   "text": "Swiftee the bird",
+   "spoken": "Swiftee the bird"
+  },
+  {
+   "file": "btnNext",
+   "key": "btnNext",
+   "speaker": "swiftee",
+   "text": "Next",
+   "spoken": "Next"
+  },
+  {
+   "file": "lessonComplete",
+   "key": "lessonComplete",
+   "speaker": "swiftee",
+   "text": "Lesson complete!",
+   "spoken": "Lesson complete!"
+  },
+  {
+   "file": "lessonPlayAgain",
+   "key": "lessonPlayAgain",
+   "speaker": "swiftee",
+   "text": "Play again",
+   "spoken": "Play again"
+  },
+  {
+   "file": "lessonPauseTitle",
+   "key": "lessonPauseTitle",
+   "speaker": "swiftee",
+   "text": "Lesson paused",
+   "spoken": "Lesson paused"
+  },
+  {
+   "file": "lessonPauseText",
+   "key": "lessonPauseText",
+   "speaker": "swiftee",
+   "text": "Swiftee will wait for you.",
+   "spoken": "Swiftee will wait for you."
+  },
+  {
+   "file": "lessonScore.0",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "You got {right} of {total} checkpoint challenges right on the first try.",
+   "spoken": "You got zero of nine checkpoint challenges right on the first try."
+  },
+  {
+   "file": "lessonScore.1",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "You got {right} of {total} checkpoint challenges right on the first try.",
+   "spoken": "You got one of nine checkpoint challenges right on the first try."
+  },
+  {
+   "file": "lessonScore.2",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "You got {right} of {total} checkpoint challenges right on the first try.",
+   "spoken": "You got two of nine checkpoint challenges right on the first try."
+  },
+  {
+   "file": "lessonScore.3",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "You got {right} of {total} checkpoint challenges right on the first try.",
+   "spoken": "You got three of nine checkpoint challenges right on the first try."
+  },
+  {
+   "file": "lessonScore.4",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "You got {right} of {total} checkpoint challenges right on the first try.",
+   "spoken": "You got four of nine checkpoint challenges right on the first try."
+  },
+  {
+   "file": "lessonScore.5",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "You got {right} of {total} checkpoint challenges right on the first try.",
+   "spoken": "You got five of nine checkpoint challenges right on the first try."
+  },
+  {
+   "file": "lessonScore.6",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "You got {right} of {total} checkpoint challenges right on the first try.",
+   "spoken": "You got six of nine checkpoint challenges right on the first try."
+  },
+  {
+   "file": "lessonScore.7",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "You got {right} of {total} checkpoint challenges right on the first try.",
+   "spoken": "You got seven of nine checkpoint challenges right on the first try."
+  },
+  {
+   "file": "lessonScore.8",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "You got {right} of {total} checkpoint challenges right on the first try.",
+   "spoken": "You got eight of nine checkpoint challenges right on the first try."
+  },
+  {
+   "file": "lessonScore.9",
+   "key": "lessonScore",
+   "speaker": "swiftee",
+   "text": "You got {right} of {total} checkpoint challenges right on the first try.",
+   "spoken": "You got nine of nine checkpoint challenges right on the first try."
+  },
+  {
+   "file": "ariaSummary",
+   "key": "ariaSummary",
+   "speaker": "swiftee",
+   "text": "Summary",
+   "spoken": "Summary"
+  },
+  {
+   "file": "wordTrapezium",
+   "key": "wordTrapezium",
+   "speaker": "swiftee",
+   "text": "Trapezium",
+   "spoken": "Trapezium"
+  },
+  {
+   "file": "wordParallelogram",
+   "key": "wordParallelogram",
+   "speaker": "swiftee",
+   "text": "Parallelogram",
+   "spoken": "Parallelogram"
+  },
+  {
+   "file": "capParallelSides",
+   "key": "capParallelSides",
+   "speaker": "swiftee",
+   "text": "Parallel sides",
+   "spoken": "Parallel sides"
+  },
+  {
+   "file": "capEqualSides",
+   "key": "capEqualSides",
+   "speaker": "swiftee",
+   "text": "Equal sides",
+   "spoken": "Equal sides"
+  },
+  {
+   "file": "capEqualAngles",
+   "key": "capEqualAngles",
+   "speaker": "swiftee",
+   "text": "Equal angles",
+   "spoken": "Equal angles"
+  },
+  {
+   "file": "capSupplementary",
+   "key": "capSupplementary",
+   "speaker": "swiftee",
+   "text": "Supplementary",
+   "spoken": "Supplementary"
+  },
+  {
+   "file": "capEqualHalves",
+   "key": "capEqualHalves",
+   "speaker": "swiftee",
+   "text": "Equal halves",
+   "spoken": "Equal halves"
+  },
+  {
+   "file": "capDiagonals",
+   "key": "capDiagonals",
+   "speaker": "swiftee",
+   "text": "Diagonals",
+   "spoken": "Diagonals"
+  },
+  {
+   "file": "lsIntro",
+   "key": "lsIntro",
+   "speaker": "swiftee",
+   "text": "We learnt about *quadrilaterals*\nearlier.",
+   "spoken": "We learnt about quadrilaterals earlier.",
+   "from": "parts/lesson/assets/vo/vo001.ogg"
+  },
+  {
+   "file": "lsQuadSides",
+   "key": "lsQuadSides",
+   "speaker": "swiftee",
+   "text": "Any *polygon* with 4 *sides* is\ncalled a *quadrilateral*.",
+   "spoken": "Any polygon with four sides is called a quadrilateral.",
+   "from": "parts/lesson/assets/vo/vo002.ogg"
+  },
+  {
+   "file": "lsSpecial",
+   "key": "lsSpecial",
+   "speaker": "swiftee",
+   "text": "This is a special type of\n*quadrilateral* called *trapezium*.",
+   "spoken": "This is a special type of quadrilateral called Trapezium.",
+   "from": "parts/lesson/assets/vo/vo003.ogg"
+  },
+  {
+   "file": "lsOnePair",
+   "key": "lsOnePair",
+   "speaker": "swiftee",
+   "text": "A *trapezium* has one pair of\n*opposite* *sides* *parallel*.",
+   "spoken": "A trapezium has one pair of opposite sides parallel.",
+   "from": "parts/lesson/assets/vo/vo004.ogg"
+  },
+  {
+   "file": "lsAskPar",
+   "key": "lsAskPar",
+   "speaker": "swiftee",
+   "text": "Which pair of *sides* are\n*parallel* to each other?",
+   "spoken": "Which pair of sides are parallel to each other?",
+   "from": "parts/lesson/assets/vo/vo005.ogg"
+  },
+  {
+   "file": "lsAskParOk",
+   "key": "lsAskParOk",
+   "speaker": "swiftee",
+   "text": "That's correct! AB ∥ CD.",
+   "spoken": "That's correct! A B is parallel to C D.",
+   "from": "parts/lesson/assets/vo/vo007.ogg"
+  },
+  {
+   "file": "lsAskParFbAD",
+   "key": "lsAskParFbAD",
+   "speaker": "swiftee",
+   "text": "Look again. AD and BC lean towards each other, so they would meet if we made them longer.",
+   "spoken": "Look again. A D and B C lean towards each other, so they would meet if we made them longer.",
+   "from": "parts/lesson/assets/vo/vo006.ogg"
+  },
+  {
+   "file": "lsWhatIf",
+   "key": "lsWhatIf",
+   "speaker": "swiftee",
+   "text": "What if we made the other pair\nof *opposite* *sides* *parallel* too?",
+   "spoken": "What if we made the other pair of opposite sides parallel too?",
+   "from": "parts/lesson/assets/vo/vo008.ogg"
+  },
+  {
+   "file": "lsDragPar",
+   "key": "lsDragPar",
+   "speaker": "swiftee",
+   "text": "Drag *vertex* B to make\nBC *parallel* to AD.",
+   "spoken": "Drag vertex B to make B C parallel to A D.",
+   "from": "parts/lesson/assets/vo/vo009.ogg"
+  },
+  {
+   "file": "lsDragParAfter",
+   "key": "lsDragParAfter",
+   "speaker": "swiftee",
+   "text": "Well done! Now BC is\n*parallel* to AD.",
+   "spoken": "Well done! Now B C is parallel to A D.",
+   "from": "parts/lesson/assets/vo/vo013.ogg"
+  },
+  {
+   "file": "lsDragParShowAnswer",
+   "key": "lsDragParShowAnswer",
+   "speaker": "swiftee",
+   "text": "Watch! BC must lean\nthe same way as AD.",
+   "spoken": "Watch! B C must lean the same way as A D.",
+   "from": "parts/lesson/assets/vo/vo119.ogg"
+  },
+  {
+   "file": "lsDragParAnswerAfter",
+   "key": "lsDragParAnswerAfter",
+   "speaker": "swiftee",
+   "text": "Now BC is *parallel* to AD.",
+   "spoken": "Now B C is parallel to A D.",
+   "from": "parts/lesson/assets/vo/vo120.ogg"
+  },
+  {
+   "file": "lsBothPar",
+   "key": "lsBothPar",
+   "speaker": "swiftee",
+   "text": "Now both pairs of *opposite*\n*sides* are *parallel*.",
+   "spoken": "Now both pairs of opposite sides are parallel.",
+   "from": "parts/lesson/assets/vo/vo014.ogg"
+  },
+  {
+   "file": "lsDefPg",
+   "key": "lsDefPg",
+   "speaker": "swiftee",
+   "text": "We call this a *parallelogram*.",
+   "spoken": "We call this a Parallelogram.",
+   "from": "parts/lesson/assets/vo/vo016.ogg"
+  },
+  {
+   "file": "lsDefFull",
+   "key": "lsDefFull",
+   "speaker": "swiftee",
+   "text": "A *quadrilateral* where both pairs\nof *opposite* *sides* are *parallel* is\ncalled a *parallelogram*.",
+   "spoken": "A quadrilateral where both pairs of opposite sides are parallel is called a parallelogram.",
+   "from": "parts/lesson/assets/vo/vo017.ogg"
+  },
+  {
+   "file": "lsLengthsQ",
+   "key": "lsLengthsQ",
+   "speaker": "swiftee",
+   "text": "But what about the\n*side* lengths?",
+   "spoken": "But what about the side lengths?",
+   "from": "parts/lesson/assets/vo/vo018.ogg"
+  },
+  {
+   "file": "lsEqualQ",
+   "key": "lsEqualQ",
+   "speaker": "swiftee",
+   "text": "Are they *equal* too?",
+   "spoken": "Are they equal too?",
+   "from": "parts/lesson/assets/vo/vo019.ogg"
+  },
+  {
+   "file": "lsFindOut",
+   "key": "lsFindOut",
+   "speaker": "swiftee",
+   "text": "Let's find out!",
+   "spoken": "Let's find out!",
+   "from": "parts/lesson/assets/vo/vo121.ogg"
+  },
+  {
+   "file": "lsInteresting",
+   "key": "lsInteresting",
+   "speaker": "swiftee",
+   "text": "There is something\ninteresting about\nthe lengths.",
+   "spoken": "There is something interesting about the lengths.",
+   "from": "parts/lesson/assets/vo/vo021.ogg"
+  },
+  {
+   "file": "lsAskSides",
+   "key": "lsAskSides",
+   "speaker": "swiftee",
+   "text": "What do you notice\nabout the *sides*?",
+   "spoken": "What do you notice about the sides?",
+   "from": "parts/lesson/assets/vo/vo022.ogg"
+  },
+  {
+   "file": "lsAskSidesOk",
+   "key": "lsAskSidesOk",
+   "speaker": "swiftee",
+   "text": "That's correct! *Opposite*\n*sides* are *equal*.",
+   "spoken": "That's correct! Opposite sides are equal.",
+   "from": "parts/lesson/assets/vo/vo024.ogg"
+  },
+  {
+   "file": "lsAskSidesOptAll",
+   "key": "lsAskSidesOptAll",
+   "speaker": "swiftee",
+   "text": "All sides are equal",
+   "spoken": "All sides are equal"
+  },
+  {
+   "file": "lsAskSidesFbAll",
+   "key": "lsAskSidesFbAll",
+   "speaker": "swiftee",
+   "text": "Look at the lengths again. AB is 6 cm, but AD is only 3 cm.",
+   "spoken": "Look at the lengths again. A B is six centimetres, but A D is only three centimetres.",
+   "from": "parts/lesson/assets/vo/vo023.ogg"
+  },
+  {
+   "file": "lsAskSidesOptOpp",
+   "key": "lsAskSidesOptOpp",
+   "speaker": "swiftee",
+   "text": "Opposite sides are equal",
+   "spoken": "Opposite sides are equal"
+  },
+  {
+   "file": "lsOppEq",
+   "key": "lsOppEq",
+   "speaker": "swiftee",
+   "text": "In any *parallelogram*,\n*opposite* *sides* are of\n*equal* lengths.",
+   "spoken": "In any parallelogram, opposite sides are of equal lengths.",
+   "from": "parts/lesson/assets/vo/vo025.ogg"
+  },
+  {
+   "file": "lsSidesSum",
+   "key": "lsSidesSum",
+   "speaker": "swiftee",
+   "text": "So, in any *parallelogram*,\n*opposite* *sides* are\n*parallel* and *equal*.",
+   "spoken": "So, in any parallelogram, opposite sides are parallel and equal.",
+   "from": "parts/lesson/assets/vo/vo027.ogg"
+  },
+  {
+   "file": "lsCp1a",
+   "key": "lsCp1a",
+   "speaker": "swiftee",
+   "text": "Which of these are\n*parallelograms*? Select\nall that apply.",
+   "spoken": "Which of these are parallelograms? Select all that apply.",
+   "from": "parts/lesson/assets/vo/vo028.ogg"
+  },
+  {
+   "file": "lsCp1aOk",
+   "key": "lsCp1aOk",
+   "speaker": "swiftee",
+   "text": "Yes! Both these shapes have\ntwo pairs of *parallel* *sides*.",
+   "spoken": "Yes! Both these shapes have two pairs of parallel sides.",
+   "from": "parts/lesson/assets/vo/vo125.ogg"
+  },
+  {
+   "file": "lsCp1aFbB",
+   "key": "lsCp1aFbB",
+   "speaker": "swiftee",
+   "text": "This shape is a *trapezium*. Only one pair of its *sides* is *parallel*.",
+   "spoken": "This shape is a trapezium. Only one pair of its sides is parallel.",
+   "from": "parts/lesson/assets/vo/vo123.ogg"
+  },
+  {
+   "file": "lsCp1aFbD",
+   "key": "lsCp1aFbD",
+   "speaker": "swiftee",
+   "text": "This shape has five *sides*, so it is not a *quadrilateral*.",
+   "spoken": "This shape has five sides, so it is not a quadrilateral.",
+   "from": "parts/lesson/assets/vo/vo124.ogg"
+  },
+  {
+   "file": "lsCp1b",
+   "key": "lsCp1b",
+   "speaker": "swiftee",
+   "text": "In this *parallelogram*,\nAB = 7 cm. What is the\nlength of CD?",
+   "spoken": "In this parallelogram, A B equals seven centimetres. What is the length of C D?",
+   "from": "parts/lesson/assets/vo/vo033.ogg"
+  },
+  {
+   "file": "lsCp1bOk",
+   "key": "lsCp1bOk",
+   "speaker": "swiftee",
+   "text": "That's right! *Opposite* *sides*\nare *equal*, so CD = 7 cm.",
+   "spoken": "That's right! Opposite sides are equal, so C D equals seven centimetres.",
+   "from": "parts/lesson/assets/vo/vo037.ogg"
+  },
+  {
+   "file": "lsCp1bFbHalf",
+   "key": "lsCp1bFbHalf",
+   "speaker": "swiftee",
+   "text": "CD is not half of AB. *Opposite* *sides* of a *parallelogram* are *equal*.",
+   "spoken": "C D is not half of A B. Opposite sides of a parallelogram are equal.",
+   "from": "parts/lesson/assets/vo/vo035.ogg"
+  },
+  {
+   "file": "lsCp1bFbDouble",
+   "key": "lsCp1bFbDouble",
+   "speaker": "swiftee",
+   "text": "CD is not double AB. *Opposite* *sides* of a *parallelogram* are *equal*.",
+   "spoken": "C D is not double A B. Opposite sides of a parallelogram are equal.",
+   "from": "parts/lesson/assets/vo/vo034.ogg"
+  },
+  {
+   "file": "lsCp1c",
+   "key": "lsCp1c",
+   "speaker": "swiftee",
+   "text": "In this *parallelogram*,\nAB = 8 cm and BC = 5 cm.\nFind the lengths of\nCD and AD.",
+   "spoken": "In this parallelogram, A B equals eight centimetres and B C equals five centimetres. Find the lengths of C D and A D.",
+   "from": "parts/lesson/assets/vo/vo038.ogg"
+  },
+  {
+   "file": "lsCp1cOk",
+   "key": "lsCp1cOk",
+   "speaker": "swiftee",
+   "text": "CD = 8 cm, AD = 5 cm.",
+   "spoken": "C D equals eight centimetres, A D equals five centimetres.",
+   "from": "parts/lesson/assets/vo/vo145.ogg"
+  },
+  {
+   "file": "lsCp1cFbCD",
+   "key": "lsCp1cFbCD",
+   "speaker": "swiftee",
+   "text": "CD is *opposite* AB, so CD = AB.",
+   "spoken": "C D is opposite A B, so C D equals A B.",
+   "from": "parts/lesson/assets/vo/vo138.ogg"
+  },
+  {
+   "file": "lsCp1cFbAD",
+   "key": "lsCp1cFbAD",
+   "speaker": "swiftee",
+   "text": "AD is *opposite* BC, so AD = BC.",
+   "spoken": "A D is opposite B C, so A D equals B C.",
+   "from": "parts/lesson/assets/vo/vo139.ogg"
+  },
+  {
+   "file": "lsSidesDone",
+   "key": "lsSidesDone",
+   "speaker": "swiftee",
+   "text": "We learnt all about the\n*sides* of a *parallelogram*.",
+   "spoken": "We learnt all about the sides of a parallelogram.",
+   "from": "parts/lesson/assets/vo/vo042.ogg"
+  },
+  {
+   "file": "lsAngles",
+   "key": "lsAngles",
+   "speaker": "swiftee",
+   "text": "But what about its *angles*?\nAre they *equal* too?",
+   "spoken": "But what about its angles? Are they equal too?",
+   "from": "parts/lesson/assets/vo/vo043.ogg"
+  },
+  {
+   "file": "lsInterestingAng",
+   "key": "lsInterestingAng",
+   "speaker": "swiftee",
+   "text": "There is something\ninteresting here too.",
+   "spoken": "There is something interesting here too.",
+   "from": "parts/lesson/assets/vo/vo045.ogg"
+  },
+  {
+   "file": "lsSomeEq",
+   "key": "lsSomeEq",
+   "speaker": "swiftee",
+   "text": "Some *angles* are *equal*\nto one another.",
+   "spoken": "Some angles are equal to one another.",
+   "from": "parts/lesson/assets/vo/vo046.ogg"
+  },
+  {
+   "file": "lsTapEqA",
+   "key": "lsTapEqA",
+   "speaker": "swiftee",
+   "text": "Which *angle* is\n*equal* to ∠A?",
+   "spoken": "Which angle is equal to angle A?",
+   "from": "parts/lesson/assets/vo/vo143.ogg"
+  },
+  {
+   "file": "lsTapEqAOk",
+   "key": "lsTapEqAOk",
+   "speaker": "swiftee",
+   "text": "That's correct! ∠A is\n*equal* to ∠C.",
+   "spoken": "That's correct! Angle A is equal to angle C.",
+   "from": "parts/lesson/assets/vo/vo050.ogg"
+  },
+  {
+   "file": "lsTapEqAFb",
+   "key": "lsTapEqAFb",
+   "speaker": "swiftee",
+   "text": "Not quite. Compare its size with ∠A. Look at the corner *opposite* A.",
+   "spoken": "Not quite. Compare its size with angle A. Look at the corner opposite A.",
+   "from": "parts/lesson/assets/vo/vo048.ogg"
+  },
+  {
+   "file": "lsTapEqD",
+   "key": "lsTapEqD",
+   "speaker": "swiftee",
+   "text": "Which *angle* is\n*equal* to ∠D?",
+   "spoken": "Which angle is equal to angle D?",
+   "from": "parts/lesson/assets/vo/vo144.ogg"
+  },
+  {
+   "file": "lsTapEqDOk",
+   "key": "lsTapEqDOk",
+   "speaker": "swiftee",
+   "text": "That's correct! ∠D is\n*equal* to ∠B.",
+   "spoken": "That's correct! Angle D is equal to angle B.",
+   "from": "parts/lesson/assets/vo/vo054.ogg"
+  },
+  {
+   "file": "lsTapEqDFb",
+   "key": "lsTapEqDFb",
+   "speaker": "swiftee",
+   "text": "Not quite. Compare its size with ∠D. Look at the corner *opposite* D.",
+   "spoken": "Not quite. Compare its size with angle D. Look at the corner opposite D.",
+   "from": "parts/lesson/assets/vo/vo052.ogg"
+  },
+  {
+   "file": "lsOppAng",
+   "key": "lsOppAng",
+   "speaker": "swiftee",
+   "text": "So in any *parallelogram*,\nthe pairs of *opposite*\n*angles* are also *equal*.",
+   "spoken": "So in any parallelogram, the pairs of opposite angles are also equal.",
+   "from": "parts/lesson/assets/vo/vo055.ogg"
+  },
+  {
+   "file": "lsSeeElse",
+   "key": "lsSeeElse",
+   "speaker": "swiftee",
+   "text": "But I see something\nelse too.",
+   "spoken": "But I see something else too.",
+   "from": "parts/lesson/assets/vo/vo056.ogg"
+  },
+  {
+   "file": "lsLookAD",
+   "key": "lsLookAD",
+   "speaker": "swiftee",
+   "text": "Look at ∠A and ∠D.",
+   "spoken": "Look at angle A and angle D.",
+   "from": "parts/lesson/assets/vo/vo057.ogg"
+  },
+  {
+   "file": "lsSumAD",
+   "key": "lsSumAD",
+   "speaker": "swiftee",
+   "text": "They add up to make *180°*.",
+   "spoken": "They add up to make one hundred and eighty degrees.",
+   "from": "parts/lesson/assets/vo/vo058.ogg"
+  },
+  {
+   "file": "lsAskAdj",
+   "key": "lsAskAdj",
+   "speaker": "swiftee",
+   "text": "Which other *angles*\nadd up to *180°*?",
+   "spoken": "Which other angles add up to one hundred and eighty degrees?",
+   "from": "parts/lesson/assets/vo/vo059.ogg"
+  },
+  {
+   "file": "lsAskAdjOk",
+   "key": "lsAskAdjOk",
+   "speaker": "swiftee",
+   "text": "Yes! ∠B + ∠C = 180° and\n∠A + ∠B = 180°.",
+   "spoken": "Yes! Angle B plus angle C equals one hundred and eighty degrees and angle A plus angle B equals one hundred and eighty degrees.",
+   "from": "parts/lesson/assets/vo/vo063.ogg"
+  },
+  {
+   "file": "lsAskAdjFbBD",
+   "key": "lsAskAdjFbBD",
+   "speaker": "swiftee",
+   "text": "∠B and ∠D are *opposite* *angles*. 70° + 70° is not *180°*.",
+   "spoken": "Angle B and angle D are opposite angles. Seventy degrees plus seventy degrees is not one hundred and eighty degrees.",
+   "from": "parts/lesson/assets/vo/vo060.ogg"
+  },
+  {
+   "file": "lsAskAdjFbAC",
+   "key": "lsAskAdjFbAC",
+   "speaker": "swiftee",
+   "text": "∠A and ∠C are *opposite* *angles*. 110° + 110° is not *180°*.",
+   "spoken": "Angle A and angle C are opposite angles. One hundred and ten degrees plus one hundred and ten degrees is not one hundred and eighty degrees.",
+   "from": "parts/lesson/assets/vo/vo122.ogg"
+  },
+  {
+   "file": "lsAdjRule",
+   "key": "lsAdjRule",
+   "speaker": "swiftee",
+   "text": "All the *adjacent* *angles*\nof this *parallelogram*\nadd up to *180°*.",
+   "spoken": "All the adjacent angles of this parallelogram add up to one hundred and eighty degrees.",
+   "from": "parts/lesson/assets/vo/vo064.ogg"
+  },
+  {
+   "file": "lsCp2a",
+   "key": "lsCp2a",
+   "speaker": "swiftee",
+   "text": "In this *parallelogram*,\n∠A = 68°. What is the\nmeasure of ∠C?",
+   "spoken": "In this parallelogram, angle A equals sixty-eight degrees. What is the measure of angle C?",
+   "from": "parts/lesson/assets/vo/vo065.ogg"
+  },
+  {
+   "file": "lsCp2aOk",
+   "key": "lsCp2aOk",
+   "speaker": "swiftee",
+   "text": "That's right! *Opposite* *angles*\nare *equal*, so ∠C = 68°.",
+   "spoken": "That's right! Opposite angles are equal, so angle C equals sixty-eight degrees.",
+   "from": "parts/lesson/assets/vo/vo069.ogg"
+  },
+  {
+   "file": "lsCp2aFb",
+   "key": "lsCp2aFb",
+   "speaker": "swiftee",
+   "text": "Look again. *Opposite* *angles* of a *parallelogram* are *equal*.",
+   "spoken": "Look again. Opposite angles of a parallelogram are equal.",
+   "from": "parts/lesson/assets/vo/vo067.ogg"
+  },
+  {
+   "file": "lsCp2b",
+   "key": "lsCp2b",
+   "speaker": "swiftee",
+   "text": "In this *parallelogram*,\n∠A = 72°. What is the\nmeasure of ∠B?",
+   "spoken": "In this parallelogram, angle A equals seventy-two degrees. What is the measure of angle B?",
+   "from": "parts/lesson/assets/vo/vo070.ogg"
+  },
+  {
+   "file": "lsCp2bOk",
+   "key": "lsCp2bOk",
+   "speaker": "swiftee",
+   "text": "Correct! 72° + 108° = 180°.",
+   "spoken": "Correct! Seventy-two degrees plus one hundred and eight degrees equals one hundred and eighty degrees.",
+   "from": "parts/lesson/assets/vo/vo074.ogg"
+  },
+  {
+   "file": "lsCp2bFb72",
+   "key": "lsCp2bFb72",
+   "speaker": "swiftee",
+   "text": "∠B is next to ∠A, not *opposite* it. *Adjacent* *angles* add up to *180°*.",
+   "spoken": "Angle B is next to angle A, not opposite it. Adjacent angles add up to one hundred and eighty degrees.",
+   "from": "parts/lesson/assets/vo/vo071.ogg"
+  },
+  {
+   "file": "lsCp2bFb180",
+   "key": "lsCp2bFb180",
+   "speaker": "swiftee",
+   "text": "*180°* is the sum of ∠A and ∠B, not ∠B by itself.",
+   "spoken": "One hundred and eighty degrees is the sum of angle A and angle B, not angle B by itself.",
+   "from": "parts/lesson/assets/vo/vo072.ogg"
+  },
+  {
+   "file": "lsCp2c",
+   "key": "lsCp2c",
+   "speaker": "swiftee",
+   "text": "In this *parallelogram*,\n∠A = 65°. Find the measures\nof ∠B, ∠C and ∠D.",
+   "spoken": "In this parallelogram, angle A equals sixty-five degrees. Find the measures of angle B, angle C and angle D.",
+   "from": "parts/lesson/assets/vo/vo075.ogg"
+  },
+  {
+   "file": "lsCp2cOk",
+   "key": "lsCp2cOk",
+   "speaker": "swiftee",
+   "text": "Amazing! ∠B = 115°, ∠C = 65°\nand ∠D = 115°.",
+   "spoken": "Amazing! Angle B equals one hundred and fifteen degrees, angle C equals sixty-five degrees and angle D equals one hundred and fifteen degrees.",
+   "from": "parts/lesson/assets/vo/vo078.ogg"
+  },
+  {
+   "file": "lsCp2cFbB25",
+   "key": "lsCp2cFbB25",
+   "speaker": "swiftee",
+   "text": "25° + 65° is only 90°. ∠A and ∠B must add up to *180°*.",
+   "spoken": "Twenty-five degrees plus sixty-five degrees is only ninety degrees. Angle A and angle B must add up to one hundred and eighty degrees.",
+   "from": "parts/lesson/assets/vo/vo126.ogg"
+  },
+  {
+   "file": "lsCp2cFbB65",
+   "key": "lsCp2cFbB65",
+   "speaker": "swiftee",
+   "text": "∠B is next to ∠A, not *opposite* it. ∠A + ∠B = 180°.",
+   "spoken": "Angle B is next to angle A, not opposite it. Angle A plus angle B equals one hundred and eighty degrees.",
+   "from": "parts/lesson/assets/vo/vo127.ogg"
+  },
+  {
+   "file": "lsCp2cFbB180",
+   "key": "lsCp2cFbB180",
+   "speaker": "swiftee",
+   "text": "*180°* is ∠A and ∠B together. Take away the 65° of ∠A.",
+   "spoken": "One hundred and eighty degrees is angle A and angle B together. Take away the sixty-five degrees of angle A.",
+   "from": "parts/lesson/assets/vo/vo128.ogg"
+  },
+  {
+   "file": "lsCp2cFbC25",
+   "key": "lsCp2cFbC25",
+   "speaker": "swiftee",
+   "text": "∠C is *opposite* ∠A, so it is *equal* to ∠A, not 25°.",
+   "spoken": "Angle C is opposite angle A, so it is equal to angle A, not twenty-five degrees.",
+   "from": "parts/lesson/assets/vo/vo129.ogg"
+  },
+  {
+   "file": "lsCp2cFbC115",
+   "key": "lsCp2cFbC115",
+   "speaker": "swiftee",
+   "text": "115° is the size of an *angle* next to ∠A. ∠C is *opposite* ∠A, so ∠C = ∠A.",
+   "spoken": "One hundred and fifteen degrees is the size of an angle next to angle A. Angle C is opposite angle A, so angle C equals angle A.",
+   "from": "parts/lesson/assets/vo/vo130.ogg"
+  },
+  {
+   "file": "lsCp2cFbC180",
+   "key": "lsCp2cFbC180",
+   "speaker": "swiftee",
+   "text": "∠C is *opposite* ∠A, so it is *equal* to ∠A, not *180°*.",
+   "spoken": "Angle C is opposite angle A, so it is equal to angle A, not one hundred and eighty degrees.",
+   "from": "parts/lesson/assets/vo/vo131.ogg"
+  },
+  {
+   "file": "lsCp2cFbD25",
+   "key": "lsCp2cFbD25",
+   "speaker": "swiftee",
+   "text": "25° + 65° is only 90°. ∠A and ∠D must add up to *180°*.",
+   "spoken": "Twenty-five degrees plus sixty-five degrees is only ninety degrees. Angle A and angle D must add up to one hundred and eighty degrees.",
+   "from": "parts/lesson/assets/vo/vo132.ogg"
+  },
+  {
+   "file": "lsCp2cFbD65",
+   "key": "lsCp2cFbD65",
+   "speaker": "swiftee",
+   "text": "∠D is next to ∠A, not *opposite* it. ∠A + ∠D = 180°.",
+   "spoken": "Angle D is next to angle A, not opposite it. Angle A plus angle D equals one hundred and eighty degrees.",
+   "from": "parts/lesson/assets/vo/vo133.ogg"
+  },
+  {
+   "file": "lsCp2cFbD180",
+   "key": "lsCp2cFbD180",
+   "speaker": "swiftee",
+   "text": "*180°* is ∠A and ∠D together. Take away the 65° of ∠A.",
+   "spoken": "One hundred and eighty degrees is angle A and angle D together. Take away the sixty-five degrees of angle A.",
+   "from": "parts/lesson/assets/vo/vo134.ogg"
+  },
+  {
+   "file": "lsExplored",
+   "key": "lsExplored",
+   "speaker": "swiftee",
+   "text": "We have explored all about\nthe *sides* and *angles* of\na *parallelogram*.",
+   "spoken": "We have explored all about the sides and angles of a parallelogram.",
+   "from": "parts/lesson/assets/vo/vo079.ogg"
+  },
+  {
+   "file": "lsDiagIntro",
+   "key": "lsDiagIntro",
+   "speaker": "swiftee",
+   "text": "Let's learn about its\n*diagonals*.",
+   "spoken": "Let's learn about its diagonals.",
+   "from": "parts/lesson/assets/vo/vo080.ogg"
+  },
+  {
+   "file": "lsDrawDiag",
+   "key": "lsDrawDiag",
+   "speaker": "swiftee",
+   "text": "Draw all the *diagonals*\nof this *parallelogram*.",
+   "spoken": "Draw all the diagonals of this parallelogram.",
+   "from": "parts/lesson/assets/vo/vo081.ogg"
+  },
+  {
+   "file": "lsDrawDiagWrong",
+   "key": "lsDrawDiagWrong",
+   "speaker": "swiftee",
+   "text": "That is a *side*. A *diagonal* joins two *opposite* corners.",
+   "spoken": "That is a side. A diagonal joins two opposite corners.",
+   "from": "parts/lesson/assets/vo/vo082.ogg"
+  },
+  {
+   "file": "lsDrawDiagAfter",
+   "key": "lsDrawDiagAfter",
+   "speaker": "swiftee",
+   "text": "Great! You drew both\n*diagonals*.",
+   "spoken": "Great! You drew both diagonals.",
+   "from": "parts/lesson/assets/vo/vo084.ogg"
+  },
+  {
+   "file": "lsDiagNames",
+   "key": "lsDiagNames",
+   "speaker": "swiftee",
+   "text": "AC and BD are the *diagonals*\nof this *parallelogram*.",
+   "spoken": "A C and B D are the diagonals of this parallelogram.",
+   "from": "parts/lesson/assets/vo/vo085.ogg"
+  },
+  {
+   "file": "lsMeetO",
+   "key": "lsMeetO",
+   "speaker": "swiftee",
+   "text": "They meet each other\nat point O.",
+   "spoken": "They meet each other at point O.",
+   "from": "parts/lesson/assets/vo/vo086.ogg"
+  },
+  {
+   "file": "lsSegs",
+   "key": "lsSegs",
+   "speaker": "swiftee",
+   "text": "Each *diagonal* divides\nthe other into\n2 *segments*.",
+   "spoken": "Each diagonal divides the other into two segments.",
+   "from": "parts/lesson/assets/vo/vo087.ogg"
+  },
+  {
+   "file": "lsMeasureSeg",
+   "key": "lsMeasureSeg",
+   "speaker": "swiftee",
+   "text": "Are the two *segments* of\neach *diagonal* *equal*?",
+   "spoken": "Are the two segments of each diagonal equal?",
+   "from": "parts/lesson/assets/vo/vo142.ogg"
+  },
+  {
+   "file": "lsCompare",
+   "key": "lsCompare",
+   "speaker": "swiftee",
+   "text": "Let's compare the lengths\nof these *segments*.",
+   "spoken": "Let's compare the lengths of these segments.",
+   "from": "parts/lesson/assets/vo/vo089.ogg"
+  },
+  {
+   "file": "lsMatchSeg",
+   "key": "lsMatchSeg",
+   "speaker": "swiftee",
+   "text": "Drag the *segments* to\ntheir correct place.",
+   "spoken": "Drag the segments to their correct place.",
+   "from": "parts/lesson/assets/vo/vo090.ogg"
+  },
+  {
+   "file": "lsMatchSegOk",
+   "key": "lsMatchSegOk",
+   "speaker": "swiftee",
+   "text": "That's correct! The *segments*\nof the same *diagonal*\nare *equal*.",
+   "spoken": "That's correct! The segments of the same diagonal are equal.",
+   "from": "parts/lesson/assets/vo/vo093.ogg"
+  },
+  {
+   "file": "lsMatchSegFb",
+   "key": "lsMatchSegFb",
+   "speaker": "swiftee",
+   "text": "Those two are not the same length. Look at the lengths again.",
+   "spoken": "Those two are not the same length. Look at the lengths again.",
+   "from": "parts/lesson/assets/vo/vo091.ogg"
+  },
+  {
+   "file": "lsBisectEq",
+   "key": "lsBisectEq",
+   "speaker": "swiftee",
+   "text": "Each *diagonal* is divided\ninto two *equal* parts\nby the other.",
+   "spoken": "Each diagonal is divided into two equal parts by the other.",
+   "from": "parts/lesson/assets/vo/vo094.ogg"
+  },
+  {
+   "file": "lsBisect",
+   "key": "lsBisect",
+   "speaker": "swiftee",
+   "text": "So the *diagonals* of\na *parallelogram* *bisect*\neach other.",
+   "spoken": "So the diagonals of a parallelogram bisect each other.",
+   "from": "parts/lesson/assets/vo/vo095.ogg"
+  },
+  {
+   "file": "lsDiagonalsBisect",
+   "key": "lsDiagonalsBisect",
+   "speaker": "swiftee",
+   "text": "*Diagonals* *bisect* each other.",
+   "spoken": "Diagonals bisect each other.",
+   "from": "parts/lesson/assets/vo/vo117.ogg"
+  },
+  {
+   "file": "lsCp3a",
+   "key": "lsCp3a",
+   "speaker": "swiftee",
+   "text": "In this *parallelogram*,\nAO = 6 cm. What is the\nlength of OC?",
+   "spoken": "In this parallelogram, A O equals six centimetres. What is the length of O C?",
+   "from": "parts/lesson/assets/vo/vo096.ogg"
+  },
+  {
+   "file": "lsCp3aOk",
+   "key": "lsCp3aOk",
+   "speaker": "swiftee",
+   "text": "Yes! O cuts AC in half,\nso OC = 6 cm.",
+   "spoken": "Yes! O cuts A C in half, so O C equals six centimetres.",
+   "from": "parts/lesson/assets/vo/vo137.ogg"
+  },
+  {
+   "file": "lsCp3aFb3",
+   "key": "lsCp3aFb3",
+   "speaker": "swiftee",
+   "text": "OC is not half of AO. OC = AO.",
+   "spoken": "O C is not half of A O. O C equals A O.",
+   "from": "parts/lesson/assets/vo/vo135.ogg"
+  },
+  {
+   "file": "lsCp3aFb12",
+   "key": "lsCp3aFb12",
+   "speaker": "swiftee",
+   "text": "12 cm is the whole of AC. OC is only half of it.",
+   "spoken": "Twelve centimetres is the whole of A C. O C is only half of it.",
+   "from": "parts/lesson/assets/vo/vo136.ogg"
+  },
+  {
+   "file": "lsCp3b",
+   "key": "lsCp3b",
+   "speaker": "swiftee",
+   "text": "In this *parallelogram*,\nAO = 5 cm and BO = 3 cm.\nFind the lengths of\nOC and OD.",
+   "spoken": "In this parallelogram, A O equals five centimetres and B O equals three centimetres. Find the lengths of O C and O D.",
+   "from": "parts/lesson/assets/vo/vo101.ogg"
+  },
+  {
+   "file": "lsCp3bOk",
+   "key": "lsCp3bOk",
+   "speaker": "swiftee",
+   "text": "Well done! OC = AO = 5 cm\nand OD = BO = 3 cm.",
+   "spoken": "Well done! O C equals A O equals five centimetres and O D equals B O equals three centimetres.",
+   "from": "parts/lesson/assets/vo/vo104.ogg"
+  },
+  {
+   "file": "lsCp3bFbOC",
+   "key": "lsCp3bFbOC",
+   "speaker": "swiftee",
+   "text": "OC is the other half of AC, so OC = AO.",
+   "spoken": "O C is the other half of A C, so O C equals A O.",
+   "from": "parts/lesson/assets/vo/vo140.ogg"
+  },
+  {
+   "file": "lsCp3bFbOD",
+   "key": "lsCp3bFbOD",
+   "speaker": "swiftee",
+   "text": "OD is the other half of BD, so OD = BO.",
+   "spoken": "O D is the other half of B D, so O D equals B O.",
+   "from": "parts/lesson/assets/vo/vo141.ogg"
+  },
+  {
+   "file": "lsCp3c",
+   "key": "lsCp3c",
+   "speaker": "swiftee",
+   "text": "Which of the following are\ntrue for this *parallelogram*?\nSelect all that apply.",
+   "spoken": "Which of the following are true for this parallelogram? Select all that apply.",
+   "from": "parts/lesson/assets/vo/vo105.ogg"
+  },
+  {
+   "file": "lsCp3cOk",
+   "key": "lsCp3cOk",
+   "speaker": "swiftee",
+   "text": "Perfect! AO = OC, BO = OD,\nso the *diagonals* *bisect*\neach other.",
+   "spoken": "Perfect! A O equals O C, B O equals O D, so the diagonals bisect each other.",
+   "from": "parts/lesson/assets/vo/vo109.ogg"
+  },
+  {
+   "file": "lsCp3cFbAOBO",
+   "key": "lsCp3cFbAOBO",
+   "speaker": "swiftee",
+   "text": "AO and BO are parts of different *diagonals*, so they need not be *equal*.",
+   "spoken": "A O and B O are parts of different diagonals, so they need not be equal.",
+   "from": "parts/lesson/assets/vo/vo106.ogg"
+  },
+  {
+   "file": "lsCp3cFbACBD",
+   "key": "lsCp3cFbACBD",
+   "speaker": "swiftee",
+   "text": "The two *diagonals* of this *parallelogram* have different lengths.",
+   "spoken": "The two diagonals of this parallelogram have different lengths.",
+   "from": "parts/lesson/assets/vo/vo107.ogg"
+  },
+  {
+   "file": "lsRecap",
+   "key": "lsRecap",
+   "speaker": "swiftee",
+   "text": "Let's recall what we learnt\nabout *parallelograms*.",
+   "spoken": "Let's recall what we learnt about parallelograms.",
+   "from": "parts/lesson/assets/vo/vo110.ogg"
+  },
+  {
+   "file": "lsEnd",
+   "key": "lsEnd",
+   "speaker": "swiftee",
+   "text": "Amazing work! You know all\nabout *parallelograms* now.",
+   "spoken": "Amazing work! You know all about parallelograms now.",
+   "from": "parts/lesson/assets/vo/vo118.ogg"
+  },
+  {
+   "file": "lsTipDragRight",
+   "key": "lsTipDragRight",
+   "speaker": "swiftee",
+   "text": "BC is not *parallel* to AD yet. Keep dragging B to the right.",
+   "spoken": "B C is not parallel to A D yet. Keep dragging B to the right.",
+   "from": "parts/lesson/assets/vo/vo010.ogg"
+  },
+  {
+   "file": "lsTipDragBack",
+   "key": "lsTipDragBack",
+   "speaker": "swiftee",
+   "text": "B went too far. Drag it back a little.",
+   "spoken": "B went too far. Drag it back a little.",
+   "from": "parts/lesson/assets/vo/vo011.ogg"
+  },
+  {
+   "file": "lsTipTryAgain",
+   "key": "lsTipTryAgain",
+   "speaker": "swiftee",
+   "text": "Not quite. Try again.",
+   "spoken": "Not quite. Try again."
+  },
+  {
+   "file": "sumParallelogram",
+   "key": "sumParallelogram",
+   "speaker": "swiftee",
+   "text": "A *parallelogram* is a *quadrilateral* with two pairs of *opposite* *sides* *parallel*.",
+   "spoken": "A parallelogram is a quadrilateral with two pairs of opposite sides parallel.",
+   "from": "parts/lesson/assets/vo/vo111.ogg"
+  },
+  {
+   "file": "sumParallel",
+   "key": "sumParallel",
+   "speaker": "swiftee",
+   "text": "*Opposite* *sides* are *parallel*.",
+   "spoken": "Opposite sides are parallel.",
+   "from": "parts/lesson/assets/vo/vo112.ogg"
+  },
+  {
+   "file": "sumEqual",
+   "key": "sumEqual",
+   "speaker": "swiftee",
+   "text": "*Opposite* *sides* are *equal*.",
+   "spoken": "Opposite sides are equal.",
+   "from": "parts/lesson/assets/vo/vo114.ogg"
+  },
+  {
+   "file": "sumAngles",
+   "key": "sumAngles",
+   "speaker": "swiftee",
+   "text": "*Opposite* *angles* are *equal*.",
+   "spoken": "Opposite angles are equal.",
+   "from": "parts/lesson/assets/vo/vo115.ogg"
+  },
+  {
+   "file": "sumSupplementary",
+   "key": "sumSupplementary",
+   "speaker": "swiftee",
+   "text": "*Adjacent* *angles* are *supplementary*. They add up to *180°*.",
+   "spoken": "Adjacent angles are supplementary. They add up to one hundred and eighty degrees.",
+   "from": "parts/lesson/assets/vo/vo116.ogg"
+  }
+ ]
+}

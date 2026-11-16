@@ -51,18 +51,26 @@ Every word on screen comes from `locales/locales.json` by key (`shell/i18n.js`):
   each word starts, measured from the audio). Swiftee and the narrator are ElevenLabs' Devi, Popo is Amit (Kids Cartoon
   Character), `eleven_multilingual_v2`. Every key of `hi` has a clip but `loadArtFailed` and `ariaFishCaught` (filled
   in at run time); a value-dependent line has one per value (`lessonScore.0`-`.9`, `ariaShape.A`-`.D`,
-  `ariaAnswerBox.*`). The script (`vo_script_hi.json`: each line as shown and as spoken, notation said in words) and the
-  studio's MP3s (`masters/`) sit beside the clips and stay out of the deploy. After a new or re-recorded master,
-  `node tools/vo_lang_build.js hi` makes its clip (Ogg Opus, 32 kbps, at the English clips' loudness) and the map, and
-  lists any line the game says that has no clip (needs Playwright, as `parts/lesson/tools/vo_build.js` does).
-- **Marathi is voiced** (`?lan=mr`) the same way, from `assets/VO-MR/` (`vo_mr.js`, `vo_script_mr.json`, `masters/`):
+  `ariaAnswerBox.*`). The script (`vo_script_hi.json`: each line as shown and as spoken, notation said in words) sits
+  beside the clips and stays out of the deploy. Only the optimised clips are kept: the studio's MP3s are not. A new or
+  re-recorded line lands as an MP3 in `masters/` (local only, in `.gitignore`); `node tools/vo_lang_build.js hi` makes
+  its clip (Ogg Opus, 32 kbps, at the English clips' loudness) and the map, and lists any line the game says that has
+  no clip (needs Playwright, as `parts/lesson/tools/vo_build.js` does). Then delete `masters/`. (The first recordings'
+  MP3s are in git history up to `e4d2cb4`.)
+- **Marathi is voiced** (`?lan=mr`) the same way, from `assets/VO-MR/` (`vo_mr.js`, `vo_script_mr.json`):
   Swiftee and the narrator are ElevenLabs' Sayali, Popo is Vardaan, `eleven_v4` (`eleven_multilingual_v2` has no
   Marathi). `ELEVENLABS_API_KEY=… node tools/vo_lang_record.js mr --only <file>,…` records masters from the script
   (`--count`: words, characters and credits without calling the API), then `node tools/vo_lang_build.js mr`.
-- **Gujarati is voiced** (`?lan=gu`) the same way, from `assets/VO-GU/` (`vo_gu.js`, `vo_script_gu.json`, `masters/`):
+- **Gujarati is voiced** (`?lan=gu`) the same way, from `assets/VO-GU/` (`vo_gu.js`, `vo_script_gu.json`):
   Swiftee and the narrator are ElevenLabs' Hetalben, Popo is Bhavesh Bhai, `eleven_v4`
   (`node tools/vo_lang_record.js gu …`, then `node tools/vo_lang_build.js gu`).
   The other languages play the English voice under their own words.
+- **English is keyed the same way** (the default, or `?lan=en`), from `assets/VO-EN/` (`vo_en.js`, `vo_script_en.json`):
+  the parts' own English recordings, one clip per key. The lesson's clips (`parts/lesson/assets/vo/`) are copied as they
+  are, and the fishing game's lines were encoded from its original MP3s (its `assets/voice/` clips and Popo's clips
+  embedded in `voice-data.js`, both in git history at `e4d2cb4`), which are not kept. A line with no clip in `VO-EN` falls back to the part's own clip
+  (`I18n.isSource`). The 73 keys never recorded in English (buttons, labels, captions, `lessonScore.*`: the script's
+  `to_record`) have no voice IDs set yet; once they do, record them with `node tools/vo_lang_record.js en --only …`.
 - Not translated: the `?dev=1` panel (a developer's tool), the `<noscript>` line (shown only without JavaScript) and the
   painted "Fishing Frenzy 2" logo (an image).
 

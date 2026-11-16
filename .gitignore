@@ -10,3 +10,6 @@ Thumbs.db
 node_modules/
 *.log
 *.zip
+
+# voice-over studio MP3s: local only, deleted once tools/vo_lang_build.js has made the .ogg clips
+assets/VO-*/masters/
